@@ -37,8 +37,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/half_shadow.json state/journal.json
-          for f in state/snapshot.json state/extra_journal.json state/form.json; do
+          git add state/journal.json
+          for f in state/half_shadow.json state/snapshot.json state/extra_journal.json state/form.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
