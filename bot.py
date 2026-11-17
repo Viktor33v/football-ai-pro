@@ -12,7 +12,10 @@ def send(chat,text):
     with urlopen(req,timeout=30) as r: return json.load(r)
 def report():
     today=date.today()
-    past=api("matches?dateFrom="+str(today-timedelta(days=90))+"&dateTo="+str(today-timedelta(days=1)))["matches"]
+    past=[]
+    for offset in range(1,57,7):
+        past.extend(api("matches?dateFrom="+str(today-timedelta(days=offset+6))+"&dateTo="+str(today-timedelta(days=offset)))["matches"])
+    past=list({m["id"]:m for m in past}.values())
     upcoming=api("matches?dateFrom="+str(today)+"&dateTo="+str(today+timedelta(days=1)))["matches"]
     stats=defaultdict(list)
     for m in past:
