@@ -1,50 +1,80 @@
-import os, math, json
+import os, math, json, time
 from urllib.request import Request, urlopen
-from datetime import date, timedelta, datetime, timezone
+from urllib.error import HTTPError
+from datetime import timedelta, datetime, timezone
 from collections import defaultdict
+
 def api(path):
-    req = Request("https://api.football-data.org/v4/"+path, headers={"X-Auth-Token":os.environ["FOOTBALL_API_KEY"]})
-    with urlopen(req,timeout=30) as r: return json.load(r)
+    req = Request("https://api.football-data.org/v4/"+path, headers={"X-Auth-Token":os.environ["FOOTBALL_API_KEY"].strip()})
+    for attempt in range(2):
+        try:
+            with urlopen(req, timeout=30) as r: return json.load(r)
+        except HTTPError as e:
+            if e.code!=429 or attempt: raise RuntimeError(f"Football API HTTP {e.code}") from None
+            time.sleep(65)
+
 def prob(lam,k):
     return 1-sum(math.exp(-lam)*lam**i/math.factorial(i) for i in range(k))
+
 def send(chat,text):
-    req=Request("https://api.telegram.org/bot"+os.environ["TELEGRAM_BOT_TOKEN"]+"/sendMessage",data=json.dumps({"chat_id":chat,"text":text}).encode(),headers={"Content-Type":"application/json"})
-    with urlopen(req,timeout=30) as r: return json.load(r)
+    req=Request("https://api.telegram.org/bot"+os.environ["TELEGRAM_BOT_TOKEN"].strip()+"/sendMessage",data=json.dumps({"chat_id":chat.strip(),"text":text}).encode(),headers={"Content-Type":"application/json"})
+    try:
+        with urlopen(req,timeout=30) as r: return json.load(r)
+    except HTTPError as e:
+        raise RuntimeError(f"Telegram HTTP {e.code}") from None
+
 def report():
-    today=date.today()
+    now=datetime.now(timezone.utc)
+    today=now.date()
     past=[]
     for offset in range(1,57,7):
         past.extend(api("matches?dateFrom="+str(today-timedelta(days=offset+6))+"&dateTo="+str(today-timedelta(days=offset)))["matches"])
-    past=list({m["id"]:m for m in past}.values())
-    upcoming=api("matches?dateFrom="+str(today)+"&dateTo="+str(today+timedelta(days=1)))["matches"]
+    upcoming=api("matches?dateFrom="+str(today)+"&dateTo="+str(today+timedelta(days=6)))["matches"]
     stats=defaultdict(list)
-    for m in past:
+    venue=defaultdict(list)
+    for m in sorted({m["id"]:m for m in past}.values(),key=lambda m:m["utcDate"]):
         if m["status"]!="FINISHED": continue
         f=m["score"]["fullTime"]; h=m["score"]["halfTime"]
         if any(v is None for v in [f["home"],f["away"],h["home"],h["away"]]): continue
-        stats[m["homeTeam"]["id"]].append((f["home"],f["away"],h["home"],h["away"]))
-        stats[m["awayTeam"]["id"]].append((f["away"],f["home"],h["away"],h["home"]))
-    lines=["⚽ FOOTBALL AI PRO V1 • ДЕМО","Базовая модель Пуассона. Не проверена на истории."]
+        for side,opp in (("home","away"),("away","home")):
+            team=m[side+"Team"]["id"]
+            v=(f[side],f[opp],h[side],h[opp])
+            stats[team].append(v); venue[team,side].append(v)
+    rows=[]
     for m in upcoming:
         if m["status"] not in ("TIMED","SCHEDULED"): continue
-        if datetime.fromisoformat(m["utcDate"].replace("Z","+00:00")) <= datetime.now(timezone.utc): continue
-        a=stats[m["homeTeam"]["id"]]; b=stats[m["awayTeam"]["id"]]
-        if min(len(a),len(b))<5: continue
-        avg=lambda x,j:sum(v[j] for v in x)/len(x)
-        full=(sum(avg(a,j)+avg(b,j) for j in (0,1)))/2
-        half=(sum(avg(a,j)+avg(b,j) for j in (2,3)))/2
-        lines.append(f'{m["homeTeam"]["name"]} — {m["awayTeam"]["name"]}\nТБ 0.5 1Т: {prob(half,1):.0%} | ТБ 1.5 1Т: {prob(half,2):.0%} | ТБ 2.5: {prob(full,3):.0%}\nМатчей в выборке: {len(a)}/{len(b)}')
-    if len(lines)==2: lines.append("Нет матчей с достаточной выборкой.")
+        kickoff=datetime.fromisoformat(m["utcDate"].replace("Z","+00:00"))
+        if kickoff<=now: continue
+        a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]
+        if min(len(stats[a]),len(stats[b]))<5: continue
+        def avg(team,side,j):
+            allgames=stats[team][-12:]; specific=venue[team,side][-8:]
+            base=sum(v[j] for v in allgames)/len(allgames)
+            return (sum(v[j] for v in specific)+4*base)/(len(specific)+4)
+        home=(avg(a,"home",0)+avg(b,"away",1))/2
+        away=(avg(b,"away",0)+avg(a,"home",1))/2
+        half=(avg(a,"home",2)+avg(b,"away",3)+avg(a,"home",3)+avg(b,"away",2))/2
+        p=[prob(half,1),prob(half,2),prob(home+away,3),prob(home,1)*prob(away,1),prob(max(0,home+away-half),1)]
+        rows.append((m,kickoff,p,len(stats[a]),len(stats[b]),home,away))
+    rows.sort(key=lambda r:r[2][0],reverse=True)
+    lines=["⚽ FOOTBALL AI PRO V2 • ДЕМО","Горизонт: 7 календарных дней UTC. Сортировка по ТБ 0.5 1Т. Вероятности модели не откалиброваны; это не гарантия.",f"Матчей от API: {len(upcoming)} | с достаточной выборкой: {len(rows)}"]
+    labels=["ТБ 0.5 1Т","ТБ 1.5 1Т","ТБ 2.5","Обе забьют","ТБ 0.5 2Т"]
+    records=[]
+    for m,k,p,na,nb,h,a in rows:
+        records.append({"id":m["id"],"kickoff":m["utcDate"],"home":m["homeTeam"]["name"],"away":m["awayTeam"]["name"],"p":dict(zip(labels,p)),"generated":now.isoformat()})
+    for m,k,p,na,nb,h,a in rows[:15]:
+        local=k.astimezone(timezone(timedelta(hours=6)))
+        lines.append(f'{m["homeTeam"]["name"]} — {m["awayTeam"]["name"]}\n{local:%d.%m %H:%M} Бишкек\n'+" | ".join(f"{l}: {v:.0%}" for l,v in zip(labels,p))+f"\nСредние ожидаемые голы: {h:.2f} / {a:.2f}\nВыборка: {na}/{nb}")
+    if not rows: lines.append("Нет матчей с достаточной выборкой.")
+    with open("predictions.json","w",encoding="utf-8") as f: json.dump(records,f,ensure_ascii=False,indent=2)
     return lines
+
 if __name__=="__main__":
     lines=report()
-    chat=os.environ.get("TELEGRAM_CHAT_ID")
-    if not chat:
-        print("Football API: OK; set TELEGRAM_CHAT_ID to enable delivery.")
-    else:
-        chunk=""
-        for line in lines:
-            if len(chunk)+len(line)>3500:
-                send(chat,chunk); chunk=""
-            chunk+=line+"\n\n"
-        if chunk: send(chat,chunk)
+    chat=os.environ["TELEGRAM_CHAT_ID"]
+    chunk=""
+    for line in lines:
+        if len(chunk)+len(line)>3500:
+            send(chat,chunk); chunk=""
+        chunk+=line+"\n\n"
+    if chunk: send(chat,chunk)
