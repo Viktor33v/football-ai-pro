@@ -1,4 +1,4 @@
-name: Football AI PRO V11 Commands
+name: Football AI PRO V16 Commands
 on:
   workflow_dispatch:
   schedule:
