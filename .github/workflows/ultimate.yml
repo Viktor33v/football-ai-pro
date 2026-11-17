@@ -31,13 +31,14 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - run: python snapshot.py
+      - run: python form.py
       - name: Persist public journals and snapshot
         if: ${{ always() && hashFiles('state/journal.json') != '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add state/journal.json
-          for f in state/snapshot.json state/extra_journal.json; do
+          for f in state/snapshot.json state/extra_journal.json state/form.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
