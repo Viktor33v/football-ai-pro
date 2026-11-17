@@ -14,10 +14,39 @@ def telegram(method,**params):
     except Exception: raise RuntimeError("Telegram API request failed") from None
 def norm(s):
     return "".join(c for c in unicodedata.normalize("NFKD",s.casefold()) if not unicodedata.combining(c))
+ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
+MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help"}
+def keyboard():
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Помощь")]],"resize_keyboard":True}
+def canonical(s):
+    return " ".join(norm(s).split())
+def query_match(q,r):
+    q=canonical(q)
+    parts=q.replace(" — "," - ").replace(" – "," - ").split(" - ")
+    names=canonical(r["home"]+" — "+r["away"])
+    return all(canonical(ALIASES.get(x.strip(),x.strip())) in names for x in parts)
+def reconcile(rows):
+    # Exact ordered team names only. A unique nearby goal fixture supplies kickoff.
+    index={}
+    for r in rows:
+        if r.get("kickoff"):
+            key=(canonical(r["home"]),canonical(r["away"]))
+            index.setdefault(key,set()).add(r["kickoff"])
+    result=[]
+    for row in rows:
+        r=dict(row)
+        if not r.get("kickoff"):
+            key=(canonical(r["home"]),canonical(r["away"]))
+            options=[k for k in index.get(key,set()) if abs((datetime.fromisoformat(k).date()-datetime.fromisoformat(r["date"]).date()).days)<=1]
+            if len(options)==1:
+                r["kickoff"]=options[0]; r["matched"]=True
+        result.append(r)
+    return result
 def answer(msg):
+    msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ V11 SMART FILTER • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (латиницей)\nОтветы при очередном запуске обработчика."
+    helptext="⚽ V12 PRO LIVE • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
     if cmd in ("/start","/help"): return helptext
     if cmd=="/stats":
         rows=list(load("state/extra_journal.json",{}).values())
@@ -36,20 +65,20 @@ def answer(msg):
     if not snap: return "База ещё не создана. Запусти V10 для обновления."
     def day(r):
         return datetime.fromisoformat(r["kickoff"]).astimezone(local).date().isoformat() if r.get("kickoff") else r["date"]
-    rs=[r for r in snap["rows"] if (datetime.fromisoformat(r["kickoff"])>now if r.get("kickoff") else r["date"]>now.date().isoformat())]
+    rs=[r for r in reconcile(snap["rows"]) if (datetime.fromisoformat(r["kickoff"])>now if r.get("kickoff") else r["date"]>now.date().isoformat())]
     if cmd=="/match" or not cmd.startswith("/"):
         q=arg.strip() if cmd=="/match" else msg.strip()
         if not q: return "Пример: /match Bayern"
-        rs=[r for r in rs if norm(q) in norm(r["home"]+" — "+r["away"])]
+        rs=[r for r in rs if query_match(q,r)]
     elif cmd in ("/today","/tomorrow"):
         target=(now.astimezone(local).date()+timedelta(days=cmd=="/tomorrow")).isoformat()
-        rs=[r for r in rs if day(r)==target and r["selected"]]
+        rs=[r for r in rs if r.get("kickoff") and day(r)==target and r["selected"]]
     elif cmd in ("/goals","/corners","/cards"):
         rs=[r for r in rs if r["group"]==cmd[1:] and r["selected"]]
     elif cmd=="/top":
         rs=[r for r in rs if r["selected"]]
     else: return helptext
-    lines=["⚽ V11 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности."]
+    lines=["⚽ V12 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
         lines.append(f'{day(r)} | {r["home"]} — {r["away"]}\n{r["market"]}: {r["p"]:.1%}')
     if not rs: lines.append("Нет подходящих будущих прогнозов в базе.")
@@ -67,7 +96,7 @@ def run():
             m=u.get("message",{})
             if m.get("chat",{}).get("id")==chat and m.get("chat",{}).get("type")=="private" and isinstance(m.get("text"),str):
                 text=answer(m["text"])
-                for i in range(0,len(text),3500): telegram("sendMessage",chat_id=chat,text=text[i:i+3500])
+                for i in range(0,len(text),3500): telegram("sendMessage",chat_id=chat,text=text[i:i+3500],reply_markup=keyboard())
             offset=u["update_id"]+1
     if offset is not None: telegram("getUpdates",offset=offset,timeout=0,limit=1,allowed_updates=["message"])
 if __name__=="__main__": run()
