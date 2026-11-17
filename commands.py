@@ -15,9 +15,9 @@ def telegram(method,**params):
 def norm(s):
     return "".join(c for c in unicodedata.normalize("NFKD",s.casefold()) if not unicodedata.combining(c))
 ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
-MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help"}
+MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form"}
 def keyboard():
-    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Помощь")]],"resize_keyboard":True}
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Помощь")]],"resize_keyboard":True}
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
@@ -42,12 +42,33 @@ def reconcile(rows):
                 r["kickoff"]=options[0]; r["matched"]=True
         result.append(r)
     return result
+def team_form(q):
+    data=load("state/form.json",{})
+    if not data: return "База формы ещё не создана. Запусти V10."
+    q=canonical(q); q=canonical(ALIASES.get(q,q))
+    if not q: return "Пример: /form Бавария"
+    teams=[t for t in data["teams"] if q in canonical(t["name"])]
+    lines=["⚽ V13 • Форма команды","Источник: "+data["source"],"Данные на "+data["created"][:10]+" UTC. Только завершённые матчи лиги."]
+    for t in teams[:5]:
+        rs=t["matches"]; n=len(rs)
+        lines.append("\n"+t["name"]+" | "+t["league"])
+        lines.append(f"Последние {n}: "+ " ".join("В" if r["g"]>r["c"] else "Н" if r["g"]==r["c"] else "П" for r in rs))
+        for r in rs:
+            lines.append(f'{r["date"]} | {r["opponent"]} | {r["g"]}:{r["c"]} ({ "дома" if r["venue"]=="home" else "в гостях"})')
+        for key,label in [("g","Голы"),("c","Пропущено"),("shots","Удары"),("target","В створ"),("corners","Угловые"),("yellow","ЖК")]:
+            vals=[r[key] for r in rs if r[key] is not None]
+            lines.append(f"{label}: "+(f"{sum(vals)/len(vals):.1f} ({len(vals)}/{n})" if vals else "нет данных"))
+    if not teams: lines.append("Команда не найдена. Попробуй латиницей.")
+    if len(teams)>5: lines.append("Уточни название команды.")
+    lines.append("Схемы, травмы и судьи пока недоступны. Форма не меняет вероятности модели.")
+    return "\n".join(lines)
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ V12 PRO LIVE • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext
+    helptext="⚽ V13 TACTICAL AI • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей"
+    if cmd=="/form": return team_form(arg.strip())
     if cmd=="/stats":
         rows=list(load("state/extra_journal.json",{}).values())
         for r in load("state/journal.json",{}).values():
@@ -78,9 +99,10 @@ def answer(msg):
     elif cmd=="/top":
         rs=[r for r in rs if r["selected"]]
     else: return helptext
-    lines=["⚽ V12 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
+    lines=["⚽ V13 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
-        lines.append(f'{day(r)} | {r["home"]} — {r["away"]}\n{r["market"]}: {r["p"]:.1%}')
+        stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M") if r.get("kickoff") else r["date"]+" (время неизвестно)"
+        lines.append(f'{stamp} | {r["home"]} — {r["away"]}\n{r["market"]}: {r["p"]:.1%}')
     if not rs: lines.append("Нет подходящих будущих прогнозов в базе.")
     return "\n".join(lines)
 def run():
