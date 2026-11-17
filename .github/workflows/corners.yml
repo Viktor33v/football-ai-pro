@@ -1,0 +1,24 @@
+name: Football AI PRO V7 Corners
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  corners:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m py_compile corners.py bot.py
+      - run: python corners.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: football-corners
+          path: corners.json
+          retention-days: 90
