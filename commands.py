@@ -15,9 +15,9 @@ def telegram(method,**params):
 def norm(s):
     return "".join(c for c in unicodedata.normalize("NFKD",s.casefold()) if not unicodedata.combining(c))
 ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
-MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form"}
+MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic"}
 def keyboard():
-    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Помощь")]],"resize_keyboard":True}
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Тактика"),("Помощь",)]],"resize_keyboard":True}
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
@@ -62,12 +62,32 @@ def team_form(q):
     if len(teams)>5: lines.append("Уточни название команды.")
     lines.append("Схемы, травмы и судьи пока недоступны. Форма не меняет вероятности модели.")
     return "\n".join(lines)
+def tactic(q):
+    data=load("state/tactical.json",{})
+    if not data: return "База тактики ещё не создана. Запусти V15."
+    lines=["⚽ V15 • История схем",f"Матчей в базе: {data['n']}","StatsBomb Open Data https://github.com/hudl/open-data","Частоты, не прогнозы. Порядок хозяева/гости."]
+    if not q:
+        lines.append("Пример: /tactic 4-3-3 4-2-3-1")
+        for r in sorted(data["pairs"],key=lambda r:r["n"],reverse=True)[:10]:
+            lines.append(f"{'-'.join(r['home'])} — {'-'.join(r['away'])}: {r['n']} матчей")
+        return "\n".join(lines)
+    parts=[x.replace("-","") for x in q.split()]
+    if len(parts)!=2 or any(not x.isascii() or not x.isdigit() or sum(map(int,x))!=10 for x in parts): return "Пример: /tactic 4-3-3 4-2-3-1"
+    rs=[r for r in data["pairs"] if [r["home"],r["away"]]==parts]
+    if not rs: return "\n".join(lines+["Нет наблюдений для этой пары."])
+    r=rs[0]; n=r["n"]
+    lines.append(f"{q} | n={n}")
+    if n<30: lines.append("Малая выборка: менее 30 матчей.")
+    for l,h in zip(data["labels"],r["hits"]):
+        lines.append(f"{l}: {h}/{n} ({h/n:.0%})")
+    return "\n".join(lines)
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ V13 TACTICAL AI • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей"
+    helptext="⚽ V15 TACTICAL INTELLIGENCE • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем"
+    if cmd=="/tactic": return tactic(arg.strip())
     if cmd=="/form": return team_form(arg.strip())
     if cmd=="/stats":
         rows=list(load("state/extra_journal.json",{}).values())
