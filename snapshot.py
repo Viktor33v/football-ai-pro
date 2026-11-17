@@ -12,12 +12,14 @@ def save(path,obj):
 def run():
     now=datetime.now(timezone.utc); today=now.date().isoformat()
     os.makedirs("state",exist_ok=True)
-    rows=[]; journal=load("state/extra_journal.json",{})
+    rows=[]; diagnostics={}; journal=load("state/extra_journal.json",{})
     for r in load("goals.json",[]):
         for i,p in enumerate(r["p"]):
             rows.append(dict(home=r["home"],away=r["away"],date=r["date"],kickoff=r["kickoff"],group="goals",market=LABELS[i],p=p,selected=p>=LIMITS[i]))
     for group,mod in [("corners",corners),("cards",cards)]:
         d=load(group+".json",{})
+        for i,rr in d.get("metrics",{}).items():
+            if rr: diagnostics[mod.MARKETS[int(i)][0]]=dict(n=len(rr),model=sum((p-y)**2 for p,b,y in rr)/len(rr),baseline=sum((b-y)**2 for p,b,y in rr)/len(rr))
         for i,rs in d.get("picks",{}).items():
             i=int(i)
             for r in rs:
@@ -51,5 +53,5 @@ def run():
                 value=[sum(v),v[0],v[1]][side]
             r["result"]=int(value>=k)
     save("state/extra_journal.json",journal)
-    save("state/snapshot.json",dict(created=now.isoformat(),rows=rows))
+    save("state/snapshot.json",dict(created=now.isoformat(),rows=rows,diagnostics=diagnostics))
 if __name__=="__main__": run()
