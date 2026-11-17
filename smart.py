@@ -25,7 +25,17 @@ def run():
         y=[int(ht>=1),int(ht>=2),int(ft>=3),int(min(v[:2])>=1),int(ft-ht>=1)]
         actual[str(m["id"])]=y
         if m["utcDate"][:10]<str(today): days[m["utcDate"][:10]].append((m,v,y))
-    teams=defaultdict(list); leagues=defaultdict(list); prior=[]
+    teams=defaultdict(list); leagues=defaultdict(list); prior=[]; half_test=[[],[]]
+    def half_candidate(a,b,l):
+        if min(len(teams[a]),len(teams[b]))<12 or len(leagues[l])<20: return None
+        base=[(sum(z[i] for z in prior)+2)/(len(prior)+4) for i in range(2)]
+        lg=[(sum(z[i] for z in leagues[l])+30*base[i])/(len(leagues[l])+30) for i in range(2)]
+        def avg(t,side,j):
+            xs=teams[t][-20:]; vs=[z for z in teams[t] if z[4]==side][-10:]
+            return (sum(z[j] for z in vs)+5*sum(z[j] for z in xs)/len(xs))/(len(vs)+5)
+        lam=(avg(a,1,2)+avg(b,0,3)+avg(a,1,3)+avg(b,0,2))/2
+        old=[(base[0]+lg[0])/2,lg[1]]
+        return [(prob(lam,i+1)+old[i])/2 for i in range(2)],old
     def strength(t):
         xs=teams[t][-20:]
         return sum(z[0]-z[1] for z in xs)/(len(xs)+8)
@@ -33,7 +43,10 @@ def run():
         pending=[]
         for m,v,y in ms:
             a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]
-            pending.append((a,b,m["competition"]["id"],v,y,strength(a),strength(b)))
+            l=m["competition"]["id"]; f=half_candidate(a,b,l)
+            if f:
+                for i in range(2): half_test[i].append((f[0][i],f[1][i],y[i]))
+            pending.append((a,b,l,v,y,strength(a),strength(b)))
         for a,b,l,v,y,sa,sb in pending:
             teams[a].append((*v,1,sb)); teams[b].append((v[1],v[0],v[3],v[2],0,sa))
             leagues[l].append(y); prior.append(y)
@@ -45,7 +58,7 @@ def run():
     def adj(t,j,sign):
         xs=teams[t][-20:]
         return sum(z[j]*math.exp(max(-.35,min(.35,sign*.12*z[5]))) for z in xs)/len(xs)
-    candidates=[]
+    candidates=[]; shadow=[]
     for m in upcoming:
         if m["status"] not in ("TIMED","SCHEDULED"): continue
         k=datetime.fromisoformat(m["utcDate"].replace("Z","+00:00"))
@@ -60,9 +73,12 @@ def run():
         aa=(aa+(adj(b,0,1)+adj(a,1,-1))/2)/2
         p=[(base[0]+lg[0])/2,lg[1],(prob(hh+aa,3)+lg[2])/2,(prob(hh,1)*prob(aa,1)+lg[3])/2,(prob(max(0,hh+aa-ht),1)+lg[4])/2]
         candidates.append((m,k,p))
+        f=half_candidate(a,b,l)
+        if f: shadow.append(dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],kickoff=k.isoformat(),p=f[0],old=f[1],sample=[min(20,len(teams[a])),min(20,len(teams[b]))]))
     os.makedirs("state",exist_ok=True)
     with open("goals.json","w",encoding="utf-8") as f:
         json.dump([dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],date=k.date().isoformat(),kickoff=k.isoformat(),p=p) for m,k,p in candidates],f,ensure_ascii=False)
+    with open("state/half_shadow.json","w",encoding="utf-8") as f: json.dump(dict(created=now.isoformat(),rows=shadow,metrics=[dict(n=len(rs),model=sum((p-y)**2 for p,b,y in rs)/len(rs),baseline=sum((b-y)**2 for p,b,y in rs)/len(rs)) if rs else dict(n=0) for rs in half_test]),f,ensure_ascii=False)
     path="state/journal.json"
     if os.path.exists(path):
         with open(path,encoding="utf-8") as f: journal=json.load(f)
