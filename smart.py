@@ -60,7 +60,10 @@ def run():
         aa=(aa+(adj(b,0,1)+adj(a,1,-1))/2)/2
         p=[(base[0]+lg[0])/2,lg[1],(prob(hh+aa,3)+lg[2])/2,(prob(hh,1)*prob(aa,1)+lg[3])/2,(prob(max(0,hh+aa-ht),1)+lg[4])/2]
         candidates.append((m,k,p))
-    path="state/journal.json"; os.makedirs("state",exist_ok=True)
+    os.makedirs("state",exist_ok=True)
+    with open("goals.json","w",encoding="utf-8") as f:
+        json.dump([dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],date=k.date().isoformat(),kickoff=k.isoformat(),p=p) for m,k,p in candidates],f,ensure_ascii=False)
+    path="state/journal.json"
     if os.path.exists(path):
         with open(path,encoding="utf-8") as f: journal=json.load(f)
     else: journal={}
