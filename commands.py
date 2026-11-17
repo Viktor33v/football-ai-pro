@@ -182,6 +182,11 @@ def answer(msg):
 def run():
     chat=int(os.environ["TELEGRAM_CHAT_ID"])
     offset=None
+    received=0; accepted=0; sent=0
+    info=telegram("getMe")
+    print("Bot username:",info.get("username","unknown"))
+    webhook=telegram("getWebhookInfo")
+    print("Webhook active:",bool(webhook.get("url")),"pending:",webhook.get("pending_update_count",0))
     # Telegram acknowledges updates on the next higher-offset request.
     for _ in range(5):
         args=dict(timeout=0,limit=100,allowed_updates=["message"])
@@ -189,10 +194,18 @@ def run():
         updates=telegram("getUpdates",**args)
         if not updates: break
         for u in updates:
+            received+=1
             m=u.get("message",{})
             if m.get("chat",{}).get("id")==chat and m.get("chat",{}).get("type")=="private" and isinstance(m.get("text"),str):
+                accepted+=1
                 text=answer(m["text"])
-                for i in range(0,len(text),3500): telegram("sendMessage",chat_id=chat,text=text[i:i+3500],reply_markup=keyboard())
+                for i in range(0,len(text),3500):
+                    telegram("sendMessage",chat_id=chat,text=text[i:i+3500],reply_markup=keyboard())
+                    sent+=1
             offset=u["update_id"]+1
     if offset is not None: telegram("getUpdates",offset=offset,timeout=0,limit=1,allowed_updates=["message"])
+    print(f"Updates received={received}; authorized={accepted}; messages sent={sent}")
+    if os.environ.get("TELEGRAM_DIAGNOSTIC")=="1":
+        telegram("sendMessage",chat_id=chat,text="V16: проверка связи Telegram успешна.",reply_markup=keyboard())
+        print("Diagnostic message delivered to Telegram API")
 if __name__=="__main__": run()
