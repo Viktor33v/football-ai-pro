@@ -81,6 +81,24 @@ def tactic(q):
     for l,h in zip(data["labels"],r["hits"]):
         lines.append(f"{l}: {h}/{n} ({h/n:.0%})")
     return "\n".join(lines)
+def eligible(r,snap):
+    d=snap.get("diagnostics",{}).get(r["market"],{})
+    return bool(r["selected"] and min(r.get("sample") or [0])>=10 and d.get("n",0)>=100 and d["model"]<d["baseline"])
+def odds(arg):
+    try:
+        p,k=map(float,arg.replace(",",".").split())
+        if not (0<p<=100 and 1<k<=1000): raise ValueError()
+    except ValueError: return "Пример: /odds 73.5 1.50"
+    p/=100
+    return f"ДЕМО: p={p:.1%}; коэффициент {k:.2f}\nБезубыточный коэффициент {1/p:.2f}\nРасчётное ожидание {p*k-1:+.1%}\nВероятность введена вручную, преимущество не подтверждено."
+def half_report():
+    d=load("state/half_shadow.json",{})
+    if not d: return "Запусти V10 для расчёта V17."
+    lines=["V17 • эксперимент первого тайма",d["created"]]
+    for label,m in zip(LABELS[:2],d["metrics"]):
+        lines.append(f"{label}: Brier {m['model']:.3f} / {m['baseline']:.3f}; n={m['n']}" if m["n"] else label+": нет теста")
+    lines.append("Исследовательский тест. Основная модель не изменена.")
+    return "\n".join(lines)
 def analyze(arg):
     q,_,schemes=arg.partition(";")
     q=q.strip(); schemes=schemes.strip()
@@ -101,7 +119,7 @@ def analyze(arg):
         return "Уточни матч:\n"+"\n".join(f"{rs[0]['home']} — {rs[0]['away']} | {key[2]}" for key,rs in list(groups.items())[:12])
     key,rs=next(iter(groups.items())); a=rs[0]
     stamp=datetime.fromisoformat(a["kickoff"]).astimezone(local).strftime("%d.%m %H:%M Бишкек") if a.get("kickoff") else a["date"]+" (время неизвестно)"
-    lines=["⚽ V16 MATCH ANALYZER • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
+    lines=["⚽ V17 SMART FILTER • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
     form=load("state/form.json",{})
     for side in ("home","away"):
         teams=[t for t in form.get("teams",[]) if canonical(t["name"])==canonical(a[side])]
@@ -125,10 +143,16 @@ def analyze(arg):
         sample=r.get("sample")
         lines.append(f"{m}: {r['p']:.1%}"+(f" | выборка {sample}" if sample else ""))
     lines.append(f"Покрытие: {len(clean)}/13. Это полнота данных, не гарантия точности.")
-    lines.append("\nТРИ РЫНКА ДЛЯ ДЕМО-НАБЛЮДЕНИЯ (по p, не по доходности)")
-    for r in sorted([r for r in clean if r["selected"]],key=lambda r:r["p"],reverse=True)[:3]:
+    lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
+    for r in sorted([r for r in clean if eligible(r,snap)],key=lambda r:r["p"],reverse=True)[:3]:
         lines.append(f"{r['market']}: {r['p']:.1%}")
-    if not any(r["selected"] for r in clean): lines.append("Нет рынков выше порогов.")
+    if not any(eligible(r,snap) for r in clean): lines.append("Нет рынков, прошедших фильтр.")
+    for r in clean:
+        d=snap.get("diagnostics",{}).get(r["market"],{})
+        if d: lines.append(f"{r['market']}: Brier {d['model']:.3f}/{d['baseline']:.3f}; n={d['n']}")
+    for row in load("state/half_shadow.json",{}).get("rows",[]):
+        if row["kickoff"]==a.get("kickoff") and canonical(row["home"])==canonical(a["home"]) and canonical(row["away"])==canonical(a["away"]):
+            lines.append(f"Эксперимент 1Т: {row['p'][0]:.1%} / {row['p'][1]:.1%}")
     lines.append("\nТАКТИКА")
     lines.append("Схемы введены вручную, не подтверждены." if schemes else "Составы не подключены. Добавь после точки с запятой две схемы хозяев/гостей.")
     if schemes: lines.append(tactic(schemes))
@@ -138,8 +162,10 @@ def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ V16 MATCH ANALYZER • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ"
+    helptext="⚽ V17 SMART FILTER • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd=="/odds": return odds(arg)
+    if cmd=="/half": return half_report()
     if cmd=="/analyze": return analyze(arg)
     if cmd=="/tactic": return tactic(arg.strip())
     if cmd=="/form": return team_form(arg.strip())
