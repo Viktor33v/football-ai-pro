@@ -30,12 +30,16 @@ jobs:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      - name: Persist public goals journal
+      - run: python snapshot.py
+      - name: Persist public journals and snapshot
         if: ${{ always() && hashFiles('state/journal.json') != '' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add state/journal.json
+          for f in state/snapshot.json state/extra_journal.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if ! git diff --cached --quiet; then
             git commit -m "Update demo prediction journal"
             git pull --rebase origin main
