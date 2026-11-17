@@ -65,6 +65,8 @@ def run():
         with open(path,encoding="utf-8") as f: journal=json.load(f)
     else: journal={}
     for r in journal.values():
+        if r["id"] in raw and raw[r["id"]].get("utcDate"):
+            r["kickoff"]=datetime.fromisoformat(raw[r["id"]]["utcDate"].replace("Z","+00:00")).isoformat()
         if r["id"] in actual and r["result"] is None: r["result"]=actual[r["id"]][r["market"]]
     lines=["⚽ FOOTBALL AI PRO V6 • ДЕМО","Фиксированные модели V5; пороги экспериментальные. Коэффициент 1/p — расчётный, не букмекерский.",f"Матчей с выборкой: {len(candidates)}"]
     for i,label in enumerate(LABELS):
@@ -72,12 +74,14 @@ def run():
         lines.append(f"\n{label} | порог {LIMITS[i]:.0%}")
         if not picks: lines.append("Нет кандидатов")
         for m,k,p in picks:
+            if k<=datetime.now(timezone.utc): continue
             key=str(m["id"])+":"+str(i)
             name=m["homeTeam"]["name"]+" — "+m["awayTeam"]["name"]
             local=k.astimezone(timezone(timedelta(hours=6)))
             lines.append(f"{name} | {local:%d.%m %H:%M} | {p[i]:.1%} | 1/p: {1/p[i]:.2f}")
             journal.setdefault(key,dict(id=str(m["id"]),market=i,p=p[i],kickoff=k.isoformat(),created=now.isoformat(),result=None))
-    lines.append("\nЖурнал V6: первый опубликованный прогноз на матч/рынок.")
+    future=sum(r["result"] is None and datetime.fromisoformat(r["kickoff"])>now for r in journal.values())
+    lines.append(f"\nЖурнал V6: первый прогноз на матч/рынок. Предстоящих прогнозов: {future}")
     for n in (7,30,90):
         lines.append(f"За {n} дней:")
         for i,label in enumerate(LABELS):
