@@ -1,6 +1,11 @@
 name: Football AI PRO V16 Commands
 on:
   workflow_dispatch:
+    inputs:
+      diagnostic:
+        description: Send Telegram test message
+        type: boolean
+        default: true
   schedule:
     - cron: '7,22,37,52 * * * *'
 permissions:
@@ -21,4 +26,5 @@ jobs:
       - run: python commands.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_DIAGNOSTIC: ${{ inputs.diagnostic && '1' || '0' }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
