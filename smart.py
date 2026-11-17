@@ -65,8 +65,8 @@ def run():
         with open(path,encoding="utf-8") as f: journal=json.load(f)
     else: journal={}
     for r in journal.values():
-        if r["id"] in raw and raw[r["id"]].get("utcDate"):
-            r["kickoff"]=datetime.fromisoformat(raw[r["id"]]["utcDate"].replace("Z","+00:00")).isoformat()
+        if int(r["id"]) in raw and raw[int(r["id"])].get("utcDate"):
+            r["kickoff"]=datetime.fromisoformat(raw[int(r["id"])]["utcDate"].replace("Z","+00:00")).isoformat()
         if r["id"] in actual and r["result"] is None: r["result"]=actual[r["id"]][r["market"]]
     lines=["⚽ FOOTBALL AI PRO V6 • ДЕМО","Фиксированные модели V5; пороги экспериментальные. Коэффициент 1/p — расчётный, не букмекерский.",f"Матчей с выборкой: {len(candidates)}"]
     for i,label in enumerate(LABELS):
