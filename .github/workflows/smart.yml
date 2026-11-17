@@ -1,0 +1,38 @@
+name: Football AI PRO V6 Smart
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: football-v6-journal
+  cancel-in-progress: false
+jobs:
+  smart:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache/restore@v4
+        with:
+          path: state
+          key: football-v6-journal-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            football-v6-journal-
+      - run: python -m py_compile smart.py bot.py backtest.py
+      - run: python smart.py
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - uses: actions/cache/save@v4
+        with:
+          path: state
+          key: football-v6-journal-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: football-v6-journal
+          path: state/journal.json
+          retention-days: 90
