@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-17T19:11:01.096986+00:00",
+  "created": "2026-11-17T20:30:42.279441+00:00",
   "rows": [
     {
       "home": "Coritiba FBC",
@@ -1052,6 +1052,106 @@
       "selected": true
     },
     {
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6939770356507333,
+      "selected": false
+    },
+    {
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3424940173037982,
+      "selected": false
+    },
+    {
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 2.5",
+      "p": 0.5269184256839936,
+      "selected": false
+    },
+    {
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "Обе забьют",
+      "p": 0.5587753244746114,
+      "selected": false
+    },
+    {
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7954382264619927,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 1Т",
+      "p": 0.713017749727656,
+      "selected": true
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3763854023587363,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 2.5",
+      "p": 0.5233904828355755,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "Обе забьют",
+      "p": 0.5512493878622979,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7569018399850963,
+      "selected": false
+    },
+    {
       "home": "West Ham United FC",
       "away": "Preston North End FC",
       "date": "2026-11-21",
@@ -1252,8 +1352,8 @@
       "selected": true
     },
     {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
@@ -1262,8 +1362,8 @@
       "selected": false
     },
     {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
@@ -1272,84 +1372,34 @@
       "selected": false
     },
     {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
       "market": "ТБ 2.5",
-      "p": 0.5269184256839936,
+      "p": 0.5019356413274862,
       "selected": false
     },
     {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
       "market": "Обе забьют",
-      "p": 0.5587753244746114,
+      "p": 0.538590414307778,
       "selected": false
     },
     {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
       "market": "ТБ 0.5 2Т",
-      "p": 0.7954382264619927,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
+      "p": 0.8047205257321539,
       "selected": true
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5233904828355755,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5512493878622979,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7569018399850963,
-      "selected": false
     },
     {
       "home": "Stoke City FC",
@@ -1599,56 +1649,6 @@
       "group": "goals",
       "market": "ТБ 0.5 2Т",
       "p": 0.8125900050249619,
-      "selected": true
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5019356413274862,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.538590414307778,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8047205257321539,
       "selected": true
     },
     {
@@ -1952,56 +1952,6 @@
       "selected": false
     },
     {
-      "home": "FC Utrecht",
-      "away": "SC Cambuur-Leeuwarden",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
-      "selected": true
-    },
-    {
-      "home": "FC Utrecht",
-      "away": "SC Cambuur-Leeuwarden",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
-      "selected": false
-    },
-    {
-      "home": "FC Utrecht",
-      "away": "SC Cambuur-Leeuwarden",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6920529526975892,
-      "selected": true
-    },
-    {
-      "home": "FC Utrecht",
-      "away": "SC Cambuur-Leeuwarden",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6947826249436397,
-      "selected": true
-    },
-    {
-      "home": "FC Utrecht",
-      "away": "SC Cambuur-Leeuwarden",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8749912231776226,
-      "selected": true
-    },
-    {
       "home": "Feyenoord Rotterdam",
       "away": "SBV Excelsior",
       "date": "2026-11-21",
@@ -2049,6 +1999,56 @@
       "group": "goals",
       "market": "ТБ 0.5 2Т",
       "p": 0.8619096427444792,
+      "selected": true
+    },
+    {
+      "home": "FC Utrecht",
+      "away": "SC Cambuur-Leeuwarden",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7418635389587578,
+      "selected": true
+    },
+    {
+      "home": "FC Utrecht",
+      "away": "SC Cambuur-Leeuwarden",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "market": "ТБ 1.5 1Т",
+      "p": 0.46164722827232485,
+      "selected": false
+    },
+    {
+      "home": "FC Utrecht",
+      "away": "SC Cambuur-Leeuwarden",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "market": "ТБ 2.5",
+      "p": 0.6920529526975892,
+      "selected": true
+    },
+    {
+      "home": "FC Utrecht",
+      "away": "SC Cambuur-Leeuwarden",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "market": "Обе забьют",
+      "p": 0.6947826249436397,
+      "selected": true
+    },
+    {
+      "home": "FC Utrecht",
+      "away": "SC Cambuur-Leeuwarden",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8749912231776226,
       "selected": true
     },
     {
@@ -2902,56 +2902,6 @@
       "selected": false
     },
     {
-      "home": "Hull City AFC",
-      "away": "Brighton & Hove Albion FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
-      "selected": false
-    },
-    {
-      "home": "Hull City AFC",
-      "away": "Brighton & Hove Albion FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
-      "selected": false
-    },
-    {
-      "home": "Hull City AFC",
-      "away": "Brighton & Hove Albion FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.4821811585524617,
-      "selected": false
-    },
-    {
-      "home": "Hull City AFC",
-      "away": "Brighton & Hove Albion FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5200179358292599,
-      "selected": false
-    },
-    {
-      "home": "Hull City AFC",
-      "away": "Brighton & Hove Albion FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7677544353149881,
-      "selected": false
-    },
-    {
       "home": "Paris FC",
       "away": "Angers SCO",
       "date": "2026-11-22",
@@ -2999,6 +2949,56 @@
       "group": "goals",
       "market": "ТБ 0.5 2Т",
       "p": 0.7826420616504242,
+      "selected": false
+    },
+    {
+      "home": "Hull City AFC",
+      "away": "Brighton & Hove Albion FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6939770356507333,
+      "selected": false
+    },
+    {
+      "home": "Hull City AFC",
+      "away": "Brighton & Hove Albion FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3424940173037982,
+      "selected": false
+    },
+    {
+      "home": "Hull City AFC",
+      "away": "Brighton & Hove Albion FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 2.5",
+      "p": 0.4821811585524617,
+      "selected": false
+    },
+    {
+      "home": "Hull City AFC",
+      "away": "Brighton & Hove Albion FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "market": "Обе забьют",
+      "p": 0.5200179358292599,
+      "selected": false
+    },
+    {
+      "home": "Hull City AFC",
+      "away": "Brighton & Hove Albion FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7677544353149881,
       "selected": false
     },
     {
@@ -14507,5 +14507,47 @@
       "market": "ЖК гостей ТБ 1.5",
       "selected": true
     }
-  ]
+  ],
+  "diagnostics": {
+    "Угловые ТБ 8.5": {
+      "n": 425,
+      "model": 0.23822542912682512,
+      "baseline": 0.24231026310230708
+    },
+    "Угловые ТБ 9.5": {
+      "n": 425,
+      "model": 0.2520605916627311,
+      "baseline": 0.2544739934702906
+    },
+    "Угловые 1Т ТБ 3.5": {
+      "n": 425,
+      "model": 0.23553771194724873,
+      "baseline": 0.23866109806814345
+    },
+    "ЖК ТБ 2.5": {
+      "n": 425,
+      "model": 0.17855389669885594,
+      "baseline": 0.17854839062237585
+    },
+    "ЖК ТБ 3.5": {
+      "n": 425,
+      "model": 0.2386771506464899,
+      "baseline": 0.24108294657177043
+    },
+    "ЖК ТБ 4.5": {
+      "n": 425,
+      "model": 0.23089986838284496,
+      "baseline": 0.23354545294443615
+    },
+    "ЖК хозяев ТБ 1.5": {
+      "n": 425,
+      "model": 0.24419844817208933,
+      "baseline": 0.24155181541284546
+    },
+    "ЖК гостей ТБ 1.5": {
+      "n": 425,
+      "model": 0.22445564972824436,
+      "baseline": 0.22397118148611997
+    }
+  }
 }
