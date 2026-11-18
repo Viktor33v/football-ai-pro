@@ -160,7 +160,7 @@ def analyze(arg):
         return "Уточни матч:\n"+"\n".join(f"{rs[0]['home']} — {rs[0]['away']} | {key[2]}" for key,rs in list(groups.items())[:12])
     key,rs=next(iter(groups.items())); a=rs[0]
     stamp=datetime.fromisoformat(a["kickoff"]).astimezone(local).strftime("%d.%m %H:%M Бишкек") if a.get("kickoff") else a["date"]+" (время неизвестно)"
-    lines=["⚽ V20 PRO ACCURACY • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
+    lines=["⚽ Football AI PRO • Подробный анализ • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
     form=load("state/form.json",{})
     for side in ("home","away"):
         teams=[t for t in form.get("teams",[]) if canonical(t["name"])==canonical(a[side])]
@@ -179,13 +179,33 @@ def analyze(arg):
     by={}
     for r in rs: by.setdefault((r["group"],r["market"]),[]).append(r)
     clean=[]
-    for (g,m), rr in by.items():
-        if len(rr)!=1: lines.append(m+": неоднозначные данные"); continue
+    descriptions=[
+        ("goals","ТБ 0.5 1Т","1+ гол до перерыва"),
+        ("goals","ТБ 1.5 1Т","2+ гола до перерыва"),
+        ("goals","ТБ 2.5","3+ гола за матч"),
+        ("goals","Обе забьют","Каждая команда забьёт"),
+        ("goals","ТБ 0.5 2Т","1+ гол после перерыва"),
+        ("corners","Угловые ТБ 8.5","9+ угловых за матч"),
+        ("corners","Угловые ТБ 9.5","10+ угловых за матч"),
+        ("corners","Угловые 1Т ТБ 3.5","4+ угловых до перерыва"),
+        ("cards","ЖК ТБ 2.5","3+ ЖК за матч"),
+        ("cards","ЖК ТБ 3.5","4+ ЖК за матч"),
+        ("cards","ЖК ТБ 4.5","5+ ЖК за матч"),
+        ("cards","ЖК хозяев ТБ 1.5","2+ ЖК хозяев"),
+        ("cards","ЖК гостей ТБ 1.5","2+ ЖК гостей")]
+    lines.append("Рынок | Вероятность | Фильтр")
+    for g,m,meaning in descriptions:
+        rr=by.get((g,m),[])
+        if len(rr)!=1:
+            lines.append(f"{m} | — | —")
+            lines.append("↳ "+meaning+"; "+("нет данных" if not rr else "неоднозначные данные"))
+            continue
         r=rr[0]; clean.append(r)
         sample=r.get("sample")
         why=reasons(r,snap)
-        lines.append("Фильтр "+m+": "+("; ".join(why) if why else "прошёл"))
-        lines.append(f"{m}: {r['p']:.1%}"+(f" | выборка {sample}" if sample else ""))
+        lines.append(f"{m} | {r['p']:.1%} | "+("нет" if why else "да"))
+        lines.append("↳ "+meaning+(f"; выборка {sample}" if sample else ""))
+        if why: lines.append("Причина: "+"; ".join(why))
     lines.append(f"Покрытие: {len(clean)}/13. Это полнота данных, не гарантия точности.")
     lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
     for r in sorted([r for r in clean if eligible(r,snap)],key=lambda r:r["p"],reverse=True)[:3]:
