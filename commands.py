@@ -256,12 +256,36 @@ def best_today():
     if not rows: lines.append("Нет кандидатов с известным временем, прошедших фильтр.")
     lines.append("Ранжирование по p, не доходности. Расписание не проверено независимо.")
     return "\n".join(lines)
+
+def shortlist():
+    snap=load("state/snapshot.json",{})
+    if not snap: return "Нет снимка."
+    now=datetime.now(timezone.utc)
+    local=timezone(timedelta(hours=6))
+    if (now-datetime.fromisoformat(snap["created"])).total_seconds()>108000:
+        return "V23: снимок устарел; кандидаты скрыты."
+    selected={}
+    for r in reconcile(snap["rows"]):
+        if not r.get("kickoff") or not eligible(r,snap): continue
+        k=datetime.fromisoformat(r["kickoff"])
+        if not now<k<=now+timedelta(days=7): continue
+        key=(canonical(r["home"]),canonical(r["away"]),k)
+        if key not in selected or r["p"]>selected[key]["p"]: selected[key]=r
+    lines=["⚽ V23 • Кандидаты на 7 дней • ДЕМО","Расписание независимо не проверено."]
+    for r in sorted(selected.values(),key=lambda x:x["p"],reverse=True)[:10]:
+        stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
+        lines.append(f"{stamp} | {r['home']} — {r['away']} | {r['market']}: {r['p']:.1%} | 1/p {1/r['p']:.2f}")
+    if not selected: lines.append("Нет кандидатов, прошедших фильтр.")
+    lines.append("Время Бишкек. Один рынок на матч, сортировка по p, не по доходности. 1/p не является котировкой букмекера.")
+    return "\n".join(lines)
+
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
     helptext="⚽ V18 PRO ACCURACY • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
     if cmd=="/status": return status_report()
     if cmd=="/h2h": return h2h(arg)
