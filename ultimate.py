@@ -44,8 +44,9 @@ def run():
     chunk=""
     for line in lines:
         if len(chunk)+len(line)+1>3500:
-            send(os.environ["TELEGRAM_CHAT_ID"],chunk); chunk=""
+            if os.environ.get("COMPACT_REPORT")!="1": send(os.environ["TELEGRAM_CHAT_ID"],chunk)
+            chunk=""
         chunk+=line+"\n"
-    if chunk: send(os.environ["TELEGRAM_CHAT_ID"],chunk)
+    if chunk and os.environ.get("COMPACT_REPORT")!="1": send(os.environ["TELEGRAM_CHAT_ID"],chunk)
     if errors: raise RuntimeError("One or more modules failed")
 if __name__=="__main__": run()
