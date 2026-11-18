@@ -12,10 +12,10 @@ def save(path,obj):
 def run():
     now=datetime.now(timezone.utc); today=now.date().isoformat()
     os.makedirs("state",exist_ok=True)
-    rows=[]; diagnostics={}; journal=load("state/extra_journal.json",{})
+    rows=[]; diagnostics=load('goal_metrics.json',{}); journal=load("state/extra_journal.json",{})
     for r in load("goals.json",[]):
         for i,p in enumerate(r["p"]):
-            rows.append(dict(home=r["home"],away=r["away"],date=r["date"],kickoff=r["kickoff"],group="goals",market=LABELS[i],p=p,selected=p>=LIMITS[i]))
+            rows.append(dict(home=r["home"],away=r["away"],date=r["date"],kickoff=r["kickoff"],group="goals",sample=r.get("sample"),market=LABELS[i],p=p,selected=p>=LIMITS[i]))
     for group,mod in [("corners",corners),("cards",cards)]:
         d=load(group+".json",{})
         for i,rr in d.get("metrics",{}).items():
