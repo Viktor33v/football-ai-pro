@@ -15,9 +15,9 @@ def telegram(method,**params):
 def norm(s):
     return "".join(c for c in unicodedata.normalize("NFKD",s.casefold()) if not unicodedata.combining(c))
 ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
-MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze"}
+MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze","Лучшие сегодня":"/best","Состояние":"/status"}
 def keyboard():
-    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Тактика"),("Анализ матча","Помощь")]],"resize_keyboard":True}
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Тактика"),("Анализ матча","Лучшие сегодня"),("Состояние","Помощь")]],"resize_keyboard":True}
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
@@ -47,14 +47,17 @@ def reconcile(rows):
 def team_form(q):
     data=load("state/form.json",{})
     if not data: return "База формы ещё не создана. Запусти V10."
-    q=canonical(q); q=canonical(ALIASES.get(q,q))
+    q=canonical(q); q={canonical(k):v for k,v in ALIASES.items()}.get(q,q)
+    q,_,window=q.partition(";"); q=q.strip()
+    if window.strip() not in ("","5","10","20"): return "Пример: /form Бавария; 10"
+    limit=int(window.strip() or "5")
     if not q: return "Пример: /form Бавария"
     teams=[t for t in data["teams"] if q in canonical(t["name"])]
     lines=["⚽ V13 • Форма команды","Источник: "+data["source"],"Данные на "+data["created"][:10]+" UTC. Только завершённые матчи лиги."]
     for t in teams[:5]:
-        rs=t["matches"]; n=len(rs)
+        rs=t["matches"][-limit:]; n=len(rs)
         lines.append("\n"+t["name"]+" | "+t["league"])
-        lines.append(f"Последние {n}: "+ " ".join("В" if r["g"]>r["c"] else "Н" if r["g"]==r["c"] else "П" for r in rs))
+        lines.append(f"Доступно {n} из {limit}: "+ " ".join("В" if r["g"]>r["c"] else "Н" if r["g"]==r["c"] else "П" for r in rs))
         for r in rs:
             lines.append(f'{r["date"]} | {r["opponent"]} | {r["g"]}:{r["c"]} ({ "дома" if r["venue"]=="home" else "в гостях"})')
         for key,label in [("g","Голы"),("c","Пропущено"),("shots","Удары"),("target","В створ"),("corners","Угловые"),("yellow","ЖК")]:
@@ -137,7 +140,7 @@ def analyze(arg):
         lines.append(a[side])
         if len(teams)!=1:
             lines.append("Нет однозначных данных"); continue
-        ms=teams[0]["matches"]; n=len(ms)
+        ms=teams[0]["matches"][-5:]; n=len(ms)
         lines.append(" ".join(f"{'В' if m['g']>m['c'] else 'Н' if m['g']==m['c'] else 'П'} {m['g']}:{m['c']}" for m in ms))
         for field,label in [("g","Голы"),("c","Пропущено"),("shots","Удары"),("target","В створ"),("corners","Угловые"),("yellow","ЖК")]:
             v=[m[field] for m in ms if m.get(field) is not None]
@@ -169,10 +172,29 @@ def analyze(arg):
     if schemes: lines.append(tactic(schemes))
     lines.append("Нет учёта судей, травм или букмекерских коэффициентов. Тактика и форма не изменяют p. Не экспресс.")
     return "\n".join(lines)
+def status_report():
+    s=load("state/snapshot.json",{}); f=load("state/form.json",{})
+    if not s: return "База отсутствует."
+    age=(datetime.now(timezone.utc)-datetime.fromisoformat(s["created"])).total_seconds()/3600
+    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/13",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
+def h2h(q):
+    if not q.strip(): return "Пример: /h2h Бавария - Кёльн"
+    f=load("state/form.json",{}); found={}
+    for t in f.get("teams",[]):
+        for m in t["matches"]:
+            if m["venue"]!="home": continue
+            r=dict(home=t["name"],away=m["opponent"])
+            if query_match(q,r): found[(t["league"],m["date"],r["home"],r["away"])]=m
+    lines=["Очные встречи: только доступная история лиги (до 20 игр каждой команды)."]
+    for k,m in sorted(found.items(),key=lambda x:x[0][1],reverse=True)[:5]:
+        lines.append(f"{k[1]} | {k[2]} — {k[3]} | {m['g']}:{m['c']}")
+    if not found: lines.append("Нет встреч в доступной истории; это не означает, что их не было.")
+    return "\n".join(lines)
 def best_today():
     snap=load("state/snapshot.json",{})
     if not snap: return "Нет снимка. Обнови V10."
     now=datetime.now(timezone.utc); local=timezone(timedelta(hours=6))
+    if (now-datetime.fromisoformat(snap["created"])).total_seconds()>108000: return "Снимок старше 30 часов. Обнови базу."
     rows=[]
     for r in reconcile(snap["rows"]):
         if not r.get("kickoff"): continue
@@ -189,8 +211,10 @@ def answer(msg):
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
     helptext="⚽ V18 PRO ACCURACY • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/best — фильтр на сегодня\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
     if cmd=="/best": return best_today()
+    if cmd=="/status": return status_report()
+    if cmd=="/h2h": return h2h(arg)
     if cmd=="/odds": return odds(arg)
     if cmd=="/half": return half_report()
     if cmd=="/analyze": return analyze(arg)
