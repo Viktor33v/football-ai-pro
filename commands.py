@@ -269,14 +269,22 @@ def shortlist():
         if not r.get("kickoff") or not eligible(r,snap): continue
         k=datetime.fromisoformat(r["kickoff"])
         if not now<k<=now+timedelta(days=7): continue
-        key=(canonical(r["home"]),canonical(r["away"]),k)
+        key=(r["market"],canonical(r["home"]),canonical(r["away"]),k)
         if key not in selected or r["p"]>selected[key]["p"]: selected[key]=r
     lines=["⚽ V23 • Кандидаты на 7 дней • ДЕМО","Расписание независимо не проверено."]
-    for r in sorted(selected.values(),key=lambda x:x["p"],reverse=True)[:10]:
+    used=set(); chosen=[]; counts={}
+    for group,limit in (("goals",4),("corners",3),("cards",3)):
+        for r in sorted(selected.values(),key=lambda x:x["p"],reverse=True):
+            if r["group"]!=group: continue
+            key=(canonical(r["home"]),canonical(r["away"]),r["kickoff"])
+            if key in used or counts.get(r["market"],0)>=2: continue
+            chosen.append(r); used.add(key); counts[r["market"]]=counts.get(r["market"],0)+1
+            if sum(x["group"]==group for x in chosen)>=limit: break
+    for r in chosen:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
         lines.append(f"{stamp} | {r['home']} — {r['away']} | {r['market']}: {r['p']:.1%} | 1/p {1/r['p']:.2f}")
-    if not selected: lines.append("Нет кандидатов, прошедших фильтр.")
-    lines.append("Время Бишкек. Один рынок на матч, сортировка по p, не по доходности. 1/p не является котировкой букмекера.")
+    if not chosen: lines.append("Нет кандидатов, прошедших фильтр.")
+    lines.append("Время Бишкек. Один рынок на матч; до 4 голов, 3 угловых, 3 ЖК; до 2 на рынок. Сортировка по p внутри группы, не по доходности. 1/p не является котировкой букмекера.")
     return "\n".join(lines)
 
 def answer(msg):
