@@ -178,7 +178,7 @@ def status_report():
     if not s: return "База отсутствует."
     age=(datetime.now(timezone.utc)-datetime.fromisoformat(s["created"])).total_seconds()/3600
     return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/13",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
-def h2h(q):
+def h2h_local(q):
     if not q.strip(): return "Пример: /h2h Бавария - Кёльн"
     f=load("state/form.json",{}); found={}
     for t in f.get("teams",[]):
@@ -191,6 +191,26 @@ def h2h(q):
         lines.append(f"{k[1]} | {k[2]} — {k[3]} | {m['g']}:{m['c']}")
     if not found: lines.append("Нет встреч в доступной истории; это не означает, что их не было.")
     return "\n".join(lines)
+
+def h2h(q):
+    import re
+    parts=[canonical(x) for x in re.split(r"\s*[-–—]\s*",q) if x.strip()]
+    if len(parts)!=2: return "Пример: /h2h Бавария - Кёльн"
+    aliases={canonical(k):canonical(v) for k,v in ALIASES.items()}
+    a,b=[aliases.get(x,x) for x in parts]
+    if a==b: return "Укажи две разные команды."
+    hist=load("state/history.json",{})
+    if not hist.get("rows"): return h2h_local(q)
+    found=[]
+    for r in hist["rows"]:
+        h,v=canonical(r["home"]),canonical(r["away"])
+        if (a in h and b in v) or (b in h and a in v): found.append(r)
+    lines=["V19 • Очные встречи OpenFootball (неполное покрытие)"]
+    for r in sorted(found,key=lambda x:x["date"],reverse=True)[:10]:
+        lines.append("{} | {} — {} | {}:{}".format(r["date"],r["home"],r["away"],*r["ft"]))
+    lines.append("Найдено: "+str(len(found))+". История не меняет прогнозы.")
+    return "\n".join(lines)
+
 def best_today():
     snap=load("state/snapshot.json",{})
     if not snap: return "Нет снимка. Обнови V10."
