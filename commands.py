@@ -81,9 +81,16 @@ def tactic(q):
     for l,h in zip(data["labels"],r["hits"]):
         lines.append(f"{l}: {h}/{n} ({h/n:.0%})")
     return "\n".join(lines)
-def eligible(r,snap):
+def reasons(r,snap):
     d=snap.get("diagnostics",{}).get(r["market"],{})
-    return bool(r["selected"] and min(r.get("sample") or [0])>=10 and d.get("n",0)>=100 and d["model"]<d["baseline"])
+    out=[]
+    if not r["selected"]: out.append("ниже порога p")
+    if min(r.get("sample") or [0])<10: out.append("выборка <10 или неизвестна")
+    if d.get("n",0)<100: out.append("мало тестов или нет метрик")
+    elif d["model"]>=d["baseline"]: out.append("Brier не лучше базы")
+    return out
+def eligible(r,snap):
+    return not reasons(r,snap)
 def odds(arg):
     try:
         p,k=map(float,arg.replace(",",".").split())
@@ -119,7 +126,7 @@ def analyze(arg):
         return "Уточни матч:\n"+"\n".join(f"{rs[0]['home']} — {rs[0]['away']} | {key[2]}" for key,rs in list(groups.items())[:12])
     key,rs=next(iter(groups.items())); a=rs[0]
     stamp=datetime.fromisoformat(a["kickoff"]).astimezone(local).strftime("%d.%m %H:%M Бишкек") if a.get("kickoff") else a["date"]+" (время неизвестно)"
-    lines=["⚽ V17 SMART FILTER • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
+    lines=["⚽ V18 PRO ACCURACY • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
     form=load("state/form.json",{})
     for side in ("home","away"):
         teams=[t for t in form.get("teams",[]) if canonical(t["name"])==canonical(a[side])]
@@ -141,6 +148,8 @@ def analyze(arg):
         if len(rr)!=1: lines.append(m+": неоднозначные данные"); continue
         r=rr[0]; clean.append(r)
         sample=r.get("sample")
+        why=reasons(r,snap)
+        lines.append("Фильтр "+m+": "+("; ".join(why) if why else "прошёл"))
         lines.append(f"{m}: {r['p']:.1%}"+(f" | выборка {sample}" if sample else ""))
     lines.append(f"Покрытие: {len(clean)}/13. Это полнота данных, не гарантия точности.")
     lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
@@ -158,12 +167,28 @@ def analyze(arg):
     if schemes: lines.append(tactic(schemes))
     lines.append("Нет учёта судей, травм или букмекерских коэффициентов. Тактика и форма не изменяют p. Не экспресс.")
     return "\n".join(lines)
+def best_today():
+    snap=load("state/snapshot.json",{})
+    if not snap: return "Нет снимка. Обнови V10."
+    now=datetime.now(timezone.utc); local=timezone(timedelta(hours=6))
+    rows=[]
+    for r in reconcile(snap["rows"]):
+        if not r.get("kickoff"): continue
+        k=datetime.fromisoformat(r["kickoff"])
+        if k>now and k.astimezone(local).date()==now.astimezone(local).date() and eligible(r,snap): rows.append(r)
+    lines=["V18 • кандидаты сегодня (Бишкек) • ДЕМО","Снимок: "+snap["created"]]
+    for r in sorted(rows,key=lambda x:x["p"],reverse=True)[:10]:
+        lines.append(f"{r['home']} — {r['away']} | {r['market']} {r['p']:.1%}")
+    if not rows: lines.append("Нет кандидатов с известным временем, прошедших фильтр.")
+    lines.append("Ранжирование по p, не доходности. Расписание не проверено независимо.")
+    return "\n".join(lines)
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ V17 SMART FILTER • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    helptext="⚽ V18 PRO ACCURACY • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/best — фильтр на сегодня\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd=="/best": return best_today()
     if cmd=="/odds": return odds(arg)
     if cmd=="/half": return half_report()
     if cmd=="/analyze": return analyze(arg)
@@ -232,6 +257,6 @@ def run():
     if offset is not None: telegram("getUpdates",offset=offset,timeout=0,limit=1,allowed_updates=["message"])
     print(f"Updates received={received}; authorized={accepted}; messages sent={sent}")
     if os.environ.get("TELEGRAM_DIAGNOSTIC")=="1":
-        telegram("sendMessage",chat_id=chat,text="V16: проверка связи Telegram успешна.",reply_markup=keyboard())
+        telegram("sendMessage",chat_id=chat,text="V18: проверка связи Telegram успешна.",reply_markup=keyboard())
         print("Diagnostic message delivered to Telegram API")
 if __name__=="__main__": run()
