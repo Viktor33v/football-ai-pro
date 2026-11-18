@@ -1,4 +1,4 @@
-name: Football AI PRO V10 Ultimate
+name: Football AI PRO V23 Ultimate
 on:
   workflow_dispatch:
   schedule:
@@ -27,6 +27,7 @@ jobs:
       - run: python -m py_compile ultimate.py smart.py corners.py cards.py bot.py backtest.py
       - run: python ultimate.py
         env:
+          COMPACT_REPORT: '1'
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -46,6 +47,11 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Send filtered shortlist
+        run: python -c 'import os; from commands import shortlist, telegram; telegram("sendMessage", chat_id=int(os.environ["TELEGRAM_CHAT_ID"]), text=shortlist())'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
