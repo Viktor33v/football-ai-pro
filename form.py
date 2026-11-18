@@ -24,5 +24,5 @@ def run():
             seen.add(key)
             for side,opp,g,c in [("home","away",h,a),("away","home",a,h)]:
                 teams[(league,r[side])].append(dict(date=r["date"],opponent=r[opp],venue=side,g=g,c=c,shots=number(r.get(side+"_shots")),target=number(r.get(side+"_target")),corners=number(r.get(side+"_corners")),yellow=number(r.get(side+"_yellow"))))
-    save("state/form.json",dict(created=datetime.now(timezone.utc).isoformat(),source=SOURCE,errors=errors,teams=[dict(league=l,name=t,matches=rs[-5:]) for (l,t),rs in teams.items()]))
+    save("state/form.json",dict(created=datetime.now(timezone.utc).isoformat(),source=SOURCE,errors=errors,teams=[dict(league=l,name=t,matches=rs[-20:]) for (l,t),rs in teams.items()]))
 if __name__=="__main__": run()
