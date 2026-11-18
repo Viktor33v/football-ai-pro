@@ -27,4 +27,30 @@ def selftest():
         try: calculate([dict(odds=o,result=None)])
         except ValueError: continue
         raise AssertionError("invalid odds accepted")
-if __name__=="__main__": selftest()
+def new_bank():
+    return {"version":1,"cycle":1,"entries":[],"history":[]}
+def reset_bank(bank, confirmed=False):
+    if not confirmed:
+        raise ValueError("confirmation required")
+    stats=calculate(bank["entries"])
+    if stats["pending"]:
+        raise ValueError("pending entries")
+    return {"version":1,"cycle":bank["cycle"]+1,"entries":[],
+            "history":bank["history"]+[{"cycle":bank["cycle"],"entries":bank["entries"]}]}
+def reset_test():
+    b=new_bank()
+    b["entries"]=[dict(odds="2",result=0)]
+    try: reset_bank(b)
+    except ValueError: pass
+    else: raise AssertionError("confirmation missing")
+    a=reset_bank(b,True)
+    assert a["cycle"]==2 and calculate(a["entries"])["balance"]==1000
+    assert a["history"][0]["entries"]==b["entries"]
+    b["entries"].append(dict(odds="2",result=None))
+    try: reset_bank(b,True)
+    except ValueError: pass
+    else: raise AssertionError("pending reset")
+if __name__=="__main__":
+    selftest()
+    reset_test()
+
