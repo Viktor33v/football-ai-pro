@@ -111,6 +111,34 @@ def half_report():
         lines.append(f"{label}: Brier {m['model']:.3f} / {m['baseline']:.3f}; n={m['n']}" if m["n"] else label+": нет теста")
     lines.append("Исследовательский тест. Основная модель не изменена.")
     return "\n".join(lines)
+
+def history_summary(a):
+    hist=load("state/history.json",{})
+    rows=hist.get("rows",[])
+    lines=["ИСТОРИЯ V20 • только результаты OpenFootball"]
+    for side in ("home","away"):
+        name=canonical(a[side])
+        games=[]
+        for r in rows:
+            h,v=canonical(r["home"]),canonical(r["away"])
+            if h==name: games.append((r["date"],"home",*r["ft"]))
+            elif v==name: games.append((r["date"],"away",*reversed(r["ft"])))
+        games.sort()
+        lines.append(a[side])
+        for n in (5,10,20):
+            ms=games[-n:]
+            if ms: lines.append(f"Последние {len(ms)}/{n}: голы {sum(m[2] for m in ms)/len(ms):.2f}, пропущено {sum(m[3] for m in ms)/len(ms):.2f}")
+        ms=[m for m in games if m[1]==side][-10:]
+        if ms: lines.append(f"На нужном поле ({len(ms)}): голы {sum(m[2] for m in ms)/len(ms):.2f}, пропущено {sum(m[3] for m in ms)/len(ms):.2f}")
+        if games: lines.append("Последняя дата архива: "+games[-1][0])
+        else: lines.append("Нет точного совпадения названия.")
+    matches=[r for r in rows if {canonical(r["home"]),canonical(r["away"])}=={canonical(a["home"]),canonical(a["away"])}][-10:]
+    lines.append(f"Очные встречи: {len(matches)}")
+    if matches:
+        lines.append(f"Средний тотал: {sum(sum(r['ft']) for r in matches)/len(matches):.2f}; ТБ 2.5: {sum(sum(r['ft'])>=3 for r in matches)}/{len(matches)}")
+    lines.append("Архив неполный; статистика не меняет вероятности.")
+    return "\n".join(lines)
+
 def analyze(arg):
     q,_,schemes=arg.partition(";")
     q=q.strip(); schemes=schemes.strip()
@@ -132,7 +160,7 @@ def analyze(arg):
         return "Уточни матч:\n"+"\n".join(f"{rs[0]['home']} — {rs[0]['away']} | {key[2]}" for key,rs in list(groups.items())[:12])
     key,rs=next(iter(groups.items())); a=rs[0]
     stamp=datetime.fromisoformat(a["kickoff"]).astimezone(local).strftime("%d.%m %H:%M Бишкек") if a.get("kickoff") else a["date"]+" (время неизвестно)"
-    lines=["⚽ V18 PRO ACCURACY • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
+    lines=["⚽ V20 PRO ACCURACY • ДЕМО",a["home"]+" — "+a["away"],stamp,"Снимок: "+snap["created"],"Расписание независимо не проверено.","","ФОРМА: последние 5 матчей лиги"]
     form=load("state/form.json",{})
     for side in ("home","away"):
         teams=[t for t in form.get("teams",[]) if canonical(t["name"])==canonical(a[side])]
@@ -146,6 +174,7 @@ def analyze(arg):
         for field,label in [("g","Голы"),("c","Пропущено"),("shots","Удары"),("target","В створ"),("corners","Угловые"),("yellow","ЖК")]:
             v=[m[field] for m in ms if m.get(field) is not None]
             lines.append(f"{label}: {sum(v)/len(v):.1f} ({len(v)}/{n})" if v else label+": нет данных")
+    lines.append("\n"+history_summary(a))
     lines.append("\nРЫНКИ: вероятности отдельных моделей")
     by={}
     for r in rs: by.setdefault((r["group"],r["market"]),[]).append(r)
