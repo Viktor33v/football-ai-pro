@@ -14,7 +14,7 @@ def main():
                 with urllib.request.urlopen(BASE+key+".json",timeout=25) as f: data=json.load(f)
                 count=0
                 for m in data["matches"]:
-                    d=m.get("date",""); h=m.get("team1"); a=m.get("team2"); s=m.get("score",{}).get("ft")
+                    d=m.get("date",""); h=m.get("team1"); a=m.get("team2"); s=(m.get("score") or {}).get("ft")
                     if not isinstance(h,str) or not isinstance(a,str) or not isinstance(s,list) or len(s)!=2 or not all(type(x)==int and x>=0 for x in s): continue
                     if not d or d>=now.date().isoformat(): continue
                     datetime.fromisoformat(d)
