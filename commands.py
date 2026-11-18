@@ -328,12 +328,21 @@ def performance():
     lines.append("ROI не рассчитан: отсутствуют зафиксированные букмекерские коэффициенты. Источники результатов независимо не проверены.")
     return "\n".join(lines)
 
+def bank_report():
+    from paper24 import calculate, new_bank
+    bank=load(os.environ.get("FOOTBALL_BANK_PATH","state/paper_bank.json"),None)
+    if bank is None:
+        return "💰 V24 • Демобанк\nСтартовый капитал: $1000.00\nУчёт операций ещё не подключён. Это не сохранённый баланс. Реальных ставок нет."
+    s=calculate(bank["entries"])
+    roi="—" if s["roi"] is None else f"{s['roi']:.2f}%"
+    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Только виртуальные средства."])
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ V18 PRO ACCURACY • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
+    helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк."
     if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd=="/bank": return bank_report()
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
