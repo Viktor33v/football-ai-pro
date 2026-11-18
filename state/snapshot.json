@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-17T20:30:42.279441+00:00",
+  "created": "2026-11-18T03:14:19.924357+00:00",
   "rows": [
     {
       "home": "Coritiba FBC",
@@ -7,8 +7,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -17,8 +21,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -27,8 +35,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5452289104474399,
+      "p": 0.5514855456851403,
       "selected": false
     },
     {
@@ -37,8 +49,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5794959013104864,
+      "p": 0.5822274106688383,
       "selected": false
     },
     {
@@ -47,8 +63,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8155712639746162,
+      "p": 0.8207835510184063,
       "selected": true
     },
     {
@@ -57,8 +77,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -67,8 +91,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -77,8 +105,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5288912171054065,
+      "p": 0.5199748994613784,
       "selected": false
     },
     {
@@ -87,8 +119,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5639517529681868,
+      "p": 0.5581555032883494,
       "selected": false
     },
     {
@@ -97,58 +133,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7958284084392746,
-      "selected": false
-    },
-    {
-      "home": "CR Flamengo",
-      "away": "CA Paranaense",
-      "date": "2026-11-18",
-      "kickoff": "2026-11-18T23:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
-      "selected": true
-    },
-    {
-      "home": "CR Flamengo",
-      "away": "CA Paranaense",
-      "date": "2026-11-18",
-      "kickoff": "2026-11-18T23:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
-      "selected": false
-    },
-    {
-      "home": "CR Flamengo",
-      "away": "CA Paranaense",
-      "date": "2026-11-18",
-      "kickoff": "2026-11-18T23:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5575792603748171,
-      "selected": false
-    },
-    {
-      "home": "CR Flamengo",
-      "away": "CA Paranaense",
-      "date": "2026-11-18",
-      "kickoff": "2026-11-18T23:30:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5846174877343414,
-      "selected": false
-    },
-    {
-      "home": "CR Flamengo",
-      "away": "CA Paranaense",
-      "date": "2026-11-18",
-      "kickoff": "2026-11-18T23:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7928439817400006,
+      "p": 0.7870068496773013,
       "selected": false
     },
     {
@@ -157,8 +147,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -167,8 +161,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -177,8 +175,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5584691652519926,
+      "p": 0.5408069832880128,
       "selected": false
     },
     {
@@ -187,8 +189,12 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5921369499902953,
+      "p": 0.5748459686170977,
       "selected": false
     },
     {
@@ -197,28 +203,82 @@
       "date": "2026-11-18",
       "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8201031980838083,
+      "p": 0.8038045672172565,
       "selected": true
     },
     {
-      "home": "Grêmio FBPA",
-      "away": "EC Bahia",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T00:30:00+00:00",
+      "home": "CR Flamengo",
+      "away": "CA Paranaense",
+      "date": "2026-11-18",
+      "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
-      "home": "Grêmio FBPA",
-      "away": "EC Bahia",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T00:30:00+00:00",
+      "home": "CR Flamengo",
+      "away": "CA Paranaense",
+      "date": "2026-11-18",
+      "kickoff": "2026-11-18T23:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
+      "selected": false
+    },
+    {
+      "home": "CR Flamengo",
+      "away": "CA Paranaense",
+      "date": "2026-11-18",
+      "kickoff": "2026-11-18T23:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5445038907364385,
+      "selected": false
+    },
+    {
+      "home": "CR Flamengo",
+      "away": "CA Paranaense",
+      "date": "2026-11-18",
+      "kickoff": "2026-11-18T23:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5741090481035049,
+      "selected": false
+    },
+    {
+      "home": "CR Flamengo",
+      "away": "CA Paranaense",
+      "date": "2026-11-18",
+      "kickoff": "2026-11-18T23:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7991187149579334,
       "selected": false
     },
     {
@@ -227,8 +287,26 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5456708821698164,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7216760439961138,
+      "selected": true
+    },
+    {
+      "home": "Grêmio FBPA",
+      "away": "EC Bahia",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T00:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -237,8 +315,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5821646000033285,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5240534610710881,
       "selected": false
     },
     {
@@ -247,8 +329,26 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5629886584472696,
+      "selected": false
+    },
+    {
+      "home": "Grêmio FBPA",
+      "away": "EC Bahia",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T00:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7840017558000087,
+      "p": 0.7682048979148706,
       "selected": false
     },
     {
@@ -257,8 +357,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -267,8 +371,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -277,8 +385,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.4545287157425167,
+      "p": 0.4478643546676632,
       "selected": false
     },
     {
@@ -287,8 +399,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5084991476707137,
+      "p": 0.499385871554551,
       "selected": false
     },
     {
@@ -297,58 +413,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7367796813875329,
-      "selected": false
-    },
-    {
-      "home": "CR Vasco da Gama",
-      "away": "SC Internacional",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T22:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
-      "selected": true
-    },
-    {
-      "home": "CR Vasco da Gama",
-      "away": "SC Internacional",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T22:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
-      "selected": false
-    },
-    {
-      "home": "CR Vasco da Gama",
-      "away": "SC Internacional",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T22:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5101104323574821,
-      "selected": false
-    },
-    {
-      "home": "CR Vasco da Gama",
-      "away": "SC Internacional",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T22:30:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5536492895922187,
-      "selected": false
-    },
-    {
-      "home": "CR Vasco da Gama",
-      "away": "SC Internacional",
-      "date": "2026-11-19",
-      "kickoff": "2026-11-19T22:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7894187772306922,
+      "p": 0.7307256445510502,
       "selected": false
     },
     {
@@ -357,8 +427,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -367,8 +441,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -377,8 +455,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.47843784337591794,
+      "p": 0.4778919460927355,
       "selected": false
     },
     {
@@ -387,8 +469,12 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5268513657329285,
+      "p": 0.5234489853974185,
       "selected": false
     },
     {
@@ -397,8 +483,82 @@
       "date": "2026-11-19",
       "kickoff": "2026-11-19T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7637807667022642,
+      "p": 0.7520034435658096,
+      "selected": false
+    },
+    {
+      "home": "CR Vasco da Gama",
+      "away": "SC Internacional",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7216760439961138,
+      "selected": true
+    },
+    {
+      "home": "CR Vasco da Gama",
+      "away": "SC Internacional",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.34307721493726046,
+      "selected": false
+    },
+    {
+      "home": "CR Vasco da Gama",
+      "away": "SC Internacional",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5078038249177301,
+      "selected": false
+    },
+    {
+      "home": "CR Vasco da Gama",
+      "away": "SC Internacional",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.550069158425192,
+      "selected": false
+    },
+    {
+      "home": "CR Vasco da Gama",
+      "away": "SC Internacional",
+      "date": "2026-11-19",
+      "kickoff": "2026-11-19T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7803821307820866,
       "selected": false
     },
     {
@@ -407,8 +567,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -417,8 +581,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -427,8 +595,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5253812442131995,
+      "p": 0.5539930232765251,
       "selected": false
     },
     {
@@ -437,8 +609,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5659651689464505,
+      "p": 0.5858943781795137,
       "selected": false
     },
     {
@@ -447,8 +623,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T00:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.812185986732003,
+      "p": 0.8278370086534742,
       "selected": true
     },
     {
@@ -457,8 +637,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7294308825653619,
+      "p": 0.732012345019731,
       "selected": true
     },
     {
@@ -467,8 +651,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.4186497905532283,
+      "p": 0.4125803558768666,
       "selected": false
     },
     {
@@ -477,8 +665,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.7026104304601635,
+      "p": 0.7082778974381327,
       "selected": true
     },
     {
@@ -487,8 +679,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6430357770556072,
+      "p": 0.6415685275773239,
       "selected": true
     },
     {
@@ -497,8 +693,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.88946638372174,
+      "p": 0.8918349434072372,
       "selected": true
     },
     {
@@ -507,8 +707,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
+      "p": 0.6943057010883464,
       "selected": false
     },
     {
@@ -517,8 +721,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
+      "p": 0.338042937894023,
       "selected": false
     },
     {
@@ -527,8 +735,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.4759902454292281,
+      "p": 0.4772702521770598,
       "selected": false
     },
     {
@@ -537,8 +749,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5241098840599887,
+      "p": 0.5288194299198821,
       "selected": false
     },
     {
@@ -547,8 +763,12 @@
       "date": "2026-11-20",
       "kickoff": "2026-11-20T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7944418435039708,
+      "p": 0.7913235149014106,
       "selected": false
     },
     {
@@ -557,8 +777,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
+      "p": 0.6946832690977369,
       "selected": false
     },
     {
@@ -567,8 +791,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
+      "p": 0.33830880266761026,
       "selected": false
     },
     {
@@ -577,8 +805,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5041562244841911,
+      "p": 0.5058235374327218,
       "selected": false
     },
     {
@@ -587,8 +819,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5298887373117169,
+      "p": 0.5320645218110087,
       "selected": false
     },
     {
@@ -597,8 +833,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7656234168300005,
+      "p": 0.7742917795366933,
       "selected": false
     },
     {
@@ -607,8 +847,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        13
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
+      "p": 0.7191615903346857,
       "selected": true
     },
     {
@@ -617,8 +861,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        13
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -627,8 +875,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        13
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6012782960387935,
+      "p": 0.6110992947526565,
       "selected": true
     },
     {
@@ -637,8 +889,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        13
+      ],
       "market": "Обе забьют",
-      "p": 0.6159227996869671,
+      "p": 0.6284356229334236,
       "selected": true
     },
     {
@@ -647,28 +903,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        13
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8011373802136794,
-      "selected": true
-    },
-    {
-      "home": "Southampton FC",
-      "away": "Derby County FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T12:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "Southampton FC",
-      "away": "Derby County FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T12:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "p": 0.7957560408909768,
       "selected": false
     },
     {
@@ -677,8 +917,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5610553715085628,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "Southampton FC",
+      "away": "Derby County FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T12:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -687,8 +945,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5575851639113016,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5906490954200163,
       "selected": false
     },
     {
@@ -697,8 +959,54 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5920782912948552,
+      "selected": false
+    },
+    {
+      "home": "Southampton FC",
+      "away": "Derby County FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T12:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7883641500839929,
+      "p": 0.8082448678850573,
+      "selected": true
+    },
+    {
+      "home": "Millwall FC",
+      "away": "Queens Park Rangers FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T12:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "Millwall FC",
+      "away": "Queens Park Rangers FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T12:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -707,18 +1015,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "Millwall FC",
-      "away": "Queens Park Rangers FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T12:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5677718723352884,
       "selected": false
     },
     {
@@ -727,8 +1029,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5446033155473065,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.596047434152432,
       "selected": false
     },
     {
@@ -737,78 +1043,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T12:30:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5729940947554727,
-      "selected": false
-    },
-    {
-      "home": "Millwall FC",
-      "away": "Queens Park Rangers FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T12:30:00+00:00",
-      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7796606177889212,
-      "selected": false
-    },
-    {
-      "home": "Deportivo Alavés",
-      "away": "RC Deportivo La Coruña",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T13:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
-      "selected": false
-    },
-    {
-      "home": "Deportivo Alavés",
-      "away": "RC Deportivo La Coruña",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T13:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
-      "selected": false
-    },
-    {
-      "home": "Deportivo Alavés",
-      "away": "RC Deportivo La Coruña",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T13:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5254617567887083,
-      "selected": false
-    },
-    {
-      "home": "Deportivo Alavés",
-      "away": "RC Deportivo La Coruña",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T13:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5642437655388692,
-      "selected": false
-    },
-    {
-      "home": "Deportivo Alavés",
-      "away": "RC Deportivo La Coruña",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T13:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8205204347687127,
-      "selected": true
-    },
-    {
-      "home": "SS Lazio",
-      "away": "US Lecce",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
+      "p": 0.7898600125594428,
       "selected": false
     },
     {
@@ -817,8 +1057,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6959175733208074,
       "selected": false
     },
     {
@@ -827,8 +1071,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5055091317291543,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3270802886457205,
       "selected": false
     },
     {
@@ -837,8 +1085,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5096093794994461,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5252779718776626,
       "selected": false
     },
     {
@@ -847,8 +1099,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5196080538991464,
+      "selected": false
+    },
+    {
+      "home": "SS Lazio",
+      "away": "US Lecce",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7809613209949186,
+      "p": 0.7904340238720059,
       "selected": false
     },
     {
@@ -857,8 +1127,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
+      "p": 0.6959175733208074,
       "selected": false
     },
     {
@@ -867,8 +1141,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
+      "p": 0.3270802886457205,
       "selected": false
     },
     {
@@ -877,8 +1155,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5038838804141851,
+      "p": 0.4920276657550444,
       "selected": false
     },
     {
@@ -887,8 +1169,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.4892114526404763,
+      "p": 0.48600337611164424,
       "selected": false
     },
     {
@@ -897,28 +1183,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8025633415706412,
-      "selected": true
-    },
-    {
-      "home": "Eintracht Frankfurt",
-      "away": "TSG 1899 Hoffenheim",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T14:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7294308825653619,
-      "selected": true
-    },
-    {
-      "home": "Eintracht Frankfurt",
-      "away": "TSG 1899 Hoffenheim",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T14:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.4186497905532283,
+      "p": 0.781951372123185,
       "selected": false
     },
     {
@@ -927,8 +1197,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6627049181309972,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.732012345019731,
       "selected": true
     },
     {
@@ -937,8 +1211,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6534191369854846,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4125803558768666,
+      "selected": false
+    },
+    {
+      "home": "Eintracht Frankfurt",
+      "away": "TSG 1899 Hoffenheim",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T14:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.6627049969230485,
       "selected": true
     },
     {
@@ -947,8 +1239,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6534476019424802,
+      "selected": true
+    },
+    {
+      "home": "Eintracht Frankfurt",
+      "away": "TSG 1899 Hoffenheim",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T14:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8623879329949331,
+      "p": 0.862372098549349,
       "selected": true
     },
     {
@@ -957,8 +1267,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7294308825653619,
+      "p": 0.732012345019731,
       "selected": true
     },
     {
@@ -967,8 +1281,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.4186497905532283,
+      "p": 0.4125803558768666,
       "selected": false
     },
     {
@@ -977,9 +1295,13 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5964209772886573,
-      "selected": false
+      "p": 0.6080464247198549,
+      "selected": true
     },
     {
       "home": "Borussia Mönchengladbach",
@@ -987,9 +1309,13 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5965765391262536,
-      "selected": false
+      "p": 0.604058349097961,
+      "selected": true
     },
     {
       "home": "Borussia Mönchengladbach",
@@ -997,8 +1323,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8626078218210893,
+      "p": 0.8630206812671561,
       "selected": true
     },
     {
@@ -1007,8 +1337,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7294308825653619,
+      "p": 0.732012345019731,
       "selected": true
     },
     {
@@ -1017,8 +1351,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.4186497905532283,
+      "p": 0.4125803558768666,
       "selected": false
     },
     {
@@ -1027,8 +1365,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6776959393463581,
+      "p": 0.6604678906159518,
       "selected": true
     },
     {
@@ -1037,8 +1379,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6643735590560852,
+      "p": 0.6493499464622172,
       "selected": true
     },
     {
@@ -1047,358 +1393,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.876822654968488,
-      "selected": true
-    },
-    {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
-      "selected": false
-    },
-    {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
-      "selected": false
-    },
-    {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5269184256839936,
-      "selected": false
-    },
-    {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5587753244746114,
-      "selected": false
-    },
-    {
-      "home": "AFC Bournemouth",
-      "away": "Nottingham Forest FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7954382264619927,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5233904828355755,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5512493878622979,
-      "selected": false
-    },
-    {
-      "home": "Sheffield United FC",
-      "away": "Watford FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7569018399850963,
-      "selected": false
-    },
-    {
-      "home": "West Ham United FC",
-      "away": "Preston North End FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "West Ham United FC",
-      "away": "Preston North End FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
-      "selected": false
-    },
-    {
-      "home": "West Ham United FC",
-      "away": "Preston North End FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5793575727974496,
-      "selected": false
-    },
-    {
-      "home": "West Ham United FC",
-      "away": "Preston North End FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5870784764689672,
-      "selected": false
-    },
-    {
-      "home": "West Ham United FC",
-      "away": "Preston North End FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7913924865613721,
-      "selected": false
-    },
-    {
-      "home": "Coventry City FC",
-      "away": "Crystal Palace FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
-      "selected": false
-    },
-    {
-      "home": "Coventry City FC",
-      "away": "Crystal Palace FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
-      "selected": false
-    },
-    {
-      "home": "Coventry City FC",
-      "away": "Crystal Palace FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.550005407136225,
-      "selected": false
-    },
-    {
-      "home": "Coventry City FC",
-      "away": "Crystal Palace FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5635797008704299,
-      "selected": false
-    },
-    {
-      "home": "Coventry City FC",
-      "away": "Crystal Palace FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7949797009949366,
-      "selected": false
-    },
-    {
-      "home": "Middlesbrough FC",
-      "away": "Bristol City FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "Middlesbrough FC",
-      "away": "Bristol City FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
-      "selected": false
-    },
-    {
-      "home": "Middlesbrough FC",
-      "away": "Bristol City FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5483562323576712,
-      "selected": false
-    },
-    {
-      "home": "Middlesbrough FC",
-      "away": "Bristol City FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5685856908960378,
-      "selected": false
-    },
-    {
-      "home": "Middlesbrough FC",
-      "away": "Bristol City FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7956233587721854,
-      "selected": false
-    },
-    {
-      "home": "Lincoln City FC",
-      "away": "Wrexham AFC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "Lincoln City FC",
-      "away": "Wrexham AFC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
-      "selected": false
-    },
-    {
-      "home": "Lincoln City FC",
-      "away": "Wrexham AFC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5696383727349448,
-      "selected": false
-    },
-    {
-      "home": "Lincoln City FC",
-      "away": "Wrexham AFC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5915738392410637,
-      "selected": false
-    },
-    {
-      "home": "Lincoln City FC",
-      "away": "Wrexham AFC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8046595819900895,
-      "selected": true
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5019356413274862,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.538590414307778,
-      "selected": false
-    },
-    {
-      "home": "Chelsea FC",
-      "away": "Leeds United FC",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8047205257321539,
+      "p": 0.8675225345238029,
       "selected": true
     },
     {
@@ -1407,8 +1407,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
+      "p": 0.7191615903346857,
       "selected": true
     },
     {
@@ -1417,8 +1421,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -1427,8 +1435,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5090206596200377,
+      "p": 0.5189018691948704,
       "selected": false
     },
     {
@@ -1437,8 +1449,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5473759624751509,
+      "p": 0.5571287397080894,
       "selected": false
     },
     {
@@ -1447,58 +1463,82 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7434569238209057,
+      "p": 0.7627859069619495,
       "selected": false
     },
     {
-      "home": "Tottenham Hotspur FC",
-      "away": "Ipswich Town FC",
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
+      "p": 0.6946832690977369,
       "selected": false
     },
     {
-      "home": "Tottenham Hotspur FC",
-      "away": "Ipswich Town FC",
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
+      "p": 0.33830880266761026,
       "selected": false
     },
     {
-      "home": "Tottenham Hotspur FC",
-      "away": "Ipswich Town FC",
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.532617638999358,
+      "p": 0.5134622133463378,
       "selected": false
     },
     {
-      "home": "Tottenham Hotspur FC",
-      "away": "Ipswich Town FC",
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5628950214857109,
+      "p": 0.5515993135292343,
       "selected": false
     },
     {
-      "home": "Tottenham Hotspur FC",
-      "away": "Ipswich Town FC",
+      "home": "AFC Bournemouth",
+      "away": "Nottingham Forest FC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7973479277361952,
+      "p": 0.7748436209579392,
       "selected": false
     },
     {
@@ -1507,8 +1547,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
+      "p": 0.7191615903346857,
       "selected": true
     },
     {
@@ -1517,8 +1561,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -1527,8 +1575,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.49456587207180325,
+      "p": 0.5056724765763633,
       "selected": false
     },
     {
@@ -1537,8 +1589,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.535807375818834,
+      "p": 0.5493560693273172,
       "selected": false
     },
     {
@@ -1547,8 +1603,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7595432505074337,
+      "p": 0.776190844022587,
       "selected": false
     },
     {
@@ -1557,8 +1617,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
+      "p": 0.7191615903346857,
       "selected": true
     },
     {
@@ -1567,8 +1631,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -1577,8 +1645,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5154599032196163,
+      "p": 0.5306317085525597,
       "selected": false
     },
     {
@@ -1587,8 +1659,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5387323677372914,
+      "p": 0.5589505963687931,
       "selected": false
     },
     {
@@ -1597,8 +1673,376 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7685651567061837,
+      "p": 0.774758269923688,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5420135935068288,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5561003724240372,
+      "selected": false
+    },
+    {
+      "home": "Sheffield United FC",
+      "away": "Watford FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7483224467130914,
+      "selected": false
+    },
+    {
+      "home": "West Ham United FC",
+      "away": "Preston North End FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "West Ham United FC",
+      "away": "Preston North End FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
+      "selected": false
+    },
+    {
+      "home": "West Ham United FC",
+      "away": "Preston North End FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5965553584119253,
+      "selected": false
+    },
+    {
+      "home": "West Ham United FC",
+      "away": "Preston North End FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6035578472307466,
+      "selected": true
+    },
+    {
+      "home": "West Ham United FC",
+      "away": "Preston North End FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7948410293771719,
+      "selected": false
+    },
+    {
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6946832690977369,
+      "selected": false
+    },
+    {
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.33830880266761026,
+      "selected": false
+    },
+    {
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.49023879512253987,
+      "selected": false
+    },
+    {
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5319459051723596,
+      "selected": false
+    },
+    {
+      "home": "Chelsea FC",
+      "away": "Leeds United FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7910244787383904,
+      "selected": false
+    },
+    {
+      "home": "Tottenham Hotspur FC",
+      "away": "Ipswich Town FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6946832690977369,
+      "selected": false
+    },
+    {
+      "home": "Tottenham Hotspur FC",
+      "away": "Ipswich Town FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.33830880266761026,
+      "selected": false
+    },
+    {
+      "home": "Tottenham Hotspur FC",
+      "away": "Ipswich Town FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5306856785114773,
+      "selected": false
+    },
+    {
+      "home": "Tottenham Hotspur FC",
+      "away": "Ipswich Town FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5648968847675613,
+      "selected": false
+    },
+    {
+      "home": "Tottenham Hotspur FC",
+      "away": "Ipswich Town FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8011708278073078,
+      "selected": true
+    },
+    {
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
+      "selected": false
+    },
+    {
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5792247649189541,
+      "selected": false
+    },
+    {
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5988610746553233,
+      "selected": false
+    },
+    {
+      "home": "Middlesbrough FC",
+      "away": "Bristol City FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8092732547347846,
+      "selected": true
+    },
+    {
+      "home": "Aston Villa FC",
+      "away": "Sunderland AFC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6946832690977369,
       "selected": false
     },
     {
@@ -1607,8 +2051,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.33830880266761026,
       "selected": false
     },
     {
@@ -1617,8 +2065,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5659914182085608,
       "selected": false
     },
     {
@@ -1627,8 +2079,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5825407228031603,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5907189781539143,
       "selected": false
     },
     {
@@ -1637,58 +2093,222 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5938134806722366,
-      "selected": false
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.813596588329208,
+      "selected": true
     },
     {
-      "home": "Aston Villa FC",
-      "away": "Sunderland AFC",
+      "home": "Lincoln City FC",
+      "away": "Wrexham AFC",
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8125900050249619,
+      "sample": [
+        14,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
       "selected": true
     },
     {
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Valencia CF",
+      "home": "Lincoln City FC",
+      "away": "Wrexham AFC",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:15:00+00:00",
+      "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
-      "selected": false
-    },
-    {
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Valencia CF",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:15:00+00:00",
-      "group": "goals",
+      "sample": [
+        14,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Valencia CF",
+      "home": "Lincoln City FC",
+      "away": "Wrexham AFC",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:15:00+00:00",
+      "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        14,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5115804981268004,
+      "p": 0.5262450118055451,
       "selected": false
     },
     {
-      "home": "Rayo Vallecano de Madrid",
-      "away": "Valencia CF",
+      "home": "Lincoln City FC",
+      "away": "Wrexham AFC",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:15:00+00:00",
+      "kickoff": "2026-11-21T15:00:00+00:00",
       "group": "goals",
+      "sample": [
+        14,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5522538291613743,
+      "p": 0.5640335168086785,
+      "selected": false
+    },
+    {
+      "home": "Lincoln City FC",
+      "away": "Wrexham AFC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        14,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7724880240579527,
+      "selected": false
+    },
+    {
+      "home": "Coventry City FC",
+      "away": "Crystal Palace FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6946832690977369,
+      "selected": false
+    },
+    {
+      "home": "Coventry City FC",
+      "away": "Crystal Palace FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.33830880266761026,
+      "selected": false
+    },
+    {
+      "home": "Coventry City FC",
+      "away": "Crystal Palace FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5632906633287776,
+      "selected": false
+    },
+    {
+      "home": "Coventry City FC",
+      "away": "Crystal Palace FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5790038609126216,
+      "selected": false
+    },
+    {
+      "home": "Coventry City FC",
+      "away": "Crystal Palace FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8152022098037159,
+      "selected": true
+    },
+    {
+      "home": "Bolton Wanderers FC",
+      "away": "Portsmouth FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        15,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "Bolton Wanderers FC",
+      "away": "Portsmouth FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        15,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
+      "selected": false
+    },
+    {
+      "home": "Bolton Wanderers FC",
+      "away": "Portsmouth FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        15,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5493885004928148,
+      "selected": false
+    },
+    {
+      "home": "Bolton Wanderers FC",
+      "away": "Portsmouth FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        15,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5789858009082074,
+      "selected": false
+    },
+    {
+      "home": "Bolton Wanderers FC",
+      "away": "Portsmouth FC",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        15,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7861338318609152,
       "selected": false
     },
     {
@@ -1697,8 +2317,96 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6943057010883464,
+      "selected": false
+    },
+    {
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Valencia CF",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.338042937894023,
+      "selected": false
+    },
+    {
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Valencia CF",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5085557172005817,
+      "selected": false
+    },
+    {
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Valencia CF",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5556533890008057,
+      "selected": false
+    },
+    {
+      "home": "Rayo Vallecano de Madrid",
+      "away": "Valencia CF",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.792725139334912,
+      "p": 0.8040033346740041,
+      "selected": true
+    },
+    {
+      "home": "NEC",
+      "away": "PSV",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7459109706277771,
+      "selected": true
+    },
+    {
+      "home": "NEC",
+      "away": "PSV",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T15:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4617851196143536,
       "selected": false
     },
     {
@@ -1707,8 +2415,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.667245755651356,
       "selected": true
     },
     {
@@ -1717,18 +2429,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
-      "selected": false
-    },
-    {
-      "home": "NEC",
-      "away": "PSV",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6810788519117423,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6608594027584047,
       "selected": true
     },
     {
@@ -1737,18 +2443,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T15:30:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6757885453786301,
-      "selected": true
-    },
-    {
-      "home": "NEC",
-      "away": "PSV",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T15:30:00+00:00",
-      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8478240451127979,
+      "p": 0.8400028847240292,
       "selected": true
     },
     {
@@ -1757,8 +2457,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
+      "p": 0.7113812195384479,
       "selected": true
     },
     {
@@ -1767,8 +2471,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
+      "p": 0.3434741229055765,
       "selected": false
     },
     {
@@ -1777,8 +2485,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5587077985020947,
+      "p": 0.5733319051395241,
       "selected": false
     },
     {
@@ -1787,8 +2499,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5538401279212639,
+      "p": 0.5595779182928422,
       "selected": false
     },
     {
@@ -1797,8 +2513,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7986461766821957,
+      "p": 0.8066484853604605,
+      "selected": true
+    },
+    {
+      "home": "Parma Calcio 1913",
+      "away": "AS Roma",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6959175733208074,
       "selected": false
     },
     {
@@ -1807,8 +2541,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3270802886457205,
       "selected": false
     },
     {
@@ -1817,8 +2555,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5412227405315708,
       "selected": false
     },
     {
@@ -1827,8 +2569,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.527824992402417,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5088081326011386,
       "selected": false
     },
     {
@@ -1837,68 +2583,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:00:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5130715490975843,
-      "selected": false
-    },
-    {
-      "home": "Parma Calcio 1913",
-      "away": "AS Roma",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:00:00+00:00",
-      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8163368084101588,
-      "selected": true
-    },
-    {
-      "home": "Sevilla FC",
-      "away": "Real Betis Balompié",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
-      "selected": false
-    },
-    {
-      "home": "Sevilla FC",
-      "away": "Real Betis Balompié",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
-      "selected": false
-    },
-    {
-      "home": "Sevilla FC",
-      "away": "Real Betis Balompié",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5225543809428079,
-      "selected": false
-    },
-    {
-      "home": "Sevilla FC",
-      "away": "Real Betis Balompié",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:30:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5620242821376504,
-      "selected": false
-    },
-    {
-      "home": "Sevilla FC",
-      "away": "Real Betis Balompié",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8077678150199252,
+      "p": 0.824589825953759,
       "selected": true
     },
     {
@@ -1907,8 +2597,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
+      "p": 0.6946832690977369,
       "selected": false
     },
     {
@@ -1917,8 +2611,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
+      "p": 0.33830880266761026,
       "selected": false
     },
     {
@@ -1927,8 +2625,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.49092587607479865,
+      "p": 0.47763710616905986,
       "selected": false
     },
     {
@@ -1937,8 +2639,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5219168999101884,
+      "p": 0.513583682876057,
       "selected": false
     },
     {
@@ -1947,58 +2653,82 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7742383034231142,
+      "p": 0.776931455784473,
       "selected": false
     },
     {
-      "home": "Feyenoord Rotterdam",
-      "away": "SBV Excelsior",
+      "home": "Sevilla FC",
+      "away": "Real Betis Balompié",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
+      "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
-      "selected": true
-    },
-    {
-      "home": "Feyenoord Rotterdam",
-      "away": "SBV Excelsior",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
+      "p": 0.6943057010883464,
       "selected": false
     },
     {
-      "home": "Feyenoord Rotterdam",
-      "away": "SBV Excelsior",
+      "home": "Sevilla FC",
+      "away": "Real Betis Balompié",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
+      "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.338042937894023,
+      "selected": false
+    },
+    {
+      "home": "Sevilla FC",
+      "away": "Real Betis Balompié",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.665786596601498,
-      "selected": true
+      "p": 0.5314947113331365,
+      "selected": false
     },
     {
-      "home": "Feyenoord Rotterdam",
-      "away": "SBV Excelsior",
+      "home": "Sevilla FC",
+      "away": "Real Betis Balompié",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
+      "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6654886700336733,
-      "selected": true
+      "p": 0.5723199927864118,
+      "selected": false
     },
     {
-      "home": "Feyenoord Rotterdam",
-      "away": "SBV Excelsior",
+      "home": "Sevilla FC",
+      "away": "Real Betis Balompié",
       "date": "2026-11-21",
-      "kickoff": "2026-11-21T17:45:00+00:00",
+      "kickoff": "2026-11-21T17:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8619096427444792,
+      "p": 0.8068794721238188,
       "selected": true
     },
     {
@@ -2007,8 +2737,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
+      "p": 0.7459109706277771,
       "selected": true
     },
     {
@@ -2017,8 +2751,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
+      "p": 0.4617851196143536,
       "selected": false
     },
     {
@@ -2027,8 +2765,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6920529526975892,
+      "p": 0.7032334875873336,
       "selected": true
     },
     {
@@ -2037,8 +2779,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "Обе забьют",
-      "p": 0.6947826249436397,
+      "p": 0.7036638470101604,
       "selected": true
     },
     {
@@ -2047,8 +2793,82 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T17:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8749912231776226,
+      "p": 0.8828429686898218,
+      "selected": true
+    },
+    {
+      "home": "Feyenoord Rotterdam",
+      "away": "SBV Excelsior",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7459109706277771,
+      "selected": true
+    },
+    {
+      "home": "Feyenoord Rotterdam",
+      "away": "SBV Excelsior",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4617851196143536,
+      "selected": false
+    },
+    {
+      "home": "Feyenoord Rotterdam",
+      "away": "SBV Excelsior",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.6570486915515352,
+      "selected": true
+    },
+    {
+      "home": "Feyenoord Rotterdam",
+      "away": "SBV Excelsior",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6610319279178622,
+      "selected": true
+    },
+    {
+      "home": "Feyenoord Rotterdam",
+      "away": "SBV Excelsior",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T17:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8527253448868184,
       "selected": true
     },
     {
@@ -2057,8 +2877,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -2067,8 +2891,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -2077,8 +2905,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5634669023390024,
+      "p": 0.562997896959057,
       "selected": false
     },
     {
@@ -2087,8 +2919,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5959028236689363,
+      "p": 0.5932223375451556,
       "selected": false
     },
     {
@@ -2097,68 +2933,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8339423697334829,
-      "selected": true
-    },
-    {
-      "home": "Lille OSC",
-      "away": "Olympique Lyonnais",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T19:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
-      "selected": true
-    },
-    {
-      "home": "Lille OSC",
-      "away": "Olympique Lyonnais",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T19:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
-      "selected": false
-    },
-    {
-      "home": "Lille OSC",
-      "away": "Olympique Lyonnais",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T19:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.4804357942046432,
-      "selected": false
-    },
-    {
-      "home": "Lille OSC",
-      "away": "Olympique Lyonnais",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T19:45:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5059907770269682,
-      "selected": false
-    },
-    {
-      "home": "Lille OSC",
-      "away": "Olympique Lyonnais",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T19:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7650281817542987,
-      "selected": false
-    },
-    {
-      "home": "AS Monaco FC",
-      "away": "AJ Auxerre",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T19:45:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
+      "p": 0.835672072350983,
       "selected": true
     },
     {
@@ -2167,8 +2947,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7113812195384479,
+      "selected": true
+    },
+    {
+      "home": "AS Monaco FC",
+      "away": "AJ Auxerre",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
+      "p": 0.3434741229055765,
       "selected": false
     },
     {
@@ -2177,8 +2975,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5794420117970247,
+      "p": 0.5808465860184256,
       "selected": false
     },
     {
@@ -2187,8 +2989,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5793724187036029,
+      "p": 0.5832849512310139,
       "selected": false
     },
     {
@@ -2197,8 +3003,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8176484048939909,
+      "p": 0.8196293358292679,
       "selected": true
     },
     {
@@ -2207,8 +3017,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
+      "p": 0.7113812195384479,
       "selected": true
     },
     {
@@ -2217,8 +3031,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
+      "p": 0.3434741229055765,
       "selected": false
     },
     {
@@ -2227,8 +3045,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5917665727363923,
+      "p": 0.5869366650473034,
       "selected": false
     },
     {
@@ -2237,8 +3059,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.594571239746273,
+      "p": 0.5926097318956542,
       "selected": false
     },
     {
@@ -2247,8 +3073,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8280823857415968,
+      "p": 0.8274231274800852,
       "selected": true
     },
     {
@@ -2257,8 +3087,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
+      "p": 0.7113812195384479,
       "selected": true
     },
     {
@@ -2267,8 +3101,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
+      "p": 0.3434741229055765,
       "selected": false
     },
     {
@@ -2277,9 +3115,13 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6163180794681213,
-      "selected": true
+      "p": 0.5957083287408971,
+      "selected": false
     },
     {
       "home": "Racing Club de Lens",
@@ -2287,9 +3129,13 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6141658224021247,
-      "selected": true
+      "p": 0.5971082130393447,
+      "selected": false
     },
     {
       "home": "Racing Club de Lens",
@@ -2297,8 +3143,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8206588059037818,
+      "p": 0.8116082903581681,
       "selected": true
     },
     {
@@ -2307,8 +3157,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
+      "p": 0.6959175733208074,
       "selected": false
     },
     {
@@ -2317,8 +3171,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
+      "p": 0.3270802886457205,
       "selected": false
     },
     {
@@ -2327,8 +3185,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.512054115579424,
+      "p": 0.5316651641387671,
       "selected": false
     },
     {
@@ -2337,8 +3199,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5245427023147946,
+      "p": 0.5343012163409928,
       "selected": false
     },
     {
@@ -2347,8 +3213,82 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7919171615122065,
+      "p": 0.7940693314952354,
+      "selected": false
+    },
+    {
+      "home": "Lille OSC",
+      "away": "Olympique Lyonnais",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7113812195384479,
+      "selected": true
+    },
+    {
+      "home": "Lille OSC",
+      "away": "Olympique Lyonnais",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3434741229055765,
+      "selected": false
+    },
+    {
+      "home": "Lille OSC",
+      "away": "Olympique Lyonnais",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.467171736317941,
+      "selected": false
+    },
+    {
+      "home": "Lille OSC",
+      "away": "Olympique Lyonnais",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.49721045299842426,
+      "selected": false
+    },
+    {
+      "home": "Lille OSC",
+      "away": "Olympique Lyonnais",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T19:45:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7629806824357588,
       "selected": false
     },
     {
@@ -2357,8 +3297,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
+      "p": 0.6943057010883464,
       "selected": false
     },
     {
@@ -2367,8 +3311,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
+      "p": 0.338042937894023,
       "selected": false
     },
     {
@@ -2377,8 +3325,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5192151742927102,
+      "p": 0.49846523668269754,
       "selected": false
     },
     {
@@ -2387,8 +3339,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5298676228795421,
+      "p": 0.5292812348211059,
       "selected": false
     },
     {
@@ -2397,78 +3353,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8081260885916668,
-      "selected": true
-    },
-    {
-      "home": "Telstar 1963",
-      "away": "PEC Zwolle",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
-      "selected": true
-    },
-    {
-      "home": "Telstar 1963",
-      "away": "PEC Zwolle",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
-      "selected": false
-    },
-    {
-      "home": "Telstar 1963",
-      "away": "PEC Zwolle",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6615295498956892,
-      "selected": true
-    },
-    {
-      "home": "Telstar 1963",
-      "away": "PEC Zwolle",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6657768157002155,
-      "selected": true
-    },
-    {
-      "home": "Telstar 1963",
-      "away": "PEC Zwolle",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8496306704846599,
-      "selected": true
-    },
-    {
-      "home": "FC Groningen",
-      "away": "SC Heerenveen",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
-      "selected": true
-    },
-    {
-      "home": "FC Groningen",
-      "away": "SC Heerenveen",
-      "date": "2026-11-21",
-      "kickoff": "2026-11-21T20:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
+      "p": 0.7904165506419172,
       "selected": false
     },
     {
@@ -2477,8 +3367,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6615172579183088,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7459109706277771,
       "selected": true
     },
     {
@@ -2487,8 +3381,26 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6709697491024851,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4617851196143536,
+      "selected": false
+    },
+    {
+      "home": "FC Groningen",
+      "away": "SC Heerenveen",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.6614516211576418,
       "selected": true
     },
     {
@@ -2497,8 +3409,96 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6709747464485636,
+      "selected": true
+    },
+    {
+      "home": "FC Groningen",
+      "away": "SC Heerenveen",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8393141313045149,
+      "p": 0.8392283431455876,
+      "selected": true
+    },
+    {
+      "home": "Telstar 1963",
+      "away": "PEC Zwolle",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7459109706277771,
+      "selected": true
+    },
+    {
+      "home": "Telstar 1963",
+      "away": "PEC Zwolle",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4617851196143536,
+      "selected": false
+    },
+    {
+      "home": "Telstar 1963",
+      "away": "PEC Zwolle",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.6611289451798332,
+      "selected": true
+    },
+    {
+      "home": "Telstar 1963",
+      "away": "PEC Zwolle",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6643405500959576,
+      "selected": true
+    },
+    {
+      "home": "Telstar 1963",
+      "away": "PEC Zwolle",
+      "date": "2026-11-21",
+      "kickoff": "2026-11-21T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8511024574804184,
       "selected": true
     },
     {
@@ -2507,8 +3507,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -2517,8 +3521,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -2527,8 +3535,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5325542445182931,
+      "p": 0.5323797874320151,
       "selected": false
     },
     {
@@ -2537,8 +3549,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.564866051973343,
+      "p": 0.5613812635524857,
       "selected": false
     },
     {
@@ -2547,8 +3563,12 @@
       "date": "2026-11-21",
       "kickoff": "2026-11-21T20:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7906644801635123,
+      "p": 0.7860598254121439,
       "selected": false
     },
     {
@@ -2557,8 +3577,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T00:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -2567,8 +3591,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T00:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -2577,8 +3605,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T00:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5788536218597813,
+      "p": 0.5721501893083666,
       "selected": false
     },
     {
@@ -2587,8 +3619,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T00:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5889779354010164,
+      "p": 0.5859947786332047,
       "selected": false
     },
     {
@@ -2597,8 +3633,110 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T00:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7840617660230049,
+      "p": 0.7835779281367518,
+      "selected": false
+    },
+    {
+      "home": "FC Twente '65",
+      "away": "Willem II Tilburg",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T11:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7459109706277771,
+      "selected": true
+    },
+    {
+      "home": "FC Twente '65",
+      "away": "Willem II Tilburg",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T11:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4617851196143536,
+      "selected": false
+    },
+    {
+      "home": "FC Twente '65",
+      "away": "Willem II Tilburg",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T11:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.6911416435589133,
+      "selected": true
+    },
+    {
+      "home": "FC Twente '65",
+      "away": "Willem II Tilburg",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T11:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "Обе забьют",
+      "p": 0.6339440066772459,
+      "selected": true
+    },
+    {
+      "home": "FC Twente '65",
+      "away": "Willem II Tilburg",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T11:15:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8776759461592362,
+      "selected": true
+    },
+    {
+      "home": "Burnley FC",
+      "away": "Blackburn Rovers FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T12:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7191615903346857,
+      "selected": true
+    },
+    {
+      "home": "Burnley FC",
+      "away": "Blackburn Rovers FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T12:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3919905609435562,
       "selected": false
     },
     {
@@ -2607,18 +3745,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T12:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.713017749727656,
-      "selected": true
-    },
-    {
-      "home": "Burnley FC",
-      "away": "Blackburn Rovers FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T12:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3763854023587363,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5596483171384542,
       "selected": false
     },
     {
@@ -2627,8 +3759,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T12:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5548435552174715,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5909011750350657,
       "selected": false
     },
     {
@@ -2637,18 +3773,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T12:00:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5790700560338968,
-      "selected": false
-    },
-    {
-      "home": "Burnley FC",
-      "away": "Blackburn Rovers FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T12:00:00+00:00",
-      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7838782575463601,
+      "p": 0.791152281551565,
       "selected": false
     },
     {
@@ -2657,8 +3787,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
+      "p": 0.6943057010883464,
       "selected": false
     },
     {
@@ -2667,8 +3801,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
+      "p": 0.338042937894023,
       "selected": false
     },
     {
@@ -2677,8 +3815,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6076892839981193,
+      "p": 0.6204726888077492,
       "selected": true
     },
     {
@@ -2687,8 +3829,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6041171387077524,
+      "p": 0.6198517647439001,
       "selected": true
     },
     {
@@ -2697,58 +3843,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8239082760674517,
-      "selected": true
-    },
-    {
-      "home": "AFC Ajax",
-      "away": "ADO Den Haag",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T13:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
-      "selected": true
-    },
-    {
-      "home": "AFC Ajax",
-      "away": "ADO Den Haag",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T13:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
-      "selected": false
-    },
-    {
-      "home": "AFC Ajax",
-      "away": "ADO Den Haag",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T13:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6274884830511833,
-      "selected": true
-    },
-    {
-      "home": "AFC Ajax",
-      "away": "ADO Den Haag",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T13:30:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6315113971581353,
-      "selected": true
-    },
-    {
-      "home": "AFC Ajax",
-      "away": "ADO Den Haag",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T13:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.832460722276015,
+      "p": 0.8434838718828721,
       "selected": true
     },
     {
@@ -2757,8 +3857,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
+      "p": 0.7459109706277771,
       "selected": true
     },
     {
@@ -2767,8 +3871,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
+      "p": 0.4617851196143536,
       "selected": false
     },
     {
@@ -2777,8 +3885,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6433716588564611,
+      "p": 0.6389776982019261,
       "selected": true
     },
     {
@@ -2787,8 +3899,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6487792291787602,
+      "p": 0.6464321950424676,
       "selected": true
     },
     {
@@ -2797,118 +3913,82 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8419213145221554,
+      "p": 0.8388504953809933,
       "selected": true
     },
     {
-      "home": "US Sassuolo Calcio",
-      "away": "Genoa CFC",
+      "home": "AFC Ajax",
+      "away": "ADO Den Haag",
       "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
+      "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
-      "selected": false
+      "p": 0.7459109706277771,
+      "selected": true
     },
     {
-      "home": "US Sassuolo Calcio",
-      "away": "Genoa CFC",
+      "home": "AFC Ajax",
+      "away": "ADO Den Haag",
       "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
+      "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
+      "p": 0.4617851196143536,
       "selected": false
     },
     {
-      "home": "US Sassuolo Calcio",
-      "away": "Genoa CFC",
+      "home": "AFC Ajax",
+      "away": "ADO Den Haag",
       "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
+      "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 2.5",
-      "p": 0.49164747179885543,
-      "selected": false
+      "p": 0.6379478319903533,
+      "selected": true
     },
     {
-      "home": "US Sassuolo Calcio",
-      "away": "Genoa CFC",
+      "home": "AFC Ajax",
+      "away": "ADO Den Haag",
       "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
+      "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "Обе забьют",
-      "p": 0.5090085893661069,
-      "selected": false
+      "p": 0.6340273214568521,
+      "selected": true
     },
     {
-      "home": "US Sassuolo Calcio",
-      "away": "Genoa CFC",
+      "home": "AFC Ajax",
+      "away": "ADO Den Haag",
       "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
+      "kickoff": "2026-11-22T13:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7696814637597442,
-      "selected": false
-    },
-    {
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
-      "selected": false
-    },
-    {
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
-      "selected": false
-    },
-    {
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5217789893121978,
-      "selected": false
-    },
-    {
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5328158768798732,
-      "selected": false
-    },
-    {
-      "home": "Bologna FC 1909",
-      "away": "Udinese Calcio",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7944670696979464,
-      "selected": false
-    },
-    {
-      "home": "Paris FC",
-      "away": "Angers SCO",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T14:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
+      "p": 0.837902998790031,
       "selected": true
     },
     {
@@ -2917,8 +3997,26 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7113812195384479,
+      "selected": true
+    },
+    {
+      "home": "Paris FC",
+      "away": "Angers SCO",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
+      "p": 0.3434741229055765,
       "selected": false
     },
     {
@@ -2927,8 +4025,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5502670431654118,
+      "p": 0.5497475226152347,
       "selected": false
     },
     {
@@ -2937,8 +4039,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5280668727094249,
+      "p": 0.5290558487407335,
       "selected": false
     },
     {
@@ -2947,8 +4053,152 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7826420616504242,
+      "p": 0.7832458879637636,
+      "selected": false
+    },
+    {
+      "home": "Bologna FC 1909",
+      "away": "Udinese Calcio",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6959175733208074,
+      "selected": false
+    },
+    {
+      "home": "Bologna FC 1909",
+      "away": "Udinese Calcio",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3270802886457205,
+      "selected": false
+    },
+    {
+      "home": "Bologna FC 1909",
+      "away": "Udinese Calcio",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5282081918908688,
+      "selected": false
+    },
+    {
+      "home": "Bologna FC 1909",
+      "away": "Udinese Calcio",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5338824378033984,
+      "selected": false
+    },
+    {
+      "home": "Bologna FC 1909",
+      "away": "Udinese Calcio",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7950835557364845,
+      "selected": false
+    },
+    {
+      "home": "US Sassuolo Calcio",
+      "away": "Genoa CFC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6959175733208074,
+      "selected": false
+    },
+    {
+      "home": "US Sassuolo Calcio",
+      "away": "Genoa CFC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3270802886457205,
+      "selected": false
+    },
+    {
+      "home": "US Sassuolo Calcio",
+      "away": "Genoa CFC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5217726784935273,
+      "selected": false
+    },
+    {
+      "home": "US Sassuolo Calcio",
+      "away": "Genoa CFC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.528856000406924,
+      "selected": false
+    },
+    {
+      "home": "US Sassuolo Calcio",
+      "away": "Genoa CFC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T14:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7692835938692312,
       "selected": false
     },
     {
@@ -2957,8 +4207,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
+      "p": 0.6946832690977369,
       "selected": false
     },
     {
@@ -2967,8 +4221,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
+      "p": 0.33830880266761026,
       "selected": false
     },
     {
@@ -2977,8 +4235,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.4821811585524617,
+      "p": 0.4890983031824153,
       "selected": false
     },
     {
@@ -2987,8 +4249,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5200179358292599,
+      "p": 0.5271504614582012,
       "selected": false
     },
     {
@@ -2997,8 +4263,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7677544353149881,
+      "p": 0.7765835853146501,
       "selected": false
     },
     {
@@ -3007,8 +4277,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7294308825653619,
+      "p": 0.732012345019731,
       "selected": true
     },
     {
@@ -3017,8 +4291,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.4186497905532283,
+      "p": 0.4125803558768666,
       "selected": false
     },
     {
@@ -3027,8 +4305,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6716221914204108,
+      "p": 0.6714860522341939,
       "selected": true
     },
     {
@@ -3037,8 +4319,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6603098554144855,
+      "p": 0.6602532202467533,
       "selected": true
     },
     {
@@ -3047,58 +4333,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T14:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8635740868411163,
-      "selected": true
-    },
-    {
-      "home": "Real Racing Club de Santander",
-      "away": "Real Sociedad de Fútbol",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T15:15:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
-      "selected": false
-    },
-    {
-      "home": "Real Racing Club de Santander",
-      "away": "Real Sociedad de Fútbol",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T15:15:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
-      "selected": false
-    },
-    {
-      "home": "Real Racing Club de Santander",
-      "away": "Real Sociedad de Fútbol",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T15:15:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.6147758053625036,
-      "selected": true
-    },
-    {
-      "home": "Real Racing Club de Santander",
-      "away": "Real Sociedad de Fútbol",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T15:15:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.6318073125181328,
-      "selected": true
-    },
-    {
-      "home": "Real Racing Club de Santander",
-      "away": "Real Sociedad de Fútbol",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T15:15:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8299663217763931,
+      "p": 0.8634489744235336,
       "selected": true
     },
     {
@@ -3107,8 +4347,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T15:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7418635389587578,
+      "p": 0.7459109706277771,
       "selected": true
     },
     {
@@ -3117,8 +4361,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T15:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.46164722827232485,
+      "p": 0.4617851196143536,
       "selected": false
     },
     {
@@ -3127,8 +4375,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T15:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.6565880194749915,
+      "p": 0.6585386606640762,
       "selected": true
     },
     {
@@ -3137,8 +4389,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T15:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.6661747498097714,
+      "p": 0.6673231664201461,
       "selected": true
     },
     {
@@ -3147,8 +4403,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T15:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.846383072027433,
+      "p": 0.8484491775611089,
       "selected": true
     },
     {
@@ -3157,8 +4417,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7117035617342822,
+      "p": 0.7113812195384479,
       "selected": true
     },
     {
@@ -3167,8 +4431,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.34638874624018784,
+      "p": 0.3434741229055765,
       "selected": false
     },
     {
@@ -3177,8 +4445,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5880882992337818,
+      "p": 0.5876467780934426,
       "selected": false
     },
     {
@@ -3187,8 +4459,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5924048105023435,
+      "p": 0.5935415792320327,
       "selected": false
     },
     {
@@ -3197,78 +4473,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:15:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7972775948761187,
-      "selected": false
-    },
-    {
-      "home": "Liverpool FC",
-      "away": "Manchester United FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6939770356507333,
-      "selected": false
-    },
-    {
-      "home": "Liverpool FC",
-      "away": "Manchester United FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3424940173037982,
-      "selected": false
-    },
-    {
-      "home": "Liverpool FC",
-      "away": "Manchester United FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5464902571133979,
-      "selected": false
-    },
-    {
-      "home": "Liverpool FC",
-      "away": "Manchester United FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.572521570770856,
-      "selected": false
-    },
-    {
-      "home": "Liverpool FC",
-      "away": "Manchester United FC",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8248878354091005,
-      "selected": true
-    },
-    {
-      "home": "SV Werder Bremen",
-      "away": "Hamburger SV",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7294308825653619,
-      "selected": true
-    },
-    {
-      "home": "SV Werder Bremen",
-      "away": "Hamburger SV",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T16:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.4186497905532283,
+      "p": 0.7979550612222819,
       "selected": false
     },
     {
@@ -3277,8 +4487,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.635594236174462,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.732012345019731,
       "selected": true
     },
     {
@@ -3287,8 +4501,26 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:30:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.625321707752571,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.4125803558768666,
+      "selected": false
+    },
+    {
+      "home": "SV Werder Bremen",
+      "away": "Hamburger SV",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T16:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.6382819681008649,
       "selected": true
     },
     {
@@ -3297,58 +4529,124 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T16:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8656276819951235,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6276032072214128,
       "selected": true
     },
     {
-      "home": "CA Osasuna",
-      "away": "Málaga CF",
+      "home": "SV Werder Bremen",
+      "away": "Hamburger SV",
       "date": "2026-11-22",
-      "kickoff": "2026-11-22T17:30:00+00:00",
+      "kickoff": "2026-11-22T16:30:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
-      "selected": false
-    },
-    {
-      "home": "CA Osasuna",
-      "away": "Málaga CF",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T17:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
-      "selected": false
-    },
-    {
-      "home": "CA Osasuna",
-      "away": "Málaga CF",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T17:30:00+00:00",
-      "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.4968732594531424,
-      "selected": false
-    },
-    {
-      "home": "CA Osasuna",
-      "away": "Málaga CF",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T17:30:00+00:00",
-      "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5370791133684465,
-      "selected": false
-    },
-    {
-      "home": "CA Osasuna",
-      "away": "Málaga CF",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T17:30:00+00:00",
-      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7994715675117468,
+      "p": 0.8669883522916727,
+      "selected": true
+    },
+    {
+      "home": "Liverpool FC",
+      "away": "Manchester United FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T16:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6946832690977369,
+      "selected": false
+    },
+    {
+      "home": "Liverpool FC",
+      "away": "Manchester United FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T16:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.33830880266761026,
+      "selected": false
+    },
+    {
+      "home": "Liverpool FC",
+      "away": "Manchester United FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T16:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5381447645140698,
+      "selected": false
+    },
+    {
+      "home": "Liverpool FC",
+      "away": "Manchester United FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T16:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5709327376805935,
+      "selected": false
+    },
+    {
+      "home": "Liverpool FC",
+      "away": "Manchester United FC",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T16:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8204211182059158,
+      "selected": true
+    },
+    {
+      "home": "CA Paranaense",
+      "away": "Clube do Remo",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T19:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7216760439961138,
+      "selected": true
+    },
+    {
+      "home": "CA Paranaense",
+      "away": "Clube do Remo",
+      "date": "2026-11-22",
+      "kickoff": "2026-11-22T19:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -3357,18 +4655,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
-      "selected": true
-    },
-    {
-      "home": "CA Paranaense",
-      "away": "Clube do Remo",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T19:00:00+00:00",
-      "group": "goals",
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5300629468187996,
       "selected": false
     },
     {
@@ -3377,8 +4669,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:00:00+00:00",
       "group": "goals",
-      "market": "ТБ 2.5",
-      "p": 0.5336136503956466,
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5600739846132758,
       "selected": false
     },
     {
@@ -3387,18 +4683,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:00:00+00:00",
       "group": "goals",
-      "market": "Обе забьют",
-      "p": 0.5685213466886179,
-      "selected": false
-    },
-    {
-      "home": "CA Paranaense",
-      "away": "Clube do Remo",
-      "date": "2026-11-22",
-      "kickoff": "2026-11-22T19:00:00+00:00",
-      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7747948046027271,
+      "p": 0.7576906833194688,
       "selected": false
     },
     {
@@ -3407,8 +4697,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.691060866178083,
+      "p": 0.6959175733208074,
       "selected": false
     },
     {
@@ -3417,8 +4711,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3245787408390559,
+      "p": 0.3270802886457205,
       "selected": false
     },
     {
@@ -3427,8 +4725,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5689534486072252,
+      "p": 0.5847531561680199,
       "selected": false
     },
     {
@@ -3437,8 +4739,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5595348191732514,
+      "p": 0.5702004333653364,
       "selected": false
     },
     {
@@ -3447,8 +4753,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T19:45:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8025586654517277,
+      "p": 0.8004485796879726,
       "selected": true
     },
     {
@@ -3457,8 +4767,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.6936460224942885,
+      "p": 0.6943057010883464,
       "selected": false
     },
     {
@@ -3467,8 +4781,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.33704088805576704,
+      "p": 0.338042937894023,
       "selected": false
     },
     {
@@ -3477,8 +4795,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.48600554506264476,
+      "p": 0.46024399545198935,
       "selected": false
     },
     {
@@ -3487,8 +4809,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5287261108183203,
+      "p": 0.514679756924445,
       "selected": false
     },
     {
@@ -3497,8 +4823,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T20:00:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7817827798900949,
+      "p": 0.7777822535828369,
       "selected": false
     },
     {
@@ -3507,8 +4837,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T21:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -3517,8 +4851,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T21:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -3527,8 +4865,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T21:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5377682625846556,
+      "p": 0.5335074754246494,
       "selected": false
     },
     {
@@ -3537,8 +4879,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T21:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.568653570323002,
+      "p": 0.565281205545676,
       "selected": false
     },
     {
@@ -3547,8 +4893,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T21:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.8303312108530556,
+      "p": 0.8264680274274164,
       "selected": true
     },
     {
@@ -3557,8 +4907,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 1Т",
-      "p": 0.7237764143559928,
+      "p": 0.7216760439961138,
       "selected": true
     },
     {
@@ -3567,8 +4921,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 1.5 1Т",
-      "p": 0.3504933474955277,
+      "p": 0.34307721493726046,
       "selected": false
     },
     {
@@ -3577,8 +4935,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 2.5",
-      "p": 0.5079340108772266,
+      "p": 0.5006133961412678,
       "selected": false
     },
     {
@@ -3587,8 +4949,12 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "Обе забьют",
-      "p": 0.5498947687209537,
+      "p": 0.540726058287522,
       "selected": false
     },
     {
@@ -3597,8 +4963,362 @@
       "date": "2026-11-22",
       "kickoff": "2026-11-22T22:30:00+00:00",
       "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
       "market": "ТБ 0.5 2Т",
-      "p": 0.7901357236013684,
+      "p": 0.765350354380743,
+      "selected": false
+    },
+    {
+      "home": "Brentford FC",
+      "away": "Everton FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6946832690977369,
+      "selected": false
+    },
+    {
+      "home": "Brentford FC",
+      "away": "Everton FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.33830880266761026,
+      "selected": false
+    },
+    {
+      "home": "Brentford FC",
+      "away": "Everton FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.4992607989164951,
+      "selected": false
+    },
+    {
+      "home": "Brentford FC",
+      "away": "Everton FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5369120726912193,
+      "selected": false
+    },
+    {
+      "home": "Brentford FC",
+      "away": "Everton FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8043910145828104,
+      "selected": true
+    },
+    {
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6943057010883464,
+      "selected": false
+    },
+    {
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.338042937894023,
+      "selected": false
+    },
+    {
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5432677484214488,
+      "selected": false
+    },
+    {
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5837790866676869,
+      "selected": false
+    },
+    {
+      "home": "Levante UD",
+      "away": "Elche CF",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7915674154316548,
+      "selected": false
+    },
+    {
+      "home": "SC Internacional",
+      "away": "EC Vitória",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7216760439961138,
+      "selected": true
+    },
+    {
+      "home": "SC Internacional",
+      "away": "EC Vitória",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.34307721493726046,
+      "selected": false
+    },
+    {
+      "home": "SC Internacional",
+      "away": "EC Vitória",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.4876533022783964,
+      "selected": false
+    },
+    {
+      "home": "SC Internacional",
+      "away": "EC Vitória",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.522807600805248,
+      "selected": false
+    },
+    {
+      "home": "SC Internacional",
+      "away": "EC Vitória",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T22:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7615170313439175,
+      "selected": false
+    },
+    {
+      "home": "Botafogo FR",
+      "away": "São Paulo FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T23:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7216760439961138,
+      "selected": true
+    },
+    {
+      "home": "Botafogo FR",
+      "away": "São Paulo FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T23:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.34307721493726046,
+      "selected": false
+    },
+    {
+      "home": "Botafogo FR",
+      "away": "São Paulo FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T23:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.4581936179809606,
+      "selected": false
+    },
+    {
+      "home": "Botafogo FR",
+      "away": "São Paulo FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T23:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5091740162602248,
+      "selected": false
+    },
+    {
+      "home": "Botafogo FR",
+      "away": "São Paulo FC",
+      "date": "2026-11-23",
+      "kickoff": "2026-11-23T23:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7126919433417731,
+      "selected": false
+    },
+    {
+      "home": "Santos FC",
+      "away": "Grêmio FBPA",
+      "date": "2026-11-24",
+      "kickoff": "2026-11-24T00:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7216760439961138,
+      "selected": true
+    },
+    {
+      "home": "Santos FC",
+      "away": "Grêmio FBPA",
+      "date": "2026-11-24",
+      "kickoff": "2026-11-24T00:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.34307721493726046,
+      "selected": false
+    },
+    {
+      "home": "Santos FC",
+      "away": "Grêmio FBPA",
+      "date": "2026-11-24",
+      "kickoff": "2026-11-24T00:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.49600542116291324,
+      "selected": false
+    },
+    {
+      "home": "Santos FC",
+      "away": "Grêmio FBPA",
+      "date": "2026-11-24",
+      "kickoff": "2026-11-24T00:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.5383579219453708,
+      "selected": false
+    },
+    {
+      "home": "Santos FC",
+      "away": "Grêmio FBPA",
+      "date": "2026-11-24",
+      "kickoff": "2026-11-24T00:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7835219296049696,
       "selected": false
     },
     {
@@ -14509,6 +16229,31 @@
     }
   ],
   "diagnostics": {
+    "ТБ 0.5 1Т": {
+      "n": 1855,
+      "model": 0.20530309227507185,
+      "baseline": 0.20509668849427956
+    },
+    "ТБ 1.5 1Т": {
+      "n": 1855,
+      "model": 0.230381864066857,
+      "baseline": 0.230381864066857
+    },
+    "ТБ 2.5": {
+      "n": 1855,
+      "model": 0.24472229442091462,
+      "baseline": 0.24617539998362478
+    },
+    "Обе забьют": {
+      "n": 1855,
+      "model": 0.24363293875273243,
+      "baseline": 0.24435977922970004
+    },
+    "ТБ 0.5 2Т": {
+      "n": 1855,
+      "model": 0.15203401354385807,
+      "baseline": 0.15204906293493178
+    },
     "Угловые ТБ 8.5": {
       "n": 425,
       "model": 0.23822542912682512,
