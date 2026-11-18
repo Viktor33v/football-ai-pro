@@ -1,4 +1,4 @@
-import os,json,unicodedata
+import os,json,unicodedata,html,time
 from urllib.request import urlopen,Request
 from datetime import datetime,timezone,timedelta
 from snapshot import load
@@ -404,7 +404,7 @@ def run():
             m=u.get("message",{})
             if m.get("chat",{}).get("id")==chat and m.get("chat",{}).get("type")=="private" and isinstance(m.get("text"),str):
                 accepted+=1
-                text=answer(m["text"])
+                text=html.unescape(answer(m["text"]))
                 for i in range(0,len(text),3500):
                     telegram("sendMessage",chat_id=chat,text=text[i:i+3500],reply_markup=keyboard())
                     sent+=1
@@ -414,4 +414,16 @@ def run():
     if os.environ.get("TELEGRAM_DIAGNOSTIC")=="1":
         telegram("sendMessage",chat_id=chat,text="Football AI PRO: проверка связи Telegram успешна.",reply_markup=keyboard())
         print("Diagnostic message delivered to Telegram API")
-if __name__=="__main__": run()
+def serve():
+    while True:
+        try:
+            run()
+        except Exception as e:
+            print("Polling error:",type(e).__name__,flush=True)
+            time.sleep(15)
+        else:
+            time.sleep(2)
+if __name__=="__main__":
+    if os.environ.get("TELEGRAM_CONTINUOUS")=="1": serve()
+    else: run()
+
