@@ -1,4 +1,4 @@
-name: Football AI PRO V18 Commands
+name: Football AI PRO V24 Commands
 on:
   workflow_dispatch:
     inputs:
@@ -23,6 +23,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m py_compile commands.py snapshot.py
+      - run: python paper24.py
       - run: python commands.py
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
