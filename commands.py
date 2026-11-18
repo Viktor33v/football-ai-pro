@@ -336,6 +336,15 @@ def bank_report():
     s=calculate(bank["entries"])
     roi="—" if s["roi"] is None else f"{s['roi']:.2f}%"
     return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Только виртуальные средства."])
+def bank_preview():
+    from paper24 import calculate
+    s=calculate([])
+    return "\n".join(["💰 V24 • Виртуальный банк • ДЕМО",
+        f"Стартовый капитал: ${s['balance']:.2f}",
+        "Размер одной демопозиции: $10",
+        "Демоучёт ещё не активирован.",
+        "Сохранение операций, расчёт исходов и сброс ожидают интеграции.",
+        "Реальные деньги не используются."])
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
@@ -343,6 +352,7 @@ def answer(msg):
     helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк."
     if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
     if cmd=="/bank": return bank_report()
+    if cmd=="/bank": return bank_preview()
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
