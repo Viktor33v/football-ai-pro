@@ -21,10 +21,12 @@ def keyboard():
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
+    import re
     q=canonical(q)
-    parts=q.replace(" — "," - ").replace(" – "," - ").split(" - ")
+    parts=[x.strip() for x in re.split(r"\s*[-‐‑‒–—−]\s*",q) if x.strip()]
+    aliases={canonical(k):canonical(v) for k,v in ALIASES.items()}
     names=canonical(r["home"]+" — "+r["away"])
-    return all(canonical(ALIASES.get(x.strip(),x.strip())) in names for x in parts)
+    return bool(parts) and all(aliases.get(x,x) in names for x in parts)
 def reconcile(rows):
     # Exact ordered team names only. A unique nearby goal fixture supplies kickoff.
     index={}
