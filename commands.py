@@ -332,11 +332,16 @@ def answer(msg):
     elif cmd=="/top":
         rs=[r for r in rs if r["selected"]]
     else: return helptext
-    lines=["⚽ V13 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
+    lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M") if r.get("kickoff") else r["date"]+" (время неизвестно)"
         lines.append(f'{stamp} | {r["home"]} — {r["away"]}\n{r["market"]}: {r["p"]:.1%}')
-    if not rs: lines.append("Нет подходящих будущих прогнозов в базе.")
+    if not rs:
+        lines.append("Нет подходящих будущих прогнозов в базе.")
+        if cmd in ("/today","/tomorrow"):
+            dates=sorted({day(r) for r in reconcile(snap["rows"]) if r.get("kickoff") and datetime.fromisoformat(r["kickoff"])>now and r["selected"] and day(r)>target})
+            if dates: lines.append("Ближайшая дата в базе: "+dates[0]+" (расписание независимо не проверено).")
+            lines.append("Используй /shortlist для обзора ближайших 7 дней.")
     return "\n".join(lines)
 def run():
     chat=int(os.environ["TELEGRAM_CHAT_ID"])
@@ -365,6 +370,6 @@ def run():
     if offset is not None: telegram("getUpdates",offset=offset,timeout=0,limit=1,allowed_updates=["message"])
     print(f"Updates received={received}; authorized={accepted}; messages sent={sent}")
     if os.environ.get("TELEGRAM_DIAGNOSTIC")=="1":
-        telegram("sendMessage",chat_id=chat,text="V18: проверка связи Telegram успешна.",reply_markup=keyboard())
+        telegram("sendMessage",chat_id=chat,text="Football AI PRO: проверка связи Telegram успешна.",reply_markup=keyboard())
         print("Diagnostic message delivered to Telegram API")
 if __name__=="__main__": run()
