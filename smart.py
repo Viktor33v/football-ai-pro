@@ -39,17 +39,6 @@ def run():
     def strength(t):
         xs=teams[t][-20:]
         return sum(z[0]-z[1] for z in xs)/(len(xs)+8)
-    for day,ms in sorted(days.items()):
-        pending=[]
-        for m,v,y in ms:
-            a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]
-            l=m["competition"]["id"]; f=half_candidate(a,b,l)
-            if f:
-                for i in range(2): half_test[i].append((f[0][i],f[1][i],y[i]))
-            pending.append((a,b,l,v,y,strength(a),strength(b)))
-        for a,b,l,v,y,sa,sb in pending:
-            teams[a].append((*v,1,sb)); teams[b].append((v[1],v[0],v[3],v[2],0,sa))
-            leagues[l].append(y); prior.append(y)
     def av(t,side,j):
         xs=teams[t][-20:]; spec=[z for z in teams[t] if z[4]==side][-10:]
         w=[.92**(len(xs)-1-i) for i in range(len(xs))]
@@ -58,13 +47,7 @@ def run():
     def adj(t,j,sign):
         xs=teams[t][-20:]
         return sum(z[j]*math.exp(max(-.35,min(.35,sign*.12*z[5]))) for z in xs)/len(xs)
-    candidates=[]; shadow=[]
-    for m in upcoming:
-        if m["status"] not in ("TIMED","SCHEDULED"): continue
-        k=datetime.fromisoformat(m["utcDate"].replace("Z","+00:00"))
-        if k<=now: continue
-        a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]; l=m["competition"]["id"]
-        if min(len(teams[a]),len(teams[b]))<12 or len(leagues[l])<20: continue
+    def forecast(a,b,l):
         base=[(sum(z[i] for z in prior)+2)/(len(prior)+4) for i in range(5)]
         lg=[(sum(z[i] for z in leagues[l])+30*base[i])/(len(leagues[l])+30) for i in range(5)]
         hh=(av(a,1,0)+av(b,0,1))/2; aa=(av(b,0,0)+av(a,1,1))/2
@@ -72,13 +55,37 @@ def run():
         hh=(hh+(adj(a,0,1)+adj(b,1,-1))/2)/2
         aa=(aa+(adj(b,0,1)+adj(a,1,-1))/2)/2
         p=[(base[0]+lg[0])/2,lg[1],(prob(hh+aa,3)+lg[2])/2,(prob(hh,1)*prob(aa,1)+lg[3])/2,(prob(max(0,hh+aa-ht),1)+lg[4])/2]
+        return p,lg
+    goal_test=[[] for _ in range(5)]
+    for day,ms in sorted(days.items()):
+        pending=[]
+        for m,v,y in ms:
+            a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]
+            l=m["competition"]["id"]; f=half_candidate(a,b,l)
+            if f:
+                pp,bb=forecast(a,b,l)
+                for i in range(5): goal_test[i].append((pp[i],bb[i],y[i]))
+                for i in range(2): half_test[i].append((f[0][i],f[1][i],y[i]))
+            pending.append((a,b,l,v,y,strength(a),strength(b)))
+        for a,b,l,v,y,sa,sb in pending:
+            teams[a].append((*v,1,sb)); teams[b].append((v[1],v[0],v[3],v[2],0,sa))
+            leagues[l].append(y); prior.append(y)
+    candidates=[]; shadow=[]
+    for m in upcoming:
+        if m["status"] not in ("TIMED","SCHEDULED"): continue
+        k=datetime.fromisoformat(m["utcDate"].replace("Z","+00:00"))
+        if k<=now: continue
+        a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]; l=m["competition"]["id"]
+        if min(len(teams[a]),len(teams[b]))<12 or len(leagues[l])<20: continue
+        p,lg=forecast(a,b,l)
         candidates.append((m,k,p))
         f=half_candidate(a,b,l)
         if f: shadow.append(dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],kickoff=k.isoformat(),p=f[0],old=f[1],sample=[min(20,len(teams[a])),min(20,len(teams[b]))]))
     os.makedirs("state",exist_ok=True)
     with open("goals.json","w",encoding="utf-8") as f:
-        json.dump([dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],date=k.date().isoformat(),kickoff=k.isoformat(),p=p) for m,k,p in candidates],f,ensure_ascii=False)
+        json.dump([dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],date=k.date().isoformat(),kickoff=k.isoformat(),p=p,sample=[min(20,len(teams[m['homeTeam']['id']])),min(20,len(teams[m['awayTeam']['id']]))]) for m,k,p in candidates],f,ensure_ascii=False)
     with open("state/half_shadow.json","w",encoding="utf-8") as f: json.dump(dict(created=now.isoformat(),rows=shadow,metrics=[dict(n=len(rs),model=sum((p-y)**2 for p,b,y in rs)/len(rs),baseline=sum((b-y)**2 for p,b,y in rs)/len(rs)) if rs else dict(n=0) for rs in half_test]),f,ensure_ascii=False)
+    with open("goal_metrics.json","w",encoding="utf-8") as f: json.dump({label:dict(n=len(rs),model=sum((p-y)**2 for p,b,y in rs)/len(rs),baseline=sum((b-y)**2 for p,b,y in rs)/len(rs)) for label,rs in zip(LABELS,goal_test) if rs},f)
     path="state/journal.json"
     if os.path.exists(path):
         with open(path,encoding="utf-8") as f: journal=json.load(f)
