@@ -287,12 +287,34 @@ def shortlist():
     lines.append("Время Бишкек. Один рынок на матч; до 4 голов, 3 угловых, 3 ЖК; до 2 на рынок. Сортировка по p внутри группы, не по доходности. 1/p не является котировкой букмекера.")
     return "\n".join(lines)
 
+
+def performance():
+    now=datetime.now(timezone.utc)
+    rows=list(load("state/extra_journal.json",{}).values())
+    for r in load("state/journal.json",{}).values():
+        rows.append(dict(market=LABELS[r["market"]],date=r["kickoff"][:10],result=r["result"]))
+    markets=list(dict.fromkeys(list(LABELS)+[r["market"] for r in load("state/snapshot.json",{}).get("rows",[])]))
+    lines=["V24 • Статистика демопрогнозов","Все сохранённые прогнозы, не только shortlist."]
+    for days in (7,30,90):
+        start=(now.date()-timedelta(days=days-1)).isoformat()
+        lines.append(f"За {days} дней (UTC):")
+        for market in markets:
+            rs=[r for r in rows if r["market"]==market and start<=r["date"]<=now.date().isoformat()]
+            done=[r for r in rs if r["result"] in (0,1)]
+            wins=sum(r["result"] for r in done)
+            rate=f"{wins/len(done):.1%}" if done else "нет результатов"
+            lines.append(f"{market}: В {wins} / П {len(done)-wins}; {rate}; ждут {len(rs)-len(done)}")
+    lines.append(f"Будущие прогнозы: {sum(r['date']>now.date().isoformat() and r['result'] is None for r in rows)}")
+    lines.append("ROI не рассчитан: отсутствуют зафиксированные букмекерские коэффициенты. Источники результатов независимо не проверены.")
+    return "\n".join(lines)
+
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
     helptext="⚽ V18 PRO ACCURACY • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nОтветы при очередном запуске обработчика."
-    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
     if cmd=="/status": return status_report()
