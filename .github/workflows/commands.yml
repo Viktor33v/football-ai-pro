@@ -6,8 +6,6 @@ on:
         description: Send Telegram test message
         type: boolean
         default: true
-  schedule:
-    - cron: '7,22,37,52 * * * *'
 permissions:
   contents: read
 concurrency:
