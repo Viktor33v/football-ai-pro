@@ -47,8 +47,8 @@ def reconcile(rows):
 def team_form(q):
     data=load("state/form.json",{})
     if not data: return "База формы ещё не создана. Запусти V10."
-    q=canonical(q); q={canonical(k):v for k,v in ALIASES.items()}.get(q,q)
-    q,_,window=q.partition(";"); q=q.strip()
+    q,_,window=canonical(q).partition(";"); q=q.strip()
+    q={canonical(k):v for k,v in ALIASES.items()}.get(q,q)
     if window.strip() not in ("","5","10","20"): return "Пример: /form Бавария; 10"
     limit=int(window.strip() or "5")
     if not q: return "Пример: /form Бавария"
@@ -118,6 +118,7 @@ def analyze(arg):
     snap=load("state/snapshot.json",{})
     if not snap: return "База отсутствует. Запусти V10."
     now=datetime.now(timezone.utc); local=timezone(timedelta(hours=6))
+    if (now-datetime.fromisoformat(snap["created"])).total_seconds()>108000: return "Снимок старше 30 часов. Обнови базу."
     groups={}
     for r in reconcile(snap["rows"]):
         if not query_match(q,r): continue
