@@ -155,7 +155,7 @@ def analyze(arg):
         if not k and r["date"]<=now.date().isoformat(): continue
         key=(canonical(r["home"]),canonical(r["away"]),k or r["date"])
         groups.setdefault(key,[]).append(r)
-    if not groups: return "Будущий матч не найден в снимке. Проверь названия или обнови V10."
+    if not groups: return "Матч не найден среди доступных будущих встреч. Возможные причины: чемпионат не поддерживается источником, матч вне горизонта прогноза или название не распознано. /status — состояние базы."
     if len(groups)>1:
         return "Уточни матч:\n"+"\n".join(f"{rs[0]['home']} — {rs[0]['away']} | {key[2]}" for key,rs in list(groups.items())[:12])
     key,rs=next(iter(groups.items())); a=rs[0]
