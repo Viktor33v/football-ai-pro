@@ -328,16 +328,58 @@ def performance():
     lines.append("ROI не рассчитан: отсутствуют зафиксированные букмекерские коэффициенты. Источники результатов независимо не проверены.")
     return "\n".join(lines)
 
+def paper_id(r):
+    import hashlib
+    key="|".join(str(r[x]) for x in ("home","away","kickoff","market"))
+    return hashlib.sha256(key.encode()).hexdigest()[:12]
+
+def paper_candidates():
+    snap=load("state/snapshot.json",{})
+    now=datetime.now(timezone.utc)
+    if not snap or (now-datetime.fromisoformat(snap["created"])).total_seconds()>108000:
+        return {}
+    return {paper_id(r):r for r in reconcile(snap["rows"]) if r.get("kickoff")
+            and now<datetime.fromisoformat(r["kickoff"])<=now+timedelta(days=7)
+            and eligible(r,snap)}
+
+def paper_commands(cmd,arg):
+    from paper24 import load_bank,save_bank,calculate
+    from decimal import Decimal
+    path=os.environ.get("FOOTBALL_BANK_PATH")
+    if not path: return "Хранилище не настроено."
+    try:
+        bank=load_bank(path)
+        if cmd=="/paper_list":
+            rows=sorted(paper_candidates().items(),key=lambda x:x[1]["p"],reverse=True)[:15]
+            lines=["Учебные кандидаты; расписание не проверено."]
+            for key,r in rows:
+                lines.append(f"{key} | {r['home']} — {r['away']} | {r['market']} {r['p']:.1%}")
+            return "\n".join(lines+["Запись: /paper_add ID коэффициент. Только виртуальные $10."])
+        if cmd=="/paper_open":
+            return "\n".join(["Открытые учебные записи:"]+[f"{e['id']} | {e['home']} — {e['away']} | {e['market']} | {e['odds']}" for e in bank["entries"] if e["result"] is None]) if any(e["result"] is None for e in bank["entries"]) else "Открытых записей нет."
+        parts=arg.split()
+        if len(parts)!=2: return "Формат: /paper_add ID 1.80"
+        key,odd=parts
+        odds=Decimal(odd.replace(",","."))
+        if not odds.is_finite() or not Decimal("1")<odds<=Decimal("1000"): return "Недопустимый коэффициент."
+        r=paper_candidates().get(key)
+        if not r: return "Кандидат отсутствует или устарел. /paper_list"
+        if any(e["id"]==key or (canonical(e["home"])==canonical(r["home"]) and canonical(e["away"])==canonical(r["away"]) and e["kickoff"]==r["kickoff"]) for e in bank["entries"]): return "Этот матч уже записан."
+        if calculate(bank["entries"])["available"]<10: return "Недостаточно виртуальных средств."
+        if datetime.now(timezone.utc)>=datetime.fromisoformat(r["kickoff"]): return "Матч уже начался."
+        bank["entries"].append(dict(id=key,home=r["home"],away=r["away"],kickoff=r["kickoff"],market=r["market"],group=r["group"],date=r["date"],p=r["p"],odds=str(odds),result=None,created=datetime.now(timezone.utc).isoformat(),odds_source="manual_unverified"))
+        save_bank(path,bank)
+        return f"Учебная запись {key} сохранена: $10, коэффициент {odds}. Расписание и коэффициент не проверены. Авторасчёт ещё отключён."
+    except (OSError,ValueError,KeyError,TypeError,ArithmeticError):
+        return "Ошибка данных или хранилища; проверьте /paper_open."
+
 def bank_report():
     from paper24 import calculate, load_bank, save_bank, new_bank
     path=os.environ.get("FOOTBALL_BANK_PATH")
     if not path:
         return "💰 V24 • Демобанк\nСтартовый капитал: $1000.00\nПостоянное хранилище не настроено. Учёт операций отключён."
     try:
-        try: bank=load_bank(path)
-        except FileNotFoundError:
-            bank=new_bank()
-            save_bank(path,bank)
+        bank=load_bank(path)
         if "storage_marker" not in bank:
             import uuid
             bank["storage_marker"]=uuid.uuid4().hex[:12]
@@ -346,7 +388,7 @@ def bank_report():
     except (OSError,ValueError,KeyError,TypeError):
         return "Ошибка хранилища демобанка. Баланс не сброшен."
     roi="—" if s["roi"] is None else f"{s['roi']:.2f}%"
-    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Метка хранения: {bank['storage_marker']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Добавление и расчёт операций ещё отключены. Только виртуальные средства."])
+    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Метка хранения: {bank['storage_marker']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Учебные записи: /paper_list, /paper_open. Авторасчёт ещё отключён."])
 def bank_admin(cmd,arg):
     from paper24 import load_bank,save_bank,calculate,reset_bank
     path=os.environ.get("FOOTBALL_BANK_PATH")
@@ -379,6 +421,7 @@ def answer(msg):
     helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк.\n/bank_reset — новый цикл\n/bank_history — история циклов"
     if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
     if cmd=="/bank": return bank_report()
+    if cmd in ("/paper_list","/paper_add","/paper_open"): return paper_commands(cmd,arg)
     if cmd in ("/bank_reset","/bank_confirm","/bank_history"): return bank_admin(cmd,arg)
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
