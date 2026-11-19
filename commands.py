@@ -338,11 +338,15 @@ def bank_report():
         except FileNotFoundError:
             bank=new_bank()
             save_bank(path,bank)
+        if "storage_marker" not in bank:
+            import uuid
+            bank["storage_marker"]=uuid.uuid4().hex[:12]
+            save_bank(path,bank)
         s=calculate(bank["entries"])
     except (OSError,ValueError,KeyError,TypeError):
         return "Ошибка хранилища демобанка. Баланс не сброшен."
     roi="—" if s["roi"] is None else f"{s['roi']:.2f}%"
-    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Добавление и расчёт операций ещё отключены. Только виртуальные средства."])
+    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Метка хранения: {bank['storage_marker']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Добавление и расчёт операций ещё отключены. Только виртуальные средства."])
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
