@@ -19,4 +19,18 @@ def probe():
             rows.append({"country":country,"error":type(e).__name__})
         time.sleep(3)
     print(json.dumps(rows,ensure_ascii=False,indent=2))
-if __name__=="__main__": probe()
+def test_events():
+    from datetime import datetime, timezone
+    now=datetime.now(timezone.utc)
+    for league in ("4432","4627","4497","4633","4689"):
+        for endpoint in ("eventspastleague","eventsnextleague","eventsseason"):
+            try:
+                params={"id":league}
+                if endpoint=="eventsseason": params["s"]=str(now.year)
+                data=get(endpoint,**params)
+                events=data.get("events") or []
+                print(json.dumps({"league":league,"endpoint":endpoint,"count":len(events),"scored":sum(e.get("intHomeScore") is not None and e.get("intAwayScore") is not None for e in events),"samples":[{k:e.get(k) for k in ("idEvent","strHomeTeam","strAwayTeam","dateEvent","strTimestamp","strStatus","intHomeScore","intAwayScore")} for e in events[:3]]},ensure_ascii=False))
+            except Exception as e:
+                print(json.dumps({"league":league,"endpoint":endpoint,"error":type(e).__name__}))
+            time.sleep(3)
+if __name__=="__main__": test_events()
