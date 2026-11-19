@@ -204,6 +204,11 @@ def analyze(arg):
         sample=r.get("sample")
         why=reasons(r,snap)
         lines.append(f"{m} | {r['p']:.1%} | "+("нет" if why else "да"))
+        if g=="goals" and m=="ТБ 2.5":
+            under=1-r["p"]
+            lines.append(f"ТМ 2.5 | {under:.1%} | обзор (0–2 гола)")
+            side="ТБ 2.5" if r["p"]>0.5 else "ТМ 2.5" if under>0.5 else "равные вероятности"
+            lines.append(f"Более вероятный исход модели: {side}; не сигнал доходности.")
         lines.append("↳ "+meaning+(f"; выборка {sample}" if sample else ""))
         if why: lines.append("Причина: "+"; ".join(why))
     lines.append(f"Покрытие: {len(clean)}/13. Это полнота данных, не гарантия точности.")
