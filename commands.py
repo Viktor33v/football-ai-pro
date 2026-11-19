@@ -347,13 +347,39 @@ def bank_report():
         return "Ошибка хранилища демобанка. Баланс не сброшен."
     roi="—" if s["roi"] is None else f"{s['roi']:.2f}%"
     return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Метка хранения: {bank['storage_marker']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Добавление и расчёт операций ещё отключены. Только виртуальные средства."])
+def bank_admin(cmd,arg):
+    from paper24 import load_bank,save_bank,calculate,reset_bank
+    path=os.environ.get("FOOTBALL_BANK_PATH")
+    if not path: return "Хранилище не настроено."
+    try:
+        bank=load_bank(path)
+        stats=calculate(bank["entries"])
+        if cmd=="/bank_history":
+            lines=["История демобанка"]
+            for old in bank["history"][-20:]:
+                v=calculate(old["entries"])
+                lines.append(f"Цикл {old['cycle']}: прибыль ${v['profit']:.2f}, операций {v['settled']}")
+            return "\n".join(lines) if len(lines)>1 else "Завершённых циклов пока нет."
+        if stats["pending"]: return "Сброс невозможен: есть открытые операции."
+        token=f"{bank['cycle']}-{bank['storage_marker']}"
+        if cmd=="/bank_reset":
+            return f"Новый цикл с $1000, прежняя история сохраняется. Для подтверждения: /bank_confirm {token}"
+        if arg.strip()!=token: return "Сначала отправьте /bank_reset и скопируйте команду подтверждения."
+        new=reset_bank(bank,True)
+        new["storage_marker"]=bank["storage_marker"]
+        save_bank(path,new)
+        return f"Демобанк: новый цикл {new['cycle']}, баланс $1000. История сохранена."
+    except (OSError,ValueError,KeyError,TypeError,ArithmeticError):
+        return "Ошибка хранилища. Сброс не выполнен."
+
 def answer(msg):
     msg=MENU.get(msg.strip(),msg)
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
-    helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк."
+    helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк.\n/bank_reset — новый цикл\n/bank_history — история циклов"
     if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
     if cmd=="/bank": return bank_report()
+    if cmd in ("/bank_reset","/bank_confirm","/bank_history"): return bank_admin(cmd,arg)
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
