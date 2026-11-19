@@ -54,3 +54,40 @@ if __name__=="__main__":
     selftest()
     reset_test()
 
+
+def save_bank(path, bank):
+    import os, json, tempfile
+    calculate(bank["entries"])
+    folder=os.path.dirname(os.path.abspath(path))
+    os.makedirs(folder,exist_ok=True)
+    fd,tmp=tempfile.mkstemp(prefix=".bank-",dir=folder)
+    try:
+        with os.fdopen(fd,"w",encoding="utf-8") as f:
+            json.dump(bank,f,ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp,path)
+    finally:
+        if os.path.exists(tmp): os.unlink(tmp)
+
+def load_bank(path):
+    import json
+    with open(path,encoding="utf-8") as f:
+        bank=json.load(f)
+    if bank.get("version")!=1 or not isinstance(bank["history"],list) or not isinstance(bank["cycle"],int):
+        raise ValueError("invalid bank")
+    calculate(bank["entries"])
+    return bank
+
+def storage_test():
+    import tempfile, os
+    with tempfile.TemporaryDirectory() as folder:
+        path=os.path.join(folder,"bank.json")
+        b=new_bank()
+        save_bank(path,b)
+        assert load_bank(path)==b
+        b["entries"].append(dict(odds="1.8",result=1))
+        save_bank(path,b)
+        assert calculate(load_bank(path)["entries"])["balance"]==1008
+
+if __name__=="__main__": storage_test()
