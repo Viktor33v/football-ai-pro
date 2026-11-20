@@ -347,6 +347,29 @@ def paper_candidates():
             and now<datetime.fromisoformat(r["kickoff"])<=now+timedelta(days=7)
             and eligible(r,snap)}
 
+def paper_settle(bank):
+    # Only exact, unique records from the published result journal.
+    # Goal entries require stable fixture IDs, not yet available.
+    import json
+    from urllib.request import urlopen
+    pending=[e for e in bank["entries"] if e["result"] is None and e["group"] in ("corners","cards") and datetime.fromisoformat(e["kickoff"])+timedelta(hours=3)<datetime.now(timezone.utc)]
+    if not pending: return 0
+    url="https://raw.githubusercontent.com/Viktor33v/football-ai-pro/main/state/extra_journal.json"
+    with urlopen(url,timeout=10) as f:
+        journal=json.load(f)
+    count=0
+    for e in pending:
+        rows=[r for r in journal.values() if all(r.get(k)==e.get(k) for k in ("group","market","date","home","away"))]
+        if len(rows)!=1: continue
+        row=rows[0]
+        if type(row.get("result")) is not int or row["result"] not in (0,1): continue
+        if not row.get("created") or datetime.fromisoformat(row["created"])>=datetime.fromisoformat(e["kickoff"]): continue
+        e["result"]=row["result"]
+        e["settled_at"]=datetime.now(timezone.utc).isoformat()
+        e["result_source"]="extra_journal_unverified"
+        count+=1
+    return count
+
 def paper_commands(cmd,arg):
     from paper24 import load_bank,save_bank,calculate
     from decimal import Decimal
@@ -354,6 +377,10 @@ def paper_commands(cmd,arg):
     if not path: return "Хранилище не настроено."
     try:
         bank=load_bank(path)
+        if cmd=="/paper_settle":
+            n=paper_settle(bank)
+            if n: save_bank(path,bank)
+            return f"Рассчитано: {n}. Только однозначные записи угловых и ЖК. Источник независимо не проверен. Голы пока не рассчитываются."
         if cmd=="/paper_list":
             rows=sorted(paper_candidates().items(),key=lambda x:x[1]["p"],reverse=True)[:15]
             lines=["Учебные кандидаты; расписание не проверено."]
@@ -374,7 +401,7 @@ def paper_commands(cmd,arg):
         if datetime.now(timezone.utc)>=datetime.fromisoformat(r["kickoff"]): return "Матч уже начался."
         bank["entries"].append(dict(id=key,home=r["home"],away=r["away"],kickoff=r["kickoff"],market=r["market"],group=r["group"],date=r["date"],p=r["p"],odds=str(odds),result=None,created=datetime.now(timezone.utc).isoformat(),odds_source="manual_unverified"))
         save_bank(path,bank)
-        return f"Учебная запись {key} сохранена: $10, коэффициент {odds}. Расписание и коэффициент не проверены. Авторасчёт ещё отключён."
+        return f"Учебная запись {key} сохранена: $10, коэффициент {odds}. Расписание и коэффициент не проверены. Расчёт угловых и ЖК: /paper_settle; голы пока отключены."
     except (OSError,ValueError,KeyError,TypeError,ArithmeticError):
         return "Ошибка данных или хранилища; проверьте /paper_open."
 
@@ -426,7 +453,7 @@ def answer(msg):
     helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк.\n/bank_reset — новый цикл\n/bank_history — история циклов"
     if cmd in ("/start","/help"): return helptext+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
     if cmd=="/bank": return bank_report()
-    if cmd in ("/paper_list","/paper_add","/paper_open"): return paper_commands(cmd,arg)
+    if cmd in ("/paper_list","/paper_add","/paper_open","/paper_settle"): return paper_commands(cmd,arg)
     if cmd in ("/bank_reset","/bank_confirm","/bank_history"): return bank_admin(cmd,arg)
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
