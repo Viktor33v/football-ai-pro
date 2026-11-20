@@ -85,6 +85,8 @@ def run():
     with open("goals.json","w",encoding="utf-8") as f:
         json.dump([dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],date=k.date().isoformat(),kickoff=k.isoformat(),p=p,sample=[min(20,len(teams[m['homeTeam']['id']])),min(20,len(teams[m['awayTeam']['id']]))]) for m,k,p in candidates],f,ensure_ascii=False)
     with open("state/half_shadow.json","w",encoding="utf-8") as f: json.dump(dict(created=now.isoformat(),rows=shadow,metrics=[dict(n=len(rs),model=sum((p-y)**2 for p,b,y in rs)/len(rs),baseline=sum((b-y)**2 for p,b,y in rs)/len(rs)) if rs else dict(n=0) for rs in half_test]),f,ensure_ascii=False)
+    with open("state/goal_calibration.json","w",encoding="utf-8") as f:
+        json.dump({"created":now.isoformat(),"markets":{label:[[round(p,6),y] for p,b,y in rs] for label,rs in zip(LABELS,goal_test)}},f,ensure_ascii=False)
     with open("goal_metrics.json","w",encoding="utf-8") as f: json.dump({label:dict(n=len(rs),model=sum((p-y)**2 for p,b,y in rs)/len(rs),baseline=sum((b-y)**2 for p,b,y in rs)/len(rs)) for label,rs in zip(LABELS,goal_test) if rs},f)
     path="state/journal.json"
     if os.path.exists(path):
