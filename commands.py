@@ -267,55 +267,86 @@ def h2h(q):
 
 def filter_predictions(arg):
     import re,math
-    aliases={
-        "обе забьют":"Обе забьют","оз":"Обе забьют","btts":"Обе забьют",
-        "тб 1.5 1т":"ТБ 1.5 1Т","тб 1,5 1т":"ТБ 1.5 1Т",
-        "тб 0.5 1т":"ТБ 0.5 1Т","тб 0,5 1т":"ТБ 0.5 1Т",
-        "тб 2.5":"ТБ 2.5","тб 2,5":"ТБ 2.5",
-        "тм 2.5":"ТМ 2.5","тм 2,5":"ТМ 2.5",
-        "тб 0.5 2т":"ТБ 0.5 2Т","тб 0,5 2т":"ТБ 0.5 2Т",
-        "угловые тб 8.5":"Угловые ТБ 8.5","угловые тб 9.5":"Угловые ТБ 9.5",
-        "угловые 1т тб 3.5":"Угловые 1Т ТБ 3.5",
-        "жк тб 2.5":"ЖК ТБ 2.5","жк тб 3.5":"ЖК ТБ 3.5","жк тб 4.5":"ЖК ТБ 4.5",
-        "жк хозяев тб 1.5":"ЖК хозяев ТБ 1.5","жк гостей тб 1.5":"ЖК гостей ТБ 1.5"}
-    helptext="Примеры:\n/filter обе забьют 60-80\n/filter тб 2.5 до 70\n/filter тб 1.5 1т от 60\n/filter тм 2.5 60-80\nБез «от/до»: /filter обе забьют 70 = от 70%."
-    arg=arg.strip().lower().replace("–","-").replace("—","-")
+    from corners import MARKETS as CORNER_MARKETS
+    from cards import MARKETS as CARD_MARKETS
+    aliases={"оз":"Обе забьют","btts":"Обе забьют","обе забьют":"Обе забьют",
+             "тм 2.5":"ТМ 2.5","тм 2,5":"ТМ 2.5"}
+    markets=LABELS+[m[0] for m in CORNER_MARKETS+CARD_MARKETS]
+    for name in markets:
+        aliases[name.casefold()]=name
+        aliases[name.casefold().replace(".",",")]=name
+    usage=("Примеры:\n/filter обе забьют 60-80\n/filter тб 2.5 до 70\n"
+           "/filter тб 1.5 1т от 60\n/filter тм 2.5 60-80\n"
+           "По умолчанию: сегодня (Бишкек), все прогнозы, по убыванию вероятности.")
+    arg=" ".join(arg.casefold().replace("–","-").replace("—","-").split())
     m=re.fullmatch(r"(.+?)\s+(?:(от|до)\s+)?(\d{1,3})(?:\s*-\s*(\d{1,3}))?\s*%?",arg)
-    if not m: return helptext
-    market=aliases.get(" ".join(m.group(1).split()))
-    if not market: return "Неизвестный рынок. "+helptext
-    a=int(m.group(3)); b=int(m.group(4)) if m.group(4) is not None else None
-    if a>100 or (b is not None and (b>100 or a>b)) or (b is not None and m.group(2)):
-        return "Диапазон должен быть от 0 до 100, например 60-80."
+    if not m: return usage
+    market=aliases.get(m.group(1))
+    if not market: return "Рынок не распознан.\n"+usage
+    a=int(m.group(3)); b=int(m.group(4)) if m.group(4) else None
+    if a>100 or (b is not None and (b>100 or a>b or m.group(2))):
+        return "Неверный диапазон: укажи от 0 до 100, например 60-80."
     lo,hi=(a,b) if b is not None else ((0,a) if m.group(2)=="до" else (a,100))
     snap=load("state/snapshot.json",{})
     if not snap: return "База прогнозов отсутствует."
     now=datetime.now(timezone.utc); local=timezone(timedelta(hours=6))
-    if (now-datetime.fromisoformat(snap["created"])).total_seconds()>108000:
-        return "База старше 30 часов. Обнови прогнозы."
+    try:
+        created=datetime.fromisoformat(snap["created"])
+        if created.tzinfo is None or (now-created).total_seconds()>108000:
+            return "База старше 30 часов. Обнови прогнозы."
+    except (ValueError,TypeError,KeyError):
+        return "Дата базы некорректна."
+    today=now.astimezone(local).date()
     found={}
-    for r in reconcile(snap["rows"]):
+    for r in reconcile(snap.get("rows",[])):
         if not r.get("kickoff"): continue
-        k=datetime.fromisoformat(r["kickoff"])
-        if not now<k<=now+timedelta(days=7): continue
+        try: k=datetime.fromisoformat(r["kickoff"])
+        except (ValueError,TypeError): continue
+        if k.tzinfo is None or k<=now or k.astimezone(local).date()!=today: continue
         if market=="ТМ 2.5":
-            if r["group"]!="goals" or r["market"]!="ТБ 2.5": continue
-            p=1-r["p"]
+            if r.get("group")!="goals" or r.get("market")!="ТБ 2.5": continue
+            p=1-r.get("p",float("nan"))
         else:
-            if r["market"]!=market: continue
-            p=r["p"]
-        if not isinstance(p,(int,float)) or not math.isfinite(p) or not lo<=p*100<=hi: continue
-        key=(canonical(r["home"]),canonical(r["away"]),r["kickoff"],market)
+            if r.get("market")!=market: continue
+            p=r.get("p")
+        if not isinstance(p,(int,float)) or not math.isfinite(p) or not 0<=p<=1: continue
+        if not lo<=p*100<=hi: continue
+        key=(canonical(r["home"]),canonical(r["away"]),k.isoformat(),market)
         if key not in found or p>found[key][0]: found[key]=(p,r)
-    lines=[f"🔎 {market} | {lo}–{hi}% | ближайшие 7 дней","Без фильтра качества. Расписание и вероятности независимо не подтверждены."]
-    if market=="ТМ 2.5": lines.append("ТМ рассчитан как 1 − P(ТБ 2.5); отдельного теста ТМ нет.")
     ranked=sorted(found.values(),key=lambda t:t[0],reverse=True)
+    lines=[f"🔎 {market} | {lo}–{hi}% | сегодня, Бишкек",
+           "Все прогнозы; сортировка по вероятности.",
+           "Расписание независимо не подтверждено; оценка не гарантия."]
+    if market=="ТМ 2.5":
+        lines.append("ТМ 2.5 = 1 − P(ТБ 2.5). Отдельного теста ТМ нет.")
     for p,r in ranked[:20]:
+        sample=r.get("sample") or []
+        d=snap.get("diagnostics",{}).get(r["market"],{})
+        n=d.get("n",0)
+        reasons_list=reasons(r,snap)
+        if market=="ТМ 2.5":
+            status="⚪ Недостаточно данных"
+            why="нет отдельной исторической проверки ТМ 2.5"
+        elif not sample or min(sample)<10 or n<100 or not all(isinstance(d.get(k),(int,float)) and math.isfinite(d[k]) for k in ("model","baseline")):
+            status="⚪ Недостаточно данных"
+            why="выборка команд <10 или тестов <100, либо нет метрик"
+        elif reasons_list:
+            status="🟡 Не прошёл фильтр"
+            why="; ".join(reasons_list)
+        else:
+            status="🟢 Прошёл фильтр"
+            why="выполнены текущие критерии отбора"
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
-        lines.append(f"{stamp} | {r['home']} — {r['away']} | {p:.1%} | "+("фильтр пройден" if eligible(r,snap) and market!="ТМ 2.5" else "без подтверждённого фильтра"))
-    if not ranked: lines.append("В доступной базе совпадений нет. Попробуй другой диапазон.")
-    if len(ranked)>20: lines.append(f"Показаны первые 20 из {len(ranked)}.")
+        lines.append(f"\n{stamp} | {r['home']} — {r['away']}\n"
+                     f"{market}: {p:.1%} | {status}\nПричина: {why}\n"
+                     f"Исторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
+                     + (f" | Brier модель/база: {d['model']:.3f}/{d['baseline']:.3f}"
+                        if market!="ТМ 2.5" and isinstance(d.get("model"),(int,float)) and isinstance(d.get("baseline"),(int,float)) else ""))
+    if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон.")
+    if len(ranked)>20: lines.append(f"Показано 20 из {len(ranked)}.")
+    lines.append("Brier — историческая ошибка вероятностей, не процент выигрышей и не ROI.")
     return "\n".join(lines)
+
 
 def all_predictions(arg):
     snap=load("state/snapshot.json",{})
