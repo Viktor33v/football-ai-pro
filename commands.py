@@ -15,9 +15,9 @@ def telegram(method,**params):
 def norm(s):
     return "".join(c for c in unicodedata.normalize("NFKD",s.casefold()) if not unicodedata.combining(c))
 ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
-MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze","Лучшие сегодня":"/best","Состояние":"/status"}
+MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze","Лучшие сегодня":"/best","Все прогнозы":"/all","Лучшие прогнозы":"/best","Состояние":"/status"}
 def keyboard():
-    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Тактика"),("Анализ матча","Лучшие сегодня"),("Состояние","Помощь")]],"resize_keyboard":True}
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Угловые","Карточки"),("Статистика","Форма","Тактика"),("Анализ матча","Все прогнозы","Лучшие прогнозы"),("Состояние","Помощь")]],"resize_keyboard":True}
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
@@ -265,6 +265,43 @@ def h2h(q):
     lines.append("Найдено: "+str(len(found))+". История не меняет прогнозы.")
     return "\n".join(lines)
 
+def all_predictions(arg):
+    snap=load("state/snapshot.json",{})
+    if not snap: return "Нет базы прогнозов. Запусти обновление."
+    now=datetime.now(timezone.utc); local=timezone(timedelta(hours=6))
+    if (now-datetime.fromisoformat(snap["created"])).total_seconds()>108000:
+        return "Снимок старше 30 часов. Обнови базу."
+    rows=[]
+    for r in reconcile(snap["rows"]):
+        if r.get("kickoff"):
+            k=datetime.fromisoformat(r["kickoff"])
+            if not now<k<=now+timedelta(days=7): continue
+        else:
+            if not now.date().isoformat()<r["date"]<=(now+timedelta(days=7)).date().isoformat(): continue
+        if arg.strip() and not query_match(arg,r): continue
+        rows.append(r)
+    groups={}
+    for r in rows:
+        key=(canonical(r["home"]),canonical(r["away"]),r.get("kickoff") or r["date"])
+        groups.setdefault(key,[]).append(r)
+    if not groups:
+        return "Нет будущих матчей в базе для этого запроса. Пример: /all Бавария - Кёльн"
+    lines=["⚽ Все прогнозы • обзор, БЕЗ фильтра качества","Снимок: "+snap["created"],"⚠️ Низкие вероятности и непрошедшие тесты НЕ рекомендации.","Расписание независимо не подтверждено."]
+    for key,rs in sorted(groups.items(),key=lambda item:item[0][2])[:(1 if arg.strip() else 3)]:
+        a=rs[0]; stamp=datetime.fromisoformat(a["kickoff"]).astimezone(local).strftime("%d.%m %H:%M Бишкек") if a.get("kickoff") else a["date"]+" (время не проверено)"
+        lines.append("\n"+a["home"]+" — "+a["away"]+" | "+stamp)
+        markets={}
+        for r in rs:
+            if r["market"] not in markets or r["p"]>markets[r["market"]]["p"]: markets[r["market"]]=r
+        for r in sorted(markets.values(),key=lambda r:(("ТБ 0.5 1Т","ТБ 1.5 1Т","ТБ 2.5","Обе забьют","ТБ 0.5 2Т").index(r["market"]) if r["market"] in ("ТБ 0.5 1Т","ТБ 1.5 1Т","ТБ 2.5","Обе забьют","ТБ 0.5 2Т") else 20,r["market"])):
+            status="фильтр пройден" if eligible(r,snap) else "не прошёл фильтр"
+            lines.append(f"{r['market']}: {r['p']:.1%} ({status})")
+            if r["group"]=="goals" and r["market"]=="ТБ 2.5":
+                lines.append(f"ТМ 2.5: {1-r['p']:.1%} (дополнение, не тестировалось отдельно)")
+        lines.append(f"Рынков в базе: {len(markets)}/13")
+    if len(groups)>(1 if arg.strip() else 3): lines.append("Другие матчи: /all НАЗВАНИЕ КОМАНДЫ")
+    return "\n".join(lines)
+
 def best_today():
     snap=load("state/snapshot.json",{})
     if not snap: return "Нет снимка. Обнови V10."
@@ -420,7 +457,7 @@ def bank_report():
     except (OSError,ValueError,KeyError,TypeError):
         return "Ошибка хранилища демобанка. Баланс не сброшен."
     roi="—" if s["roi"] is None else f"{s['roi']:.2f}%"
-    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Метка хранения: {bank['storage_marker']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Учебные записи: /paper_list, /paper_open. Авторасчёт ещё отключён."])
+    return "\n".join(["💰 V24 • Демобанк",f"Цикл: {bank['cycle']}",f"Метка хранения: {bank['storage_marker']}",f"Баланс: ${s['balance']:.2f}",f"Свободно: ${s['available']:.2f}",f"Прибыль: ${s['profit']:.2f}",f"ROI: {roi}",f"Открыто: {s['pending']} | Рассчитано: {s['settled']}","Файл банка доступен. Сохранность при Redeploy ещё не проверена.","Учебные записи: /paper_list, /paper_open, /paper_settle. Автоматический расчёт ещё отключён."])
 def bank_admin(cmd,arg):
     from paper24 import load_bank,save_bank,calculate,reset_bank
     path=os.environ.get("FOOTBALL_BANK_PATH")
@@ -458,6 +495,7 @@ def answer(msg):
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
+    if cmd=="/all": return all_predictions(arg)
     if cmd=="/status": return status_report()
     if cmd=="/h2h": return h2h(arg)
     if cmd=="/odds": return odds(arg)
