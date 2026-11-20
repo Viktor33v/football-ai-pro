@@ -280,7 +280,7 @@ def filter_predictions(arg):
         "жк хозяев тб 1.5":"ЖК хозяев ТБ 1.5","жк гостей тб 1.5":"ЖК гостей ТБ 1.5"}
     helptext="Примеры:\n/filter обе забьют 60-80\n/filter тб 2.5 до 70\n/filter тб 1.5 1т от 60\n/filter тм 2.5 60-80\nБез «от/до»: /filter обе забьют 70 = от 70%."
     arg=arg.strip().lower().replace("–","-").replace("—","-")
-    m=re.fullmatch(r"(.+?)\\s+(?:(от|до)\\s+)?(\\d{1,3})(?:\\s*-\\s*(\\d{1,3}))?\\s*%?",arg)
+    m=re.fullmatch(r"(.+?)\s+(?:(от|до)\s+)?(\d{1,3})(?:\s*-\s*(\d{1,3}))?\s*%?",arg)
     if not m: return helptext
     market=aliases.get(" ".join(m.group(1).split()))
     if not market: return "Неизвестный рынок. "+helptext
