@@ -53,5 +53,5 @@ def run():
                 value=[sum(v),v[0],v[1]][side]
             r["result"]=int(value>=k)
     save("state/extra_journal.json",journal)
-    save("state/snapshot.json",dict(created=now.isoformat(),rows=rows,diagnostics=diagnostics))
+    save("state/snapshot.json",dict(created=now.isoformat(),rows=rows,diagnostics=diagnostics,calibration=load("state/goal_calibration.json",{})))
 if __name__=="__main__": run()
