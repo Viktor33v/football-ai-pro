@@ -3470,5 +3470,418 @@
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
     "result": null
+  },
+  "[\"corners\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 0]": {
+    "league": "GER_1_bundesliga",
+    "date": "2026-11-27",
+    "home": "SV Werder Bremen",
+    "away": "Borussia Mönchengladbach",
+    "p": 0.6872947411111847,
+    "baseline": 0.6987951807228916,
+    "expected": 9.930246913580246,
+    "sample": [
+      9,
+      9
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"corners\", \"NED_1_eredivisie\", \"2026-11-27\", \"FC Groningen\", \"Willem II\", 0]": {
+    "league": "NED_1_eredivisie",
+    "date": "2026-11-27",
+    "home": "FC Groningen",
+    "away": "Willem II",
+    "p": 0.698046711251018,
+    "baseline": 0.7090909090909091,
+    "expected": 10.204545454545455,
+    "sample": [
+      12,
+      12
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"corners\", \"BEL_1_pro-league\", \"2026-11-27\", \"OH Leuven\", \"KV Kortrijk\", 0]": {
+    "league": "BEL_1_pro-league",
+    "date": "2026-11-27",
+    "home": "OH Leuven",
+    "away": "KV Kortrijk",
+    "p": 0.7022415802667472,
+    "baseline": 0.6435643564356436,
+    "expected": 11.190082644628099,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_1_premier-league\", \"2026-11-27\", \"Nott'm Forest\", \"Chelsea\", 2]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-11-27",
+    "home": "Nott'm Forest",
+    "away": "Chelsea",
+    "p": 0.6885051054739993,
+    "baseline": 0.696078431372549,
+    "expected": 4.65,
+    "sample": [
+      10,
+      10
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ESP_1_la-liga\", \"2026-11-27\", \"Levante UD\", \"R. Racing Club\", 2]": {
+    "league": "ESP_1_la-liga",
+    "date": "2026-11-27",
+    "home": "Levante UD",
+    "away": "R. Racing Club",
+    "p": 0.6961403327750509,
+    "baseline": 0.6776859504132231,
+    "expected": 5.0,
+    "sample": [
+      12,
+      12
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 2]": {
+    "league": "GER_1_bundesliga",
+    "date": "2026-11-27",
+    "home": "SV Werder Bremen",
+    "away": "Borussia Mönchengladbach",
+    "p": 0.6663070748184997,
+    "baseline": 0.6987951807228916,
+    "expected": 4.193827160493827,
+    "sample": [
+      9,
+      9
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"corners\", \"BEL_1_pro-league\", \"2026-11-27\", \"OH Leuven\", \"KV Kortrijk\", 2]": {
+    "league": "BEL_1_pro-league",
+    "date": "2026-11-27",
+    "home": "OH Leuven",
+    "away": "KV Kortrijk",
+    "p": 0.6957373817053318,
+    "baseline": 0.6336633663366337,
+    "expected": 5.314049586776859,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_1_premier-league\", \"2026-11-27\", \"Nott'm Forest\", \"Chelsea\", 0]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-11-27",
+    "home": "Nott'm Forest",
+    "away": "Chelsea",
+    "p": 0.7757041784779908,
+    "baseline": 0.7549019607843137,
+    "expected": 4.251689003436426,
+    "sample": [
+      10,
+      10
+    ],
+    "fouls": 23.5,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ESP_1_la-liga\", \"2026-11-27\", \"Levante UD\", \"R. Racing Club\", 0]": {
+    "league": "ESP_1_la-liga",
+    "date": "2026-11-27",
+    "home": "Levante UD",
+    "away": "R. Racing Club",
+    "p": 0.8056542813659298,
+    "baseline": 0.8347107438016529,
+    "expected": 4.102958593765104,
+    "sample": [
+      12,
+      12
+    ],
+    "fouls": 22.5,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 0]": {
+    "league": "GER_1_bundesliga",
+    "date": "2026-11-27",
+    "home": "SV Werder Bremen",
+    "away": "Borussia Mönchengladbach",
+    "p": 0.7542005428220431,
+    "baseline": 0.6987951807228916,
+    "expected": 4.356332203574395,
+    "sample": [
+      9,
+      9
+    ],
+    "fouls": 25.0,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ITA_1_serie-a\", \"2026-11-27\", \"Venezia\", \"Bologna\", 0]": {
+    "league": "ITA_1_serie-a",
+    "date": "2026-11-27",
+    "home": "Venezia",
+    "away": "Bologna",
+    "p": 0.6616024241946984,
+    "baseline": 0.625,
+    "expected": 3.605381478846259,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 22.81818181818182,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-27\", \"Stade Brestois 29\", \"Paris FC\", 0]": {
+    "league": "FRA_1_ligue-1",
+    "date": "2026-11-27",
+    "home": "Stade Brestois 29",
+    "away": "Paris FC",
+    "p": 0.6957039529791424,
+    "baseline": 0.6630434782608695,
+    "expected": 3.783110312827421,
+    "sample": [
+      10,
+      10
+    ],
+    "fouls": 28.3,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"POR_1_primeira-liga\", \"2026-11-27\", \"Marítimo M.\", \"CD Nacional\", 0]": {
+    "league": "POR_1_primeira-liga",
+    "date": "2026-11-27",
+    "home": "Marítimo M.",
+    "away": "CD Nacional",
+    "p": 0.7573066650754225,
+    "baseline": 0.81,
+    "expected": 3.64196004925509,
+    "sample": [
+      10,
+      11
+    ],
+    "fouls": 26.46363636363636,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"BEL_1_pro-league\", \"2026-11-27\", \"OH Leuven\", \"KV Kortrijk\", 0]": {
+    "league": "BEL_1_pro-league",
+    "date": "2026-11-27",
+    "home": "OH Leuven",
+    "away": "KV Kortrijk",
+    "p": 0.7545659198818937,
+    "baseline": 0.7227722772277227,
+    "expected": 4.174446192954847,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 26.636363636363637,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Alanyaspor\", \"Konyaspor\", 0]": {
+    "league": "TUR_1_super-lig",
+    "date": "2026-11-27",
+    "home": "Alanyaspor",
+    "away": "Konyaspor",
+    "p": 0.7521439964571976,
+    "baseline": 0.7128712871287128,
+    "expected": 4.212552026286966,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 25.363636363636363,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Çaykur Rizespor\", \"Kasimpasa\", 0]": {
+    "league": "TUR_1_super-lig",
+    "date": "2026-11-27",
+    "home": "Çaykur Rizespor",
+    "away": "Kasimpasa",
+    "p": 0.730077851612398,
+    "baseline": 0.7128712871287128,
+    "expected": 3.9026619792954804,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 26.81818181818182,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_1_premier-league\", \"2026-11-27\", \"Nott'm Forest\", \"Chelsea\", 4]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-11-27",
+    "home": "Nott'm Forest",
+    "away": "Chelsea",
+    "p": 0.7152622337539727,
+    "baseline": 0.7156862745098039,
+    "expected": 2.510439862542955,
+    "sample": [
+      10,
+      10
+    ],
+    "fouls": 23.5,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ESP_1_la-liga\", \"2026-11-27\", \"Levante UD\", \"R. Racing Club\", 4]": {
+    "league": "ESP_1_la-liga",
+    "date": "2026-11-27",
+    "home": "Levante UD",
+    "away": "R. Racing Club",
+    "p": 0.7040170144870833,
+    "baseline": 0.6859504132231405,
+    "expected": 2.5463554206854973,
+    "sample": [
+      12,
+      12
+    ],
+    "fouls": 22.5,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 4]": {
+    "league": "GER_1_bundesliga",
+    "date": "2026-11-27",
+    "home": "SV Werder Bremen",
+    "away": "Borussia Mönchengladbach",
+    "p": 0.6713854904970109,
+    "baseline": 0.5903614457831325,
+    "expected": 2.7059073869900776,
+    "sample": [
+      9,
+      9
+    ],
+    "fouls": 25.0,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Alanyaspor\", \"Konyaspor\", 4]": {
+    "league": "TUR_1_super-lig",
+    "date": "2026-11-27",
+    "home": "Alanyaspor",
+    "away": "Konyaspor",
+    "p": 0.678010363763142,
+    "baseline": 0.6435643564356436,
+    "expected": 2.498801022270902,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 25.363636363636363,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
+  },
+  "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Çaykur Rizespor\", \"Kasimpasa\", 4]": {
+    "league": "TUR_1_super-lig",
+    "date": "2026-11-27",
+    "home": "Çaykur Rizespor",
+    "away": "Kasimpasa",
+    "p": 0.6743988924816557,
+    "baseline": 0.6435643564356436,
+    "expected": 2.463993687359408,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 26.81818181818182,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-20T07:08:27.224101+00:00",
+    "result": null
   }
 }
