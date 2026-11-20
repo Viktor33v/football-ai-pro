@@ -319,6 +319,20 @@ def filter_predictions(arg):
            "Расписание независимо не подтверждено; оценка не гарантия."]
     if market=="ТМ 2.5":
         lines.append("ТМ 2.5 = 1 − P(ТБ 2.5). Отдельного теста ТМ нет.")
+    calibration=snap.get("calibration",{}).get("markets",{}).get("ТБ 2.5" if market=="ТМ 2.5" else market)
+    if market=="ТМ 2.5" and calibration:
+        calibration=[[1-p,1-y] for p,y in calibration]
+    if calibration is not None:
+        valid=[(p,y) for p,y in calibration if isinstance(p,(int,float)) and isinstance(y,(int,float)) and 0<=p<=1 and y in (0,1) and lo<=p*100<=hi]
+        if len(valid)>=30:
+            actual=sum(y for p,y in valid)/len(valid)
+            predicted=sum(p for p,y in valid)/len(valid)
+            lines.append(f"📊 Исторически в диапазоне {lo}–{hi}%: {sum(y for p,y in valid)}/{len(valid)} ({actual:.1%}) событий; средний прогноз {predicted:.1%}; разница {actual-predicted:+.1%} п.п.")
+            lines.append("Это общая историческая частота диапазона, не точность отдельного матча.")
+        else:
+            lines.append(f"📊 Для диапазона {lo}–{hi}% данных недостаточно: {len(valid)} исторических прогнозов (минимум 30).")
+    else:
+        lines.append("📊 Историческая проверка выбранного диапазона пока недоступна: дождись обновления базы." )
     for p,r in ranked[:20]:
         sample=r.get("sample") or []
         d=snap.get("diagnostics",{}).get(r["market"],{})
