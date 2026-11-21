@@ -3,7 +3,8 @@ from urllib.request import urlopen,Request
 from datetime import datetime,timezone,timedelta
 from snapshot import load
 from backtest import LABELS
-from reliability26 import calibration_summary, reliability, baseline_evidence\nfrom forward28 import report as forward_report
+from reliability26 import calibration_summary, reliability, baseline_evidence
+from forward28 import report as forward_report
 
 def telegram(method,**params):
     try:
