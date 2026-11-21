@@ -12,6 +12,7 @@ def save(path,obj):
 def run():
     now=datetime.now(timezone.utc); today=now.date().isoformat()
     os.makedirs("state",exist_ok=True)
+    previous=load("state/snapshot.json",{})
     rows=[]; diagnostics=load('goal_metrics.json',{}); journal=load("state/extra_journal.json",{})
     for r in load("goals.json",[]):
         for i,p in enumerate(r["p"]):
@@ -53,5 +54,10 @@ def run():
                 value=[sum(v),v[0],v[1]][side]
             r["result"]=int(value>=k)
     save("state/extra_journal.json",journal)
-    save("state/snapshot.json",dict(created=now.isoformat(),rows=rows,diagnostics=diagnostics,calibration=load("state/goal_calibration.json",{})))
+    changes={}
+    for market,d in diagnostics.items():
+        old=previous.get("diagnostics",{}).get(market,{})
+        if isinstance(d,dict) and isinstance(old,dict) and type(d.get("n")) is int and type(old.get("n")) is int and d["n"]!=old["n"]:
+            changes[market]={"previous":old["n"],"current":d["n"]}
+    save("state/snapshot.json",dict(created=now.isoformat(),rows=rows,diagnostics=diagnostics,calibration=load("state/goal_calibration.json",{}),history_comparison={"previous_created":previous.get("created"),"markets":changes}))
 if __name__=="__main__": run()
