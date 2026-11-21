@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime,timezone,timedelta
-from reliability26 import wilson_interval,calibration_summary,reliability
+from reliability26 import wilson_interval,calibration_summary,reliability,baseline_evidence
 
 class Reliability26Tests(unittest.TestCase):
     def test_wilson(self):
@@ -28,6 +28,21 @@ class Reliability26Tests(unittest.TestCase):
         self.assertIn("🔴",bad["status"])
         self.assertIsNone(reliability(s,{"n":50},[20,20])["score"])
         self.assertIsNone(reliability(s,{"n":1802,"model":.2,"baseline":.3},[2,20])["score"])
+    def test_v261_rounded_brier_must_not_be_green(self):
+        s=calibration_summary([[.623,1]]*74+[[.623,0]]*51,60,80)
+        d={"n":814,"model":.2446,"baseline":.2449}
+        self.assertIn("🟡",baseline_evidence(d)["status"])
+        q=reliability(s,d,[20,20])
+        self.assertNotIn("🟢",q["status"])
+        self.assertIn("🟡",q["status"])
+    def test_v261_material_advantage(self):
+        s=calibration_summary([[.65,1]]*195+[[.65,0]]*105,60,80)
+        self.assertIn("🟢",baseline_evidence({"n":814,"model":.241,"baseline":.245})["status"])
+        self.assertIn("🟢",reliability(s,{"n":814,"model":.241,"baseline":.245},[20,20])["status"])
+    def test_v261_worse_and_missing(self):
+        self.assertIn("🔴",baseline_evidence({"n":814,"model":.251,"baseline":.245})["status"])
+        self.assertIn("⚪",baseline_evidence({"n":50,"model":.2,"baseline":.3})["status"])
+
     def test_stale(self):
         s=calibration_summary([[.65,1]]*195+[[.65,0]]*105,60,80)
         now=datetime.now(timezone.utc)
