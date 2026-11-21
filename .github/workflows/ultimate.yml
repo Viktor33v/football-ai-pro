@@ -24,7 +24,7 @@ jobs:
           key: football-v6-journal-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
             football-v6-journal-
-      - run: python -m py_compile ultimate.py smart.py corners.py cards.py bot.py backtest.py
+      - run: python -m py_compile ultimate.py smart.py corners.py cards.py bot.py backtest.py forward28.py snapshot.py
       - run: python ultimate.py
         env:
           COMPACT_REPORT: '1'
@@ -39,7 +39,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add state/journal.json
-          for f in state/half_shadow.json state/snapshot.json state/extra_journal.json state/form.json; do
+          for f in state/half_shadow.json state/snapshot.json state/extra_journal.json state/form.json state/forward28.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --cached --quiet; then
