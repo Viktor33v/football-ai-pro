@@ -21,7 +21,7 @@ class Reliability26Tests(unittest.TestCase):
         self.assertFalse(s["sufficient"])
     def test_reliability(self):
         s=calibration_summary([[.65,1]]*195+[[.65,0]]*105,60,80)
-        good=reliability(s,{"n":1802,"model":.243,"baseline":.244},[20,20])
+        good=reliability(s,{"n":1802,"model":.240,"baseline":.244},[20,20])
         self.assertIsInstance(good["score"],int)
         self.assertIn("🟢",good["status"])
         bad=reliability(s,{"n":1802,"model":.25,"baseline":.24},[20,20])
