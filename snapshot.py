@@ -2,7 +2,8 @@ import json,os
 from datetime import datetime,timezone,timedelta
 import corners,cards
 from backtest import LABELS
-from smart import LIMITS\nfrom forward28 import archive,settle
+from smart import LIMITS
+from forward28 import archive,settle
 
 def load(path,default):
     if not os.path.exists(path): return default
@@ -53,7 +54,11 @@ def run():
                 if v is None: continue
                 value=[sum(v),v[0],v[1]][side]
             r["result"]=int(value>=k)
-    save("state/extra_journal.json",journal)\n    audit=load("state/forward28.json",{})\n    settle(audit,load("state/v28_results.json",{}),now)\n    archive(audit,rows,now)\n    save("state/forward28.json",audit)
+    save("state/extra_journal.json",journal)
+    audit=load("state/forward28.json",{})
+    settle(audit,load("state/v28_results.json",{}),now)
+    archive(audit,rows,now)
+    save("state/forward28.json",audit)
     changes={}
     for market,d in diagnostics.items():
         old=previous.get("diagnostics",{}).get(market,{})
