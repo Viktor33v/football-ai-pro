@@ -19,7 +19,7 @@ class FilterTests(unittest.TestCase):
             self.assertIn("195/300 (65.0%)",out)
             self.assertIn("95% интервал",out)
             if self.same_day:
-                self.assertIn("Индекс V26:",out)
+                self.assertIn("Индекс V26.1:",out)
                 self.assertIn("Калибровка согласуется",out)
 
     def test_parse(self):
