@@ -2,7 +2,7 @@ import json,os
 from datetime import datetime,timezone,timedelta
 import corners,cards
 from backtest import LABELS
-from smart import LIMITS
+from smart import LIMITS\nfrom forward28 import archive,settle
 
 def load(path,default):
     if not os.path.exists(path): return default
@@ -16,7 +16,7 @@ def run():
     rows=[]; diagnostics=load('goal_metrics.json',{}); journal=load("state/extra_journal.json",{})
     for r in load("goals.json",[]):
         for i,p in enumerate(r["p"]):
-            rows.append(dict(home=r["home"],away=r["away"],date=r["date"],kickoff=r["kickoff"],group="goals",sample=r.get("sample"),market=LABELS[i],p=p,selected=p>=LIMITS[i]))
+            rows.append(dict(fixture_id=r.get("fixture_id"),home=r["home"],away=r["away"],date=r["date"],kickoff=r["kickoff"],group="goals",sample=r.get("sample"),market=LABELS[i],p=p,selected=p>=LIMITS[i]))
     for group,mod in [("corners",corners),("cards",cards)]:
         d=load(group+".json",{})
         for i,rr in d.get("metrics",{}).items():
@@ -53,7 +53,7 @@ def run():
                 if v is None: continue
                 value=[sum(v),v[0],v[1]][side]
             r["result"]=int(value>=k)
-    save("state/extra_journal.json",journal)
+    save("state/extra_journal.json",journal)\n    audit=load("state/forward28.json",{})\n    settle(audit,load("state/v28_results.json",{}),now)\n    archive(audit,rows,now)\n    save("state/forward28.json",audit)
     changes={}
     for market,d in diagnostics.items():
         old=previous.get("diagnostics",{}).get(market,{})
