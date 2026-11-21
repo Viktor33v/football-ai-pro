@@ -19,6 +19,8 @@ class FilterTests(unittest.TestCase):
             self.assertIn("195/300 (65.0%)",out)
             self.assertIn("95% интервал",out)
             if self.same_day:
+                self.assertNotIn("🟢 Прошёл фильтр",out)
+                self.assertIn("Предварительный отбор:",out)
                 self.assertIn("Индекс V26.1:",out)
                 self.assertIn("Калибровка согласуется",out)
 
@@ -30,9 +32,9 @@ class FilterTests(unittest.TestCase):
             self.assertIn("Обе забьют",out)
             if self.same_day:
                 self.assertIn("72.0%",out)
-                self.assertIn("🟢 Прошёл фильтр",out)
+                self.assertIn("Предварительный отбор: ✓ Базовые условия выполнены",out)
                 self.assertIn("425",out)
-                self.assertIn("Brier",out)
+                self.assertIn("Brier модель/база: 0.2300/0.2400",out)
             out=commands.filter_predictions("тм 2.5 30-40")
             if self.same_day:
                 self.assertIn("32.0%",out)
