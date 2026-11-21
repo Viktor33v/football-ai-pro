@@ -3,7 +3,7 @@ from urllib.request import urlopen,Request
 from datetime import datetime,timezone,timedelta
 from snapshot import load
 from backtest import LABELS
-from reliability26 import calibration_summary, reliability, baseline_evidence
+from reliability26 import calibration_summary, reliability, baseline_evidence\nfrom forward28 import report as forward_report
 
 def telegram(method,**params):
     try:
@@ -595,7 +595,7 @@ def answer(msg):
     if cmd=="/bank": return bank_report()
     if cmd in ("/paper_list","/paper_add","/paper_open","/paper_settle"): return paper_commands(cmd,arg)
     if cmd in ("/bank_reset","/bank_confirm","/bank_history"): return bank_admin(cmd,arg)
-    if cmd=="/performance": return performance()
+    if cmd=="/forward": return forward_report(load("state/forward28.json",{}),now)\n    if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
     if cmd=="/all": return all_predictions(arg)
