@@ -349,16 +349,16 @@ def filter_predictions(arg):
             status="🟡 Не прошёл фильтр"
             why="; ".join(reasons_list)
         else:
-            status="🟢 Прошёл фильтр"
-            why="выполнены текущие критерии отбора"
+            status="✓ Базовые условия выполнены"
+            why="это предварительный отбор, не подтверждение надёжности"
         quality=reliability(summary,d,r.get("sample"),snap.get("created"),now) if market!="ТМ 2.5" else {"score":None,"status":"⚪ Недостаточно данных","reason":"отдельная оценка ТМ не валидирована"}
         quality_text=(f"{quality['score']}/100" if quality['score'] is not None else "н/д")
         evidence=baseline_evidence(d) if market!="ТМ 2.5" else {"status":"⚪ Нет отдельного теста","delta":None}
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
         lines.append(f"\n{stamp} | {r['home']} — {r['away']}\n"
-                     f"{market}: {p:.1%} | {status}\nПричина: {why}\n"
+                     f"{market}: {p:.1%}\nПредварительный отбор: {status}\nПричина: {why}\n"
                      f"Индекс V26.1: {quality_text} | {quality['status']}\nОснование: {quality['reason']}\nПреимущество над базой: {evidence['status']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
-                     + (f" | Brier модель/база: {d['model']:.3f}/{d['baseline']:.3f}"
+                     + (f" | Brier модель/база: {d['model']:.4f}/{d['baseline']:.4f}"
                         if market!="ТМ 2.5" and isinstance(d.get("model"),(int,float)) and isinstance(d.get("baseline"),(int,float)) else ""))
     if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон.")
     if len(ranked)>20: lines.append(f"Показано 20 из {len(ranked)}.")
