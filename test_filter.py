@@ -12,6 +12,16 @@ class FilterTests(unittest.TestCase):
         self.snap={"created":now.isoformat(),"diagnostics":{"Обе забьют":{"n":425,"model":.23,"baseline":.24},"ТБ 2.5":{"n":425,"model":.24,"baseline":.25}},
                    "rows":[{"home":"A","away":"B","kickoff":self.k,"date":now.date().isoformat(),"group":"goals","market":"Обе забьют","p":.72,"selected":True,"sample":[20,20]},
                            {"home":"A","away":"B","kickoff":self.k,"date":now.date().isoformat(),"group":"goals","market":"ТБ 2.5","p":.68,"selected":True,"sample":[20,20]}]}
+    def test_v26_filter_integration(self):
+        self.snap["calibration"]={"markets":{"Обе забьют":[[.65,1]]*195+[[.65,0]]*105}}
+        with patch.object(commands,"load",return_value=self.snap):
+            out=commands.filter_predictions("оз 60-80")
+            self.assertIn("195/300 (65.0%)",out)
+            self.assertIn("95% интервал",out)
+            if self.same_day:
+                self.assertIn("Индекс V26:",out)
+                self.assertIn("Калибровка согласуется",out)
+
     def test_parse(self):
         with patch.object(commands,"load",return_value=self.snap):
             self.assertIn("Неверный диапазон",commands.filter_predictions("оз 90-60"))
