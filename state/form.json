@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-20T19:41:04.028596+00:00",
+  "created": "2026-11-21T07:03:24.898979+00:00",
   "source": "https://github.com/oladeeayo/open-matchday",
   "errors": [],
   "teams": [
@@ -3275,6 +3275,17 @@
           "target": 4,
           "corners": 9,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "Athletic Club",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -4368,6 +4379,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "RCD Espanyol de Barcelona",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -5163,6 +5185,17 @@
           "target": 9,
           "corners": 8,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "1. FC Köln",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -5373,6 +5406,17 @@
           "target": 6,
           "corners": 2,
           "yellow": 6
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "FC Bayern München",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -10068,6 +10112,17 @@
           "target": 3,
           "corners": 1,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "Havre Athletic Club",
+          "venue": "home",
+          "g": 3,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -11228,6 +11283,17 @@
           "target": 5,
           "corners": 5,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "Estac Troyes",
+          "venue": "away",
+          "g": 1,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -16832,6 +16898,17 @@
           "target": 5,
           "corners": 2,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "KVC Westerlo",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -16959,6 +17036,17 @@
           "target": 3,
           "corners": 1,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-20",
+          "opponent": "Cercle Brugge KSV",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
