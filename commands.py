@@ -3,6 +3,7 @@ from urllib.request import urlopen,Request
 from datetime import datetime,timezone,timedelta
 from snapshot import load
 from backtest import LABELS
+from reliability26 import calibration_summary, reliability
 
 def telegram(method,**params):
     try:
@@ -320,19 +321,15 @@ def filter_predictions(arg):
     if market=="ТМ 2.5":
         lines.append("ТМ 2.5 = 1 − P(ТБ 2.5). Отдельного теста ТМ нет.")
     calibration=snap.get("calibration",{}).get("markets",{}).get("ТБ 2.5" if market=="ТМ 2.5" else market)
-    if market=="ТМ 2.5" and calibration:
+    if market=="ТМ 2.5" and calibration is not None:
         calibration=[[1-p,1-y] for p,y in calibration]
-    if calibration is not None:
-        valid=[(p,y) for p,y in calibration if isinstance(p,(int,float)) and isinstance(y,(int,float)) and 0<=p<=1 and y in (0,1) and lo<=p*100<=hi]
-        if len(valid)>=30:
-            actual=sum(y for p,y in valid)/len(valid)
-            predicted=sum(p for p,y in valid)/len(valid)
-            lines.append(f"📊 Исторически в диапазоне {lo}–{hi}%: {sum(y for p,y in valid)}/{len(valid)} ({actual:.1%}) событий; средний прогноз {predicted:.1%}; разница {actual-predicted:+.1%} п.п.")
-            lines.append("Это общая историческая частота диапазона, не точность отдельного матча.")
-        else:
-            lines.append(f"📊 Для диапазона {lo}–{hi}% данных недостаточно: {len(valid)} исторических прогнозов (минимум 30).")
+    summary=calibration_summary(calibration,lo,hi)
+    if summary["sufficient"]:
+        lines.append(f"📊 Исторически в диапазоне {lo}–{hi}%: {summary['wins']}/{summary['n']} ({summary['observed']:.1%}) событий; средний прогноз {summary['mean']:.1%}; разница {100*summary['gap']:+.1f} п.п.")
+        lines.append(f"95% интервал частоты (Уилсон): {summary['low']:.1%}–{summary['high']:.1%}.")
+        lines.append("Это общая историческая частота диапазона, не точность отдельного матча.")
     else:
-        lines.append("📊 Историческая проверка выбранного диапазона пока недоступна: дождись обновления базы." )
+        lines.append(f"📊 Для диапазона {lo}–{hi}% недостаточно исторических записей: {summary['n']} (минимум 30).")
     for p,r in ranked[:20]:
         sample=r.get("sample") or []
         d=snap.get("diagnostics",{}).get(r["market"],{})
@@ -350,14 +347,17 @@ def filter_predictions(arg):
         else:
             status="🟢 Прошёл фильтр"
             why="выполнены текущие критерии отбора"
+        quality=reliability(summary,d,r.get("sample"),snap.get("created"),now) if market!="ТМ 2.5" else {"score":None,"status":"⚪ Недостаточно данных","reason":"отдельная оценка ТМ не валидирована"}
+        quality_text=(f"{quality['score']}/100" if quality['score'] is not None else "н/д")
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
         lines.append(f"\n{stamp} | {r['home']} — {r['away']}\n"
                      f"{market}: {p:.1%} | {status}\nПричина: {why}\n"
-                     f"Исторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
+                     f"Индекс V26: {quality_text} | {quality['status']}\nОснование: {quality['reason']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
                      + (f" | Brier модель/база: {d['model']:.3f}/{d['baseline']:.3f}"
                         if market!="ТМ 2.5" and isinstance(d.get("model"),(int,float)) and isinstance(d.get("baseline"),(int,float)) else ""))
     if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон.")
     if len(ranked)>20: lines.append(f"Показано 20 из {len(ranked)}.")
+    lines.append("V26: индекс — эвристика качества данных и калибровки, не вероятность выигрыша. 95% интервал описывает частоту, не отдельный матч.")
     lines.append("Brier — историческая ошибка вероятностей, не процент выигрышей и не ROI.")
     return "\n".join(lines)
 
