@@ -96,6 +96,8 @@ def reasons(r,snap):
     if min(r.get("sample") or [0])<10: out.append("выборка <10 или неизвестна")
     if d.get("n",0)<100: out.append("мало тестов или нет метрик")
     elif d["model"]>=d["baseline"]: out.append("Brier не лучше базы")
+    elif r["market"]=="Обе забьют" and d["baseline"]-d["model"]<0.002:
+        out.append("ОЗ: улучшение Brier менее 0.002; преимущество не подтверждено")
     return out
 def eligible(r,snap):
     return not reasons(r,snap)
