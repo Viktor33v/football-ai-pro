@@ -18,5 +18,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m py_compile commands.py reliability26.py test_filter.py test_reliability26.py forward28.py test_forward28.py smart.py snapshot.py
-      - run: python -m unittest -v test_filter test_reliability26 test_forward28
+      - run: python -m py_compile commands.py reliability26.py test_filter.py test_reliability26.py forward28.py test_forward28.py smart.py snapshot.py team_ru.py test_fixture_safety.py
+      - run: python -m unittest -v test_filter test_reliability26 test_forward28 test_fixture_safety
