@@ -51,6 +51,13 @@ class FilterTests(unittest.TestCase):
         self.assertEqual(display('Feyenoord Rotterdam'),'Фейеноорд')
         self.assertEqual(display('SBV Excelsior'),'Эксельсиор')
         self.assertEqual(display('Unknown FC'),'Unknown FC')
+    def test_btts_keyboard_button(self):
+        labels=[button["text"] for row in commands.keyboard()["keyboard"] for button in row]
+        self.assertIn("Обе забьют",labels)
+        self.assertEqual(commands.MENU["Обе забьют"],"/btts")
+        with patch.object(commands,"filter_predictions",return_value="BTTS report") as report:
+            self.assertEqual(commands.answer("Обе забьют"),"BTTS report")
+            report.assert_called_once_with("обе забьют 0-100")
     def test_btts_requires_meaningful_brier_gain(self):
         row=dict(self.snap["rows"][0]); row["sample"]=[20,20]; row["selected"]=True
         self.snap["diagnostics"]["Обе забьют"]={"n":814,"model":0.2447,"baseline":0.2448}
