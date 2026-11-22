@@ -17,6 +17,13 @@ NAMES={
 "FC Internazionale Milano":"Интер","SSC Napoli":"Наполи",
 "PSV":"ПСВ","AFC Ajax":"Аякс","SL Benfica":"Бенфика",
 "Sporting Clube de Portugal":"Спортинг","FC Porto":"Порту",
+"SV Werder Bremen":"Вердер","Hamburger SV":"Гамбург",
+"FC Augsburg":"Аугсбург","1. FSV Mainz 05":"Майнц",
+"Go Ahead Eagles":"Гоу Эхед Иглс","Fortuna Sittard":"Фортуна Ситтард",
+"Sparta Rotterdam":"Спарта Роттердам","AZ":"АЗ Алкмар",
+"Villarreal CF":"Вильярреал","Bologna FC 1909":"Болонья",
+"Udinese Calcio":"Удинезе","Atalanta BC":"Аталанта",
+"AS Roma":"Рома","Lille OSC":"Лилль","Racing Club de Lens":"Ланс",
 "Vitória SC":"Витория Гимарайнш","Red Bull Bragantino":"Ред Булл Брагантино",
 }
 # Display fallback deliberately preserves unknown names instead of guessing wrong clubs.
