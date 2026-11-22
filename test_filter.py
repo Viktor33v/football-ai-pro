@@ -51,6 +51,13 @@ class FilterTests(unittest.TestCase):
         self.assertEqual(display('Feyenoord Rotterdam'),'Фейеноорд')
         self.assertEqual(display('SBV Excelsior'),'Эксельсиор')
         self.assertEqual(display('Unknown FC'),'Unknown FC')
+    def test_btts_requires_meaningful_brier_gain(self):
+        row=dict(self.snap["rows"][0]); row["sample"]=[20,20]; row["selected"]=True
+        self.snap["diagnostics"]["Обе забьют"]={"n":814,"model":0.2447,"baseline":0.2448}
+        self.assertFalse(commands.eligible(row,self.snap))
+        self.assertIn("преимущество не подтверждено"," ".join(commands.reasons(row,self.snap)))
+        self.snap["diagnostics"]["Обе забьют"]["model"]=0.2400
+        self.assertTrue(commands.eligible(row,self.snap))
     def test_quality(self):
         self.snap["rows"][0]["sample"]=[3,20]
         with patch.object(commands,"load",return_value=self.snap):
