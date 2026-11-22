@@ -104,7 +104,10 @@ def odds(arg):
         if not (0<p<=100 and 1<k<=1000): raise ValueError()
     except ValueError: return "Пример: /odds 73.5 1.50"
     p/=100
-    return f"ДЕМО: p={p:.1%}; коэффициент {k:.2f}\nБезубыточный коэффициент {1/p:.2f}\nРасчётное ожидание {p*k-1:+.1%}\nВероятность введена вручную, преимущество не подтверждено."
+    edge=p*k-1
+    threshold=1/k
+    verdict=("⛔ Пропустить: расчётное ожидание не положительное" if edge<=0 else "⚪ Положительное ожидание по введённой вероятности, но преимущество не подтверждено")
+    return f"ДЕМО: p={p:.1%}; коэффициент {k:.2f}\nМинимальная вероятность безубыточности: {threshold:.1%}\nБезубыточный коэффициент {1/p:.2f}\nРасчётное ожидание {edge:+.1%}\n{verdict}\nВероятность введена вручную. Без независимой проверки калибровки это не рекомендация ставки."
 def half_report():
     d=load("state/half_shadow.json",{})
     if not d: return "Запусти V10 для расчёта V17."
@@ -602,7 +605,8 @@ def answer(msg):
     if cmd=="/bank": return bank_report()
     if cmd in ("/paper_list","/paper_add","/paper_open","/paper_settle"): return paper_commands(cmd,arg)
     if cmd in ("/bank_reset","/bank_confirm","/bank_history"): return bank_admin(cmd,arg)
-    if cmd=="/forward": return forward_report(load("state/forward28.json",{}),now)\n    if cmd=="/performance": return performance()
+    if cmd=="/forward": return forward_report(load("state/forward28.json",{}),now)
+    if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
     if cmd=="/all": return all_predictions(arg)
