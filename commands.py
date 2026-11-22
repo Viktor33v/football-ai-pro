@@ -355,10 +355,16 @@ def filter_predictions(arg):
         quality=reliability(summary,d,r.get("sample"),snap.get("created"),now) if market!="ТМ 2.5" else {"score":None,"status":"⚪ Недостаточно данных","reason":"отдельная оценка ТМ не валидирована"}
         quality_text=(f"{quality['score']}/100" if quality['score'] is not None else "н/д")
         evidence=baseline_evidence(d) if market!="ТМ 2.5" else {"status":"⚪ Нет отдельного теста","delta":None}
+        if quality["score"] is None or quality["status"].startswith(("⚪","🔴")):
+            decision="⛔ Пропустить: качество прогноза не подтверждено"
+        elif not quality["status"].startswith("🟢") or not evidence["status"].startswith("🟢"):
+            decision="⏸ Пропустить: преимущество модели над базой не подтверждено"
+        else:
+            decision="🔎 Кандидат для наблюдения; прибыльность не доказана"
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
         lines.append(f"\n{stamp} | {r['home']} — {r['away']}\n"
                      f"{market}: {p:.1%}\nПредварительный отбор: {status}\nПричина: {why}\n"
-                     f"Индекс V26.1: {quality_text} | {quality['status']}\nОснование: {quality['reason']}\nПреимущество над базой: {evidence['status']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
+                     f"Индекс V26.1: {quality_text} | {quality['status']}\nРешение V29: {decision}\nОснование: {quality['reason']}\nПреимущество над базой: {evidence['status']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
                      + (f" | Brier модель/база: {d['model']:.4f}/{d['baseline']:.4f}"
                         if market!="ТМ 2.5" and isinstance(d.get("model"),(int,float)) and isinstance(d.get("baseline"),(int,float)) else ""))
     if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон.")
