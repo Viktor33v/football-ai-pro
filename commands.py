@@ -5,6 +5,7 @@ from snapshot import load
 from backtest import LABELS
 from reliability26 import calibration_summary, reliability, baseline_evidence
 from forward28 import report as forward_report
+from team_ru import display as ru_team
 
 def telegram(method,**params):
     try:
@@ -365,7 +366,7 @@ def filter_predictions(arg):
         else:
             decision="🔎 Кандидат для наблюдения; прибыльность не доказана"
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
-        lines.append(f"\n{stamp} | {r['home']} — {r['away']}\n"
+        lines.append(f"\n{stamp} | {ru_team(r['home'])} — {ru_team(r['away'])}\n"
                      f"{market}: {p:.1%}\nПредварительный отбор: {status}\nПричина: {why}\n"
                      f"Индекс V26.1: {quality_text} | {quality['status']}\nРешение V29: {decision}\nОснование: {quality['reason']}\nПреимущество над базой: {evidence['status']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
                      + (f" | Brier модель/база: {d['model']:.4f}/{d['baseline']:.4f}"
@@ -427,7 +428,7 @@ def best_today():
         if k>now and k.astimezone(local).date()==now.astimezone(local).date() and eligible(r,snap): rows.append(r)
     lines=["V18 • кандидаты сегодня (Бишкек) • ДЕМО","Снимок: "+snap["created"]]
     for r in sorted(rows,key=lambda x:x["p"],reverse=True)[:10]:
-        lines.append(f"{r['home']} — {r['away']} | {r['market']} {r['p']:.1%}")
+        lines.append(f"{ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']} {r['p']:.1%}")
     if not rows: lines.append("Нет кандидатов с известным временем, прошедших фильтр.")
     lines.append("Ранжирование по p, не доходности. Расписание не проверено независимо.")
     return "\n".join(lines)
@@ -457,7 +458,7 @@ def shortlist():
             if sum(x["group"]==group for x in chosen)>=limit: break
     for r in chosen:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
-        lines.append(f"{stamp} | {r['home']} — {r['away']} | {r['market']}: {r['p']:.1%} | 1/p {1/r['p']:.2f}")
+        lines.append(f"{stamp} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']}: {r['p']:.1%} | 1/p {1/r['p']:.2f}")
     if not chosen: lines.append("Нет кандидатов, прошедших фильтр.")
     lines.append("Время Бишкек. Один рынок на матч; до 4 голов, 3 угловых, 3 ЖК; до 2 на рынок. Сортировка по p внутри группы, не по доходности. 1/p не является котировкой букмекера.")
     return "\n".join(lines)
@@ -535,7 +536,7 @@ def paper_commands(cmd,arg):
             rows=sorted(paper_candidates().items(),key=lambda x:x[1]["p"],reverse=True)[:15]
             lines=["Учебные кандидаты; расписание не проверено."]
             for key,r in rows:
-                lines.append(f"{key} | {r['home']} — {r['away']} | {r['market']} {r['p']:.1%}")
+                lines.append(f"{key} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']} {r['p']:.1%}")
             return "\n".join(lines+["Запись: /paper_add ID коэффициент. Только виртуальные $10."])
         if cmd=="/paper_open":
             return "\n".join(["Открытые учебные записи:"]+[f"{e['id']} | {e['home']} — {e['away']} | {e['market']} | {e['odds']}" for e in bank["entries"] if e["result"] is None]) if any(e["result"] is None for e in bank["entries"]) else "Открытых записей нет."
@@ -651,7 +652,7 @@ def answer(msg):
     lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M") if r.get("kickoff") else r["date"]+" (время неизвестно)"
-        lines.append(f'{stamp} | {r["home"]} — {r["away"]}\n{r["market"]}: {r["p"]:.1%}')
+        lines.append(f'{stamp} | {ru_team(r["home"])} — {ru_team(r["away"])}\n{r["market"]}: {r["p"]:.1%}')
     if not rs:
         lines.append("Нет подходящих будущих прогнозов в базе.")
         if cmd in ("/today","/tomorrow"):
