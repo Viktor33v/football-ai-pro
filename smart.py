@@ -82,7 +82,9 @@ def run():
         f=half_candidate(a,b,l)
         if f: shadow.append(dict(home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],kickoff=k.isoformat(),p=f[0],old=f[1],sample=[min(20,len(teams[a])),min(20,len(teams[b]))]))
     os.makedirs("state",exist_ok=True)
-    with open("state/v28_results.json","w",encoding="utf-8") as f:\n        json.dump({str(k):v for k,v in raw.items() if v.get("status")=="FINISHED"},f,ensure_ascii=False)\n    with open("goals.json","w",encoding="utf-8") as f:
+    with open("state/v28_results.json","w",encoding="utf-8") as f:
+        json.dump({str(k):v for k,v in raw.items() if v.get("status")=="FINISHED"},f,ensure_ascii=False)
+    with open("goals.json","w",encoding="utf-8") as f:
         json.dump([dict(fixture_id=m["id"],home=m["homeTeam"]["name"],away=m["awayTeam"]["name"],date=k.date().isoformat(),kickoff=k.isoformat(),p=p,sample=[min(20,len(teams[m['homeTeam']['id']])),min(20,len(teams[m['awayTeam']['id']]))]) for m,k,p in candidates],f,ensure_ascii=False)
     with open("state/half_shadow.json","w",encoding="utf-8") as f: json.dump(dict(created=now.isoformat(),rows=shadow,metrics=[dict(n=len(rs),model=sum((p-y)**2 for p,b,y in rs)/len(rs),baseline=sum((b-y)**2 for p,b,y in rs)/len(rs)) if rs else dict(n=0) for rs in half_test]),f,ensure_ascii=False)
     with open("state/goal_calibration.json","w",encoding="utf-8") as f:
