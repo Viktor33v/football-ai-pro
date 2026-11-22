@@ -46,6 +46,11 @@ class FilterTests(unittest.TestCase):
     def test_forward_command_dispatch(self):
         with patch.object(commands,"load",return_value={}):
             self.assertIn("V28",commands.answer("/forward"))
+    def test_russian_team_display(self):
+        from team_ru import display
+        self.assertEqual(display('Feyenoord Rotterdam'),'Фейеноорд')
+        self.assertEqual(display('SBV Excelsior'),'Эксельсиор')
+        self.assertEqual(display('Unknown FC'),'Unknown FC')
     def test_quality(self):
         self.snap["rows"][0]["sample"]=[3,20]
         with patch.object(commands,"load",return_value=self.snap):
