@@ -636,7 +636,25 @@ def answer(msg):
     if not snap: return "База ещё не создана. Запусти V10 для обновления."
     def day(r):
         return datetime.fromisoformat(r["kickoff"]).astimezone(local).date().isoformat() if r.get("kickoff") else r["date"]
-    rs=[r for r in reconcile(snap["rows"]) if (datetime.fromisoformat(r["kickoff"])>now if r.get("kickoff") else r["date"]>now.date().isoformat())]
+    # Do not advertise CSV-only future dates as actionable fixtures.
+    # Only dated API-linked fixtures with a timezone-aware future kickoff enter
+    # the main prediction commands. /all remains an exploratory overview.
+    try:
+        created=datetime.fromisoformat(snap["created"])
+        if created.tzinfo is None or not 0 <= (now-created).total_seconds() <= 108000:
+            return "База прогнозов устарела или имеет некорректную дату. Обнови данные."
+    except (ValueError,TypeError,KeyError):
+        return "Дата базы прогнозов некорректна."
+    rs=[]
+    for r in reconcile(snap["rows"]):
+        if not r.get("kickoff"):
+            continue
+        try:
+            kickoff=datetime.fromisoformat(r["kickoff"])
+        except (ValueError,TypeError):
+            continue
+        if kickoff.tzinfo is not None and kickoff>now:
+            rs.append(r)
     if cmd=="/match" or not cmd.startswith("/"):
         q=arg.strip() if cmd=="/match" else msg.strip()
         if not q: return "Пример: /match Bayern"
@@ -649,7 +667,7 @@ def answer(msg):
     elif cmd=="/top":
         rs=[r for r in rs if r["selected"]]
     else: return helptext
-    lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Время Бишкек для совпавших матчей; остальные даты из CSV не подтверждены."]
+    lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Только будущие матчи с известным временем; расписание независимо не подтверждено."]
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M") if r.get("kickoff") else r["date"]+" (время неизвестно)"
         lines.append(f'{stamp} | {ru_team(r["home"])} — {ru_team(r["away"])}\n{r["market"]}: {r["p"]:.1%}')
