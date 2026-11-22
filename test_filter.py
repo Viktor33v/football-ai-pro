@@ -39,6 +39,13 @@ class FilterTests(unittest.TestCase):
             if self.same_day:
                 self.assertIn("32.0%",out)
                 self.assertIn("⚪ Недостаточно данных",out)
+    def test_odds_break_even(self):
+        self.assertIn("⛔ Пропустить",commands.odds("90 1.07"))
+        self.assertIn("93.5%",commands.odds("90 1.07"))
+        self.assertIn("преимущество не подтверждено",commands.odds("95 1.07"))
+    def test_forward_command_dispatch(self):
+        with patch.object(commands,"load",return_value={}):
+            self.assertIn("V28",commands.answer("/forward"))
     def test_quality(self):
         self.snap["rows"][0]["sample"]=[3,20]
         with patch.object(commands,"load",return_value=self.snap):
