@@ -24,6 +24,13 @@ class FixtureSafetyTests(unittest.TestCase):
         self.assertNotIn("Unverified FC",output)
         self.assertIn("Вердер — Гамбург",output)
 
+    def test_second_half_market_is_not_confused(self):
+        with patch.object(commands,"load",return_value=self.snapshot):
+            output=commands.answer("/top")
+        self.assertIn("ТБ 0.5 2Т",output)
+        self.assertIn("НЕ 2 гола",output)
+        self.assertIn("модель не выдаёт",output)
+
     def test_stale_snapshot_is_rejected(self):
         self.snapshot["created"]=(datetime.now(timezone.utc)-timedelta(hours=32)).isoformat()
         with patch.object(commands,"load",return_value=self.snapshot):
