@@ -18,9 +18,9 @@ def telegram(method,**params):
 def norm(s):
     return "".join(c for c in unicodedata.normalize("NFKD",s.casefold()) if not unicodedata.combining(c))
 ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
-MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Обе забьют":"/btts","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze","Лучшие сегодня":"/best","Все прогнозы":"/all","Лучшие прогнозы":"/best","Состояние":"/status"}
+MENU={"Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Обе забьют":"/btts","Надёжные прогнозы":"/reliable","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze","Лучшие сегодня":"/best","Все прогнозы":"/all","Лучшие прогнозы":"/best","Состояние":"/status"}
 def keyboard():
-    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Обе забьют","Угловые"),("Карточки","Статистика","Форма"),("Тактика","Анализ матча","Все прогнозы"),("Лучшие прогнозы",),("Состояние","Помощь")]],"resize_keyboard":True}
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Сегодня","Завтра","Топ-10"),("Голы","Обе забьют","Угловые"),("Карточки","Статистика","Форма"),("Тактика","Анализ матча","Все прогнозы"),("Лучшие прогнозы","Надёжные прогнозы"),("Состояние","Помощь")]],"resize_keyboard":True}
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
@@ -428,6 +428,45 @@ def all_predictions(arg):
     if len(groups)>(1 if arg.strip() else 3): lines.append("Другие матчи: /all НАЗВАНИЕ КОМАНДЫ")
     return "\n".join(lines)
 
+def reliable_predictions():
+    """Strict seven-day research shortlist; never promise winning bets."""
+    import math
+    snap=load("state/snapshot.json",{})
+    if not snap: return "Нет базы прогнозов."
+    now=datetime.now(timezone.utc)
+    local=timezone(timedelta(hours=6))
+    try:
+        created=datetime.fromisoformat(snap["created"])
+        if created.tzinfo is None or (now-created).total_seconds()>108000:
+            return "База прогнозов устарела. Обнови данные."
+    except (ValueError,TypeError,KeyError):
+        return "Не удалось проверить дату базы."
+    today=now.astimezone(local).date()
+    selected={}
+    for r in reconcile(snap.get("rows",[])):
+        if not r.get("kickoff") or not eligible(r,snap): continue
+        try: k=datetime.fromisoformat(r["kickoff"])
+        except (ValueError,TypeError): continue
+        if k.tzinfo is None or k<=now or not today<=k.astimezone(local).date()<today+timedelta(days=7): continue
+        p=r.get("p")
+        if not isinstance(p,(int,float)) or not math.isfinite(p) or not 0<p<1: continue
+        d=snap.get("diagnostics",{}).get(r["market"],{})
+        q=reliability(calibration_summary(snap.get("calibration",{}).get("markets",{}).get(r["market"]),0,100),d,r.get("sample"),snap.get("created"),now)
+        e=baseline_evidence(d)
+        if not q["status"].startswith("🟢") or not e["status"].startswith("🟢"): continue
+        key=(canonical(r["home"]),canonical(r["away"]),k.isoformat())
+        if key not in selected or p>selected[key]["p"]: selected[key]=r
+    lines=["🛡 Надёжные прогнозы • строгий отбор • 7 дней, Бишкек",
+           "Только прошедшие фильтры качества; это не гарантия выигрыша.",
+           "Расписание не подтверждено независимо. Без проверки коэффициентов прибыльность неизвестна."]
+    for r in sorted(selected.values(),key=lambda x:x["p"],reverse=True)[:10]:
+        k=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
+        lines.append(f"{k} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']}: {r['p']:.1%} | 🟢 Отбор пройден")
+    if not selected: lines.append("Сейчас нет прогнозов, прошедших строгий отбор. Ставки не рекомендуются.")
+    lines.append("Качество прогноза не равно доказанной доходности. Проверяй фактическое расписание.")
+    return "\n".join(lines)
+
+
 def best_today():
     snap=load("state/snapshot.json",{})
     if not snap: return "Нет снимка. Обнови V10."
@@ -624,6 +663,7 @@ def answer(msg):
     if cmd=="/best": return best_today()
     if cmd=="/all": return all_predictions(arg)
     if cmd=="/filter": return filter_predictions(arg)
+    if cmd=="/reliable": return reliable_predictions()
     if cmd=="/btts": return filter_predictions("обе забьют 0-100",days=7,compact=True)
     if cmd=="/status": return status_report()
     if cmd=="/h2h": return h2h(arg)
