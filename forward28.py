@@ -70,5 +70,17 @@ def report(journal,now):
             hits=sum(r["result"] for r in m)
             brier=sum((r["p"]-r["result"])**2 for r in m)/len(m)
             lines.append(f"{market}: {hits}/{len(m)} ({hits/len(m):.1%}), Brier {brier:.4f}")
+            if len(m)>=30:
+                mean_p=sum(x["p"] for x in m)/len(m)
+                gap=hits/len(m)-mean_p
+                lines.append(f"  Калибровка: средний прогноз {mean_p:.1%}, факт {hits/len(m):.1%}, отклонение {gap*100:+.1f} п.п.")
+                for low,high in ((0.0,0.5),(0.5,0.6),(0.6,0.7),(0.7,0.8),(0.8,1.000001)):
+                    bucket=[x for x in m if low<=x["p"]<high]
+                    if len(bucket)<20: continue
+                    observed=sum(x["result"] for x in bucket)/len(bucket)
+                    expected=sum(x["p"] for x in bucket)/len(bucket)
+                    lines.append(f"  {low:.0%}–{min(high,1):.0%}: {len(bucket)} прогнозов, ожидалось {expected:.1%}, произошло {observed:.1%}")
+            else:
+                lines.append("  Калибровка: недостаточно завершённых прогнозов (минимум 30).")
     lines.append("Без коэффициентов букмекеров: ROI не рассчитывается. Неподтверждённые исходы остаются открытыми.")
     return "\n".join(lines)
