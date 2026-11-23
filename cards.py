@@ -1,7 +1,7 @@
 import os,json
 from collections import defaultdict
 from datetime import datetime,timezone,timedelta
-from corners import read,LEAGUES,SOURCE
+from corners import read,LEAGUES,SOURCE,valid_future_fixture
 from bot import prob,send
 
 MARKETS=[("ЖК ТБ 2.5",3,0),("ЖК ТБ 3.5",4,0),("ЖК ТБ 4.5",5,0),("ЖК хозяев ТБ 1.5",2,1),("ЖК гостей ТБ 1.5",2,2)]
@@ -63,7 +63,7 @@ def run():
         used=set()
         for r in fixtures:
             key=(r["date"],r["home"],r["away"])
-            if key in used or key in seen or not str(today)<r["date"]<=str(today+timedelta(days=7)): continue
+            if key in used or not valid_future_fixture(r,today,seen): continue
             used.add(key)
             for i,market in enumerate(MARKETS):
                 f=forecast(r,market)
