@@ -6,7 +6,7 @@ from bot import prob,send
 
 SOURCE="https://github.com/oladeeayo/open-matchday"
 BASE="https://raw.githubusercontent.com/oladeeayo/open-matchday/master/data/"
-LEAGUES=["ENG_1_premier-league","ESP_1_la-liga","GER_1_bundesliga","ITA_1_serie-a","FRA_1_ligue-1","NED_1_eredivisie","POR_1_primeira-liga","BEL_1_pro-league","TUR_1_super-lig","GRE_1_super-league"]
+LEAGUES=["ENG_1_premier-league","ESP_1_la-liga","GER_1_bundesliga","ITA_1_serie-a","FRA_1_ligue-1","NED_1_eredivisie","POR_1_primeira-liga","BEL_1_pro-league","TUR_1_super-lig","GRE_1_super-league","ENG_2_championship","GER_2_2-bundesliga","DEN_1_superliga","NOR_1_eliteserien","SWE_1_allsvenskan","SUI_1_super-league","AUT_1_bundesliga"]
 MARKETS=[("Угловые ТБ 8.5",9,0),("Угловые ТБ 9.5",10,0),("Угловые 1Т ТБ 3.5",4,1)]
 def read(league,kind):
     with urlopen(BASE+league+"/"+kind+"_2627.csv",timeout=30) as r:
