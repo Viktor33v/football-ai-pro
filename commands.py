@@ -273,7 +273,7 @@ def h2h(q):
     lines.append("Найдено: "+str(len(found))+". История не меняет прогнозы.")
     return "\n".join(lines)
 
-def filter_predictions(arg, days=1):
+def filter_predictions(arg, days=1, compact=False):
     import re,math
     from corners import MARKETS as CORNER_MARKETS
     from cards import MARKETS as CARD_MARKETS
@@ -345,7 +345,9 @@ def filter_predictions(arg, days=1):
     if history.get("markets") and market in history["markets"]:
         h=history["markets"][market]
         lines.append(f"📚 Изменение базы тестов: {h['previous']} → {h['current']} ({h['current']-h['previous']:+d}). Причина изменения автоматически не установлена.")
-    for p,r in ranked[:20]:
+    if compact:
+        lines.append("Краткий обзор: топ-10. 🟡 Не рекомендация для ставки.")
+    for p,r in ranked[:10 if compact else 20]:
         sample=r.get("sample") or []
         d=snap.get("diagnostics",{}).get(r["market"],{})
         n=d.get("n",0)
@@ -372,13 +374,17 @@ def filter_predictions(arg, days=1):
         else:
             decision="🔎 Кандидат для наблюдения; прибыльность не доказана"
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
+        if compact:
+            lines.append(f"{stamp} | {ru_team(r['home'])} — {ru_team(r['away'])} | {p:.1%} | {decision}")
+            continue
         lines.append(f"\n{stamp} | {ru_team(r['home'])} — {ru_team(r['away'])}\n"
                      f"{market}: {p:.1%}\nПредварительный отбор: {status}\nПричина: {why}\n"
                      f"Индекс V26.1: {quality_text} | {quality['status']}\nРешение V29: {decision}\nОснование: {quality['reason']}\nПреимущество над базой: {evidence['status']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
                      + (f" | Brier модель/база: {d['model']:.4f}/{d['baseline']:.4f}"
                         if market!="ТМ 2.5" and isinstance(d.get("model"),(int,float)) and isinstance(d.get("baseline"),(int,float)) else ""))
     if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон." if days==1 else "На ближайшие 7 дней нет предстоящих матчей с подтверждённым временем в базе.")
-    if len(ranked)>20: lines.append(f"Показано 20 из {len(ranked)}.")
+    limit=10 if compact else 20
+    if len(ranked)>limit: lines.append(f"Показано {limit} из {len(ranked)}. Подробности: /filter обе забьют 0-100" if compact else f"Показано 20 из {len(ranked)}.")
     lines.append("V26.1: порог улучшения Brier 0.002 — эвристический, не проверка статистической значимости.")
     lines.append("V26: индекс — эвристика качества данных и калибровки, не вероятность выигрыша. 95% интервал описывает частоту, не отдельный матч.")
     lines.append("Brier — историческая ошибка вероятностей, не процент выигрышей и не ROI.")
@@ -618,7 +624,7 @@ def answer(msg):
     if cmd=="/best": return best_today()
     if cmd=="/all": return all_predictions(arg)
     if cmd=="/filter": return filter_predictions(arg)
-    if cmd=="/btts": return filter_predictions("обе забьют 0-100",days=7)
+    if cmd=="/btts": return filter_predictions("обе забьют 0-100",days=7,compact=True)
     if cmd=="/status": return status_report()
     if cmd=="/h2h": return h2h(arg)
     if cmd=="/odds": return odds(arg)
