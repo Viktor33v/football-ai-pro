@@ -84,3 +84,31 @@ def report(journal,now):
                 lines.append("  Калибровка: недостаточно завершённых прогнозов (минимум 30).")
     lines.append("Без коэффициентов букмекеров: ROI не рассчитывается. Неподтверждённые исходы остаются открытыми.")
     return "\n".join(lines)
+
+def extra_market_report(journal,now):
+    """Separate CSV-based corner/card journal; kickoff times are not verified."""
+    lines=["\n📐 Угловые и карточки • отдельный журнал",
+           "CSV содержит дату без подтверждённого времени начала. Это НЕ независимая forward-проверка до стартового свистка."]
+    for days in (7,30,90):
+        start=(now-timedelta(days=days)).date()
+        records=[]
+        for r in journal.values():
+            if r.get("group") not in ("corners","cards"):continue
+            try:
+                match_date=datetime.fromisoformat(r["date"]).date()
+                created=datetime.fromisoformat(r["created"])
+            except (KeyError,ValueError,TypeError):continue
+            if created.tzinfo is None or not start<=match_date<=now.date():continue
+            # Without verified kickoff time, do not claim independent pre-match timing.
+            records.append(r)
+        done=[r for r in records if type(r.get("result")) is int and r["result"] in (0,1)]
+        lines.append(f"\nЗа {days} дней: завершено {len(done)}, ожидают {len(records)-len(done)}")
+        for market in sorted({r.get("market","") for r in records}):
+            matches=[r for r in done if r.get("market")==market and type(r.get("p")) in (int,float) and math.isfinite(r["p"]) and 0<=r["p"]<=1]
+            if not matches:continue
+            hits=sum(r["result"] for r in matches)
+            brier=sum((r["p"]-r["result"])**2 for r in matches)/len(matches)
+            lines.append(f"{market}: {hits}/{len(matches)} ({hits/len(matches):.1%}), Brier {brier:.4f}")
+            if len(matches)<30:lines.append("  Мало наблюдений для калибровки (минимум 30).")
+    lines.append("Отсутствие подтверждённого времени начала и независимой сверки исходов ограничивает достоверность.")
+    return "\n".join(lines)
