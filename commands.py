@@ -429,7 +429,7 @@ def all_predictions(arg):
     return "\n".join(lines)
 
 def reliable_predictions():
-    """Strict seven-day research shortlist; never promise winning bets."""
+    """Show strict picks and clearly separated research-only candidates."""
     import math
     snap=load("state/snapshot.json",{})
     if not snap: return "Нет базы прогнозов."
@@ -437,34 +437,62 @@ def reliable_predictions():
     local=timezone(timedelta(hours=6))
     try:
         created=datetime.fromisoformat(snap["created"])
-        if created.tzinfo is None or (now-created).total_seconds()>108000:
+        if created.tzinfo is None or created>now or (now-created).total_seconds()>108000:
             return "База прогнозов устарела. Обнови данные."
     except (ValueError,TypeError,KeyError):
         return "Не удалось проверить дату базы."
-    today=now.astimezone(local).date()
-    selected={}
+    strict=[]
+    watch=[]
+    rejected={}
+    seen=set()
     for r in reconcile(snap.get("rows",[])):
-        if not r.get("kickoff") or not eligible(r,snap): continue
-        try: k=datetime.fromisoformat(r["kickoff"])
-        except (ValueError,TypeError): continue
-        if k.tzinfo is None or k<=now or not today<=k.astimezone(local).date()<today+timedelta(days=7): continue
-        p=r.get("p")
-        if not isinstance(p,(int,float)) or not math.isfinite(p) or not 0<p<1: continue
+        try:
+            k=datetime.fromisoformat(r["kickoff"])
+            p=r["p"]
+            if k.tzinfo is None or not now<k<=now+timedelta(days=7): continue
+            if type(p) not in (float,int) or not math.isfinite(p) or not 0<p<1: continue
+            key=(canonical(r["home"]),canonical(r["away"]),r["market"],k.isoformat())
+            if key in seen: continue
+            seen.add(key)
+        except (ValueError,TypeError,KeyError): continue
+        problems=reasons(r,snap)
         d=snap.get("diagnostics",{}).get(r["market"],{})
         q=reliability(calibration_summary(snap.get("calibration",{}).get("markets",{}).get(r["market"]),0,100),d,r.get("sample"),snap.get("created"),now)
         e=baseline_evidence(d)
-        if not q["status"].startswith("🟢") or not e["status"].startswith("🟢"): continue
-        key=(canonical(r["home"]),canonical(r["away"]),k.isoformat())
-        if key not in selected or p>selected[key]["p"]: selected[key]=r
-    lines=["🛡 Надёжные прогнозы • строгий отбор • 7 дней, Бишкек",
-           "Только прошедшие фильтры качества; это не гарантия выигрыша.",
-           "Расписание не подтверждено независимо. Без проверки коэффициентов прибыльность неизвестна."]
-    for r in sorted(selected.values(),key=lambda x:x["p"],reverse=True)[:10]:
+        if not problems and q["status"].startswith("🟢") and e["status"].startswith("🟢"):
+            strict.append(r)
+        else:
+            if problems:
+                for reason in problems: rejected[reason]=rejected.get(reason,0)+1
+            elif not q["status"].startswith("🟢"):
+                rejected["калибровка или качество не подтверждены"]=rejected.get("калибровка или качество не подтверждены",0)+1
+            elif not e["status"].startswith("🟢"):
+                rejected["преимущество над базой не подтверждено"]=rejected.get("преимущество над базой не подтверждено",0)+1
+            if r.get("selected") and min(r.get("sample") or [0])>=10 and d.get("n",0)>=100 and d.get("model",1)<d.get("baseline",0):
+                watch.append(r)
+    lines=["🛡 Надёжные прогнозы • 7 дней, Бишкек",
+           "🟢 Строгий отбор: только при подтверждённом качестве модели.",
+           "Расписание независимо не подтверждено; без коэффициентов доходность неизвестна."]
+    for r in sorted(strict,key=lambda x:x["p"],reverse=True)[:10]:
         k=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
-        lines.append(f"{k} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']}: {r['p']:.1%} | 🟢 Отбор пройден")
-    if not selected: lines.append("Сейчас нет прогнозов, прошедших строгий отбор. Ставки не рекомендуются.")
-    lines.append("Качество прогноза не равно доказанной доходности. Проверяй фактическое расписание.")
-    return "\n".join(lines)
+        lines.append(f"🟢 {k} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']} {r['p']:.1%}")
+    if not strict: lines.append("🟢 Сейчас нет прогнозов, прошедших строгий отбор.")
+    lines.append("\\n🔎 Перспективные • исследовательский список, НЕ ставки:")
+    used=set()
+    for r in sorted(watch,key=lambda x:x["p"],reverse=True):
+        fixture=(canonical(r["home"]),canonical(r["away"]),r["kickoff"])
+        if fixture in used: continue
+        used.add(fixture)
+        k=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
+        lines.append(f"🟡 {k} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']} {r['p']:.1%}")
+        if len(used)>=5: break
+    if not used: lines.append("Нет даже предварительных кандидатов с достаточной выборкой.")
+    if rejected:
+        lines.append("\\nПочему строгий список пуст или ограничен (число отклонённых прогнозов по причинам):")
+        for reason,count in sorted(rejected.items(),key=lambda x:-x[1])[:4]:
+            lines.append(f"• {reason}: {count}")
+    lines.append("🟡 Не означает надёжную ставку. Проверь матч и коэффициенты; гарантии нет.")
+    return "\\n".join(lines)
 
 
 def best_today():
