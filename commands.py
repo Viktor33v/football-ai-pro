@@ -273,7 +273,7 @@ def h2h(q):
     lines.append("Найдено: "+str(len(found))+". История не меняет прогнозы.")
     return "\n".join(lines)
 
-def filter_predictions(arg):
+def filter_predictions(arg, days=1):
     import re,math
     from corners import MARKETS as CORNER_MARKETS
     from cards import MARKETS as CARD_MARKETS
@@ -305,12 +305,13 @@ def filter_predictions(arg):
     except (ValueError,TypeError,KeyError):
         return "Дата базы некорректна."
     today=now.astimezone(local).date()
+    if not isinstance(days,int) or not 1<=days<=7: return "Неверный период."
     found={}
     for r in reconcile(snap.get("rows",[])):
         if not r.get("kickoff"): continue
         try: k=datetime.fromisoformat(r["kickoff"])
         except (ValueError,TypeError): continue
-        if k.tzinfo is None or k<=now or k.astimezone(local).date()!=today: continue
+        if k.tzinfo is None or k<=now or not today<=k.astimezone(local).date()<today+timedelta(days=days): continue
         if market=="ТМ 2.5":
             if r.get("group")!="goals" or r.get("market")!="ТБ 2.5": continue
             p=1-r.get("p",float("nan"))
@@ -322,10 +323,12 @@ def filter_predictions(arg):
         key=(canonical(r["home"]),canonical(r["away"]),k.isoformat(),market)
         if key not in found or p>found[key][0]: found[key]=(p,r)
     ranked=sorted(found.values(),key=lambda t:t[0],reverse=True)
-    lines=[f"🔎 {market} | {lo}–{hi}% | сегодня, Бишкек",
+    period="сегодня" if days==1 else "ближайшие 7 дней"
+    lines=[f"🔎 {market} | {lo}–{hi}% | {period}, Бишкек",
            "Все прогнозы; сортировка по вероятности.",
-           "Расписание независимо не подтверждено; оценка не гарантия.",
-           "⚠️ ТБ 0.5 2Т = минимум 1 гол во 2-м тайме; это НЕ ТБ 1.5 2Т (минимум 2 гола)."]
+           "Расписание независимо не подтверждено; оценка не гарантия."]
+    if market=="ТБ 0.5 2Т":
+        lines.append("⚠️ ТБ 0.5 2Т = минимум 1 гол во 2-м тайме; это НЕ ТБ 1.5 2Т (минимум 2 гола).")
     if market=="ТМ 2.5":
         lines.append("ТМ 2.5 = 1 − P(ТБ 2.5). Отдельного теста ТМ нет.")
     calibration=snap.get("calibration",{}).get("markets",{}).get("ТБ 2.5" if market=="ТМ 2.5" else market)
@@ -374,7 +377,7 @@ def filter_predictions(arg):
                      f"Индекс V26.1: {quality_text} | {quality['status']}\nРешение V29: {decision}\nОснование: {quality['reason']}\nПреимущество над базой: {evidence['status']}\nИсторических тестов: {n if market!='ТМ 2.5' and n else 'нет отдельного теста'}"
                      + (f" | Brier модель/база: {d['model']:.4f}/{d['baseline']:.4f}"
                         if market!="ТМ 2.5" and isinstance(d.get("model"),(int,float)) and isinstance(d.get("baseline"),(int,float)) else ""))
-    if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон.")
+    if not ranked: lines.append("На сегодня подходящих матчей нет. Попробуй другой диапазон." if days==1 else "На ближайшие 7 дней нет предстоящих матчей с подтверждённым временем в базе.")
     if len(ranked)>20: lines.append(f"Показано 20 из {len(ranked)}.")
     lines.append("V26.1: порог улучшения Brier 0.002 — эвристический, не проверка статистической значимости.")
     lines.append("V26: индекс — эвристика качества данных и калибровки, не вероятность выигрыша. 95% интервал описывает частоту, не отдельный матч.")
@@ -615,7 +618,7 @@ def answer(msg):
     if cmd=="/best": return best_today()
     if cmd=="/all": return all_predictions(arg)
     if cmd=="/filter": return filter_predictions(arg)
-    if cmd=="/btts": return filter_predictions("обе забьют 0-100")
+    if cmd=="/btts": return filter_predictions("обе забьют 0-100",days=7)
     if cmd=="/status": return status_report()
     if cmd=="/h2h": return h2h(arg)
     if cmd=="/odds": return odds(arg)
