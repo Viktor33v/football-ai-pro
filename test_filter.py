@@ -60,6 +60,9 @@ class FilterTests(unittest.TestCase):
             self.assertIn("ближайшие 7 дней",result)
             self.assertIn("Обе забьют: 72.0%",result)
             self.assertNotIn("ТБ 0.5 2Т = минимум",result)
+            compact=commands.filter_predictions("обе забьют 0-100",days=7,compact=True)
+            self.assertIn("Краткий обзор: топ-10",compact)
+            self.assertIn("A — B | 72.0%",compact)
             daily=commands.filter_predictions("обе забьют 0-100")
             self.assertNotIn("Обе забьют: 72.0%",daily)
     def test_btts_keyboard_button(self):
@@ -68,7 +71,7 @@ class FilterTests(unittest.TestCase):
         self.assertEqual(commands.MENU["Обе забьют"],"/btts")
         with patch.object(commands,"filter_predictions",return_value="BTTS report") as report:
             self.assertEqual(commands.answer("Обе забьют"),"BTTS report")
-            report.assert_called_once_with("обе забьют 0-100",days=7)
+            report.assert_called_once_with("обе забьют 0-100",days=7,compact=True)
     def test_btts_requires_meaningful_brier_gain(self):
         row=dict(self.snap["rows"][0]); row["sample"]=[20,20]; row["selected"]=True
         self.snap["diagnostics"]["Обе забьют"]={"n":814,"model":0.2447,"baseline":0.2448}
