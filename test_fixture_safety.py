@@ -33,6 +33,24 @@ class FixtureSafetyTests(unittest.TestCase):
         self.assertIn("Угловые ТБ 8.5",output)
         self.assertNotIn("Угловые 1Т ТБ 3.5: 69.0%",output)
 
+    def test_corners_prefer_brier_evidence_over_raw_probability(self):
+        kickoff=(datetime.now(timezone.utc)+timedelta(hours=2)).isoformat()
+        self.snapshot["rows"]=[
+            {"home":"SV Werder Bremen","away":"Hamburger SV",
+             "date":kickoff[:10],"kickoff":kickoff,
+             "market":"Угловые ТБ 8.5","p":.81,"selected":True,"group":"corners"},
+            {"home":"SV Werder Bremen","away":"Hamburger SV",
+             "date":kickoff[:10],"kickoff":kickoff,
+             "market":"Угловые 1Т ТБ 3.5","p":.72,"selected":True,"group":"corners"}]
+        self.snapshot["diagnostics"]={
+            "Угловые ТБ 8.5":{"n":120,"model":.26,"baseline":.25},
+            "Угловые 1Т ТБ 3.5":{"n":120,"model":.23,"baseline":.25}}
+        with patch.object(commands,"load",return_value=self.snapshot):
+            output=commands.answer("/corners")
+        self.assertEqual(output.count("Вердер — Гамбург"),1)
+        self.assertIn("Угловые 1Т ТБ 3.5: 72.0%",output)
+        self.assertNotIn("Угловые ТБ 8.5: 81.0%",output)
+
     def test_cards_show_one_market_per_fixture(self):
         kickoff=(datetime.now(timezone.utc)+timedelta(hours=2)).isoformat()
         self.snapshot["rows"]=[
