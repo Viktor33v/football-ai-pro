@@ -86,6 +86,17 @@ class FilterTests(unittest.TestCase):
         self.assertIn("улучшение Brier менее 0.002",out)
         self.assertNotIn("🟢 "+self.snap["rows"][0]["home"],out)
 
+    def test_today_quality_rejects_weak_brier(self):
+        self.snap["rows"]=self.snap["rows"][:1]
+        self.snap["diagnostics"]["Обе забьют"]={"n":1015,"model":.2429,"baseline":.2439}
+        with patch.object(commands,"load",return_value=self.snap):
+            out=commands.answer("Прогнозы сегодня")
+        self.assertIn("Прогнозы сегодня",out)
+        self.assertIn("Строгий отбор",out)
+        self.assertIn("Предварительный анализ",out)
+        self.assertNotIn("🟢 "+self.snap["rows"][0]["home"],out)
+        self.assertEqual(commands.MENU["Прогнозы сегодня"],"/today")
+
     def test_btts_keyboard_button(self):
         labels=[button["text"] for row in commands.keyboard()["keyboard"] for button in row]
         self.assertIn("Обе забьют",labels)
