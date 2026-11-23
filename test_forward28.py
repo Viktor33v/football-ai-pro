@@ -31,6 +31,17 @@ class Forward28Tests(unittest.TestCase):
         result["123"]["status"]="FINISHED"
         next(iter(j.values()))["created"]=(self.now+timedelta(days=1,hours=1)).isoformat()
         self.assertEqual(settle(j,result,future),0)
+    def test_forward_calibration_by_market(self):
+        now=self.now
+        journal={}
+        for i in range(40):
+            journal[str(i)]={"market":"Обе забьют","kickoff":(now-timedelta(days=1)).isoformat(),
+                "p":0.65,"result":int(i<24)}
+        out=report(journal,now)
+        self.assertIn("Калибровка: средний прогноз 65.0%, факт 60.0%",out)
+        self.assertIn("60%–70%: 40 прогнозов",out)
+        self.assertNotIn("80%–100%: 0 прогнозов",out)
+
     def test_half_second_half(self):
         rows=[dict(self.rows[0],market="ТБ 0.5 2Т")]
         j=archive({},rows,self.now)
