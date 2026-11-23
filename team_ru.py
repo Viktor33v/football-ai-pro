@@ -51,7 +51,7 @@ NAMES={
 "FC Twente '65":"Твенте",
 "SC Heerenveen":"Херенвен",
 "NEC Nijmegen":"НЕК Неймеген",
-""Feyenoord Rotterdam":"Фейеноорд","SBV Excelsior":"Эксельсиор",
+"Feyenoord Rotterdam":"Фейеноорд","SBV Excelsior":"Эксельсиор",
 "FC Bayern München":"Бавария","Bayern Munich":"Бавария","1. FC Köln":"Кёльн",
 "VfB Stuttgart":"Штутгарт","FC Schalke 04":"Шальке 04",
 "Bayer 04 Leverkusen":"Байер","SC Paderborn 07":"Падерборн",
