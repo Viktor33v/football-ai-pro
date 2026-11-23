@@ -4,7 +4,7 @@ from datetime import datetime,timezone,timedelta
 from snapshot import load
 from backtest import LABELS
 from reliability26 import calibration_summary, reliability, baseline_evidence
-from forward28 import report as forward_report
+from forward28 import report as forward_report, extra_market_report
 from team_ru import display as ru_team
 
 def telegram(method,**params):
@@ -749,7 +749,7 @@ def answer(msg):
     if cmd=="/bank": return bank_report()
     if cmd in ("/paper_list","/paper_add","/paper_open","/paper_settle"): return paper_commands(cmd,arg)
     if cmd in ("/bank_reset","/bank_confirm","/bank_history"): return bank_admin(cmd,arg)
-    if cmd=="/forward": return forward_report(load("state/forward28.json",{}),now)
+    if cmd=="/forward": return forward_report(load("state/forward28.json",{}),now)+"\n"+extra_market_report(load("state/extra_journal.json",{}),now)
     if cmd=="/performance": return performance()
     if cmd=="/shortlist": return shortlist()
     if cmd=="/best": return best_today()
