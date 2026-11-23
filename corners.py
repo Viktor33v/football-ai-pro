@@ -24,7 +24,7 @@ def counts(r):
 
 def run():
     today=datetime.now(timezone.utc).date()
-    metrics=defaultdict(list); picks=defaultdict(list); coverage=[]; errors=[]
+    metrics=defaultdict(list); picks=defaultdict(list); coverage=[]; errors=[]; unavailable_stats=[]; fixture_counts={}
     for league in LEAGUES:
         try: history=read(league,"results"); fixtures=read(league,"fixtures")
         except Exception as e:
@@ -66,6 +66,8 @@ def run():
                     venue[h,1,half].append((a,b)); venue[t,0,half].append((b,a))
                     totals[half].append(a+b)
         coverage.append(f"{league}: {len(totals[0])}/{len(totals[1])}")
+        fixture_counts[league]=len(fixtures)
+        if len(totals[0])<30: unavailable_stats.append(league+" (угловые: "+str(len(totals[0]))+")")
         used=set()
         for r in fixtures:
             key=(r["date"],r["home"],r["away"])
@@ -89,8 +91,9 @@ def run():
         for r in sorted(picks[i],key=lambda r:r["p"],reverse=True)[:5]:
             lines.append(f'{r["home"]} — {r["away"]} | {r["date"]} | {r["p"]:.0%} | угл. модель {r["expected"]:.1f} | {r["sample"][0]}/{r["sample"][1]}')
         if not picks[i]: lines.append("Нет кандидатов")
+    if unavailable_stats: lines.append("Нет достаточной статистики угловых (не активны для прогнозов): "+", ".join(unavailable_stats))
     if errors: lines.append("Недоступные лиги: "+", ".join(errors))
     lines.append("Не независимый финальный тест. Вероятности экспериментальные; пропуски не заменяются нулями.")
-    with open("corners.json","w",encoding="utf-8") as f: json.dump(dict(source=SOURCE,coverage=coverage,errors=errors,picks=picks,metrics=metrics),f,ensure_ascii=False,indent=2)
+    with open("corners.json","w",encoding="utf-8") as f: json.dump(dict(source=SOURCE,coverage=coverage,errors=errors,unavailable_stats=unavailable_stats,fixture_counts=fixture_counts,picks=picks,metrics=metrics),f,ensure_ascii=False,indent=2)
     send(os.environ["TELEGRAM_CHAT_ID"],"\n".join(lines))
 if __name__=="__main__": run()
