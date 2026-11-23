@@ -20,7 +20,7 @@ def norm(s):
 ALIASES={"бавария":"bayern","кёльн":"koln","кельн":"koln","барселона":"barcelona","реал мадрид":"real madrid","реал":"real","атлетико":"atletico","арсенал":"arsenal","челси":"chelsea","ливерпуль":"liverpool","манчестер сити":"manchester city","манчестер юнайтед":"manchester united","тоттенхэм":"tottenham","псж":"paris saint","боруссия":"borussia","дортмунд":"dortmund","ювентус":"juventus","интер":"inter","милан":"milan","наполи":"napoli","псв":"psv","аякс":"ajax","фейеноорд":"feyenoord","утрехт":"utrecht","вильярреал":"villarreal","бетис":"betis","гетафе":"getafe","валенсия":"valencia","севилья":"sevilla","лейпциг":"leipzig","байер":"leverkusen","штутгарт":"stuttgart","аугсбург":"augsburg","майнц":"mainz","эвертон":"everton","брентфорд":"brentford"}
 MENU={"Прогнозы сегодня":"/today","Сегодня":"/today","Завтра":"/tomorrow","Топ-10":"/top","Голы":"/goals","Обе забьют":"/btts","Надёжные прогнозы":"/reliable","Угловые":"/corners","Карточки":"/cards","Статистика":"/stats","Помощь":"/help","Форма":"/form","Тактика":"/tactic","Анализ матча":"/analyze","Лучшие сегодня":"/best","Все прогнозы":"/all","Лучшие прогнозы":"/best","Состояние":"/status"}
 def keyboard():
-    return {"keyboard":[[{"text":x} for x in row] for row in [("Прогнозы сегодня","Завтра","Топ-10"),("Голы","Обе забьют","Угловые"),("Карточки",),("Анализ матча","Все прогнозы"),("Лучшие прогнозы","Надёжные прогнозы"),("Помощь",)]],"resize_keyboard":True}
+    return {"keyboard":[[{"text":x} for x in row] for row in [("Прогнозы сегодня",),("Завтра","Топ-10"),("Голы","Обе забьют","Угловые"),("Карточки",),("Анализ матча","Все прогнозы"),("Лучшие прогнозы","Надёжные прогнозы"),("Помощь",)]],"resize_keyboard":True}
 def canonical(s):
     return " ".join(norm(s).split())
 def query_match(q,r):
@@ -509,13 +509,14 @@ def today_quality():
     except (ValueError,TypeError,KeyError):
         return "Некорректная дата базы прогнозов."
     target=now.astimezone(local).date()
-    strict=[]; research=[]; seen=set()
+    candidates=[]
+    seen=set()
     for r in reconcile(snap.get("rows",[])):
         try:
             k=datetime.fromisoformat(r["kickoff"])
             p=r["p"]
-            if k.tzinfo is None or k<=now or k.astimezone(local).date()!=target: continue
-            if type(p) not in (int,float) or not math.isfinite(p) or not 0<p<1: continue
+            if k.tzinfo is None or k<=now or not math.isfinite(p) or not 0<p<1: continue
+            if k>now+timedelta(hours=24) and k.astimezone(local).date()!=target: continue
             key=(canonical(r["home"]),canonical(r["away"]),k.isoformat(),r["market"])
             if key in seen: continue
             seen.add(key)
@@ -523,20 +524,29 @@ def today_quality():
         d=snap.get("diagnostics",{}).get(r["market"],{})
         q=reliability(calibration_summary(snap.get("calibration",{}).get("markets",{}).get(r["market"]),0,100),d,r.get("sample"),snap.get("created"),now)
         e=baseline_evidence(d)
+        level=None
         if eligible(r,snap) and q["status"].startswith("🟢") and e["status"].startswith("🟢"):
-            strict.append(r)
+            level="strict"
         elif r.get("selected") and min(r.get("sample") or [0])>=10 and d.get("n",0)>=100 and d.get("model",1)<d.get("baseline",0):
-            research.append(r)
+            level="research"
+        if level: candidates.append((r,k,level))
+    today=[x for x in candidates if x[1].astimezone(local).date()==target]
+    fallback=not today
+    pool=([x for x in candidates if now<x[1]<=now+timedelta(hours=24)] if fallback else today)
+    strict=[r for r,k,level in pool if level=="strict"]
+    research=[r for r,k,level in pool if level=="research"]
     lines=["⚽ Прогнозы сегодня • Бишкек • "+target.strftime("%d.%m.%Y"),
-           "Только будущие матчи с известным временем. Расписание независимо не подтверждено.",
-           "🟢 Строгий отбор (качество проверено):"]
+           "Только будущие матчи с известным временем. Расписание независимо не подтверждено."]
+    if fallback:
+        lines.append("Сегодня подходящих прогнозов нет. Проверяю ближайшие 24 часа от текущего момента (включая часть завтрашнего дня).")
+    lines.append("🟢 Строгий отбор (качество проверено):")
     def append_rows(rows,mark,limit):
         fixtures=set(); count=0
         for r in sorted(rows,key=lambda x:x["p"],reverse=True):
             key=(canonical(r["home"]),canonical(r["away"]),r["kickoff"])
             if key in fixtures: continue
             fixtures.add(key)
-            k=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%H:%M")
+            k=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
             lines.append(f"{mark} {k} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']}: {r['p']:.1%}")
             count+=1
             if count>=limit: break
@@ -544,6 +554,7 @@ def today_quality():
     if not append_rows(strict,"🟢",5): lines.append("Нет прогнозов, прошедших строгий отбор.")
     lines.append("\n🟡 Предварительный анализ (НЕ рекомендации для ставок):")
     if not append_rows(research,"🟡",5): lines.append("Нет предварительных кандидатов.")
+    if fallback and not pool: lines.append("На ближайшие 24 часа подходящих прогнозов также нет.")
     lines.append("Вероятность — оценка модели, не гарантия. Без подтверждения матчей и коэффициентов доходность неизвестна.")
     return "\n".join(lines)
 
