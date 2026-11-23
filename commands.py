@@ -814,19 +814,32 @@ def answer(msg):
     else: return helptext
     lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Только будущие матчи с известным временем; расписание независимо не подтверждено.",
            "⚠️ ТБ 0.5 2Т означает минимум 1 гол во 2-м тайме, НЕ 2 гола. Прогнозов ТБ 1.5 2Т модель не выдаёт."]
-    # For corners/cards, display one market per fixture to avoid crowding
-    # the main list with correlated bets on the same match.
+    # Prefer historically supported markets when choosing ONE forecast per fixture.
+    # Raw probability alone is not a measure of prediction quality.
     if cmd in ("/corners","/cards"):
+        diagnostics=snap.get("diagnostics",{})
+        def market_rank(r):
+            d=diagnostics.get(r["market"],{})
+            n=d.get("n",0)
+            model=d.get("model")
+            baseline=d.get("baseline")
+            verified=(isinstance(n,(int,float)) and n>=100
+                      and isinstance(model,(int,float))
+                      and isinstance(baseline,(int,float))
+                      and 0<=model<baseline<=1
+                      and baseline-model>=0.002)
+            return (int(verified),r["p"])
         unique=[]
         seen_fixtures=set()
-        for r in sorted(rs,key=lambda r:r["p"],reverse=True):
+        for r in sorted(rs,key=market_rank,reverse=True):
             fixture=(canonical(r["home"]),canonical(r["away"]),r["kickoff"])
             if fixture in seen_fixtures:
                 continue
             seen_fixtures.add(fixture)
             unique.append(r)
         rs=unique
-        lines.append("Один рынок на матч: максимальная оценка p среди доступных рынков, не доказательство надёжности.")
+        lines.append("Один рынок на матч. Приоритет — историческое преимущество по Brier (от 100 проверок), затем вероятность.")
+        lines.append("Это исследовательский отбор: даже положительный исторический Brier не доказывает точность будущих прогнозов.")
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M") if r.get("kickoff") else r["date"]+" (время неизвестно)"
         lines.append(f'{stamp} | {ru_team(r["home"])} — {ru_team(r["away"])}\n{r["market"]}: {r["p"]:.1%}')
