@@ -65,6 +65,16 @@ class FilterTests(unittest.TestCase):
             self.assertIn("A — B | 72.0%",compact)
             daily=commands.filter_predictions("обе забьют 0-100")
             self.assertNotIn("Обе забьют: 72.0%",daily)
+    def test_reliable_button_and_strict_rejection(self):
+        labels=[button["text"] for row in commands.keyboard()["keyboard"] for button in row]
+        self.assertIn("Надёжные прогнозы",labels)
+        self.assertEqual(commands.MENU["Надёжные прогнозы"],"/reliable")
+        self.snap["diagnostics"]["Обе забьют"]={"n":1015,"model":0.2429,"baseline":0.2439}
+        with patch.object(commands,"load",return_value=self.snap):
+            out=commands.answer("Надёжные прогнозы")
+        self.assertIn("строгий отбор",out)
+        self.assertIn("нет прогнозов, прошедших строгий отбор",out)
+
     def test_btts_keyboard_button(self):
         labels=[button["text"] for row in commands.keyboard()["keyboard"] for button in row]
         self.assertIn("Обе забьют",labels)
