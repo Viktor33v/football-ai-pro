@@ -11,6 +11,15 @@ MARKETS=[("Угловые ТБ 8.5",9,0),("Угловые ТБ 9.5",10,0),("Уг
 def read(league,kind):
     with urlopen(BASE+league+"/"+kind+"_2627.csv",timeout=30) as r:
         return list(csv.DictReader(io.StringIO(r.read().decode("utf-8-sig"))))
+def valid_future_fixture(r,today,seen):
+    """CSV dates are UTC calendar dates only; no trusted kickoff time."""
+    try:
+        d=datetime.strptime(r["date"],"%Y-%m-%d").date()
+        home=r["home"].strip(); away=r["away"].strip()
+        return bool(home and away and home!=away and today<d<=today+timedelta(days=7) and (r["date"],home,away) not in seen)
+    except (KeyError,TypeError,ValueError,AttributeError):
+        return False
+
 def counts(r):
     try:
         a,b=int(r["home_corners"]),int(r["away_corners"])
@@ -71,7 +80,7 @@ def run():
         used=set()
         for r in fixtures:
             key=(r["date"],r["home"],r["away"])
-            if key in used or key in seen or not str(today)<r["date"]<=str(today+timedelta(days=7)): continue
+            if key in used or not valid_future_fixture(r,today,seen): continue
             used.add(key)
             for i,market in enumerate(MARKETS):
                 f=forecast(r,market)
