@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-22T07:03:38.792717+00:00",
+  "created": "2026-11-23T07:27:26.290987+00:00",
   "source": "https://github.com/oladeeayo/open-matchday",
   "errors": [],
   "teams": [
@@ -116,6 +116,17 @@
           "target": 10,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Newcastle",
+          "venue": "away",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -232,6 +243,17 @@
           "target": 4,
           "corners": 2,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Crystal Palace",
+          "venue": "home",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -348,6 +370,17 @@
           "target": 2,
           "corners": 4,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Brighton",
+          "venue": "home",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -464,6 +497,17 @@
           "target": 9,
           "corners": 8,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Liverpool",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -696,6 +740,17 @@
           "target": 7,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Coventry",
+          "venue": "away",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -812,6 +867,17 @@
           "target": 2,
           "corners": 2,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Spurs",
+          "venue": "away",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -928,6 +994,17 @@
           "target": 2,
           "corners": 2,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Aston Villa",
+          "venue": "away",
+          "g": 0,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -1044,6 +1121,17 @@
           "target": 5,
           "corners": 3,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Bournemouth",
+          "venue": "away",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -1160,6 +1248,17 @@
           "target": 4,
           "corners": 6,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Chelsea",
+          "venue": "away",
+          "g": 4,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -1392,6 +1491,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Ipswich",
+          "venue": "home",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -1508,6 +1618,17 @@
           "target": 6,
           "corners": 7,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Hull",
+          "venue": "away",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -1624,6 +1745,17 @@
           "target": 6,
           "corners": 1,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Sunderland",
+          "venue": "home",
+          "g": 0,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -1740,6 +1872,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Fulham",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -1856,6 +1999,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Nott'm Forest",
+          "venue": "home",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -1972,6 +2126,17 @@
           "target": 5,
           "corners": 3,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Arsenal",
+          "venue": "home",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -2088,6 +2253,17 @@
           "target": 8,
           "corners": 7,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Man Utd",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 15,
+          "yellow": null
         }
       ]
     },
@@ -2204,6 +2380,17 @@
           "target": 5,
           "corners": 3,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Man City",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -2320,6 +2507,17 @@
           "target": 4,
           "corners": 2,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Leeds",
+          "venue": "home",
+          "g": 1,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -2458,6 +2656,17 @@
           "target": 2,
           "corners": 4,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "RC Deportivo",
+          "venue": "home",
+          "g": 3,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -2596,6 +2805,17 @@
           "target": 1,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Atlético de Madrid",
+          "venue": "home",
+          "g": 0,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -2734,6 +2954,17 @@
           "target": 3,
           "corners": 5,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Real Betis",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -2861,6 +3092,17 @@
           "target": 3,
           "corners": 6,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Valencia CF",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -2999,6 +3241,17 @@
           "target": 7,
           "corners": 3,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Real Sociedad",
+          "venue": "home",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -3137,6 +3390,17 @@
           "target": 7,
           "corners": 9,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "FC Barcelona",
+          "venue": "away",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -3562,6 +3826,17 @@
           "target": 1,
           "corners": 5,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Deportivo Alavés",
+          "venue": "away",
+          "g": 1,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -3838,6 +4113,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Getafe CF",
+          "venue": "away",
+          "g": 3,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -3976,6 +4262,17 @@
           "target": 8,
           "corners": 6,
           "yellow": 6
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "CA Osasuna",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -4114,6 +4411,17 @@
           "target": 9,
           "corners": 8,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Sevilla FC",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -4252,6 +4560,17 @@
           "target": 3,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "R. Racing Club",
+          "venue": "away",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 14,
+          "yellow": null
         }
       ]
     },
@@ -4528,6 +4847,17 @@
           "target": 2,
           "corners": 2,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Rayo Vallecano",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -4666,6 +4996,17 @@
           "target": 8,
           "corners": 6,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Real Madrid",
+          "venue": "away",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -4804,6 +5145,17 @@
           "target": 11,
           "corners": 5,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Celta",
+          "venue": "home",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -4942,6 +5294,17 @@
           "target": 4,
           "corners": 2,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Villarreal CF",
+          "venue": "home",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 10,
+          "yellow": null
         }
       ]
     },
@@ -5080,6 +5443,17 @@
           "target": 5,
           "corners": 6,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Málaga CF",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -5301,6 +5675,17 @@
           "target": 5,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "FC Schalke 04",
+          "venue": "away",
+          "g": 0,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -5522,6 +5907,17 @@
           "target": 7,
           "corners": 6,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Eintracht Frankfurt",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -5627,6 +6023,17 @@
           "target": 0,
           "corners": 1,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "RB Leipzig",
+          "venue": "home",
+          "g": 1,
+          "c": 5,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -5732,6 +6139,17 @@
           "target": 3,
           "corners": 6,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "TSG Hoffenheim",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -5837,6 +6255,17 @@
           "target": 1,
           "corners": 7,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "FC Augsburg",
+          "venue": "away",
+          "g": 1,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -5942,6 +6371,17 @@
           "target": 3,
           "corners": 2,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Bayer 04 Leverkusen",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -6047,6 +6487,17 @@
           "target": 7,
           "corners": 2,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "1. FC Union Berlin",
+          "venue": "away",
+          "g": 5,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -6152,6 +6603,17 @@
           "target": 6,
           "corners": 3,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Borussia Dortmund",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -6257,6 +6719,17 @@
           "target": 7,
           "corners": 6,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "SC Freiburg",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -6362,6 +6835,17 @@
           "target": 8,
           "corners": 6,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "SC Paderborn 07",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -6467,6 +6951,17 @@
           "target": 6,
           "corners": 6,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Borussia Mönchengladbach",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -6572,6 +7067,17 @@
           "target": 9,
           "corners": 5,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "SV Werder Bremen",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -6677,6 +7183,17 @@
           "target": 9,
           "corners": 5,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "SV 07 Elversberg",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -6782,6 +7299,17 @@
           "target": 5,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Hamburger SV",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -6887,6 +7415,17 @@
           "target": 8,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "1. FSV Mainz 05",
+          "venue": "home",
+          "g": 3,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -6992,6 +7531,17 @@
           "target": 6,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "VfB Stuttgart",
+          "venue": "home",
+          "g": 0,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -7119,6 +7669,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Atalanta",
+          "venue": "away",
+          "g": 4,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -7373,6 +7934,17 @@
           "target": 5,
           "corners": 7,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Bologna",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -7500,6 +8072,17 @@
           "target": 1,
           "corners": 2,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Cagliari",
+          "venue": "home",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -7627,6 +8210,17 @@
           "target": 5,
           "corners": 3,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Sassuolo",
+          "venue": "away",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -7754,6 +8348,17 @@
           "target": 6,
           "corners": 6,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Torino",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -7881,6 +8486,17 @@
           "target": 2,
           "corners": 1,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Roma",
+          "venue": "home",
+          "g": 1,
+          "c": 5,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -8008,6 +8624,17 @@
           "target": 4,
           "corners": 3,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Como",
+          "venue": "away",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -8135,6 +8762,17 @@
           "target": 9,
           "corners": 13,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Milan",
+          "venue": "away",
+          "g": 1,
+          "c": 5,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -8262,6 +8900,17 @@
           "target": 6,
           "corners": 12,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Venezia",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -8389,6 +9038,17 @@
           "target": 4,
           "corners": 3,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Juventus",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -8516,6 +9176,17 @@
           "target": 1,
           "corners": 5,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Lazio",
+          "venue": "away",
+          "g": 0,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -8643,6 +9314,17 @@
           "target": 7,
           "corners": 2,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Internazionale",
+          "venue": "home",
+          "g": 4,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -8770,6 +9452,17 @@
           "target": 1,
           "corners": 1,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Genoa",
+          "venue": "home",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -8897,6 +9590,17 @@
           "target": 2,
           "corners": 4,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Napoli",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -9024,6 +9728,17 @@
           "target": 2,
           "corners": 0,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Frosinone",
+          "venue": "home",
+          "g": 5,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -9151,6 +9866,17 @@
           "target": 10,
           "corners": 15,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Udinese",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -9278,6 +10004,17 @@
           "target": 6,
           "corners": 6,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Lecce",
+          "venue": "home",
+          "g": 3,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -9405,6 +10142,17 @@
           "target": 9,
           "corners": 12,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Parma",
+          "venue": "away",
+          "g": 5,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -9648,6 +10396,17 @@
           "target": 5,
           "corners": 6,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Le Mans FC",
+          "venue": "home",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -9764,6 +10523,17 @@
           "target": 4,
           "corners": 1,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Stade Brestois 29",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -9880,6 +10650,17 @@
           "target": 6,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Toulouse FC",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -9996,6 +10777,17 @@
           "target": 2,
           "corners": 1,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "AS Monaco",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -10239,6 +11031,17 @@
           "target": 3,
           "corners": 5,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Angers SCO",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 10,
+          "yellow": null
         }
       ]
     },
@@ -10355,6 +11158,17 @@
           "target": 5,
           "corners": 8,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Olympique de Marseille",
+          "venue": "away",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -10471,6 +11285,17 @@
           "target": 6,
           "corners": 1,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "RC Strasbourg Alsace",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -10587,6 +11412,17 @@
           "target": 8,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Paris Saint-Germain",
+          "venue": "home",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -10703,6 +11539,17 @@
           "target": 3,
           "corners": 0,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Stade Rennais FC",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -10819,6 +11666,17 @@
           "target": 5,
           "corners": 7,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "RC Lens",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -10935,6 +11793,17 @@
           "target": 2,
           "corners": 8,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "LOSC Lille",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -11051,6 +11920,17 @@
           "target": 5,
           "corners": 6,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Paris FC",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -11167,6 +12047,17 @@
           "target": 3,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Olympique Lyonnais",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -11410,6 +12301,17 @@
           "target": 3,
           "corners": 7,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "AJ Auxerre",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -11526,6 +12428,17 @@
           "target": 2,
           "corners": 7,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "FC Lorient",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -11642,6 +12555,17 @@
           "target": 7,
           "corners": 5,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "OGC Nice",
+          "venue": "away",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -11780,6 +12704,17 @@
           "target": 3,
           "corners": 1,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "FC Utrecht",
+          "venue": "away",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -11918,6 +12853,17 @@
           "target": 2,
           "corners": 7,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Feyenoord",
+          "venue": "away",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -12056,6 +13002,17 @@
           "target": 7,
           "corners": 8,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "PSV",
+          "venue": "home",
+          "g": 1,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -12194,6 +13151,17 @@
           "target": 8,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "PEC Zwolle",
+          "venue": "home",
+          "g": 1,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 11,
+          "yellow": null
         }
       ]
     },
@@ -12332,6 +13300,17 @@
           "target": 2,
           "corners": 0,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Fortuna Sittard",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 13,
+          "yellow": null
         }
       ]
     },
@@ -12470,6 +13449,17 @@
           "target": 5,
           "corners": 2,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "FC Twente",
+          "venue": "away",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -12608,6 +13598,17 @@
           "target": 7,
           "corners": 1,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "N.E.C. Nijmegen",
+          "venue": "away",
+          "g": 4,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -12746,6 +13747,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Go Ahead Eagles",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -12884,6 +13896,17 @@
           "target": 5,
           "corners": 7,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Sparta Rotterdam",
+          "venue": "away",
+          "g": 5,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -13022,6 +14045,17 @@
           "target": 7,
           "corners": 5,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Ajax",
+          "venue": "away",
+          "g": 0,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -13160,6 +14194,17 @@
           "target": 6,
           "corners": 9,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "AZ",
+          "venue": "home",
+          "g": 1,
+          "c": 5,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -13298,6 +14343,17 @@
           "target": 3,
           "corners": 1,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Excelsior Rotterdam",
+          "venue": "home",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -13436,6 +14492,17 @@
           "target": 5,
           "corners": 0,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "sc Heerenveen",
+          "venue": "home",
+          "g": 1,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -13574,6 +14641,17 @@
           "target": 5,
           "corners": 3,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "SC Cambuur",
+          "venue": "home",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -13712,6 +14790,17 @@
           "target": 2,
           "corners": 7,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Telstar",
+          "venue": "away",
+          "g": 3,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -13850,6 +14939,17 @@
           "target": 2,
           "corners": 2,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "ADO Den Haag",
+          "venue": "home",
+          "g": 3,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -13988,6 +15088,17 @@
           "target": 9,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "FC Groningen",
+          "venue": "away",
+          "g": 3,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -14126,6 +15237,17 @@
           "target": 5,
           "corners": 9,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Willem II",
+          "venue": "home",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -16517,6 +17639,17 @@
           "target": 8,
           "corners": 9,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "KV Mechelen",
+          "venue": "away",
+          "g": 5,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -16644,6 +17777,17 @@
           "target": 7,
           "corners": 1,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Union St.-Gilloise",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -16771,6 +17915,17 @@
           "target": 5,
           "corners": 3,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Lommel SK",
+          "venue": "away",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -17174,6 +18329,17 @@
           "target": 4,
           "corners": 10,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "KV Kortrijk",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -17301,6 +18467,17 @@
           "target": 9,
           "corners": 5,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Royal Charleroi SC",
+          "venue": "away",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -17428,6 +18605,17 @@
           "target": 4,
           "corners": 8,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Standard Liege",
+          "venue": "home",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -17555,6 +18743,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Waasland-Beveren",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 10,
+          "yellow": null
         }
       ]
     },
@@ -17682,6 +18881,17 @@
           "target": 2,
           "corners": 16,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Club Brugge",
+          "venue": "home",
+          "g": 1,
+          "c": 5,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -17809,6 +19019,17 @@
           "target": 10,
           "corners": 5,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Sint-Truidense",
+          "venue": "home",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -17936,6 +19157,17 @@
           "target": 6,
           "corners": 6,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Anderlecht",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -18063,6 +19295,17 @@
           "target": 2,
           "corners": 4,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Antwerp",
+          "venue": "home",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -18190,6 +19433,17 @@
           "target": 0,
           "corners": 3,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "RAAL La Louvière",
+          "venue": "home",
+          "g": 3,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -18317,6 +19571,17 @@
           "target": 1,
           "corners": 1,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "OH Leuven",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -18444,6 +19709,17 @@
           "target": 1,
           "corners": 6,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Racing Genk",
+          "venue": "away",
+          "g": 0,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -18571,6 +19847,17 @@
           "target": 5,
           "corners": 9,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Zulte-Waregem",
+          "venue": "away",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -18698,6 +19985,17 @@
           "target": 3,
           "corners": 5,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "KAA Gent",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 10,
+          "yellow": null
         }
       ]
     },
@@ -18825,6 +20123,17 @@
           "target": 6,
           "corners": 3,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Samsunspor",
+          "venue": "home",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -19079,6 +20388,17 @@
           "target": 5,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Alanyaspor",
+          "venue": "home",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -19206,6 +20526,17 @@
           "target": 5,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Eyüpspor",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 11,
+          "yellow": null
         }
       ]
     },
@@ -19333,6 +20664,17 @@
           "target": 1,
           "corners": 3,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Besiktas",
+          "venue": "home",
+          "g": 2,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -19460,6 +20802,17 @@
           "target": 6,
           "corners": 8,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Amedspor",
+          "venue": "away",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -19587,6 +20940,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Gençlerbirligi",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -19714,6 +21078,17 @@
           "target": 2,
           "corners": 5,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Kasimpasa",
+          "venue": "away",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -19841,6 +21216,17 @@
           "target": 1,
           "corners": 1,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Gaziantep",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -19968,6 +21354,17 @@
           "target": 6,
           "corners": 1,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Kocaelispor",
+          "venue": "away",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -20222,6 +21619,17 @@
           "target": 7,
           "corners": 1,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Fenerbahçe",
+          "venue": "home",
+          "g": 2,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -20349,6 +21757,17 @@
           "target": 5,
           "corners": 6,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Çaykur Rizespor",
+          "venue": "home",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -20476,6 +21895,17 @@
           "target": 4,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Göztepe",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -20603,6 +22033,17 @@
           "target": 10,
           "corners": 4,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Konyaspor",
+          "venue": "away",
+          "g": 4,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -20730,6 +22171,17 @@
           "target": 3,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Trabzonspor",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -20857,6 +22309,17 @@
           "target": 3,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Galatasaray",
+          "venue": "away",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -20984,6 +22447,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Erzurumspor",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -21089,6 +22563,17 @@
           "target": 5,
           "corners": 10,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "Kalamata",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -21205,6 +22690,17 @@
           "target": 3,
           "corners": 1,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Olympiacos",
+          "venue": "away",
+          "g": 2,
+          "c": 6,
+          "shots": null,
+          "target": null,
+          "corners": 0,
+          "yellow": null
         }
       ]
     },
@@ -21321,6 +22817,17 @@
           "target": 3,
           "corners": 3,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-21",
+          "opponent": "AEK Athens",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -21553,6 +23060,17 @@
           "target": 5,
           "corners": 5,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Iraklis",
+          "venue": "home",
+          "g": 6,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -21658,6 +23176,17 @@
           "target": 0,
           "corners": 5,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Levadiakos",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -21774,6 +23303,17 @@
           "target": 2,
           "corners": 9,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Panathinaikos",
+          "venue": "away",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -21890,6 +23430,17 @@
           "target": 2,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Panetolikos",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -22006,6 +23557,17 @@
           "target": 2,
           "corners": 4,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Kifisia",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -22122,6 +23684,17 @@
           "target": 2,
           "corners": 6,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Atromitos",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -22238,6 +23811,17 @@
           "target": 1,
           "corners": 5,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "Volos NFC",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -22470,6 +24054,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "PAOK",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -22586,6 +24181,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-22",
+          "opponent": "OFI Crete",
+          "venue": "home",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     }
