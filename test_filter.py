@@ -75,6 +75,17 @@ class FilterTests(unittest.TestCase):
         self.assertIn("строгий отбор",out)
         self.assertIn("нет прогнозов, прошедших строгий отбор",out)
 
+    def test_reliable_shows_watchlist_without_green(self):
+        self.snap["diagnostics"]["Обе забьют"]={"n":1015,"model":.2429,"baseline":.2439}
+        self.snap["rows"]=self.snap["rows"][:1]
+        self.snap["rows"][0]["sample"]=[20,20]
+        with patch.object(commands,"load",return_value=self.snap):
+            out=commands.reliable_predictions()
+        self.assertIn("Перспективные",out)
+        self.assertIn("🟡",out)
+        self.assertIn("улучшение Brier менее 0.002",out)
+        self.assertNotIn("🟢 "+self.snap["rows"][0]["home"],out)
+
     def test_btts_keyboard_button(self):
         labels=[button["text"] for row in commands.keyboard()["keyboard"] for button in row]
         self.assertIn("Обе забьют",labels)
