@@ -18,6 +18,35 @@ class FixtureSafetyTests(unittest.TestCase):
             ]
         }
 
+    def test_corners_show_one_market_per_fixture(self):
+        kickoff=(datetime.now(timezone.utc)+timedelta(hours=2)).isoformat()
+        self.snapshot["rows"]=[
+            {"home":"SV Werder Bremen","away":"Hamburger SV",
+             "date":kickoff[:10],"kickoff":kickoff,
+             "market":"Угловые ТБ 8.5","p":.71,"selected":True,"group":"corners"},
+            {"home":"SV Werder Bremen","away":"Hamburger SV",
+             "date":kickoff[:10],"kickoff":kickoff,
+             "market":"Угловые 1Т ТБ 3.5","p":.69,"selected":True,"group":"corners"}]
+        with patch.object(commands,"load",return_value=self.snapshot):
+            output=commands.answer("/corners")
+        self.assertEqual(output.count("Вердер — Гамбург"),1)
+        self.assertIn("Угловые ТБ 8.5",output)
+        self.assertNotIn("Угловые 1Т ТБ 3.5: 69.0%",output)
+
+    def test_cards_show_one_market_per_fixture(self):
+        kickoff=(datetime.now(timezone.utc)+timedelta(hours=2)).isoformat()
+        self.snapshot["rows"]=[
+            {"home":"SV Werder Bremen","away":"Hamburger SV",
+             "date":kickoff[:10],"kickoff":kickoff,
+             "market":"ЖК ТБ 2.5","p":.73,"selected":True,"group":"cards"},
+            {"home":"SV Werder Bremen","away":"Hamburger SV",
+             "date":kickoff[:10],"kickoff":kickoff,
+             "market":"ЖК ТБ 3.5","p":.65,"selected":True,"group":"cards"}]
+        with patch.object(commands,"load",return_value=self.snapshot):
+            output=commands.answer("/cards")
+        self.assertEqual(output.count("Вердер — Гамбург"),1)
+        self.assertIn("ЖК ТБ 2.5",output)
+
     def test_top_omits_unverified_future_csv_rows(self):
         with patch.object(commands,"load",return_value=self.snapshot):
             output=commands.answer("/top")
