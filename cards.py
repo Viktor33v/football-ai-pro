@@ -12,7 +12,7 @@ def pair(r,field):
     except (ValueError,TypeError,KeyError): return None
 def run():
     today=datetime.now(timezone.utc).date()
-    metrics=defaultdict(list); picks=defaultdict(list); coverage={}; errors=[]
+    metrics=defaultdict(list); picks=defaultdict(list); coverage={}; errors=[]; unavailable_stats=[]; fixture_counts={}
     for league in LEAGUES:
         try: history=read(league,"results"); fixtures=read(league,"fixtures")
         except Exception as e:
@@ -58,6 +58,8 @@ def run():
                 if fou is not None:
                     fouls[h].append(fou[0]); fouls[t].append(fou[1]); league_fouls.append(sum(fou))
         coverage[league]=[len(totals),len(league_fouls)]
+        fixture_counts[league]=len(fixtures)
+        if len(totals)<30: unavailable_stats.append(league+" (ЖК: "+str(len(totals))+")")
         used=set()
         for r in fixtures:
             key=(r["date"],r["home"],r["away"])
@@ -81,9 +83,10 @@ def run():
             fm="нет" if r["fouls"] is None else f'{r["fouls"]:.1f}'
             lines.append(f'{r["home"]} — {r["away"]} | {r["date"]} | {r["p"]:.0%} | ЖК {r["expected"]:.1f} | фолы {fm} | {r["sample"][0]}/{r["sample"][1]}')
         if not picks[i]: lines.append("Нет кандидатов")
+    if unavailable_stats: lines.append("Нет достаточной статистики ЖК (не активны для прогнозов): "+", ".join(unavailable_stats))
     if errors: lines.append("Недоступные лиги: "+", ".join(errors))
     lines.append("Исторический последовательный тест, не независимый финальный тест. Судьи не учтены. Демо.")
-    with open("cards.json","w",encoding="utf-8") as f: json.dump(dict(source=SOURCE,coverage=coverage,errors=errors,picks=picks,metrics=metrics),f,ensure_ascii=False,indent=2)
+    with open("cards.json","w",encoding="utf-8") as f: json.dump(dict(source=SOURCE,coverage=coverage,errors=errors,unavailable_stats=unavailable_stats,fixture_counts=fixture_counts,picks=picks,metrics=metrics),f,ensure_ascii=False,indent=2)
     chunk=""
     for line in lines:
         if len(chunk)+len(line)>3500:
