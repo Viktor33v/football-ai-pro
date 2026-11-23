@@ -49,4 +49,26 @@ class Forward28Tests(unittest.TestCase):
         settle(j,result,self.now+timedelta(days=2))
         self.assertEqual(next(iter(j.values()))["result"],0)
 
+
+class ExtraMarketReportTests(unittest.TestCase):
+    def test_separate_journal_discloses_unverified_kickoff(self):
+        from forward28 import extra_market_report
+        now=datetime.now(timezone.utc)
+        row={"group":"corners","market":"Угловые ТБ 8.5",
+             "date":(now-timedelta(days=1)).date().isoformat(),
+             "created":(now-timedelta(days=3)).isoformat(),
+             "p":.7,"result":1}
+        out=extra_market_report({"one":row},now)
+        self.assertIn("Угловые ТБ 8.5: 1/1",out)
+        self.assertIn("НЕ независимая forward-проверка",out)
+
+    def test_invalid_probability_not_scored(self):
+        from forward28 import extra_market_report
+        now=datetime.now(timezone.utc)
+        row={"group":"cards","market":"ЖК ТБ 2.5",
+             "date":now.date().isoformat(),"created":now.isoformat(),
+             "p":float("nan"),"result":1}
+        out=extra_market_report({"one":row},now)
+        self.assertNotIn("Brier",out)
+
 if __name__=="__main__":unittest.main()
