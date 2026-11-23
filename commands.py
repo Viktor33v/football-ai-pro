@@ -477,7 +477,7 @@ def reliable_predictions():
         k=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M")
         lines.append(f"🟢 {k} | {ru_team(r['home'])} — {ru_team(r['away'])} | {r['market']} {r['p']:.1%}")
     if not strict: lines.append("🟢 Сейчас нет прогнозов, прошедших строгий отбор.")
-    lines.append("\\n🔎 Перспективные • исследовательский список, НЕ ставки:")
+    lines.append("\n🔎 Перспективные • исследовательский список, НЕ ставки:")
     used=set()
     for r in sorted(watch,key=lambda x:x["p"],reverse=True):
         fixture=(canonical(r["home"]),canonical(r["away"]),r["kickoff"])
@@ -488,11 +488,11 @@ def reliable_predictions():
         if len(used)>=5: break
     if not used: lines.append("Нет даже предварительных кандидатов с достаточной выборкой.")
     if rejected:
-        lines.append("\\nПочему строгий список пуст или ограничен (число отклонённых прогнозов по причинам):")
+        lines.append("\nПочему строгий список пуст или ограничен (число отклонённых прогнозов по причинам):")
         for reason,count in sorted(rejected.items(),key=lambda x:-x[1])[:4]:
             lines.append(f"• {reason}: {count}")
     lines.append("🟡 Не означает надёжную ставку. Проверь матч и коэффициенты; гарантии нет.")
-    return "\\n".join(lines)
+    return "\n".join(lines)
 
 
 def best_today():
