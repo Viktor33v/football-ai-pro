@@ -814,6 +814,19 @@ def answer(msg):
     else: return helptext
     lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Только будущие матчи с известным временем; расписание независимо не подтверждено.",
            "⚠️ ТБ 0.5 2Т означает минимум 1 гол во 2-м тайме, НЕ 2 гола. Прогнозов ТБ 1.5 2Т модель не выдаёт."]
+    # For corners/cards, display one market per fixture to avoid crowding
+    # the main list with correlated bets on the same match.
+    if cmd in ("/corners","/cards"):
+        unique=[]
+        seen_fixtures=set()
+        for r in sorted(rs,key=lambda r:r["p"],reverse=True):
+            fixture=(canonical(r["home"]),canonical(r["away"]),r["kickoff"])
+            if fixture in seen_fixtures:
+                continue
+            seen_fixtures.add(fixture)
+            unique.append(r)
+        rs=unique
+        lines.append("Один рынок на матч: максимальная оценка p среди доступных рынков, не доказательство надёжности.")
     for r in sorted(rs,key=lambda r:r["p"],reverse=True)[:(25 if cmd=="/match" else 10)]:
         stamp=datetime.fromisoformat(r["kickoff"]).astimezone(local).strftime("%d.%m %H:%M") if r.get("kickoff") else r["date"]+" (время неизвестно)"
         lines.append(f'{stamp} | {ru_team(r["home"])} — {ru_team(r["away"])}\n{r["market"]}: {r["p"]:.1%}')
