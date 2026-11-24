@@ -108,6 +108,22 @@ def extra_market_report(journal,now):
         lines.append(f"\nЗа {days} дней: завершено {len(done)}, ожидают {len(pending)} (будущие {future}, сегодня {today}, прошлые без результата {overdue})")
         if overdue:
             lines.append("  ⚠️ Прошлые без результата: проверь CSV results, доступность лиги и совпадение названий команд.")
+            reasons={"source_unavailable":"источник недоступен",
+                     "fixture_not_found":"матч не найден",
+                     "missing_corner_stats":"нет статистики угловых",
+                     "missing_first_half_corners":"нет угловых 1Т",
+                     "missing_card_stats":"нет статистики карточек",
+                     "not_checked":"причина ещё не определена"}
+            counts={}
+            leagues={}
+            for r,d in pending:
+                if d>=now.date():continue
+                issue=r.get("settlement_issue") or "not_checked"
+                counts[issue]=counts.get(issue,0)+1
+                league=r.get("league") or "неизвестная лига"
+                leagues[league]=leagues.get(league,0)+1
+            lines.append("  Причины: "+", ".join(f"{reasons.get(k,k)} — {v}" for k,v in sorted(counts.items(),key=lambda x:-x[1])))
+            lines.append("  Лиги с незакрытыми записями: "+", ".join(f"{k} — {v}" for k,v in sorted(leagues.items(),key=lambda x:-x[1])[:5]))
         for market in sorted({r.get("market","") for r in done}):
             matches=[r for r in done if r.get("market")==market and type(r.get("p")) in (int,float) and math.isfinite(r["p"]) and 0<=r["p"]<=1]
             if not matches:continue
