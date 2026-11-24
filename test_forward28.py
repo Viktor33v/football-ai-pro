@@ -79,6 +79,17 @@ class ExtraMarketReportTests(unittest.TestCase):
         self.assertIn("причина ещё не определена — 1",out)
         self.assertIn("Лиги с незакрытыми записями:",out)
 
+    def test_ambiguous_csv_fixture_is_reported(self):
+        from forward28 import extra_market_report
+        now=datetime(2026,11,24,12,tzinfo=timezone.utc)
+        row={"group":"corners","market":"Угловые ТБ 8.5",
+             "date":"2026-11-22","created":"2026-11-20T12:00:00+00:00",
+             "p":.7,"result":None,"league":"ENG_1_premier-league",
+             "settlement_issue":"ambiguous_fixture"}
+        out=extra_market_report({"a":row},now)
+        self.assertIn("дублирующийся матч в CSV — 1",out)
+        self.assertIn("ENG_1_premier-league — 1",out)
+
     def test_invalid_probability_not_scored(self):
         from forward28 import extra_market_report
         now=datetime.now(timezone.utc)
