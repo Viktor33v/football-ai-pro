@@ -39,11 +39,18 @@ def run():
             for r in rs: r["settlement_issue"]="source_unavailable"
             continue
         actual={}
+        ambiguous=set()
         for x in history:
             if x["date"]<today and x.get("ft_home","").isdigit() and x.get("ft_away","").isdigit():
-                actual[(x["date"],x["home"],x["away"])]=x
+                key=(x["date"],x["home"],x["away"])
+                if key in actual: ambiguous.add(key)
+                else: actual[key]=x
         for r in rs:
-            x=actual.get((r["date"],r["home"],r["away"]))
+            fixture_key=(r["date"],r["home"],r["away"])
+            if fixture_key in ambiguous:
+                r["settlement_issue"]="ambiguous_fixture"
+                continue
+            x=actual.get(fixture_key)
             if x is None:
                 r["settlement_issue"]="fixture_not_found"
                 continue
