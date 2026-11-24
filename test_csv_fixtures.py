@@ -2,6 +2,7 @@
 import unittest
 from datetime import date, timedelta
 from corners import valid_future_fixture, unique_fixture_rows, unique_result_rows
+from snapshot import completed_result_index
 
 class FixtureDateTests(unittest.TestCase):
     def setUp(self):
@@ -36,6 +37,20 @@ class FixtureDateTests(unittest.TestCase):
         conflicting={**first,"home_corners":"9"}
         clean={**first,"date":"2026-11-22"}
         self.assertEqual(unique_result_rows([first,conflicting,clean]),[clean])
+
+    def test_unscored_duplicate_blocks_settlement(self):
+        scored={**self.row,"date":"2026-11-22","ft_home":"2","ft_away":"1"}
+        unscored={**scored,"ft_home":"","ft_away":""}
+        index,ambiguous=completed_result_index([scored,unscored],"2026-11-24")
+        key=("2026-11-22","Home FC","Away FC")
+        self.assertIn(key,ambiguous)
+        self.assertNotIn(key,index)
+
+    def test_unique_completed_result_can_settle(self):
+        scored={**self.row,"date":"2026-11-22","ft_home":"2","ft_away":"1"}
+        index,ambiguous=completed_result_index([scored],"2026-11-24")
+        self.assertEqual(len(index),1)
+        self.assertFalse(ambiguous)
 
     def test_single_fixture_is_preserved(self):
         self.assertEqual(unique_fixture_rows([self.row]),[self.row])
