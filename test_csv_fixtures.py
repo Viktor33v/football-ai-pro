@@ -1,7 +1,7 @@
 """Safety tests for date-only open-matchday fixture feeds."""
 import unittest
 from datetime import date, timedelta
-from corners import valid_future_fixture
+from corners import valid_future_fixture, unique_fixture_rows
 
 class FixtureDateTests(unittest.TestCase):
     def setUp(self):
@@ -25,6 +25,14 @@ class FixtureDateTests(unittest.TestCase):
                     {**self.row,"away":"Home FC"},
                     {"date":"2026-11-24","home":"Home FC"}):
             self.assertFalse(valid_future_fixture(row,self.today,set()))
+
+    def test_duplicate_fixtures_are_all_excluded(self):
+        duplicate={**self.row}
+        other={**self.row,"away":"Different FC"}
+        self.assertEqual(unique_fixture_rows([self.row,duplicate,other]),[other])
+
+    def test_single_fixture_is_preserved(self):
+        self.assertEqual(unique_fixture_rows([self.row]),[self.row])
 
     def test_rejects_already_played_fixture(self):
         seen={("2026-11-24","Home FC","Away FC")}
