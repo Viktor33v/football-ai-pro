@@ -35,26 +35,44 @@ def run():
         if r["result"] is None and r["date"]<today: pending.setdefault(r["league"],[]).append(r)
     for league,rs in pending.items():
         try: history=corners.read(league,"results")
-        except Exception: continue
+        except Exception as e:
+            for r in rs: r["settlement_issue"]="source_unavailable"
+            continue
         actual={}
         for x in history:
             if x["date"]<today and x.get("ft_home","").isdigit() and x.get("ft_away","").isdigit():
                 actual[(x["date"],x["home"],x["away"])]=x
         for r in rs:
             x=actual.get((r["date"],r["home"],r["away"]))
-            if x is None: continue
+            if x is None:
+                r["settlement_issue"]="fixture_not_found"
+                continue
             if r["group"]=="corners":
                 _,k,half=corners.MARKETS[r["index"]]; v=corners.counts(x)
-                if v is None: continue
+                if v is None:
+                    r["settlement_issue"]="missing_corner_stats"
+                    continue
                 pair=v[2:] if half else v[:2]
-                if None in pair: continue
+                if None in pair:
+                    r["settlement_issue"]="missing_first_half_corners"
+                    continue
                 value=sum(pair)
             else:
                 _,k,side=cards.MARKETS[r["index"]]; v=cards.pair(x,"yellow")
-                if v is None: continue
+                if v is None:
+                    r["settlement_issue"]="missing_card_stats"
+                    continue
                 value=[sum(v),v[0],v[1]][side]
             r["result"]=int(value>=k)
+            r.pop("settlement_issue",None)
+            r["settled_at"]=now.isoformat()
     save("state/extra_journal.json",journal)
+    issues={}
+    for r in journal.values():
+        if r.get("result") is None and r.get("date","")<today:
+            issue=r.get("settlement_issue","not_checked")
+            issues[issue]=issues.get(issue,0)+1
+    save("state/settlement_diagnostics.json",dict(created=now.isoformat(),issues=issues))
     audit=load("state/forward28.json",{})
     settle(audit,load("state/v28_results.json",{}),now)
     archive(audit,rows,now)
