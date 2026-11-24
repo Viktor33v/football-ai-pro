@@ -10,6 +10,22 @@ def load(path,default):
     with open(path,encoding="utf-8") as f: return json.load(f)
 def save(path,obj):
     with open(path,"w",encoding="utf-8") as f: json.dump(obj,f,ensure_ascii=False,indent=2)
+def completed_result_index(history,today):
+    """Index only unambiguous completed CSV matches; return duplicate keys."""
+    actual={}
+    ambiguous=set()
+    for x in history:
+        try:
+            key=(x["date"],x["home"],x["away"])
+            if x["date"]>=today: continue
+        except (KeyError,TypeError): continue
+        if key in actual: ambiguous.add(key)
+        else: actual[key]=x
+    completed={key:x for key,x in actual.items()
+               if str(x.get("ft_home","")).isdigit() and str(x.get("ft_away","")).isdigit()
+               and key not in ambiguous}
+    return completed,ambiguous
+
 def run():
     now=datetime.now(timezone.utc); today=now.date().isoformat()
     os.makedirs("state",exist_ok=True)
@@ -38,21 +54,7 @@ def run():
         except Exception as e:
             for r in rs: r["settlement_issue"]="source_unavailable"
             continue
-        actual={}
-        ambiguous=set()
-        for x in history:
-            try:
-                key=(x["date"],x["home"],x["away"])
-                if x["date"]>=today: continue
-            except (KeyError,TypeError): continue
-            # Count every duplicate, including rows with missing scores.
-            # Otherwise a scored row plus an unscored duplicate could be
-            # mistaken for a uniquely verified result.
-            if key in actual: ambiguous.add(key)
-            else: actual[key]=x
-        # Only completed matches can be settled.
-        completed={key:x for key,x in actual.items()
-                   if str(x.get("ft_home","")).isdigit() and str(x.get("ft_away","")).isdigit()}
+        completed,ambiguous=completed_result_index(history,today)
         for r in rs:
             fixture_key=(r["date"],r["home"],r["away"])
             if fixture_key in ambiguous:
