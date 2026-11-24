@@ -508,6 +508,7 @@ def today_quality():
             return "База прогнозов устарела. Обнови данные."
     except (ValueError,TypeError,KeyError):
         return "Некорректная дата базы прогнозов."
+    snapshot_age_hours=(now-created).total_seconds()/3600
     target=now.astimezone(local).date()
     candidates=[]
     seen=set()
@@ -536,10 +537,13 @@ def today_quality():
     strict=[r for r,k,level in pool if level=="strict"]
     research=[r for r,k,level in pool if level=="research"]
     lines=["⚽ Прогнозы сегодня • Бишкек • "+target.strftime("%d.%m.%Y"),
-           "Только будущие матчи с известным временем. Расписание независимо не подтверждено."]
+           "Только будущие матчи с известным временем. Расписание независимо не подтверждено.",
+           f"Снимок данных: {created.astimezone(local).strftime('%d.%m %H:%M')} Бишкек ({snapshot_age_hours:.1f} ч назад)."]
+    if snapshot_age_hours>6:
+        lines.append("⚠️ Снимок старше 6 часов: проверь обновление данных перед анализом.")
     if fallback:
         lines.append("Сегодня подходящих прогнозов нет. Проверяю ближайшие 24 часа от текущего момента (включая часть завтрашнего дня).")
-    lines.append("🟢 Строгий отбор (качество проверено):")
+    lines.append("🟢 Строгий отбор (исторические метрики; расписание не подтверждено):")
     def append_rows(rows,mark,limit):
         fixtures=set(); count=0
         for r in sorted(rows,key=lambda x:x["p"],reverse=True):
