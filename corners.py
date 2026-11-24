@@ -22,6 +22,14 @@ def unique_fixture_rows(fixtures):
     counts=Counter(key(r) for r in fixtures)
     return [r for r in fixtures if counts[key(r)]==1]
 
+def unique_result_rows(history):
+    """Remove every duplicate date/home/away result before model training.
+
+    This prevents ambiguous CSV outcomes from contaminating Brier tests
+    and historical team statistics.
+    """
+    return unique_fixture_rows(history)
+
 def valid_future_fixture(r,today,seen):
     """CSV dates are UTC calendar dates only; no trusted kickoff time."""
     try:
@@ -50,7 +58,7 @@ def run():
         except Exception as e:
             errors.append(league+": "+type(e).__name__); continue
         days=defaultdict(list); seen=set()
-        for r in history:
+        for r in unique_result_rows(history):
             key=(r["date"],r["home"],r["away"])
             if key in seen or r["date"]>=str(today): continue
             v=counts(r)
