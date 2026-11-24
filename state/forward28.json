@@ -1027,8 +1027,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.698207044097455,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "00750aed1942533a264b": {
     "fixture_id": 560649,
@@ -1038,8 +1039,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.3603553980266309,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "b2daa16b9a46f5a101e3": {
     "fixture_id": 560649,
@@ -1049,8 +1051,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.498296738622481,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "7365cc45b659eac70ddd": {
     "fixture_id": 560649,
@@ -1060,8 +1063,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.534513862156349,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "7cb7d0f35deed8d86afd": {
     "fixture_id": 560649,
@@ -1071,8 +1075,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.7849166483385095,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "8236a4d6d95aeb2cb77c": {
     "fixture_id": 564757,
@@ -1082,8 +1087,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.690155488788172,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "bb93805a05c93a03cf7e": {
     "fixture_id": 564757,
@@ -1093,8 +1099,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.32736670570861126,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "8050dee98dae08ba70aa": {
     "fixture_id": 564757,
@@ -1104,8 +1111,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.5445990532685119,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "041635c00920e2661548": {
     "fixture_id": 564757,
@@ -1115,8 +1123,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.5977838619178528,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "794f1c80c7811982f91b": {
     "fixture_id": 564757,
@@ -1126,8 +1135,9 @@
     "kickoff": "2026-11-23T20:00:00+00:00",
     "p": 0.8083905290442348,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "18423db4ec150ddc4183": {
     "fixture_id": 555097,
@@ -1137,8 +1147,9 @@
     "kickoff": "2026-11-23T22:30:00+00:00",
     "p": 0.7336471594301112,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "c4adc43583ee88cb60ce": {
     "fixture_id": 555097,
@@ -1148,8 +1159,9 @@
     "kickoff": "2026-11-23T22:30:00+00:00",
     "p": 0.37477612662761994,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "86211eea107920b87388": {
     "fixture_id": 555097,
@@ -1159,8 +1171,9 @@
     "kickoff": "2026-11-23T22:30:00+00:00",
     "p": 0.47761809443046366,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "13b93e77556455a005ae": {
     "fixture_id": 555097,
@@ -1170,8 +1183,9 @@
     "kickoff": "2026-11-23T22:30:00+00:00",
     "p": 0.5232392032711414,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "b5a3484fe8ae0cbadf0d": {
     "fixture_id": 555097,
@@ -1181,8 +1195,9 @@
     "kickoff": "2026-11-23T22:30:00+00:00",
     "p": 0.7698564132690152,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "2be3e0a7a62af07cf815": {
     "fixture_id": 555093,
@@ -1192,8 +1207,9 @@
     "kickoff": "2026-11-23T23:00:00+00:00",
     "p": 0.7336471594301112,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "91ce991f057c296d82d9": {
     "fixture_id": 555093,
@@ -1203,8 +1219,9 @@
     "kickoff": "2026-11-23T23:00:00+00:00",
     "p": 0.37477612662761994,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "2906aaa35c2ba09fc147": {
     "fixture_id": 555093,
@@ -1214,8 +1231,9 @@
     "kickoff": "2026-11-23T23:00:00+00:00",
     "p": 0.48977326299761786,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "bb7e2140e5f00267f001": {
     "fixture_id": 555093,
@@ -1225,8 +1243,9 @@
     "kickoff": "2026-11-23T23:00:00+00:00",
     "p": 0.5376708109712203,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "1d9beeea7f145490568d": {
     "fixture_id": 555093,
@@ -1236,8 +1255,9 @@
     "kickoff": "2026-11-23T23:00:00+00:00",
     "p": 0.7504291212966695,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "d6893fd75ff54fc3acb7": {
     "fixture_id": 555099,
@@ -1247,8 +1267,9 @@
     "kickoff": "2026-11-24T00:00:00+00:00",
     "p": 0.7336471594301112,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "dbf77eac5cb7a71764ed": {
     "fixture_id": 555099,
@@ -1258,8 +1279,9 @@
     "kickoff": "2026-11-24T00:00:00+00:00",
     "p": 0.37477612662761994,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "7cc66a9000d38fc8aa32": {
     "fixture_id": 555099,
@@ -1269,8 +1291,9 @@
     "kickoff": "2026-11-24T00:00:00+00:00",
     "p": 0.4918322307281993,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "d5cae76fc85fa341da86": {
     "fixture_id": 555099,
@@ -1280,8 +1303,9 @@
     "kickoff": "2026-11-24T00:00:00+00:00",
     "p": 0.5356773126778025,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "80f900c25d6ed6fc41d3": {
     "fixture_id": 555099,
@@ -1291,8 +1315,9 @@
     "kickoff": "2026-11-24T00:00:00+00:00",
     "p": 0.787838715934881,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-24T07:09:49.089288+00:00"
   },
   "3d22c4ce2adb716c8442": {
     "fixture_id": 561953,
@@ -4866,6 +4891,1931 @@
     "kickoff": "2026-11-29T00:00:00+00:00",
     "p": 0.7282794550327859,
     "created": "2026-11-23T07:27:24.728193+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "376dd7f8a23b0e925ae1": {
+    "fixture_id": 558515,
+    "market": "ТБ 0.5 1Т",
+    "home": "Venezia FC",
+    "away": "Bologna FC 1909",
+    "kickoff": "2026-11-27T19:45:00+00:00",
+    "p": 0.6907944124385332,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d4af27c2976ebb14f707": {
+    "fixture_id": 558515,
+    "market": "ТБ 1.5 1Т",
+    "home": "Venezia FC",
+    "away": "Bologna FC 1909",
+    "kickoff": "2026-11-27T19:45:00+00:00",
+    "p": 0.3221328268154491,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2c0a6605481cc658466d": {
+    "fixture_id": 558515,
+    "market": "ТБ 2.5",
+    "home": "Venezia FC",
+    "away": "Bologna FC 1909",
+    "kickoff": "2026-11-27T19:45:00+00:00",
+    "p": 0.5051691893927543,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3fc844e2e35e6d7d92b2": {
+    "fixture_id": 558515,
+    "market": "Обе забьют",
+    "home": "Venezia FC",
+    "away": "Bologna FC 1909",
+    "kickoff": "2026-11-27T19:45:00+00:00",
+    "p": 0.4960792530390504,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "47eacd12de8e6d0e0af3": {
+    "fixture_id": 558515,
+    "market": "ТБ 0.5 2Т",
+    "home": "Venezia FC",
+    "away": "Bologna FC 1909",
+    "kickoff": "2026-11-27T19:45:00+00:00",
+    "p": 0.822824633651124,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1edf213c65b71dbe200f": {
+    "fixture_id": 558827,
+    "market": "ТБ 0.5 1Т",
+    "home": "ADO Den Haag",
+    "away": "FC Utrecht",
+    "kickoff": "2026-11-29T11:15:00+00:00",
+    "p": 0.741593069533816,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "894366f55ec35d761b4e": {
+    "fixture_id": 558827,
+    "market": "ТБ 1.5 1Т",
+    "home": "ADO Den Haag",
+    "away": "FC Utrecht",
+    "kickoff": "2026-11-29T11:15:00+00:00",
+    "p": 0.4647115686000785,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "53430fb2ad69b263e3b8": {
+    "fixture_id": 558827,
+    "market": "ТБ 2.5",
+    "home": "ADO Den Haag",
+    "away": "FC Utrecht",
+    "kickoff": "2026-11-29T11:15:00+00:00",
+    "p": 0.6896766142075614,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "eb0d350d41fda423882d": {
+    "fixture_id": 558827,
+    "market": "Обе забьют",
+    "home": "ADO Den Haag",
+    "away": "FC Utrecht",
+    "kickoff": "2026-11-29T11:15:00+00:00",
+    "p": 0.6881749737106406,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c5ee054654e66d78c379": {
+    "fixture_id": 558827,
+    "market": "ТБ 0.5 2Т",
+    "home": "ADO Den Haag",
+    "away": "FC Utrecht",
+    "kickoff": "2026-11-29T11:15:00+00:00",
+    "p": 0.8674752455916528,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "386ca0bc992bc208b308": {
+    "fixture_id": 558517,
+    "market": "ТБ 0.5 1Т",
+    "home": "Udinese Calcio",
+    "away": "ACF Fiorentina",
+    "kickoff": "2026-11-29T11:30:00+00:00",
+    "p": 0.6907944124385332,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2da98e4bcb8cb0200671": {
+    "fixture_id": 558517,
+    "market": "ТБ 1.5 1Т",
+    "home": "Udinese Calcio",
+    "away": "ACF Fiorentina",
+    "kickoff": "2026-11-29T11:30:00+00:00",
+    "p": 0.3221328268154491,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "4e7c5ab0c789c77d7fa0": {
+    "fixture_id": 558517,
+    "market": "ТБ 2.5",
+    "home": "Udinese Calcio",
+    "away": "ACF Fiorentina",
+    "kickoff": "2026-11-29T11:30:00+00:00",
+    "p": 0.5232478879568001,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6f9373d9440e7d6e8571": {
+    "fixture_id": 558517,
+    "market": "Обе забьют",
+    "home": "Udinese Calcio",
+    "away": "ACF Fiorentina",
+    "kickoff": "2026-11-29T11:30:00+00:00",
+    "p": 0.5311950752679717,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "a4a116431cdbb9ac827d": {
+    "fixture_id": 558517,
+    "market": "ТБ 0.5 2Т",
+    "home": "Udinese Calcio",
+    "away": "ACF Fiorentina",
+    "kickoff": "2026-11-29T11:30:00+00:00",
+    "p": 0.7994429514525725,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "18789026055f2f6735b4": {
+    "fixture_id": 560656,
+    "market": "ТБ 0.5 1Т",
+    "home": "Everton FC",
+    "away": "Liverpool FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.6950286740907219,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "850187d622b333127f50": {
+    "fixture_id": 560656,
+    "market": "ТБ 1.5 1Т",
+    "home": "Everton FC",
+    "away": "Liverpool FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.35044730661378887,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "40ab07f36c248a76e1da": {
+    "fixture_id": 560656,
+    "market": "ТБ 2.5",
+    "home": "Everton FC",
+    "away": "Liverpool FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.5747518123342967,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "fa9b143f3771415a8d88": {
+    "fixture_id": 560656,
+    "market": "Обе забьют",
+    "home": "Everton FC",
+    "away": "Liverpool FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.5923026978378825,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "19241eee3c5907209936": {
+    "fixture_id": 560656,
+    "market": "ТБ 0.5 2Т",
+    "home": "Everton FC",
+    "away": "Liverpool FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.8433589708418769,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "397600f51453584531c5": {
+    "fixture_id": 561976,
+    "market": "ТБ 0.5 1Т",
+    "home": "Swansea City AFC",
+    "away": "Cardiff City FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.7086812849246329,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "ec4ab6a6922526d7944e": {
+    "fixture_id": 561976,
+    "market": "ТБ 1.5 1Т",
+    "home": "Swansea City AFC",
+    "away": "Cardiff City FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.37030454013569447,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "9ad9665fe0321f75d730": {
+    "fixture_id": 561976,
+    "market": "ТБ 2.5",
+    "home": "Swansea City AFC",
+    "away": "Cardiff City FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.5660640748851228,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "94382a7168ef1f8e306c": {
+    "fixture_id": 561976,
+    "market": "Обе забьют",
+    "home": "Swansea City AFC",
+    "away": "Cardiff City FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.5867099253651598,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2727e1d42f0085c924c1": {
+    "fixture_id": 561976,
+    "market": "ТБ 0.5 2Т",
+    "home": "Swansea City AFC",
+    "away": "Cardiff City FC",
+    "kickoff": "2026-11-29T12:00:00+00:00",
+    "p": 0.7805289139485494,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "02155fb932dd951a87ed": {
+    "fixture_id": 564761,
+    "market": "ТБ 0.5 1Т",
+    "home": "Valencia CF",
+    "away": "CA Osasuna",
+    "kickoff": "2026-11-29T13:00:00+00:00",
+    "p": 0.6971576272786966,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c84283a809e4db317772": {
+    "fixture_id": 564761,
+    "market": "ТБ 1.5 1Т",
+    "home": "Valencia CF",
+    "away": "CA Osasuna",
+    "kickoff": "2026-11-29T13:00:00+00:00",
+    "p": 0.34211468314011584,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1416c6b1578d2c736762": {
+    "fixture_id": 564761,
+    "market": "ТБ 2.5",
+    "home": "Valencia CF",
+    "away": "CA Osasuna",
+    "kickoff": "2026-11-29T13:00:00+00:00",
+    "p": 0.5429086413908407,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c560a489d83c53a0537d": {
+    "fixture_id": 564761,
+    "market": "Обе забьют",
+    "home": "Valencia CF",
+    "away": "CA Osasuna",
+    "kickoff": "2026-11-29T13:00:00+00:00",
+    "p": 0.5779045704095784,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "b2a9322dd162d90c6f88": {
+    "fixture_id": 564761,
+    "market": "ТБ 0.5 2Т",
+    "home": "Valencia CF",
+    "away": "CA Osasuna",
+    "kickoff": "2026-11-29T13:00:00+00:00",
+    "p": 0.8252256290708463,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "a5ef3c913eb68f8ecde5": {
+    "fixture_id": 558824,
+    "market": "ТБ 0.5 1Т",
+    "home": "Feyenoord Rotterdam",
+    "away": "AFC Ajax",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.741593069533816,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "0f77acfaa9982bd158cf": {
+    "fixture_id": 558824,
+    "market": "ТБ 1.5 1Т",
+    "home": "Feyenoord Rotterdam",
+    "away": "AFC Ajax",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.4647115686000785,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6e968801455b5252af4e": {
+    "fixture_id": 558824,
+    "market": "ТБ 2.5",
+    "home": "Feyenoord Rotterdam",
+    "away": "AFC Ajax",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.6641692528318912,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f76a90eb02789699434d": {
+    "fixture_id": 558824,
+    "market": "Обе забьют",
+    "home": "Feyenoord Rotterdam",
+    "away": "AFC Ajax",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.6666679358586127,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "51c4b9b96574c72c667c": {
+    "fixture_id": 558824,
+    "market": "ТБ 0.5 2Т",
+    "home": "Feyenoord Rotterdam",
+    "away": "AFC Ajax",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.8579959541550939,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "a20851b83a88fd5ae6a4": {
+    "fixture_id": 558821,
+    "market": "ТБ 0.5 1Т",
+    "home": "Fortuna Sittard",
+    "away": "SC Heerenveen",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.741593069533816,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "22a573e17d65035b0128": {
+    "fixture_id": 558821,
+    "market": "ТБ 1.5 1Т",
+    "home": "Fortuna Sittard",
+    "away": "SC Heerenveen",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.4647115686000785,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "0a28568cb0676ee8415d": {
+    "fixture_id": 558821,
+    "market": "ТБ 2.5",
+    "home": "Fortuna Sittard",
+    "away": "SC Heerenveen",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.626103839046479,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "4c60d630b337430f5cfa": {
+    "fixture_id": 558821,
+    "market": "Обе забьют",
+    "home": "Fortuna Sittard",
+    "away": "SC Heerenveen",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.6353600172402362,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "60377f63d1e4a48ecf1c": {
+    "fixture_id": 558821,
+    "market": "ТБ 0.5 2Т",
+    "home": "Fortuna Sittard",
+    "away": "SC Heerenveen",
+    "kickoff": "2026-11-29T13:30:00+00:00",
+    "p": 0.8412260791716959,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2440d4db0cb3be11cbff": {
+    "fixture_id": 559619,
+    "market": "ТБ 0.5 1Т",
+    "home": "AJ Auxerre",
+    "away": "Olympique de Marseille",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.7130093867144849,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1d01e826429bc9bd33e0": {
+    "fixture_id": 559619,
+    "market": "ТБ 1.5 1Т",
+    "home": "AJ Auxerre",
+    "away": "Olympique de Marseille",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.3495884202101766,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "46f009580da4f74f89ff": {
+    "fixture_id": 559619,
+    "market": "ТБ 2.5",
+    "home": "AJ Auxerre",
+    "away": "Olympique de Marseille",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.5446679956623613,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "45cf05687db2d4586dcd": {
+    "fixture_id": 559619,
+    "market": "Обе забьют",
+    "home": "AJ Auxerre",
+    "away": "Olympique de Marseille",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.5614919099769355,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "06b6ddb25a9e81d4641e": {
+    "fixture_id": 559619,
+    "market": "ТБ 0.5 2Т",
+    "home": "AJ Auxerre",
+    "away": "Olympique de Marseille",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.8244636882188632,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "17267d89cac4c437ead4": {
+    "fixture_id": 558509,
+    "market": "ТБ 0.5 1Т",
+    "home": "US Sassuolo Calcio",
+    "away": "SSC Napoli",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.6907944124385332,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "0cda411775b38a33bce3": {
+    "fixture_id": 558509,
+    "market": "ТБ 1.5 1Т",
+    "home": "US Sassuolo Calcio",
+    "away": "SSC Napoli",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.3221328268154491,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "54cabfa361f6e7c8b7bb": {
+    "fixture_id": 558509,
+    "market": "ТБ 2.5",
+    "home": "US Sassuolo Calcio",
+    "away": "SSC Napoli",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.5313016123140364,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "af2e8a2b5ef4cba637ef": {
+    "fixture_id": 558509,
+    "market": "Обе забьют",
+    "home": "US Sassuolo Calcio",
+    "away": "SSC Napoli",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.5344973606392008,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "af55db4a9955184109f6": {
+    "fixture_id": 558509,
+    "market": "ТБ 0.5 2Т",
+    "home": "US Sassuolo Calcio",
+    "away": "SSC Napoli",
+    "kickoff": "2026-11-29T14:00:00+00:00",
+    "p": 0.8140161731277148,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "23226b11306dc37563a0": {
+    "fixture_id": 560660,
+    "market": "ТБ 0.5 1Т",
+    "home": "Sunderland AFC",
+    "away": "Tottenham Hotspur FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.6950286740907219,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6e66cc728919ccb6d252": {
+    "fixture_id": 560660,
+    "market": "ТБ 1.5 1Т",
+    "home": "Sunderland AFC",
+    "away": "Tottenham Hotspur FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.35044730661378887,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1caaa00f4d5280d28460": {
+    "fixture_id": 560660,
+    "market": "ТБ 2.5",
+    "home": "Sunderland AFC",
+    "away": "Tottenham Hotspur FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.43692594006566354,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "14d990a96bb0756e3874": {
+    "fixture_id": 560660,
+    "market": "Обе забьют",
+    "home": "Sunderland AFC",
+    "away": "Tottenham Hotspur FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.48282886150352333,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "431afb7ad133369ea00c": {
+    "fixture_id": 560660,
+    "market": "ТБ 0.5 2Т",
+    "home": "Sunderland AFC",
+    "away": "Tottenham Hotspur FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.7750386591705516,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "7d1a6c66fba564de3297": {
+    "fixture_id": 560657,
+    "market": "ТБ 0.5 1Т",
+    "home": "Fulham FC",
+    "away": "AFC Bournemouth",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.6950286740907219,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "0b0c1d5d69d4bd0d34ec": {
+    "fixture_id": 560657,
+    "market": "ТБ 1.5 1Т",
+    "home": "Fulham FC",
+    "away": "AFC Bournemouth",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.35044730661378887,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f91ea19020ac647110a8": {
+    "fixture_id": 560657,
+    "market": "ТБ 2.5",
+    "home": "Fulham FC",
+    "away": "AFC Bournemouth",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.4775935615429155,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "538d1281e4dbcf0b779a": {
+    "fixture_id": 560657,
+    "market": "Обе забьют",
+    "home": "Fulham FC",
+    "away": "AFC Bournemouth",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.5176990763918354,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1bf22e57acf6cbb9e6f1": {
+    "fixture_id": 560657,
+    "market": "ТБ 0.5 2Т",
+    "home": "Fulham FC",
+    "away": "AFC Bournemouth",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.7652424236609774,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d93b3efe7712546e50b5": {
+    "fixture_id": 560661,
+    "market": "ТБ 0.5 1Т",
+    "home": "Crystal Palace FC",
+    "away": "Hull City AFC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.6950286740907219,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "ed2255b43c9af0bf0b11": {
+    "fixture_id": 560661,
+    "market": "ТБ 1.5 1Т",
+    "home": "Crystal Palace FC",
+    "away": "Hull City AFC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.35044730661378887,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "0ac770dab948340ea3da": {
+    "fixture_id": 560661,
+    "market": "ТБ 2.5",
+    "home": "Crystal Palace FC",
+    "away": "Hull City AFC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.5028270688116727,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "5b8afce004996774c04b": {
+    "fixture_id": 560661,
+    "market": "Обе забьют",
+    "home": "Crystal Palace FC",
+    "away": "Hull City AFC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.5327508370104574,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c686fc621e1284f249c2": {
+    "fixture_id": 560661,
+    "market": "ТБ 0.5 2Т",
+    "home": "Crystal Palace FC",
+    "away": "Hull City AFC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.7728567594346503,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "5538fc826857b5fe0928": {
+    "fixture_id": 560659,
+    "market": "ТБ 0.5 1Т",
+    "home": "Brighton & Hove Albion FC",
+    "away": "Newcastle United FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.6950286740907219,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "09278f2418074ac63826": {
+    "fixture_id": 560659,
+    "market": "ТБ 1.5 1Т",
+    "home": "Brighton & Hove Albion FC",
+    "away": "Newcastle United FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.35044730661378887,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "48c88fb5c204c57b4973": {
+    "fixture_id": 560659,
+    "market": "ТБ 2.5",
+    "home": "Brighton & Hove Albion FC",
+    "away": "Newcastle United FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.5495320329604344,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "eb138a9e7912c7462ad9": {
+    "fixture_id": 560659,
+    "market": "Обе забьют",
+    "home": "Brighton & Hove Albion FC",
+    "away": "Newcastle United FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.5545303935802995,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "77f39fd84d25b75018bb": {
+    "fixture_id": 560659,
+    "market": "ТБ 0.5 2Т",
+    "home": "Brighton & Hove Albion FC",
+    "away": "Newcastle United FC",
+    "kickoff": "2026-11-29T14:05:00+00:00",
+    "p": 0.7757360931130693,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "cd6115a89e80dc612a3d": {
+    "fixture_id": 565873,
+    "market": "ТБ 0.5 1Т",
+    "home": "SC Freiburg",
+    "away": "RB Leipzig",
+    "kickoff": "2026-11-29T14:30:00+00:00",
+    "p": 0.7260541948480237,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8322ed74afd2a3b8dffe": {
+    "fixture_id": 565873,
+    "market": "ТБ 1.5 1Т",
+    "home": "SC Freiburg",
+    "away": "RB Leipzig",
+    "kickoff": "2026-11-29T14:30:00+00:00",
+    "p": 0.4155886000205776,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6a090530b959e2f5243b": {
+    "fixture_id": 565873,
+    "market": "ТБ 2.5",
+    "home": "SC Freiburg",
+    "away": "RB Leipzig",
+    "kickoff": "2026-11-29T14:30:00+00:00",
+    "p": 0.6906997170033621,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6db15d6eff14d6d1a014": {
+    "fixture_id": 565873,
+    "market": "Обе забьют",
+    "home": "SC Freiburg",
+    "away": "RB Leipzig",
+    "kickoff": "2026-11-29T14:30:00+00:00",
+    "p": 0.6713480746687694,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f0c3a0915f854a2182d5": {
+    "fixture_id": 565873,
+    "market": "ТБ 0.5 2Т",
+    "home": "SC Freiburg",
+    "away": "RB Leipzig",
+    "kickoff": "2026-11-29T14:30:00+00:00",
+    "p": 0.8810166127012442,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "9690bdc9479d6d228b69": {
+    "fixture_id": 564766,
+    "market": "ТБ 0.5 1Т",
+    "home": "RC Deportivo La Coruña",
+    "away": "FC Barcelona",
+    "kickoff": "2026-11-29T15:15:00+00:00",
+    "p": 0.6971576272786966,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "afa67ddc5d1e933dc60e": {
+    "fixture_id": 564766,
+    "market": "ТБ 1.5 1Т",
+    "home": "RC Deportivo La Coruña",
+    "away": "FC Barcelona",
+    "kickoff": "2026-11-29T15:15:00+00:00",
+    "p": 0.34211468314011584,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "111e9a61d52d955b1223": {
+    "fixture_id": 564766,
+    "market": "ТБ 2.5",
+    "home": "RC Deportivo La Coruña",
+    "away": "FC Barcelona",
+    "kickoff": "2026-11-29T15:15:00+00:00",
+    "p": 0.5891544116540464,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f75899aff01f7ac7b16e": {
+    "fixture_id": 564766,
+    "market": "Обе забьют",
+    "home": "RC Deportivo La Coruña",
+    "away": "FC Barcelona",
+    "kickoff": "2026-11-29T15:15:00+00:00",
+    "p": 0.58957611145689,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "b9420d13d3f29896c346": {
+    "fixture_id": 564766,
+    "market": "ТБ 0.5 2Т",
+    "home": "RC Deportivo La Coruña",
+    "away": "FC Barcelona",
+    "kickoff": "2026-11-29T15:15:00+00:00",
+    "p": 0.8439887832724742,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c0177654fcee8b2f3f5f": {
+    "fixture_id": 558823,
+    "market": "ТБ 0.5 1Т",
+    "home": "PEC Zwolle",
+    "away": "AZ",
+    "kickoff": "2026-11-29T15:45:00+00:00",
+    "p": 0.741593069533816,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "36decf36de7b64d2bd65": {
+    "fixture_id": 558823,
+    "market": "ТБ 1.5 1Т",
+    "home": "PEC Zwolle",
+    "away": "AZ",
+    "kickoff": "2026-11-29T15:45:00+00:00",
+    "p": 0.4647115686000785,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "719ac55c48c32e53766b": {
+    "fixture_id": 558823,
+    "market": "ТБ 2.5",
+    "home": "PEC Zwolle",
+    "away": "AZ",
+    "kickoff": "2026-11-29T15:45:00+00:00",
+    "p": 0.630294684646111,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d5aede7b75acb9952054": {
+    "fixture_id": 558823,
+    "market": "Обе забьют",
+    "home": "PEC Zwolle",
+    "away": "AZ",
+    "kickoff": "2026-11-29T15:45:00+00:00",
+    "p": 0.6284444178467957,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "28942260c71c8f309455": {
+    "fixture_id": 558823,
+    "market": "ТБ 0.5 2Т",
+    "home": "PEC Zwolle",
+    "away": "AZ",
+    "kickoff": "2026-11-29T15:45:00+00:00",
+    "p": 0.8426524373625328,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "100135342126bebc2329": {
+    "fixture_id": 559618,
+    "market": "ТБ 0.5 1Т",
+    "home": "Toulouse FC",
+    "away": "Stade Rennais FC 1901",
+    "kickoff": "2026-11-29T16:15:00+00:00",
+    "p": 0.7130093867144849,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "ff6418c8bfa2466e0859": {
+    "fixture_id": 559618,
+    "market": "ТБ 1.5 1Т",
+    "home": "Toulouse FC",
+    "away": "Stade Rennais FC 1901",
+    "kickoff": "2026-11-29T16:15:00+00:00",
+    "p": 0.3495884202101766,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "b06486bb0f36e8897a11": {
+    "fixture_id": 559618,
+    "market": "ТБ 2.5",
+    "home": "Toulouse FC",
+    "away": "Stade Rennais FC 1901",
+    "kickoff": "2026-11-29T16:15:00+00:00",
+    "p": 0.6106758857139157,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "9191856220dbf4177cfe": {
+    "fixture_id": 559618,
+    "market": "Обе забьют",
+    "home": "Toulouse FC",
+    "away": "Stade Rennais FC 1901",
+    "kickoff": "2026-11-29T16:15:00+00:00",
+    "p": 0.6126913277125742,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f5a419437d3964e75c47": {
+    "fixture_id": 559618,
+    "market": "ТБ 0.5 2Т",
+    "home": "Toulouse FC",
+    "away": "Stade Rennais FC 1901",
+    "kickoff": "2026-11-29T16:15:00+00:00",
+    "p": 0.8191307849305672,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "fb3dab7eaba245c39f86": {
+    "fixture_id": 565871,
+    "market": "ТБ 0.5 1Т",
+    "home": "TSG 1899 Hoffenheim",
+    "away": "FC Augsburg",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.7260541948480237,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "4d5f9be657879aae485b": {
+    "fixture_id": 565871,
+    "market": "ТБ 1.5 1Т",
+    "home": "TSG 1899 Hoffenheim",
+    "away": "FC Augsburg",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.4155886000205776,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "71b0912c032280c7c574": {
+    "fixture_id": 565871,
+    "market": "ТБ 2.5",
+    "home": "TSG 1899 Hoffenheim",
+    "away": "FC Augsburg",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.6849609371912341,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "91d27e0c37281e47c3d8": {
+    "fixture_id": 565871,
+    "market": "Обе забьют",
+    "home": "TSG 1899 Hoffenheim",
+    "away": "FC Augsburg",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.6694937557246161,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3785f91dc68411523eab": {
+    "fixture_id": 565871,
+    "market": "ТБ 0.5 2Т",
+    "home": "TSG 1899 Hoffenheim",
+    "away": "FC Augsburg",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.8732335630450121,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1b1eed86eda48a341e97": {
+    "fixture_id": 560654,
+    "market": "ТБ 0.5 1Т",
+    "home": "Arsenal FC",
+    "away": "Manchester City FC",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.6950286740907219,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "52840bd189b26583fa3c": {
+    "fixture_id": 560654,
+    "market": "ТБ 1.5 1Т",
+    "home": "Arsenal FC",
+    "away": "Manchester City FC",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.35044730661378887,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "b49ea8db4c9ef3170613": {
+    "fixture_id": 560654,
+    "market": "ТБ 2.5",
+    "home": "Arsenal FC",
+    "away": "Manchester City FC",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.5191565576266961,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "536efa891d667b8800a0": {
+    "fixture_id": 560654,
+    "market": "Обе забьют",
+    "home": "Arsenal FC",
+    "away": "Manchester City FC",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.5521202996164349,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "62da8863336e07b6449c": {
+    "fixture_id": 560654,
+    "market": "ТБ 0.5 2Т",
+    "home": "Arsenal FC",
+    "away": "Manchester City FC",
+    "kickoff": "2026-11-29T16:30:00+00:00",
+    "p": 0.8012714037273728,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "34de20e20c84cc41ccb7": {
+    "fixture_id": 558512,
+    "market": "ТБ 0.5 1Т",
+    "home": "AS Roma",
+    "away": "AC Monza",
+    "kickoff": "2026-11-29T17:00:00+00:00",
+    "p": 0.6907944124385332,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "ddfb759e34b0692d9b43": {
+    "fixture_id": 558512,
+    "market": "ТБ 1.5 1Т",
+    "home": "AS Roma",
+    "away": "AC Monza",
+    "kickoff": "2026-11-29T17:00:00+00:00",
+    "p": 0.3221328268154491,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "12b1cfd7bf328d35cb77": {
+    "fixture_id": 558512,
+    "market": "ТБ 2.5",
+    "home": "AS Roma",
+    "away": "AC Monza",
+    "kickoff": "2026-11-29T17:00:00+00:00",
+    "p": 0.6048019924556844,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "62ebabe8f16ee1aa163f": {
+    "fixture_id": 558512,
+    "market": "Обе забьют",
+    "home": "AS Roma",
+    "away": "AC Monza",
+    "kickoff": "2026-11-29T17:00:00+00:00",
+    "p": 0.5630797102417293,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "963527b5d750e74dcb1f": {
+    "fixture_id": 558512,
+    "market": "ТБ 0.5 2Т",
+    "home": "AS Roma",
+    "away": "AC Monza",
+    "kickoff": "2026-11-29T17:00:00+00:00",
+    "p": 0.8323696857300042,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "ed8000d741665b6357a0": {
+    "fixture_id": 564758,
+    "market": "ТБ 0.5 1Т",
+    "home": "RC Celta de Vigo",
+    "away": "Villarreal CF",
+    "kickoff": "2026-11-29T17:30:00+00:00",
+    "p": 0.6971576272786966,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6724bff945eafe2b6332": {
+    "fixture_id": 564758,
+    "market": "ТБ 1.5 1Т",
+    "home": "RC Celta de Vigo",
+    "away": "Villarreal CF",
+    "kickoff": "2026-11-29T17:30:00+00:00",
+    "p": 0.34211468314011584,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f4a8e05c26bf686f1694": {
+    "fixture_id": 564758,
+    "market": "ТБ 2.5",
+    "home": "RC Celta de Vigo",
+    "away": "Villarreal CF",
+    "kickoff": "2026-11-29T17:30:00+00:00",
+    "p": 0.48925841268153275,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3a2b0ae8d0a739774446": {
+    "fixture_id": 564758,
+    "market": "Обе забьют",
+    "home": "RC Celta de Vigo",
+    "away": "Villarreal CF",
+    "kickoff": "2026-11-29T17:30:00+00:00",
+    "p": 0.5371486429817012,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8dc537594ed2b077195f": {
+    "fixture_id": 564758,
+    "market": "ТБ 0.5 2Т",
+    "home": "RC Celta de Vigo",
+    "away": "Villarreal CF",
+    "kickoff": "2026-11-29T17:30:00+00:00",
+    "p": 0.7730636854370376,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2f13a4da1a3e822f754f": {
+    "fixture_id": 567363,
+    "market": "ТБ 0.5 1Т",
+    "home": "Gil Vicente FC",
+    "away": "GD Estoril Praia",
+    "kickoff": "2026-11-29T18:00:00+00:00",
+    "p": 0.6872053625965158,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2ede551333e0ceb4556b": {
+    "fixture_id": 567363,
+    "market": "ТБ 1.5 1Т",
+    "home": "Gil Vicente FC",
+    "away": "GD Estoril Praia",
+    "kickoff": "2026-11-29T18:00:00+00:00",
+    "p": 0.322812961696485,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8ae45c7abbac398d5b28": {
+    "fixture_id": 567363,
+    "market": "ТБ 2.5",
+    "home": "Gil Vicente FC",
+    "away": "GD Estoril Praia",
+    "kickoff": "2026-11-29T18:00:00+00:00",
+    "p": 0.4529688642910058,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "886142dca656d5fc80d6": {
+    "fixture_id": 567363,
+    "market": "Обе забьют",
+    "home": "Gil Vicente FC",
+    "away": "GD Estoril Praia",
+    "kickoff": "2026-11-29T18:00:00+00:00",
+    "p": 0.4487617032818563,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "996c8dc1c558f21b2032": {
+    "fixture_id": 567363,
+    "market": "ТБ 0.5 2Т",
+    "home": "Gil Vicente FC",
+    "away": "GD Estoril Praia",
+    "kickoff": "2026-11-29T18:00:00+00:00",
+    "p": 0.753504922473061,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d0ff841db86634766286": {
+    "fixture_id": 565872,
+    "market": "ТБ 0.5 1Т",
+    "home": "Borussia Dortmund",
+    "away": "Bayer 04 Leverkusen",
+    "kickoff": "2026-11-29T18:30:00+00:00",
+    "p": 0.7260541948480237,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "bc8819508ed30eedc53e": {
+    "fixture_id": 565872,
+    "market": "ТБ 1.5 1Т",
+    "home": "Borussia Dortmund",
+    "away": "Bayer 04 Leverkusen",
+    "kickoff": "2026-11-29T18:30:00+00:00",
+    "p": 0.4155886000205776,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "280ae22716143cda4b69": {
+    "fixture_id": 565872,
+    "market": "ТБ 2.5",
+    "home": "Borussia Dortmund",
+    "away": "Bayer 04 Leverkusen",
+    "kickoff": "2026-11-29T18:30:00+00:00",
+    "p": 0.6491298480309545,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d05b773c7b4ecb420f89": {
+    "fixture_id": 565872,
+    "market": "Обе забьют",
+    "home": "Borussia Dortmund",
+    "away": "Bayer 04 Leverkusen",
+    "kickoff": "2026-11-29T18:30:00+00:00",
+    "p": 0.6388961218515425,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "ab8cda2ec27b84dd88bb": {
+    "fixture_id": 565872,
+    "market": "ТБ 0.5 2Т",
+    "home": "Borussia Dortmund",
+    "away": "Bayer 04 Leverkusen",
+    "kickoff": "2026-11-29T18:30:00+00:00",
+    "p": 0.8593353836128004,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "76370f334957aeb24a59": {
+    "fixture_id": 555104,
+    "market": "ТБ 0.5 1Т",
+    "home": "Coritiba FBC",
+    "away": "CR Flamengo",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.7226222509350846,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "da588678a69a6c600ad2": {
+    "fixture_id": 555104,
+    "market": "ТБ 1.5 1Т",
+    "home": "Coritiba FBC",
+    "away": "CR Flamengo",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.3496871203995827,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c25726313314cc0c67ea": {
+    "fixture_id": 555104,
+    "market": "ТБ 2.5",
+    "home": "Coritiba FBC",
+    "away": "CR Flamengo",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.5199353876060793,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "073d6420cb4ce968a8c6": {
+    "fixture_id": 555104,
+    "market": "Обе забьют",
+    "home": "Coritiba FBC",
+    "away": "CR Flamengo",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.5423659714528788,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d59d060a97b50408fdb3": {
+    "fixture_id": 555104,
+    "market": "ТБ 0.5 2Т",
+    "home": "Coritiba FBC",
+    "away": "CR Flamengo",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.8175638293571068,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "bf82e7e49b566c27f94f": {
+    "fixture_id": 558822,
+    "market": "ТБ 0.5 1Т",
+    "home": "NEC",
+    "away": "FC Twente '65",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.741593069533816,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "74103d16f454d51785a4": {
+    "fixture_id": 558822,
+    "market": "ТБ 1.5 1Т",
+    "home": "NEC",
+    "away": "FC Twente '65",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.4647115686000785,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3a8269734ae037827bdc": {
+    "fixture_id": 558822,
+    "market": "ТБ 2.5",
+    "home": "NEC",
+    "away": "FC Twente '65",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.6550675913169455,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "96f136c0a6fa9b9d9d09": {
+    "fixture_id": 558822,
+    "market": "Обе забьют",
+    "home": "NEC",
+    "away": "FC Twente '65",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.6507801094331962,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6423f9deb9b329aa0ebf": {
+    "fixture_id": 558822,
+    "market": "ТБ 0.5 2Т",
+    "home": "NEC",
+    "away": "FC Twente '65",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.8192904397648451,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "047acfdde5226189a7d8": {
+    "fixture_id": 555109,
+    "market": "ТБ 0.5 1Т",
+    "home": "EC Vitória",
+    "away": "Santos FC",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.7226222509350846,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6db5292c8db7c3a906c7": {
+    "fixture_id": 555109,
+    "market": "ТБ 1.5 1Т",
+    "home": "EC Vitória",
+    "away": "Santos FC",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.3496871203995827,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "9aaa22f94f0f6a3a9c70": {
+    "fixture_id": 555109,
+    "market": "ТБ 2.5",
+    "home": "EC Vitória",
+    "away": "Santos FC",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.5152734741767404,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8fc50a06d2d7e1eb2b92": {
+    "fixture_id": 555109,
+    "market": "Обе забьют",
+    "home": "EC Vitória",
+    "away": "Santos FC",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.5573016340704695,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "532426314dba109ffec0": {
+    "fixture_id": 555109,
+    "market": "ТБ 0.5 2Т",
+    "home": "EC Vitória",
+    "away": "Santos FC",
+    "kickoff": "2026-11-29T19:00:00+00:00",
+    "p": 0.7906733331322211,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "88be93990cb100f8595c": {
+    "fixture_id": 558511,
+    "market": "ТБ 0.5 1Т",
+    "home": "Como 1907",
+    "away": "Juventus FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.6907944124385332,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6672fe9300f59bcdcd62": {
+    "fixture_id": 558511,
+    "market": "ТБ 1.5 1Т",
+    "home": "Como 1907",
+    "away": "Juventus FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.3221328268154491,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c6cf14649c594692f237": {
+    "fixture_id": 558511,
+    "market": "ТБ 2.5",
+    "home": "Como 1907",
+    "away": "Juventus FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.49094319573118755,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "e5cd3f869491b6d8c13f": {
+    "fixture_id": 558511,
+    "market": "Обе забьют",
+    "home": "Como 1907",
+    "away": "Juventus FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.498122627076882,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2829681b4089adc94e4b": {
+    "fixture_id": 558511,
+    "market": "ТБ 0.5 2Т",
+    "home": "Como 1907",
+    "away": "Juventus FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.7952266337495837,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "4caa5f54ef05d0322255": {
+    "fixture_id": 559615,
+    "market": "ТБ 0.5 1Т",
+    "home": "Olympique Lyonnais",
+    "away": "AS Monaco FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.7130093867144849,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3999b95db019929493ca": {
+    "fixture_id": 559615,
+    "market": "ТБ 1.5 1Т",
+    "home": "Olympique Lyonnais",
+    "away": "AS Monaco FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.3495884202101766,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d1b27b82e61ae9894f31": {
+    "fixture_id": 559615,
+    "market": "ТБ 2.5",
+    "home": "Olympique Lyonnais",
+    "away": "AS Monaco FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.5579395162231383,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6d9f7fc745675c4fceec": {
+    "fixture_id": 559615,
+    "market": "Обе забьют",
+    "home": "Olympique Lyonnais",
+    "away": "AS Monaco FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.5689469677583434,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d5734dee723361b94078": {
+    "fixture_id": 559615,
+    "market": "ТБ 0.5 2Т",
+    "home": "Olympique Lyonnais",
+    "away": "AS Monaco FC",
+    "kickoff": "2026-11-29T19:45:00+00:00",
+    "p": 0.7767491173469316,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "591dab8599571addeb0c": {
+    "fixture_id": 564764,
+    "market": "ТБ 0.5 1Т",
+    "home": "Real Sociedad de Fútbol",
+    "away": "Sevilla FC",
+    "kickoff": "2026-11-29T20:00:00+00:00",
+    "p": 0.6971576272786966,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3491ea9029fde673c57e": {
+    "fixture_id": 564764,
+    "market": "ТБ 1.5 1Т",
+    "home": "Real Sociedad de Fútbol",
+    "away": "Sevilla FC",
+    "kickoff": "2026-11-29T20:00:00+00:00",
+    "p": 0.34211468314011584,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "68afdee748e1e5a1af43": {
+    "fixture_id": 564764,
+    "market": "ТБ 2.5",
+    "home": "Real Sociedad de Fútbol",
+    "away": "Sevilla FC",
+    "kickoff": "2026-11-29T20:00:00+00:00",
+    "p": 0.5651259937571231,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "fb38b0df9ebd17873155": {
+    "fixture_id": 564764,
+    "market": "Обе забьют",
+    "home": "Real Sociedad de Fútbol",
+    "away": "Sevilla FC",
+    "kickoff": "2026-11-29T20:00:00+00:00",
+    "p": 0.596325262557755,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "d64f73e7000c0f2d97a1": {
+    "fixture_id": 564764,
+    "market": "ТБ 0.5 2Т",
+    "home": "Real Sociedad de Fútbol",
+    "away": "Sevilla FC",
+    "kickoff": "2026-11-29T20:00:00+00:00",
+    "p": 0.8314717837150486,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c9e7eb680a3d3a45fdc5": {
+    "fixture_id": 567358,
+    "market": "ТБ 0.5 1Т",
+    "home": "FC Porto",
+    "away": "Sporting Clube de Portugal",
+    "kickoff": "2026-11-29T20:30:00+00:00",
+    "p": 0.6872053625965158,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6d99389b6d206c28733d": {
+    "fixture_id": 567358,
+    "market": "ТБ 1.5 1Т",
+    "home": "FC Porto",
+    "away": "Sporting Clube de Portugal",
+    "kickoff": "2026-11-29T20:30:00+00:00",
+    "p": 0.322812961696485,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "f785cd187c85d32893f3": {
+    "fixture_id": 567358,
+    "market": "ТБ 2.5",
+    "home": "FC Porto",
+    "away": "Sporting Clube de Portugal",
+    "kickoff": "2026-11-29T20:30:00+00:00",
+    "p": 0.5671679649000863,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "df9c9bf79ef6476b6d8c": {
+    "fixture_id": 567358,
+    "market": "Обе забьют",
+    "home": "FC Porto",
+    "away": "Sporting Clube de Portugal",
+    "kickoff": "2026-11-29T20:30:00+00:00",
+    "p": 0.5516022876359657,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "3c0c7186d2474a8499fc": {
+    "fixture_id": 567358,
+    "market": "ТБ 0.5 2Т",
+    "home": "FC Porto",
+    "away": "Sporting Clube de Portugal",
+    "kickoff": "2026-11-29T20:30:00+00:00",
+    "p": 0.8350313541520558,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8586c35113b60370f035": {
+    "fixture_id": 555106,
+    "market": "ТБ 0.5 1Т",
+    "home": "SC Internacional",
+    "away": "RB Bragantino",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.7226222509350846,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "17e1ad3b3286868530e4": {
+    "fixture_id": 555106,
+    "market": "ТБ 1.5 1Т",
+    "home": "SC Internacional",
+    "away": "RB Bragantino",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.3496871203995827,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "4ad56695844a03b45866": {
+    "fixture_id": 555106,
+    "market": "ТБ 2.5",
+    "home": "SC Internacional",
+    "away": "RB Bragantino",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.5040772864971943,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8091971443fc3e145862": {
+    "fixture_id": 555106,
+    "market": "Обе забьют",
+    "home": "SC Internacional",
+    "away": "RB Bragantino",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.5519721295154388,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "e32e175f79b8fb959130": {
+    "fixture_id": 555106,
+    "market": "ТБ 0.5 2Т",
+    "home": "SC Internacional",
+    "away": "RB Bragantino",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.7674367807933586,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "6e7fee9569d39e6ecc53": {
+    "fixture_id": 555107,
+    "market": "ТБ 0.5 1Т",
+    "home": "Mirassol FC",
+    "away": "CA Paranaense",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.7226222509350846,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2ff4db9b12337188cee1": {
+    "fixture_id": 555107,
+    "market": "ТБ 1.5 1Т",
+    "home": "Mirassol FC",
+    "away": "CA Paranaense",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.3496871203995827,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c0336dd605417538e10e": {
+    "fixture_id": 555107,
+    "market": "ТБ 2.5",
+    "home": "Mirassol FC",
+    "away": "CA Paranaense",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.5385640467486363,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1228b1a3a7795026bb0f": {
+    "fixture_id": 555107,
+    "market": "Обе забьют",
+    "home": "Mirassol FC",
+    "away": "CA Paranaense",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.5789775079002062,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c842f0f8b6bfe920ab1f": {
+    "fixture_id": 555107,
+    "market": "ТБ 0.5 2Т",
+    "home": "Mirassol FC",
+    "away": "CA Paranaense",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.7763701904995648,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "29c81cf9b382901f88af": {
+    "fixture_id": 555103,
+    "market": "ТБ 0.5 1Т",
+    "home": "SC Corinthians Paulista",
+    "away": "Grêmio FBPA",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.7226222509350846,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "8914a826af8750fc8230": {
+    "fixture_id": 555103,
+    "market": "ТБ 1.5 1Т",
+    "home": "SC Corinthians Paulista",
+    "away": "Grêmio FBPA",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.3496871203995827,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "596cec80ac91994a4ee4": {
+    "fixture_id": 555103,
+    "market": "ТБ 2.5",
+    "home": "SC Corinthians Paulista",
+    "away": "Grêmio FBPA",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.46914777023807575,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "5a0f807bddb5b6642b18": {
+    "fixture_id": 555103,
+    "market": "Обе забьют",
+    "home": "SC Corinthians Paulista",
+    "away": "Grêmio FBPA",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.5229319818776328,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c87054bddd950de3747f": {
+    "fixture_id": 555103,
+    "market": "ТБ 0.5 2Т",
+    "home": "SC Corinthians Paulista",
+    "away": "Grêmio FBPA",
+    "kickoff": "2026-11-29T21:30:00+00:00",
+    "p": 0.7790339143437341,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "4f48b472c08d16017eb1": {
+    "fixture_id": 555100,
+    "market": "ТБ 0.5 1Т",
+    "home": "CA Mineiro",
+    "away": "CR Vasco da Gama",
+    "kickoff": "2026-11-29T22:30:00+00:00",
+    "p": 0.7226222509350846,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "00c229b9f2ff0bf9a4f5": {
+    "fixture_id": 555100,
+    "market": "ТБ 1.5 1Т",
+    "home": "CA Mineiro",
+    "away": "CR Vasco da Gama",
+    "kickoff": "2026-11-29T22:30:00+00:00",
+    "p": 0.3496871203995827,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "e93f6d7dd532decf9f3d": {
+    "fixture_id": 555100,
+    "market": "ТБ 2.5",
+    "home": "CA Mineiro",
+    "away": "CR Vasco da Gama",
+    "kickoff": "2026-11-29T22:30:00+00:00",
+    "p": 0.468094178999346,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2031cde481583629fee0": {
+    "fixture_id": 555100,
+    "market": "Обе забьют",
+    "home": "CA Mineiro",
+    "away": "CR Vasco da Gama",
+    "kickoff": "2026-11-29T22:30:00+00:00",
+    "p": 0.5202861978047297,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "548e906db90387785fcb": {
+    "fixture_id": 555100,
+    "market": "ТБ 0.5 2Т",
+    "home": "CA Mineiro",
+    "away": "CR Vasco da Gama",
+    "kickoff": "2026-11-29T22:30:00+00:00",
+    "p": 0.8014362277137715,
+    "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
     "result_source": null
   }

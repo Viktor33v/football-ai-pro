@@ -681,7 +681,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ESP_1_la-liga\", \"2026-11-20\", \"Athletic Club\", \"RCD Espanyol de Barcelona\", 2]": {
     "league": "ESP_1_la-liga",
@@ -852,7 +853,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"GER_1_bundesliga\", \"2026-11-20\", \"FC Bayern München\", \"1. FC Köln\", 2]": {
     "league": "GER_1_bundesliga",
@@ -1270,7 +1272,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"GRE_1_super-league\", \"2026-11-22\", \"Panathinaikos\", \"OFI Crete\", 2]": {
     "league": "GRE_1_super-league",
@@ -1309,7 +1312,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Aston Villa\", \"Sunderland\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1329,7 +1333,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Bournemouth\", \"Nott'm Forest\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1349,7 +1354,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Chelsea\", \"Leeds\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1369,7 +1375,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Spurs\", \"Ipswich\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1389,7 +1396,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Newcastle\", \"Arsenal\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1409,7 +1417,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-22\", \"Hull\", \"Brighton\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1429,7 +1438,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-22\", \"Liverpool\", \"Man Utd\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1449,7 +1459,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-23\", \"Brentford\", \"Everton\", 0]": {
     "league": "ENG_1_premier-league",
@@ -1469,7 +1480,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-20\", \"Athletic Club\", \"RCD Espanyol de Barcelona\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1489,7 +1501,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Deportivo Alavés\", \"RC Deportivo\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1509,7 +1522,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Rayo Vallecano\", \"Valencia CF\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1529,7 +1543,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Sevilla FC\", \"Real Betis\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1549,7 +1564,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Real Madrid\", \"Celta\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1569,7 +1585,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"FC Barcelona\", \"Villarreal CF\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1589,7 +1606,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"R. Racing Club\", \"Real Sociedad\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1609,7 +1627,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"CA Osasuna\", \"Málaga CF\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1629,7 +1648,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"Getafe CF\", \"Atlético de Madrid\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1649,7 +1669,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-23\", \"Levante UD\", \"Elche CF\", 0]": {
     "league": "ESP_1_la-liga",
@@ -1669,7 +1690,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-20\", \"FC Bayern München\", \"1. FC Köln\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1689,7 +1711,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-21\", \"1. FC Union Berlin\", \"RB Leipzig\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1709,7 +1732,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-21\", \"Bayer 04 Leverkusen\", \"SC Paderborn 07\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1729,7 +1753,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-21\", \"Borussia Mönchengladbach\", \"Borussia Dortmund\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1749,7 +1774,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-21\", \"Eintracht Frankfurt\", \"TSG Hoffenheim\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1769,7 +1795,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-21\", \"SV 07 Elversberg\", \"SC Freiburg\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1789,7 +1816,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-22\", \"FC Augsburg\", \"1. FSV Mainz 05\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1809,7 +1837,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-22\", \"SV Werder Bremen\", \"Hamburger SV\", 0]": {
     "league": "GER_1_bundesliga",
@@ -1829,7 +1858,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ITA_1_serie-a\", \"2026-11-21\", \"Lazio\", \"Lecce\", 0]": {
     "league": "ITA_1_serie-a",
@@ -1849,7 +1879,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ITA_1_serie-a\", \"2026-11-22\", \"Juventus\", \"Venezia\", 0]": {
     "league": "ITA_1_serie-a",
@@ -1869,7 +1900,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ITA_1_serie-a\", \"2026-11-22\", \"Bologna\", \"Udinese\", 0]": {
     "league": "ITA_1_serie-a",
@@ -1889,7 +1921,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ITA_1_serie-a\", \"2026-11-22\", \"Sassuolo\", \"Genoa\", 0]": {
     "league": "ITA_1_serie-a",
@@ -1909,7 +1942,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ITA_1_serie-a\", \"2026-11-23\", \"Monza\", \"Fiorentina\", 0]": {
     "league": "ITA_1_serie-a",
@@ -1929,7 +1963,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-20\", \"Estac Troyes\", \"Havre Athletic Club\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -1949,7 +1984,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-21\", \"OGC Nice\", \"Paris Saint-Germain\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -1969,7 +2005,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-21\", \"AS Monaco\", \"AJ Auxerre\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -1989,7 +2026,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-21\", \"RC Lens\", \"Toulouse FC\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -2009,7 +2047,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-22\", \"Paris FC\", \"Angers SCO\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -2029,7 +2068,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-22\", \"FC Lorient\", \"Stade Rennais FC\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -2049,7 +2089,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-22\", \"Olympique de Marseille\", \"Le Mans FC\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -2069,7 +2110,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"NED_1_eredivisie\", \"2026-11-21\", \"FC Utrecht\", \"SC Cambuur\", 0]": {
     "league": "NED_1_eredivisie",
@@ -2089,7 +2131,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-21\", \"Royal Charleroi SC\", \"Sint-Truidense\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2109,7 +2152,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-21\", \"Racing Genk\", \"RAAL La Louvière\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2129,7 +2173,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-21\", \"KV Mechelen\", \"Club Brugge\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2149,7 +2194,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-21\", \"Zulte-Waregem\", \"Antwerp\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2169,7 +2215,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-22\", \"Waasland-Beveren\", \"KAA Gent\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2189,7 +2236,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-22\", \"KV Kortrijk\", \"Union St.-Gilloise\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2209,7 +2257,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-22\", \"Anderlecht\", \"OH Leuven\", 0]": {
     "league": "BEL_1_pro-league",
@@ -2229,7 +2278,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-21\", \"Gençlerbirligi\", \"Gaziantep\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2249,7 +2299,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-21\", \"Amedspor\", \"Çaykur Rizespor\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2269,7 +2320,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-21\", \"Galatasaray\", \"Samsunspor\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2289,7 +2341,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-21\", \"Kocaelispor\", \"Fenerbahçe\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2309,7 +2362,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-22\", \"Erzurumspor\", \"Göztepe\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2329,7 +2383,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-22\", \"Kasimpasa\", \"Alanyaspor\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2349,7 +2404,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-22\", \"Konyaspor\", \"Besiktas\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2369,7 +2425,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-22\", \"Trabzonspor\", \"Eyüpspor\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2389,7 +2446,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-23\", \"Istanbul Basaksehir\", \"Çorum\", 0]": {
     "league": "TUR_1_super-lig",
@@ -2409,7 +2467,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-21\", \"Kalamata\", \"AEK Athens\", 0]": {
     "league": "GRE_1_super-league",
@@ -2429,7 +2488,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Levadiakos\", \"Atromitos\", 0]": {
     "league": "GRE_1_super-league",
@@ -2449,7 +2509,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Panetolikos\", \"Volos NFC\", 0]": {
     "league": "GRE_1_super-league",
@@ -2469,7 +2530,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Panathinaikos\", \"OFI Crete\", 0]": {
     "league": "GRE_1_super-league",
@@ -2489,7 +2551,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Olympiacos\", \"Iraklis\", 0]": {
     "league": "GRE_1_super-league",
@@ -2509,7 +2572,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"PAOK\", \"Kifisia\", 0]": {
     "league": "GRE_1_super-league",
@@ -2529,7 +2593,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-23\", \"Asteras Tripoli\", \"Aris\", 0]": {
     "league": "GRE_1_super-league",
@@ -2549,7 +2614,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Bournemouth\", \"Nott'm Forest\", 1]": {
     "league": "ENG_1_premier-league",
@@ -2569,7 +2635,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-20\", \"Athletic Club\", \"RCD Espanyol de Barcelona\", 1]": {
     "league": "ESP_1_la-liga",
@@ -2589,7 +2656,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Rayo Vallecano\", \"Valencia CF\", 1]": {
     "league": "ESP_1_la-liga",
@@ -2609,7 +2677,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"R. Racing Club\", \"Real Sociedad\", 1]": {
     "league": "ESP_1_la-liga",
@@ -2629,7 +2698,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"CA Osasuna\", \"Málaga CF\", 1]": {
     "league": "ESP_1_la-liga",
@@ -2649,7 +2719,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"Getafe CF\", \"Atlético de Madrid\", 1]": {
     "league": "ESP_1_la-liga",
@@ -2669,7 +2740,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-21\", \"Kalamata\", \"AEK Athens\", 1]": {
     "league": "GRE_1_super-league",
@@ -2689,7 +2761,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Levadiakos\", \"Atromitos\", 1]": {
     "league": "GRE_1_super-league",
@@ -2709,7 +2782,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Panetolikos\", \"Volos NFC\", 1]": {
     "league": "GRE_1_super-league",
@@ -2729,7 +2803,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Olympiacos\", \"Iraklis\", 1]": {
     "league": "GRE_1_super-league",
@@ -2749,7 +2824,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"PAOK\", \"Kifisia\", 1]": {
     "league": "GRE_1_super-league",
@@ -2769,7 +2845,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-23\", \"Asteras Tripoli\", \"Aris\", 1]": {
     "league": "GRE_1_super-league",
@@ -2789,7 +2866,8 @@
     "selected": true,
     "index": 1,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Rayo Vallecano\", \"Valencia CF\", 3]": {
     "league": "ESP_1_la-liga",
@@ -2809,7 +2887,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Sevilla FC\", \"Real Betis\", 3]": {
     "league": "ESP_1_la-liga",
@@ -2829,7 +2908,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"R. Racing Club\", \"Real Sociedad\", 3]": {
     "league": "ESP_1_la-liga",
@@ -2849,7 +2929,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"CA Osasuna\", \"Málaga CF\", 3]": {
     "league": "ESP_1_la-liga",
@@ -2869,7 +2950,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"Getafe CF\", \"Atlético de Madrid\", 3]": {
     "league": "ESP_1_la-liga",
@@ -2889,7 +2971,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-21\", \"Kalamata\", \"AEK Athens\", 3]": {
     "league": "GRE_1_super-league",
@@ -2909,7 +2992,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Panetolikos\", \"Volos NFC\", 3]": {
     "league": "GRE_1_super-league",
@@ -2929,7 +3013,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Olympiacos\", \"Iraklis\", 3]": {
     "league": "GRE_1_super-league",
@@ -2949,7 +3034,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"PAOK\", \"Kifisia\", 3]": {
     "league": "GRE_1_super-league",
@@ -2969,7 +3055,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-23\", \"Asteras Tripoli\", \"Aris\", 3]": {
     "league": "GRE_1_super-league",
@@ -2989,7 +3076,8 @@
     "selected": true,
     "index": 3,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Man City\", \"Fulham\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3009,7 +3097,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Aston Villa\", \"Sunderland\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3029,7 +3118,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Bournemouth\", \"Nott'm Forest\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3049,7 +3139,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Chelsea\", \"Leeds\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3069,7 +3160,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-21\", \"Spurs\", \"Ipswich\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3089,7 +3181,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-22\", \"Hull\", \"Brighton\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3109,7 +3202,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-22\", \"Liverpool\", \"Man Utd\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3129,7 +3223,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-20\", \"Athletic Club\", \"RCD Espanyol de Barcelona\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3149,7 +3244,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Deportivo Alavés\", \"RC Deportivo\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3169,7 +3265,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-21\", \"Rayo Vallecano\", \"Valencia CF\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3189,7 +3286,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"R. Racing Club\", \"Real Sociedad\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3209,7 +3307,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"CA Osasuna\", \"Málaga CF\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3229,7 +3328,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-22\", \"Getafe CF\", \"Atlético de Madrid\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3249,7 +3349,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-23\", \"Levante UD\", \"Elche CF\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3269,7 +3370,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-22\", \"FC Augsburg\", \"1. FSV Mainz 05\", 4]": {
     "league": "GER_1_bundesliga",
@@ -3289,7 +3391,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-21\", \"Zulte-Waregem\", \"Antwerp\", 4]": {
     "league": "BEL_1_pro-league",
@@ -3309,7 +3412,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-22\", \"Erzurumspor\", \"Göztepe\", 4]": {
     "league": "TUR_1_super-lig",
@@ -3329,7 +3433,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-22\", \"Konyaspor\", \"Besiktas\", 4]": {
     "league": "TUR_1_super-lig",
@@ -3349,7 +3454,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-21\", \"Kalamata\", \"AEK Athens\", 4]": {
     "league": "GRE_1_super-league",
@@ -3369,7 +3475,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Levadiakos\", \"Atromitos\", 4]": {
     "league": "GRE_1_super-league",
@@ -3389,7 +3496,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Panetolikos\", \"Volos NFC\", 4]": {
     "league": "GRE_1_super-league",
@@ -3409,7 +3517,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"Olympiacos\", \"Iraklis\", 4]": {
     "league": "GRE_1_super-league",
@@ -3429,7 +3538,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-22\", \"PAOK\", \"Kifisia\", 4]": {
     "league": "GRE_1_super-league",
@@ -3449,7 +3559,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GRE_1_super-league\", \"2026-11-23\", \"Asteras Tripoli\", \"Aris\", 4]": {
     "league": "GRE_1_super-league",
@@ -3469,7 +3580,8 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-17T18:56:37.787912+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 0]": {
     "league": "GER_1_bundesliga",
@@ -7435,6 +7547,1524 @@
     "selected": true,
     "index": 4,
     "created": "2026-11-23T07:27:24.728193+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Bolton Wanderers\", \"West Bromwich Albion\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Bolton Wanderers",
+    "away": "West Bromwich Albion",
+    "p": 0.7330394898724912,
+    "baseline": 0.6649484536082474,
+    "expected": 11.817307692307692,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Burnley",
+    "away": "Birmingham City",
+    "p": 0.6654411568237806,
+    "baseline": 0.6649484536082474,
+    "expected": 9.810096153846155,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Watford",
+    "away": "Blackburn Rovers",
+    "p": 0.6984026818193809,
+    "baseline": 0.6649484536082474,
+    "expected": 10.701923076923077,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Stoke City",
+    "away": "Millwall",
+    "p": 0.697823658874709,
+    "baseline": 0.6649484536082474,
+    "expected": 10.685096153846153,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-27\", \"Southampton\", \"Middlesbrough\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-27",
+    "home": "Southampton",
+    "away": "Middlesbrough",
+    "p": 0.6861553636421464,
+    "baseline": 0.6649484536082474,
+    "expected": 10.35576923076923,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Blackburn Rovers",
+    "away": "Charlton Athletic",
+    "p": 0.7064118468236891,
+    "baseline": 0.6649484536082474,
+    "expected": 10.939903846153847,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Lincoln City\", \"Wolverhampton Wanderers\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Lincoln City",
+    "away": "Wolverhampton Wanderers",
+    "p": 0.6735797643247943,
+    "baseline": 0.6649484536082474,
+    "expected": 10.01923076923077,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Preston North End\", \"Norwich City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Preston North End",
+    "away": "Norwich City",
+    "p": 0.6772390629446399,
+    "baseline": 0.6649484536082474,
+    "expected": 10.115384615384615,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Birmingham City\", \"Bolton Wanderers\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Birmingham City",
+    "away": "Bolton Wanderers",
+    "p": 0.6614255878560777,
+    "baseline": 0.6649484536082474,
+    "expected": 9.709134615384617,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Derby County\", \"Watford\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Derby County",
+    "away": "Watford",
+    "p": 0.6877247310942429,
+    "baseline": 0.6649484536082474,
+    "expected": 10.399038461538462,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Millwall\", \"Burnley\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Millwall",
+    "away": "Burnley",
+    "p": 0.6798590746086282,
+    "baseline": 0.6649484536082474,
+    "expected": 10.185096153846153,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Queens Park Rangers\", \"Sheffield United\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Queens Park Rangers",
+    "away": "Sheffield United",
+    "p": 0.6682751149490969,
+    "baseline": 0.6649484536082474,
+    "expected": 9.882211538461538,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"West Bromwich Albion\", \"Bristol City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "West Bromwich Albion",
+    "away": "Bristol City",
+    "p": 0.7001296862915698,
+    "baseline": 0.6649484536082474,
+    "expected": 10.752403846153847,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"West Ham United\", \"Stoke City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "West Ham United",
+    "away": "Stoke City",
+    "p": 0.7109476979894127,
+    "baseline": 0.6649484536082474,
+    "expected": 11.079326923076922,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-29\", \"Swansea City\", \"Cardiff City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-29",
+    "home": "Swansea City",
+    "away": "Cardiff City",
+    "p": 0.6631533638141476,
+    "baseline": 0.6649484536082474,
+    "expected": 9.752403846153847,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"1. FC Heidenheim 1846\", \"1. FC Nürnberg\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "1. FC Heidenheim 1846",
+    "away": "1. FC Nürnberg",
+    "p": 0.7787032061803503,
+    "baseline": 0.7326732673267327,
+    "expected": 11.999586776859504,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"VfL Bochum\", \"SV Darmstadt 98\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "VfL Bochum",
+    "away": "SV Darmstadt 98",
+    "p": 0.730354861856368,
+    "baseline": 0.7326732673267327,
+    "expected": 10.383471074380166,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Dynamo Dresden\", \"FC St. Pauli\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Dynamo Dresden",
+    "away": "FC St. Pauli",
+    "p": 0.7141663301152633,
+    "baseline": 0.7326732673267327,
+    "expected": 9.933884297520663,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Hertha BSC\", \"Karlsruher SC\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Hertha BSC",
+    "away": "Karlsruher SC",
+    "p": 0.7343568390678248,
+    "baseline": 0.7326732673267327,
+    "expected": 10.5,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Holstein Kiel\", \"1. FC Kaiserslautern\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Holstein Kiel",
+    "away": "1. FC Kaiserslautern",
+    "p": 0.7581234954621177,
+    "baseline": 0.7326732673267327,
+    "expected": 11.24793388429752,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"VfL Osnabrück\", \"Hannover 96\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "VfL Osnabrück",
+    "away": "Hannover 96",
+    "p": 0.7586113012105765,
+    "baseline": 0.7326732673267327,
+    "expected": 11.264462809917356,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"1. FC Magdeburg\", \"Energie Cottbus\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "1. FC Magdeburg",
+    "away": "Energie Cottbus",
+    "p": 0.762099915408245,
+    "baseline": 0.7326732673267327,
+    "expected": 11.384297520661159,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"Eintracht Braunschweig\", \"VfL Wolfsburg\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "Eintracht Braunschweig",
+    "away": "VfL Wolfsburg",
+    "p": 0.7771388880173898,
+    "baseline": 0.7326732673267327,
+    "expected": 11.938016528925619,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"SpVgg Greuther Fürth\", \"DSC Arminia Bielefeld\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "SpVgg Greuther Fürth",
+    "away": "DSC Arminia Bielefeld",
+    "p": 0.7453902450755832,
+    "baseline": 0.7326732673267327,
+    "expected": 10.834297520661156,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"1. FC Heidenheim 1846\", \"1. FC Nürnberg\", 1]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "1. FC Heidenheim 1846",
+    "away": "1. FC Nürnberg",
+    "p": 0.6971624220721948,
+    "baseline": 0.6633663366336634,
+    "expected": 11.999586776859504,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 9.5",
+    "selected": true,
+    "index": 1,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Holstein Kiel\", \"1. FC Kaiserslautern\", 1]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Holstein Kiel",
+    "away": "1. FC Kaiserslautern",
+    "p": 0.6710130175618796,
+    "baseline": 0.6633663366336634,
+    "expected": 11.24793388429752,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 9.5",
+    "selected": true,
+    "index": 1,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"VfL Osnabrück\", \"Hannover 96\", 1]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "VfL Osnabrück",
+    "away": "Hannover 96",
+    "p": 0.6716192731841344,
+    "baseline": 0.6633663366336634,
+    "expected": 11.264462809917356,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 9.5",
+    "selected": true,
+    "index": 1,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"1. FC Magdeburg\", \"Energie Cottbus\", 1]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "1. FC Magdeburg",
+    "away": "Energie Cottbus",
+    "p": 0.6759734350287447,
+    "baseline": 0.6633663366336634,
+    "expected": 11.384297520661159,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 9.5",
+    "selected": true,
+    "index": 1,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"Eintracht Braunschweig\", \"VfL Wolfsburg\", 1]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "Eintracht Braunschweig",
+    "away": "VfL Wolfsburg",
+    "p": 0.6951315594087062,
+    "baseline": 0.6633663366336634,
+    "expected": 11.938016528925619,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 9.5",
+    "selected": true,
+    "index": 1,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"SpVgg Greuther Fürth\", \"DSC Arminia Bielefeld\", 1]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "SpVgg Greuther Fürth",
+    "away": "DSC Arminia Bielefeld",
+    "p": 0.6554035792929056,
+    "baseline": 0.6633663366336634,
+    "expected": 10.834297520661156,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 9.5",
+    "selected": true,
+    "index": 1,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_1_premier-league\", \"2026-12-01\", \"Coventry\", \"Ipswich\", 2]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-01",
+    "home": "Coventry",
+    "away": "Ipswich",
+    "p": 0.659058497176799,
+    "baseline": 0.6936936936936937,
+    "expected": 4.177685950413223,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Bolton Wanderers\", \"West Bromwich Albion\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Bolton Wanderers",
+    "away": "West Bromwich Albion",
+    "p": 0.6761409555944036,
+    "baseline": 0.6443298969072165,
+    "expected": 4.882211538461538,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Burnley",
+    "away": "Birmingham City",
+    "p": 0.6742278835115261,
+    "baseline": 0.6443298969072165,
+    "expected": 4.846153846153847,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Watford",
+    "away": "Blackburn Rovers",
+    "p": 0.7013662648384509,
+    "baseline": 0.6443298969072165,
+    "expected": 5.394230769230769,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Stoke City",
+    "away": "Millwall",
+    "p": 0.6983672899714879,
+    "baseline": 0.6443298969072165,
+    "expected": 5.3293269230769225,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-27\", \"Southampton\", \"Middlesbrough\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-27",
+    "home": "Southampton",
+    "away": "Middlesbrough",
+    "p": 0.6817715779731142,
+    "baseline": 0.6443298969072165,
+    "expected": 4.990384615384616,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Blackburn Rovers",
+    "away": "Charlton Athletic",
+    "p": 0.6827555546295916,
+    "baseline": 0.6443298969072165,
+    "expected": 5.009615384615384,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Lincoln City\", \"Wolverhampton Wanderers\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Lincoln City",
+    "away": "Wolverhampton Wanderers",
+    "p": 0.6733289145911839,
+    "baseline": 0.6443298969072165,
+    "expected": 4.829326923076923,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Derby County\", \"Watford\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Derby County",
+    "away": "Watford",
+    "p": 0.6519884702903724,
+    "baseline": 0.6443298969072165,
+    "expected": 4.449519230769231,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Millwall\", \"Burnley\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Millwall",
+    "away": "Burnley",
+    "p": 0.6538199789381233,
+    "baseline": 0.6443298969072165,
+    "expected": 4.480769230769231,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"West Bromwich Albion\", \"Bristol City\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "West Bromwich Albion",
+    "away": "Bristol City",
+    "p": 0.6694314641204977,
+    "baseline": 0.6443298969072165,
+    "expected": 4.757211538461538,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"West Ham United\", \"Stoke City\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "West Ham United",
+    "away": "Stoke City",
+    "p": 0.6892635087923236,
+    "baseline": 0.6443298969072165,
+    "expected": 5.139423076923077,
+    "sample": [
+      16,
+      16
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_1_premier-league\", \"2026-12-01\", \"Coventry\", \"Ipswich\", 0]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-01",
+    "home": "Coventry",
+    "away": "Ipswich",
+    "p": 0.7019221829603834,
+    "baseline": 0.7549019607843137,
+    "expected": 3.3420197594501717,
+    "sample": [
+      10,
+      10
+    ],
+    "fouls": 21.700000000000003,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Bolton Wanderers\", \"West Bromwich Albion\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Bolton Wanderers",
+    "away": "West Bromwich Albion",
+    "p": 0.6981816142471173,
+    "baseline": 0.7252747252747253,
+    "expected": 3.456799687010955,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 20.4,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Burnley",
+    "away": "Birmingham City",
+    "p": 0.7461196426294088,
+    "baseline": 0.7252747252747253,
+    "expected": 4.034890453834116,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 22.0,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Watford",
+    "away": "Blackburn Rovers",
+    "p": 0.7786895034618588,
+    "baseline": 0.7252747252747253,
+    "expected": 4.5512441314554,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 23.0,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-25",
+    "home": "Stoke City",
+    "away": "Millwall",
+    "p": 0.7337489458485815,
+    "baseline": 0.7252747252747253,
+    "expected": 3.870001805706031,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 25.53333333333333,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Blackburn Rovers",
+    "away": "Charlton Athletic",
+    "p": 0.7864140369104113,
+    "baseline": 0.7252747252747253,
+    "expected": 4.6985449018899725,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 24.46666666666667,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Lincoln City\", \"Wolverhampton Wanderers\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Lincoln City",
+    "away": "Wolverhampton Wanderers",
+    "p": 0.7259757611657878,
+    "baseline": 0.7252747252747253,
+    "expected": 3.772769953051643,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 24.933333333333334,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Preston North End\", \"Norwich City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Preston North End",
+    "away": "Norwich City",
+    "p": 0.7353582540101877,
+    "baseline": 0.7252747252747253,
+    "expected": 3.890711448176237,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 23.0,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Birmingham City\", \"Bolton Wanderers\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Birmingham City",
+    "away": "Bolton Wanderers",
+    "p": 0.7181716565001699,
+    "baseline": 0.7252747252747253,
+    "expected": 3.679425785482124,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 22.46666666666667,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Derby County\", \"Watford\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Derby County",
+    "away": "Watford",
+    "p": 0.7792808532679745,
+    "baseline": 0.7252747252747253,
+    "expected": 4.56209702660407,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 24.0,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Millwall\", \"Burnley\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Millwall",
+    "away": "Burnley",
+    "p": 0.7398694392992246,
+    "baseline": 0.7252747252747253,
+    "expected": 3.949904598531359,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 22.066666666666666,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Queens Park Rangers\", \"Sheffield United\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Queens Park Rangers",
+    "away": "Sheffield United",
+    "p": 0.7314002808542415,
+    "baseline": 0.7252747252747253,
+    "expected": 3.8401444564824843,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 19.53333333333333,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"West Bromwich Albion\", \"Bristol City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "West Bromwich Albion",
+    "away": "Bristol City",
+    "p": 0.6818865749261454,
+    "baseline": 0.7252747252747253,
+    "expected": 3.2896882147586375,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 21.266666666666666,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"West Ham United\", \"Stoke City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "West Ham United",
+    "away": "Stoke City",
+    "p": 0.7404663239256952,
+    "baseline": 0.7252747252747253,
+    "expected": 3.957867160226315,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 23.933333333333334,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Wrexham\", \"Portsmouth\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Wrexham",
+    "away": "Portsmouth",
+    "p": 0.6797986771371611,
+    "baseline": 0.7252747252747253,
+    "expected": 3.269062838569881,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 22.200000000000003,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-29\", \"Swansea City\", \"Cardiff City\", 0]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-29",
+    "home": "Swansea City",
+    "away": "Cardiff City",
+    "p": 0.6775558304151617,
+    "baseline": 0.7252747252747253,
+    "expected": 3.247089201877934,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 19.466666666666665,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"1. FC Heidenheim 1846\", \"1. FC Nürnberg\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "1. FC Heidenheim 1846",
+    "away": "1. FC Nürnberg",
+    "p": 0.7552575111454761,
+    "baseline": 0.7821782178217822,
+    "expected": 3.782940655357401,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 20.636363636363637,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"VfL Bochum\", \"SV Darmstadt 98\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "VfL Bochum",
+    "away": "SV Darmstadt 98",
+    "p": 0.817012725483889,
+    "baseline": 0.7821782178217822,
+    "expected": 4.741786283891547,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 24.545454545454547,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Dynamo Dresden\", \"FC St. Pauli\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Dynamo Dresden",
+    "away": "FC St. Pauli",
+    "p": 0.7816101893527032,
+    "baseline": 0.7821782178217822,
+    "expected": 4.135178584891983,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 21.636363636363637,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Hertha BSC\", \"Karlsruher SC\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Hertha BSC",
+    "away": "Karlsruher SC",
+    "p": 0.7545292860464833,
+    "baseline": 0.7821782178217822,
+    "expected": 3.774014513556618,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 26.272727272727273,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Holstein Kiel\", \"1. FC Kaiserslautern\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Holstein Kiel",
+    "away": "1. FC Kaiserslautern",
+    "p": 0.8181828942261314,
+    "baseline": 0.7821782178217822,
+    "expected": 4.765817384370015,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 25.545454545454547,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"VfL Osnabrück\", \"Hannover 96\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "VfL Osnabrück",
+    "away": "Hannover 96",
+    "p": 0.772033621404724,
+    "baseline": 0.7821782178217822,
+    "expected": 3.9999476584022036,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 22.454545454545453,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"1. FC Magdeburg\", \"Energie Cottbus\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "1. FC Magdeburg",
+    "away": "Energie Cottbus",
+    "p": 0.7970849741655923,
+    "baseline": 0.7821782178217822,
+    "expected": 4.376041612295201,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 21.272727272727273,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"Eintracht Braunschweig\", \"VfL Wolfsburg\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "Eintracht Braunschweig",
+    "away": "VfL Wolfsburg",
+    "p": 0.8046957169002072,
+    "baseline": 0.7821782178217822,
+    "expected": 4.507048789328693,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 23.90909090909091,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"SpVgg Greuther Fürth\", \"DSC Arminia Bielefeld\", 0]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "SpVgg Greuther Fürth",
+    "away": "DSC Arminia Bielefeld",
+    "p": 0.7128645042604352,
+    "baseline": 0.7821782178217822,
+    "expected": 3.314868406553574,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 21.0,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_1_premier-league\", \"2026-12-01\", \"Coventry\", \"Ipswich\", 4]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-01",
+    "home": "Coventry",
+    "away": "Ipswich",
+    "p": 0.6727529093954813,
+    "baseline": 0.7156862745098039,
+    "expected": 2.1370463917525773,
+    "sample": [
+      10,
+      10
+    ],
+    "fouls": 21.700000000000003,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Derby County\", \"Watford\", 4]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Derby County",
+    "away": "Watford",
+    "p": 0.6778318010225443,
+    "baseline": 0.6263736263736264,
+    "expected": 2.5828716744913933,
+    "sample": [
+      15,
+      15
+    ],
+    "fouls": 24.0,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"1. FC Heidenheim 1846\", \"1. FC Nürnberg\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "1. FC Heidenheim 1846",
+    "away": "1. FC Nürnberg",
+    "p": 0.7116000363553837,
+    "baseline": 0.7326732673267327,
+    "expected": 2.3952658692185005,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 20.636363636363637,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"VfL Bochum\", \"SV Darmstadt 98\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-27",
+    "home": "VfL Bochum",
+    "away": "SV Darmstadt 98",
+    "p": 0.7407821637950616,
+    "baseline": 0.7326732673267327,
+    "expected": 2.686562998405104,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 24.545454545454547,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Dynamo Dresden\", \"FC St. Pauli\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Dynamo Dresden",
+    "away": "FC St. Pauli",
+    "p": 0.7226430857412011,
+    "baseline": 0.7326732673267327,
+    "expected": 2.499563433376831,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 21.636363636363637,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Hertha BSC\", \"Karlsruher SC\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Hertha BSC",
+    "away": "Karlsruher SC",
+    "p": 0.6529192419389078,
+    "baseline": 0.7326732673267327,
+    "expected": 1.924472328548644,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 26.272727272727273,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Holstein Kiel\", \"1. FC Kaiserslautern\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "Holstein Kiel",
+    "away": "1. FC Kaiserslautern",
+    "p": 0.6983651082212385,
+    "baseline": 0.7326732673267327,
+    "expected": 2.2780677830940985,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 25.545454545454547,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"VfL Osnabrück\", \"Hannover 96\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-28",
+    "home": "VfL Osnabrück",
+    "away": "Hannover 96",
+    "p": 0.677768075717956,
+    "baseline": 0.7326732673267327,
+    "expected": 2.109659779614325,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 22.454545454545453,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"1. FC Magdeburg\", \"Energie Cottbus\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "1. FC Magdeburg",
+    "away": "Energie Cottbus",
+    "p": 0.688054859252891,
+    "baseline": 0.7326732673267327,
+    "expected": 2.191840510366826,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 21.272727272727273,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"Eintracht Braunschweig\", \"VfL Wolfsburg\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "Eintracht Braunschweig",
+    "away": "VfL Wolfsburg",
+    "p": 0.7025454804347353,
+    "baseline": 0.7326732673267327,
+    "expected": 2.3142461215021024,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 23.90909090909091,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
+    "result": null
+  },
+  "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-29\", \"SpVgg Greuther Fürth\", \"DSC Arminia Bielefeld\", 4]": {
+    "league": "GER_2_2-bundesliga",
+    "date": "2026-11-29",
+    "home": "SpVgg Greuther Fürth",
+    "away": "DSC Arminia Bielefeld",
+    "p": 0.6672427617623803,
+    "baseline": 0.7326732673267327,
+    "expected": 2.02909583877048,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 21.0,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null
   }
 }
