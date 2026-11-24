@@ -62,6 +62,21 @@ class ExtraMarketReportTests(unittest.TestCase):
         self.assertIn("Угловые ТБ 8.5: 1/1",out)
         self.assertIn("НЕ независимая forward-проверка",out)
 
+    def test_pending_classification_and_calibration(self):
+        from forward28 import extra_market_report
+        now=datetime(2026,11,24,12,tzinfo=timezone.utc)
+        def row(date,result=None):
+            return {"group":"corners","market":"Угловые 1Т ТБ 3.5",
+                    "date":date,"created":"2026-11-20T12:00:00+00:00",
+                    "p":.6,"result":result}
+        journal={str(i):row("2026-11-23",1) for i in range(30)}
+        journal["overdue"]=row("2026-11-22")
+        journal["today"]=row("2026-11-24")
+        journal["future"]=row("2026-11-26")
+        out=extra_market_report(journal,now)
+        self.assertIn("будущие 1, сегодня 1, прошлые без результата 1",out)
+        self.assertIn("Калибровка: прогноз 60.0%, факт 100.0%",out)
+
     def test_invalid_probability_not_scored(self):
         from forward28 import extra_market_report
         now=datetime.now(timezone.utc)
