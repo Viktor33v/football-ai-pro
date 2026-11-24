@@ -41,16 +41,24 @@ def run():
         actual={}
         ambiguous=set()
         for x in history:
-            if x["date"]<today and x.get("ft_home","").isdigit() and x.get("ft_away","").isdigit():
+            try:
                 key=(x["date"],x["home"],x["away"])
-                if key in actual: ambiguous.add(key)
-                else: actual[key]=x
+                if x["date"]>=today: continue
+            except (KeyError,TypeError): continue
+            # Count every duplicate, including rows with missing scores.
+            # Otherwise a scored row plus an unscored duplicate could be
+            # mistaken for a uniquely verified result.
+            if key in actual: ambiguous.add(key)
+            else: actual[key]=x
+        # Only completed matches can be settled.
+        completed={key:x for key,x in actual.items()
+                   if str(x.get("ft_home","")).isdigit() and str(x.get("ft_away","")).isdigit()}
         for r in rs:
             fixture_key=(r["date"],r["home"],r["away"])
             if fixture_key in ambiguous:
                 r["settlement_issue"]="ambiguous_fixture"
                 continue
-            x=actual.get(fixture_key)
+            x=completed.get(fixture_key)
             if x is None:
                 r["settlement_issue"]="fixture_not_found"
                 continue
