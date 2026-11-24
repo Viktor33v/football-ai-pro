@@ -76,6 +76,8 @@ class ExtraMarketReportTests(unittest.TestCase):
         out=extra_market_report(journal,now)
         self.assertIn("будущие 1, сегодня 1, прошлые без результата 1",out)
         self.assertIn("Калибровка: прогноз 60.0%, факт 100.0%",out)
+        self.assertIn("причина ещё не определена — 1",out)
+        self.assertIn("Лиги с незакрытыми записями:",out)
 
     def test_invalid_probability_not_scored(self):
         from forward28 import extra_market_report
