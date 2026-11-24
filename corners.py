@@ -1,4 +1,5 @@
 import csv,io,os,json,math
+from collections import Counter
 from collections import defaultdict
 from datetime import datetime,timezone,timedelta
 from urllib.request import urlopen
@@ -11,6 +12,16 @@ MARKETS=[("Угловые ТБ 8.5",9,0),("Угловые ТБ 9.5",10,0),("Уг
 def read(league,kind):
     with urlopen(BASE+league+"/"+kind+"_2627.csv",timeout=30) as r:
         return list(csv.DictReader(io.StringIO(r.read().decode("utf-8-sig"))))
+def unique_fixture_rows(fixtures):
+    """Exclude all duplicated CSV fixtures, not merely later copies.
+
+    Duplicate date/team keys are ambiguous even when one copy appears first.
+    """
+    def key(row):
+        return (row.get("date"),row.get("home"),row.get("away"))
+    counts=Counter(key(r) for r in fixtures)
+    return [r for r in fixtures if counts[key(r)]==1]
+
 def valid_future_fixture(r,today,seen):
     """CSV dates are UTC calendar dates only; no trusted kickoff time."""
     try:
@@ -78,7 +89,7 @@ def run():
         fixture_counts[league]=len(fixtures)
         if len(totals[0])<30: unavailable_stats.append(league+" (угловые: "+str(len(totals[0]))+")")
         used=set()
-        for r in fixtures:
+        for r in unique_fixture_rows(fixtures):
             key=(r["date"],r["home"],r["away"])
             if key in used or not valid_future_fixture(r,today,seen): continue
             used.add(key)
