@@ -110,6 +110,7 @@ def extra_market_report(journal,now):
             lines.append("  ⚠️ Прошлые без результата: проверь CSV results, доступность лиги и совпадение названий команд.")
             reasons={"source_unavailable":"источник недоступен",
                      "fixture_not_found":"матч не найден",
+                     "ambiguous_fixture":"дублирующийся матч в CSV",
                      "missing_corner_stats":"нет статистики угловых",
                      "missing_first_half_corners":"нет угловых 1Т",
                      "missing_card_stats":"нет статистики карточек",
