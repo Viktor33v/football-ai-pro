@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-24T07:09:51.617969+00:00",
+  "created": "2026-11-25T07:13:12.465326+00:00",
   "source": "https://github.com/oladeeayo/open-matchday",
   "errors": [],
   "teams": [
@@ -123,10 +123,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 4,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -250,10 +250,10 @@
           "venue": "home",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 7,
           "corners": 4,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -377,10 +377,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 5,
           "corners": 3,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -504,10 +504,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 3,
           "corners": 5,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -623,6 +623,17 @@
           "shots": 15,
           "target": 7,
           "corners": 2,
+          "yellow": 1
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Brentford",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": 4,
+          "target": 2,
+          "corners": 3,
           "yellow": 1
         }
       ]
@@ -747,10 +758,10 @@
           "venue": "away",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 5,
           "corners": 6,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -874,10 +885,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 3,
           "corners": 6,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -1001,10 +1012,10 @@
           "venue": "away",
           "g": 0,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 1,
           "corners": 2,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -1128,10 +1139,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 1,
           "corners": 4,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -1255,10 +1266,10 @@
           "venue": "away",
           "g": 4,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 8,
           "corners": 2,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -1375,6 +1386,17 @@
           "target": 0,
           "corners": 3,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Everton",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": 21,
+          "target": 7,
+          "corners": 6,
+          "yellow": 0
         }
       ]
     },
@@ -1498,10 +1520,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 9,
           "corners": 8,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -1625,10 +1647,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 8,
           "corners": 4,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -1752,10 +1774,10 @@
           "venue": "home",
           "g": 0,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 7,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -1879,10 +1901,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 3,
           "corners": 8,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -2006,10 +2028,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 7,
           "corners": 6,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -2133,10 +2155,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 3,
           "corners": 6,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -2260,10 +2282,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 28,
+          "target": 11,
           "corners": 15,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -2387,10 +2409,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 5,
+          "target": 4,
           "corners": 6,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -2514,10 +2536,10 @@
           "venue": "home",
           "g": 1,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 3,
           "corners": 3,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -2663,10 +2685,10 @@
           "venue": "home",
           "g": 3,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 8,
           "corners": 8,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -2812,10 +2834,10 @@
           "venue": "home",
           "g": 0,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 1,
           "corners": 2,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -2961,10 +2983,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 25,
+          "target": 6,
           "corners": 7,
-          "yellow": null
+          "yellow": 5
         }
       ]
     },
@@ -3099,10 +3121,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 5,
           "corners": 8,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -3248,10 +3270,10 @@
           "venue": "home",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 8,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -3397,10 +3419,10 @@
           "venue": "away",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 4,
+          "target": 2,
           "corners": 0,
-          "yellow": null
+          "yellow": 6
         }
       ]
     },
@@ -3546,10 +3568,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 6,
+          "target": 3,
           "corners": 2,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -3688,6 +3710,17 @@
           "target": 0,
           "corners": 1,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Elche CF",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": 18,
+          "target": 2,
+          "corners": 5,
+          "yellow": 4
         }
       ]
     },
@@ -3833,10 +3866,10 @@
           "venue": "away",
           "g": 1,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 2,
           "corners": 2,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -3975,6 +4008,17 @@
           "target": 1,
           "corners": 9,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Levante UD",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": 4,
+          "target": 2,
+          "corners": 1,
+          "yellow": 1
         }
       ]
     },
@@ -4120,10 +4164,10 @@
           "venue": "away",
           "g": 3,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 10,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -4269,10 +4313,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 5,
+          "target": 0,
           "corners": 1,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -4418,10 +4462,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 6,
+          "target": 3,
           "corners": 2,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -4567,10 +4611,10 @@
           "venue": "away",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 31,
+          "target": 7,
           "corners": 14,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -4705,10 +4749,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 17,
+          "target": 6,
           "corners": 9,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -4854,10 +4898,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 2,
           "corners": 5,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -5003,10 +5047,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 8,
+          "target": 4,
           "corners": 3,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -5152,10 +5196,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 24,
+          "target": 7,
           "corners": 8,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -5301,10 +5345,10 @@
           "venue": "home",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 30,
+          "target": 9,
           "corners": 10,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -5450,10 +5494,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 2,
           "corners": 4,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -5566,10 +5610,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 17,
+          "target": 1,
           "corners": 5,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -5682,10 +5726,10 @@
           "venue": "away",
           "g": 0,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 4,
           "corners": 5,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -5798,10 +5842,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 4,
           "corners": 0,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -5914,10 +5958,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 4,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -6030,10 +6074,10 @@
           "venue": "home",
           "g": 1,
           "c": 5,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 8,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -6146,10 +6190,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 6,
           "corners": 9,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -6262,10 +6306,10 @@
           "venue": "away",
           "g": 1,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 4,
           "corners": 0,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -6378,10 +6422,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 8,
+          "target": 1,
           "corners": 3,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -6494,10 +6538,10 @@
           "venue": "away",
           "g": 5,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 32,
+          "target": 10,
           "corners": 8,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -6610,10 +6654,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 2,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -6726,10 +6770,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 2,
           "corners": 5,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -6842,10 +6886,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 10,
           "corners": 8,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -6958,10 +7002,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 5,
           "corners": 7,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -7074,10 +7118,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 17,
+          "target": 2,
           "corners": 8,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -7190,10 +7234,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 1,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -7306,10 +7350,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 7,
           "corners": 1,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -7422,10 +7466,10 @@
           "venue": "home",
           "g": 3,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 22,
+          "target": 9,
           "corners": 6,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -7538,10 +7582,10 @@
           "venue": "home",
           "g": 0,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 7,
           "corners": 4,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -7676,10 +7720,10 @@
           "venue": "away",
           "g": 4,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 6,
           "corners": 6,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -7807,6 +7851,17 @@
           "target": 7,
           "corners": 7,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Fiorentina",
+          "venue": "home",
+          "g": 3,
+          "c": 0,
+          "shots": 13,
+          "target": 5,
+          "corners": 3,
+          "yellow": 0
         }
       ]
     },
@@ -7941,10 +7996,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 3,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -8079,10 +8134,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 6,
           "corners": 3,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -8217,10 +8272,10 @@
           "venue": "away",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 5,
           "corners": 3,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -8355,10 +8410,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 22,
+          "target": 10,
           "corners": 8,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -8493,10 +8548,10 @@
           "venue": "home",
           "g": 1,
           "c": 5,
-          "shots": null,
-          "target": null,
+          "shots": 17,
+          "target": 6,
           "corners": 3,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -8631,10 +8686,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 6,
+          "target": 1,
           "corners": 3,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -8769,10 +8824,10 @@
           "venue": "away",
           "g": 1,
           "c": 5,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 3,
           "corners": 9,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -8907,10 +8962,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 8,
           "corners": 5,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -9045,10 +9100,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 1,
           "corners": 2,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -9183,10 +9238,10 @@
           "venue": "away",
           "g": 0,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 2,
           "corners": 3,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -9321,10 +9376,10 @@
           "venue": "home",
           "g": 4,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 10,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -9459,10 +9514,10 @@
           "venue": "home",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 25,
+          "target": 7,
           "corners": 5,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -9597,10 +9652,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 2,
           "corners": 5,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -9735,10 +9790,10 @@
           "venue": "home",
           "g": 5,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 8,
           "corners": 2,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -9873,10 +9928,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 4,
           "corners": 8,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -10011,10 +10066,10 @@
           "venue": "home",
           "g": 3,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 6,
           "corners": 9,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -10149,10 +10204,10 @@
           "venue": "away",
           "g": 5,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 9,
           "corners": 8,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -10280,6 +10335,17 @@
           "target": 6,
           "corners": 5,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Monza",
+          "venue": "away",
+          "g": 0,
+          "c": 3,
+          "shots": 17,
+          "target": 8,
+          "corners": 7,
+          "yellow": 1
         }
       ]
     },
@@ -10403,10 +10469,10 @@
           "venue": "home",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 5,
           "corners": 2,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -10530,10 +10596,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 5,
           "corners": 8,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -10657,10 +10723,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 22,
+          "target": 8,
           "corners": 9,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -10784,10 +10850,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 6,
+          "target": 2,
           "corners": 0,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -10911,10 +10977,10 @@
           "venue": "home",
           "g": 3,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 7,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -11038,10 +11104,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 9,
           "corners": 10,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -11165,10 +11231,10 @@
           "venue": "away",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 9,
           "corners": 5,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -11292,10 +11358,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 2,
           "corners": 1,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -11419,10 +11485,10 @@
           "venue": "home",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 4,
+          "target": 3,
           "corners": 1,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -11546,10 +11612,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 3,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -11673,10 +11739,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 5,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -11800,10 +11866,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 6,
           "corners": 7,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -11927,10 +11993,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 1,
           "corners": 2,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -12054,10 +12120,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 5,
           "corners": 7,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -12181,10 +12247,10 @@
           "venue": "away",
           "g": 1,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 2,
           "corners": 0,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -12308,10 +12374,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 4,
           "corners": 3,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -12435,10 +12501,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 3,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -12562,10 +12628,10 @@
           "venue": "away",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 5,
           "corners": 5,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -12711,10 +12777,10 @@
           "venue": "away",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 8,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -12860,10 +12926,10 @@
           "venue": "away",
           "g": 3,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 5,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -13009,10 +13075,10 @@
           "venue": "home",
           "g": 1,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 8,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -13158,10 +13224,10 @@
           "venue": "home",
           "g": 1,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 6,
           "corners": 11,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -13307,10 +13373,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 10,
           "corners": 13,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -13456,10 +13522,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 2,
+          "target": 1,
           "corners": 0,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -13605,10 +13671,10 @@
           "venue": "away",
           "g": 4,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 4,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -13754,10 +13820,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 2,
           "corners": 1,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -13903,10 +13969,10 @@
           "venue": "away",
           "g": 5,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 8,
           "corners": 4,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -14052,10 +14118,10 @@
           "venue": "away",
           "g": 0,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 4,
+          "target": 1,
           "corners": 3,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -14201,10 +14267,10 @@
           "venue": "home",
           "g": 1,
           "c": 5,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 2,
           "corners": 5,
-          "yellow": null
+          "yellow": 5
         }
       ]
     },
@@ -14350,10 +14416,10 @@
           "venue": "home",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 3,
           "corners": 8,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -14499,10 +14565,10 @@
           "venue": "home",
           "g": 1,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 8,
           "corners": 4,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -14648,10 +14714,10 @@
           "venue": "home",
           "g": 2,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 17,
+          "target": 10,
           "corners": 3,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -14797,10 +14863,10 @@
           "venue": "away",
           "g": 3,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 4,
           "corners": 7,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -14946,10 +15012,10 @@
           "venue": "home",
           "g": 3,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 10,
           "corners": 8,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -15095,10 +15161,10 @@
           "venue": "away",
           "g": 3,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 5,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -15244,10 +15310,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 29,
+          "target": 9,
           "corners": 6,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -17646,10 +17712,10 @@
           "venue": "away",
           "g": 5,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 9,
           "corners": 7,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -17784,10 +17850,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 3,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -17922,10 +17988,10 @@
           "venue": "away",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 7,
           "corners": 4,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -18060,10 +18126,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 6,
           "corners": 2,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -18198,10 +18264,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 6,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -18336,10 +18402,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 25,
+          "target": 6,
           "corners": 6,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -18474,10 +18540,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 8,
           "corners": 7,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -18612,10 +18678,10 @@
           "venue": "home",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 4,
           "corners": 4,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -18750,10 +18816,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 17,
+          "target": 5,
           "corners": 10,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -18888,10 +18954,10 @@
           "venue": "home",
           "g": 1,
           "c": 5,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 4,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -19026,10 +19092,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 2,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -19164,10 +19230,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 4,
           "corners": 4,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -19302,10 +19368,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 24,
+          "target": 10,
           "corners": 8,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -19440,10 +19506,10 @@
           "venue": "home",
           "g": 3,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 6,
           "corners": 3,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -19578,10 +19644,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 21,
+          "target": 4,
           "corners": 6,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -19716,10 +19782,10 @@
           "venue": "away",
           "g": 0,
           "c": 3,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 3,
           "corners": 1,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -19854,10 +19920,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 9,
+          "target": 3,
           "corners": 3,
-          "yellow": null
+          "yellow": 5
         }
       ]
     },
@@ -19992,10 +20058,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 6,
           "corners": 10,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -20130,10 +20196,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 5,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -20261,6 +20327,17 @@
           "target": 8,
           "corners": 7,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Istanbul Basaksehir",
+          "venue": "away",
+          "g": 2,
+          "c": 4,
+          "shots": 11,
+          "target": 3,
+          "corners": 1,
+          "yellow": 3
         }
       ]
     },
@@ -20395,10 +20472,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 4,
           "corners": 4,
-          "yellow": null
+          "yellow": 5
         }
       ]
     },
@@ -20533,10 +20610,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 24,
+          "target": 9,
           "corners": 11,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -20671,10 +20748,10 @@
           "venue": "home",
           "g": 2,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 6,
           "corners": 2,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -20809,10 +20886,10 @@
           "venue": "away",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 5,
           "corners": 4,
-          "yellow": null
+          "yellow": 5
         }
       ]
     },
@@ -20947,10 +21024,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 2,
           "corners": 3,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -21085,10 +21162,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 2,
           "corners": 1,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -21223,10 +21300,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 2,
           "corners": 1,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -21361,10 +21438,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 13,
+          "target": 6,
           "corners": 5,
-          "yellow": null
+          "yellow": 6
         }
       ]
     },
@@ -21492,6 +21569,17 @@
           "target": 5,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Çorum",
+          "venue": "home",
+          "g": 4,
+          "c": 2,
+          "shots": 26,
+          "target": 5,
+          "corners": 3,
+          "yellow": 0
         }
       ]
     },
@@ -21626,10 +21714,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 14,
+          "target": 5,
           "corners": 4,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -21764,10 +21852,10 @@
           "venue": "home",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 7,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -21902,10 +21990,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 5,
           "corners": 5,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -22040,10 +22128,10 @@
           "venue": "away",
           "g": 4,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 7,
           "corners": 3,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -22178,10 +22266,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 1,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -22316,10 +22404,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 18,
+          "target": 7,
           "corners": 8,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -22454,10 +22542,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 4,
           "corners": 5,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -22570,10 +22658,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": 8,
-          "yellow": null
+          "shots": 17,
+          "target": 3,
+          "corners": 9,
+          "yellow": 1
         }
       ]
     },
@@ -22697,10 +22785,10 @@
           "venue": "away",
           "g": 2,
           "c": 6,
-          "shots": null,
-          "target": null,
+          "shots": 3,
+          "target": 3,
           "corners": 0,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -22824,10 +22912,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 5,
+          "target": 1,
           "corners": 2,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -22943,6 +23031,17 @@
           "shots": 18,
           "target": 6,
           "corners": 3,
+          "yellow": 1
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Asteras Tripoli",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": 5,
+          "target": 2,
+          "corners": 1,
           "yellow": 1
         }
       ]
@@ -23067,10 +23166,10 @@
           "venue": "home",
           "g": 6,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 22,
+          "target": 8,
           "corners": 9,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -23183,10 +23282,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 4,
           "corners": 1,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -23310,10 +23409,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 3,
+          "target": 2,
           "corners": 3,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -23437,10 +23536,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 3,
           "corners": 2,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -23564,10 +23663,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": 8,
-          "yellow": null
+          "shots": 21,
+          "target": 9,
+          "corners": 9,
+          "yellow": 1
         }
       ]
     },
@@ -23691,10 +23790,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 2,
           "corners": 3,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -23818,10 +23917,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 10,
+          "target": 3,
           "corners": 4,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -23938,6 +24037,17 @@
           "target": 1,
           "corners": 6,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Aris",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": 7,
+          "target": 2,
+          "corners": 2,
+          "yellow": 3
         }
       ]
     },
@@ -24061,10 +24171,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 4,
+          "target": 2,
           "corners": 2,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -24188,10 +24298,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 7,
           "corners": 4,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -24370,10 +24480,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 19,
+          "target": 4,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -24552,10 +24662,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 3,
           "corners": 2,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -24734,10 +24844,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 16,
+          "target": 6,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -24916,10 +25026,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 8,
+          "target": 2,
           "corners": 2,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -25098,10 +25208,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 3,
           "corners": 5,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -25280,10 +25390,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 4,
+          "target": 1,
           "corners": 3,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -25462,10 +25572,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 3,
+          "target": 2,
           "corners": 6,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -25644,10 +25754,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 8,
+          "target": 2,
           "corners": 4,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -25826,10 +25936,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 4,
           "corners": 7,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -26008,10 +26118,10 @@
           "venue": "home",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 4,
           "corners": 7,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -26190,10 +26300,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 22,
+          "target": 4,
           "corners": 8,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -26372,10 +26482,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 8,
           "corners": 8,
-          "yellow": null
+          "yellow": 3
         }
       ]
     },
@@ -26554,10 +26664,10 @@
           "venue": "away",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 6,
+          "target": 1,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -26736,10 +26846,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 31,
+          "target": 7,
           "corners": 12,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -26918,10 +27028,10 @@
           "venue": "home",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 5,
           "corners": 7,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -27100,10 +27210,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 6,
           "corners": 0,
-          "yellow": null
+          "yellow": 5
         }
       ]
     },
@@ -27282,10 +27392,10 @@
           "venue": "home",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 9,
           "corners": 3,
-          "yellow": null
+          "yellow": 6
         }
       ]
     },
@@ -27464,10 +27574,10 @@
           "venue": "away",
           "g": 0,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 4,
           "corners": 4,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -27646,10 +27756,10 @@
           "venue": "away",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
+          "shots": 7,
+          "target": 3,
           "corners": 1,
-          "yellow": null
+          "yellow": 7
         }
       ]
     },
@@ -27828,10 +27938,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 20,
+          "target": 5,
           "corners": 10,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -28010,10 +28120,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 12,
+          "target": 4,
           "corners": 4,
-          "yellow": null
+          "yellow": 4
         }
       ]
     },
@@ -28192,10 +28302,10 @@
           "venue": "home",
           "g": 1,
           "c": 1,
-          "shots": null,
-          "target": null,
+          "shots": 30,
+          "target": 4,
           "corners": 14,
-          "yellow": null
+          "yellow": 2
         }
       ]
     },
@@ -28374,10 +28484,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
+          "shots": 15,
+          "target": 3,
           "corners": 3,
-          "yellow": null
+          "yellow": 1
         }
       ]
     },
@@ -28556,10 +28666,10 @@
           "venue": "away",
           "g": 1,
           "c": 0,
-          "shots": null,
-          "target": null,
+          "shots": 11,
+          "target": 3,
           "corners": 5,
-          "yellow": null
+          "yellow": 0
         }
       ]
     },
@@ -28694,10 +28804,10 @@
           "venue": "away",
           "g": 0,
           "c": 2,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 14,
+          "target": 4,
+          "corners": 1,
+          "yellow": 2
         }
       ]
     },
@@ -28832,10 +28942,10 @@
           "venue": "away",
           "g": 4,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 20,
+          "target": 7,
+          "corners": 12,
+          "yellow": 3
         }
       ]
     },
@@ -28970,10 +29080,10 @@
           "venue": "away",
           "g": 1,
           "c": 3,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 21,
+          "target": 7,
+          "corners": 4,
+          "yellow": 4
         }
       ]
     },
@@ -29108,10 +29218,10 @@
           "venue": "away",
           "g": 0,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 7,
+          "target": 2,
+          "corners": 4,
+          "yellow": 2
         }
       ]
     },
@@ -29246,10 +29356,10 @@
           "venue": "away",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 9,
+          "target": 6,
+          "corners": 1,
+          "yellow": 2
         }
       ]
     },
@@ -29384,10 +29494,10 @@
           "venue": "away",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 13,
+          "target": 6,
+          "corners": 5,
+          "yellow": 3
         }
       ]
     },
@@ -29522,10 +29632,10 @@
           "venue": "home",
           "g": 0,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 25,
+          "target": 8,
+          "corners": 9,
+          "yellow": 0
         }
       ]
     },
@@ -29660,10 +29770,10 @@
           "venue": "home",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 18,
+          "target": 4,
+          "corners": 7,
+          "yellow": 1
         }
       ]
     },
@@ -29798,10 +29908,10 @@
           "venue": "home",
           "g": 3,
           "c": 1,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 12,
+          "target": 5,
+          "corners": 5,
+          "yellow": 1
         }
       ]
     },
@@ -29936,10 +30046,10 @@
           "venue": "away",
           "g": 0,
           "c": 3,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 11,
+          "target": 1,
+          "corners": 4,
+          "yellow": 3
         }
       ]
     },
@@ -30074,10 +30184,10 @@
           "venue": "home",
           "g": 3,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 12,
+          "target": 5,
+          "corners": 11,
+          "yellow": 1
         }
       ]
     },
@@ -30212,10 +30322,10 @@
           "venue": "home",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 22,
+          "target": 6,
+          "corners": 5,
+          "yellow": 1
         }
       ]
     },
@@ -30350,10 +30460,10 @@
           "venue": "home",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 22,
+          "target": 7,
+          "corners": 7,
+          "yellow": 2
         }
       ]
     },
@@ -30488,10 +30598,10 @@
           "venue": "away",
           "g": 2,
           "c": 2,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 15,
+          "target": 6,
+          "corners": 4,
+          "yellow": 0
         }
       ]
     },
@@ -30626,10 +30736,10 @@
           "venue": "home",
           "g": 0,
           "c": 4,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 11,
+          "target": 2,
+          "corners": 3,
+          "yellow": 2
         }
       ]
     },
@@ -30764,10 +30874,10 @@
           "venue": "home",
           "g": 2,
           "c": 1,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 10,
+          "target": 4,
+          "corners": 4,
+          "yellow": 1
         }
       ]
     },
@@ -30902,10 +31012,10 @@
           "venue": "home",
           "g": 2,
           "c": 0,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 18,
+          "target": 8,
+          "corners": 10,
+          "yellow": 3
         }
       ]
     },
@@ -31040,10 +31150,10 @@
           "venue": "away",
           "g": 1,
           "c": 2,
-          "shots": null,
-          "target": null,
-          "corners": null,
-          "yellow": null
+          "shots": 10,
+          "target": 1,
+          "corners": 6,
+          "yellow": 3
         }
       ]
     },
@@ -31713,6 +31823,17 @@
           "venue": "away",
           "g": 0,
           "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": null,
+          "yellow": null
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Midtjylland",
+          "venue": "home",
+          "g": 0,
+          "c": 2,
           "shots": null,
           "target": null,
           "corners": null,
@@ -32728,6 +32849,17 @@
           "venue": "home",
           "g": 2,
           "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": null,
+          "yellow": null
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Brondby",
+          "venue": "away",
+          "g": 2,
+          "c": 0,
           "shots": null,
           "target": null,
           "corners": null,
@@ -36440,6 +36572,17 @@
           "target": null,
           "corners": null,
           "yellow": null
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Kalmar",
+          "venue": "home",
+          "g": 3,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": null,
+          "yellow": null
         }
       ]
     },
@@ -36723,6 +36866,17 @@
           "venue": "home",
           "g": 0,
           "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": null,
+          "yellow": null
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Hammarby",
+          "venue": "away",
+          "g": 1,
+          "c": 3,
           "shots": null,
           "target": null,
           "corners": null,
@@ -37472,6 +37626,17 @@
           "target": null,
           "corners": null,
           "yellow": null
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Orgryte",
+          "venue": "away",
+          "g": 2,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": null,
+          "yellow": null
         }
       ]
     },
@@ -37605,6 +37770,17 @@
           "opponent": "Elfsborg",
           "venue": "home",
           "g": 4,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": null,
+          "yellow": null
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Goteborg",
+          "venue": "home",
+          "g": 3,
           "c": 1,
           "shots": null,
           "target": null,
