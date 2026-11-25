@@ -1,7 +1,24 @@
 import os,json,unicodedata,html,time
 from urllib.request import urlopen,Request
 from datetime import datetime,timezone,timedelta
-from snapshot import load
+from snapshot import load as local_load
+
+def load(path, default):
+    # Only the command handler reads published state remotely; calculation jobs stay local.
+    if os.environ.get('TELEGRAM_CONTINUOUS') == '1' and path in ('state/snapshot.json', 'state/form.json', 'state/journal.json', 'state/extra_journal.json', 'state/forward28.json'):
+        try:
+            url = 'https://raw.githubusercontent.com/Viktor33v/football-ai-pro/main/' + path
+            with urlopen(Request(url, headers={'Cache-Control': 'no-cache'}), timeout=15) as response:
+                data = json.load(response)
+            if isinstance(data, dict):
+                if path == 'state/snapshot.json':
+                    created = datetime.fromisoformat(data['created'])
+                    if created.tzinfo is None or created > datetime.now(timezone.utc) or not isinstance(data.get('rows'), list):
+                        raise ValueError('Invalid snapshot')
+                return data
+        except (OSError, ValueError, KeyError, TypeError):
+            pass
+    return local_load(path, default)
 from backtest import LABELS
 from reliability26 import calibration_summary, reliability, baseline_evidence
 from forward28 import report as forward_report, extra_market_report
