@@ -9757,5 +9757,24 @@
     "index": 4,
     "created": "2026-11-25T07:13:11.512876+00:00",
     "result": null
+  },
+  "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Wrexham\", \"Portsmouth\", 2]": {
+    "league": "ENG_2_championship",
+    "date": "2026-11-28",
+    "home": "Wrexham",
+    "away": "Portsmouth",
+    "p": 0.652904583090288,
+    "baseline": 0.6534653465346535,
+    "expected": 4.375565610859728,
+    "sample": [
+      17,
+      17
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-25T16:44:16.527958+00:00",
+    "result": null
   }
 }

@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-25T07:13:12.465326+00:00",
+  "created": "2026-11-25T16:44:17.241558+00:00",
   "source": "https://github.com/oladeeayo/open-matchday",
   "errors": [],
   "teams": [
@@ -24484,6 +24484,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Derby County",
+          "venue": "home",
+          "g": 3,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 11,
+          "yellow": null
         }
       ]
     },
@@ -25030,6 +25041,17 @@
           "target": 2,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Cardiff City",
+          "venue": "away",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -25212,6 +25234,17 @@
           "target": 3,
           "corners": 5,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Wrexham",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -25576,6 +25609,17 @@
           "target": 2,
           "corners": 6,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Lincoln City",
+          "venue": "home",
+          "g": 4,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 10,
+          "yellow": null
         }
       ]
     },
@@ -25758,6 +25802,17 @@
           "target": 2,
           "corners": 4,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Wolverhampton Wanderers",
+          "venue": "away",
+          "g": 0,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -25940,6 +25995,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Swansea City",
+          "venue": "home",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -26122,6 +26188,17 @@
           "target": 4,
           "corners": 7,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Charlton Athletic",
+          "venue": "away",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -26304,6 +26381,17 @@
           "target": 4,
           "corners": 8,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Queens Park Rangers",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -26668,6 +26756,17 @@
           "target": 1,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "West Ham United",
+          "venue": "home",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -26850,6 +26949,17 @@
           "target": 7,
           "corners": 12,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Norwich City",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 3,
+          "yellow": null
         }
       ]
     },
@@ -27214,6 +27324,17 @@
           "target": 6,
           "corners": 0,
           "yellow": 5
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Middlesbrough",
+          "venue": "away",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -27396,6 +27517,17 @@
           "target": 9,
           "corners": 3,
           "yellow": 6
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Southampton",
+          "venue": "home",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
@@ -27942,6 +28074,17 @@
           "target": 5,
           "corners": 10,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Sheffield United",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 6,
+          "yellow": null
         }
       ]
     },
@@ -28306,6 +28449,17 @@
           "target": 4,
           "corners": 14,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Portsmouth",
+          "venue": "away",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -28488,6 +28642,17 @@
           "target": 3,
           "corners": 3,
           "yellow": 1
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Preston North End",
+          "venue": "home",
+          "g": 0,
+          "c": 4,
+          "shots": null,
+          "target": null,
+          "corners": 8,
+          "yellow": null
         }
       ]
     },
@@ -28670,6 +28835,17 @@
           "target": 3,
           "corners": 5,
           "yellow": 0
+        },
+        {
+          "date": "2026-11-24",
+          "opponent": "Bristol City",
+          "venue": "away",
+          "g": 1,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
