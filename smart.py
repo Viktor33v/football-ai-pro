@@ -55,6 +55,17 @@ def run():
         hh=(hh+(adj(a,0,1)+adj(b,1,-1))/2)/2
         aa=(aa+(adj(b,0,1)+adj(a,1,-1))/2)/2
         p=[(base[0]+lg[0])/2,lg[1],(prob(hh+aa,3)+lg[2])/2,(prob(hh,1)*prob(aa,1)+lg[3])/2,(prob(max(0,hh+aa-ht),1)+lg[4])/2]
+        # BTTS: venue-specific observed scoring and conceding, shrunk to league prior.
+        def rate(t,side,kind):
+            xs=teams[t][-20:]
+            vs=[z for z in xs if z[4]==side][-10:]
+            def hit(z):
+                return int(min(z[:2])>0) if kind==2 else int(z[kind]>0)
+            overall=(sum(hit(z) for z in xs)+2)/(len(xs)+4)
+            return (sum(hit(z) for z in vs)+6*overall)/(len(vs)+6)
+        empirical=(rate(a,1,2)+rate(b,0,2))/2
+        scoring=((rate(a,1,0)+rate(b,0,1))/2)*((rate(b,0,0)+rate(a,1,1))/2)
+        p[3]=.4*p[3]+.4*empirical+.2*scoring
         return p,lg
     goal_test=[[] for _ in range(5)]
     for day,ms in sorted(days.items()):
