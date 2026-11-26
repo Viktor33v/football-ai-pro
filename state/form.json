@@ -1,5 +1,5 @@
 {
-  "created": "2026-11-26T07:11:58.994277+00:00",
+  "created": "2026-11-26T13:13:55.231347+00:00",
   "source": "https://github.com/oladeeayo/open-matchday",
   "errors": [],
   "teams": [
@@ -24677,6 +24677,17 @@
           "target": 3,
           "corners": 2,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Watford",
+          "venue": "away",
+          "g": 1,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -24859,6 +24870,17 @@
           "target": 6,
           "corners": 7,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "West Bromwich Albion",
+          "venue": "home",
+          "g": 1,
+          "c": 3,
+          "shots": null,
+          "target": null,
+          "corners": 1,
+          "yellow": null
         }
       ]
     },
@@ -25427,6 +25449,17 @@
           "target": 1,
           "corners": 3,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Stoke City",
+          "venue": "away",
+          "g": 1,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -26574,6 +26607,17 @@
           "target": 8,
           "corners": 8,
           "yellow": 3
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Bolton Wanderers",
+          "venue": "away",
+          "g": 3,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 4,
+          "yellow": null
         }
       ]
     },
@@ -27142,6 +27186,17 @@
           "target": 5,
           "corners": 7,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Millwall",
+          "venue": "home",
+          "g": 2,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 2,
+          "yellow": null
         }
       ]
     },
@@ -27710,6 +27765,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 2
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Burnley",
+          "venue": "away",
+          "g": 2,
+          "c": 0,
+          "shots": null,
+          "target": null,
+          "corners": 7,
+          "yellow": null
         }
       ]
     },
@@ -27892,6 +27958,17 @@
           "target": 3,
           "corners": 1,
           "yellow": 7
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Blackburn Rovers",
+          "venue": "home",
+          "g": 0,
+          "c": 1,
+          "shots": null,
+          "target": null,
+          "corners": 5,
+          "yellow": null
         }
       ]
     },
@@ -28267,6 +28344,17 @@
           "target": 4,
           "corners": 4,
           "yellow": 4
+        },
+        {
+          "date": "2026-11-25",
+          "opponent": "Birmingham City",
+          "venue": "home",
+          "g": 0,
+          "c": 2,
+          "shots": null,
+          "target": null,
+          "corners": 9,
+          "yellow": null
         }
       ]
     },
