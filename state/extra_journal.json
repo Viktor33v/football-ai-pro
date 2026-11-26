@@ -7566,7 +7566,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 0]": {
     "league": "ENG_2_championship",
@@ -7585,7 +7586,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 0]": {
     "league": "ENG_2_championship",
@@ -7604,7 +7606,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 0]": {
     "league": "ENG_2_championship",
@@ -7623,7 +7626,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-27\", \"Southampton\", \"Middlesbrough\", 0]": {
     "league": "ENG_2_championship",
@@ -8155,7 +8159,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 2]": {
     "league": "ENG_2_championship",
@@ -8174,7 +8179,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 2]": {
     "league": "ENG_2_championship",
@@ -8193,7 +8199,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 2]": {
     "league": "ENG_2_championship",
@@ -8212,7 +8219,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-27\", \"Southampton\", \"Middlesbrough\", 2]": {
     "league": "ENG_2_championship",
@@ -8385,7 +8393,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 0]": {
     "league": "ENG_2_championship",
@@ -8405,7 +8414,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 0]": {
     "league": "ENG_2_championship",
@@ -8425,7 +8435,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 0]": {
     "league": "ENG_2_championship",
@@ -8445,7 +8456,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null
+    "result": null,
+    "settlement_issue": "fixture_not_found"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 0]": {
     "league": "ENG_2_championship",
@@ -9775,6 +9787,84 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-25T16:44:16.527958+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_1_premier-league\", \"2026-12-03\", \"Spurs\", \"Fulham\", 0]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-03",
+    "home": "Spurs",
+    "away": "Fulham",
+    "p": 0.6769687274448251,
+    "baseline": 0.5803571428571429,
+    "expected": 11.694214876033058,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые ТБ 8.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null
+  },
+  "[\"corners\", \"ENG_1_premier-league\", \"2026-12-03\", \"Spurs\", \"Fulham\", 2]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-03",
+    "home": "Spurs",
+    "away": "Fulham",
+    "p": 0.7407187164203878,
+    "baseline": 0.6964285714285714,
+    "expected": 5.710743801652892,
+    "sample": [
+      11,
+      11
+    ],
+    "group": "corners",
+    "market": "Угловые 1Т ТБ 3.5",
+    "selected": true,
+    "index": 2,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_1_premier-league\", \"2026-12-03\", \"Spurs\", \"Fulham\", 0]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-03",
+    "home": "Spurs",
+    "away": "Fulham",
+    "p": 0.7526685405798028,
+    "baseline": 0.7589285714285714,
+    "expected": 3.896972556350065,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 24.363636363636363,
+    "group": "cards",
+    "market": "ЖК ТБ 2.5",
+    "selected": true,
+    "index": 0,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null
+  },
+  "[\"cards\", \"ENG_1_premier-league\", \"2026-12-03\", \"Spurs\", \"Fulham\", 4]": {
+    "league": "ENG_1_premier-league",
+    "date": "2026-12-03",
+    "home": "Spurs",
+    "away": "Fulham",
+    "p": 0.6902730660298959,
+    "baseline": 0.7142857142857143,
+    "expected": 2.2875311597774806,
+    "sample": [
+      11,
+      11
+    ],
+    "fouls": 24.363636363636363,
+    "group": "cards",
+    "market": "ЖК гостей ТБ 1.5",
+    "selected": true,
+    "index": 4,
+    "created": "2026-11-26T01:05:22.716129+00:00",
     "result": null
   }
 }

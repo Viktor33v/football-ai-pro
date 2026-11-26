@@ -2107,8 +2107,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.7171452640832173,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "9c3082cd2ae8af95c8a7": {
     "fixture_id": 561963,
@@ -2118,8 +2119,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.3744414328620614,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "8bc71610f8e71b6e5595": {
     "fixture_id": 561963,
@@ -2129,8 +2131,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.525021066996545,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "6c562def7fd758add89f": {
     "fixture_id": 561963,
@@ -2140,8 +2143,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.5558518448950689,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "73199a25d8f31bd80522": {
     "fixture_id": 561963,
@@ -2151,8 +2155,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.7543651881544682,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "6b207cb32283699bc3e8": {
     "fixture_id": 561961,
@@ -2162,8 +2167,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.7171452640832173,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "0ef49e32b858fc23fc9f": {
     "fixture_id": 561961,
@@ -2173,8 +2179,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.3744414328620614,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "3eb7c022601f0a9d176d": {
     "fixture_id": 561961,
@@ -2184,8 +2191,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.5253953217130976,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "9b852f451c7afa4e662b": {
     "fixture_id": 561961,
@@ -2195,8 +2203,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.5618014441370109,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "0e966faf131c773cd485": {
     "fixture_id": 561961,
@@ -2206,8 +2215,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.754356596607487,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "79c12830a192f513aa37": {
     "fixture_id": 561964,
@@ -2217,8 +2227,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.7171452640832173,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "70720fc48adc605c1d47": {
     "fixture_id": 561964,
@@ -2228,8 +2239,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.3744414328620614,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "fe705f8764673b2ebffe": {
     "fixture_id": 561964,
@@ -2239,8 +2251,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.507139859440871,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "3aba458b74d10883372d": {
     "fixture_id": 561964,
@@ -2250,8 +2263,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.539337646564582,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "01004beaf1934c05ac63": {
     "fixture_id": 561964,
@@ -2261,8 +2275,9 @@
     "kickoff": "2026-11-25T19:45:00+00:00",
     "p": 0.7618886438352321,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "5418d08b27044fab2851": {
     "fixture_id": 575411,
@@ -2272,8 +2287,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7260908168442415,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "56ca80beb6de903da109": {
     "fixture_id": 575411,
@@ -2283,8 +2299,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.486396499238965,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "36513355f6636de56c10": {
     "fixture_id": 575411,
@@ -2294,8 +2311,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.6084621088414903,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "ed6846a561ad741a9365": {
     "fixture_id": 575411,
@@ -2305,8 +2323,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.5696399229870156,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "2ace0106a73e56d3131a": {
     "fixture_id": 575411,
@@ -2316,8 +2335,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.8507988268536051,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "294331958e2f343fa0e4": {
     "fixture_id": 575406,
@@ -2327,8 +2347,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7260908168442415,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "af14d8815ba0c0b506f2": {
     "fixture_id": 575406,
@@ -2338,8 +2359,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.486396499238965,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "543679f0c6ce50bfa5e8": {
     "fixture_id": 575406,
@@ -2349,8 +2371,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.6721037118863875,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "2d4ed4814600d109f296": {
     "fixture_id": 575406,
@@ -2360,8 +2383,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.6328571737552214,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "1d4d469f39cab9ff4e1d": {
     "fixture_id": 575406,
@@ -2371,8 +2395,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.877484178609881,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "6e623b68269be2d967d4": {
     "fixture_id": 575408,
@@ -2382,8 +2407,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7260908168442415,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "4382b2278d1de5293439": {
     "fixture_id": 575408,
@@ -2393,8 +2419,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.486396499238965,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "dc1717496fd14f084ee1": {
     "fixture_id": 575408,
@@ -2404,8 +2431,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7142514475274082,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "7de20a39fd42820043eb": {
     "fixture_id": 575408,
@@ -2415,8 +2443,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.6712099871226247,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "0d0f445b0b03088bd175": {
     "fixture_id": 575408,
@@ -2426,8 +2455,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.8890841117555042,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "12ba74bf5fbb6c08dffe": {
     "fixture_id": 561962,
@@ -2437,8 +2467,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7171452640832173,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "7a17a6cf19a13446972f": {
     "fixture_id": 561962,
@@ -2448,8 +2479,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.3744414328620614,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "6f831c13fbd1a27b5da6": {
     "fixture_id": 561962,
@@ -2459,8 +2491,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.5279448370523891,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "87ed4528a85208af6b54": {
     "fixture_id": 561962,
@@ -2470,8 +2503,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.5666798394703512,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "9bb7c705eee3d3ca9575": {
     "fixture_id": 561962,
@@ -2481,8 +2515,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7899472429961938,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "e5d1059b31771a18fb58": {
     "fixture_id": 575410,
@@ -2492,8 +2527,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.7260908168442415,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "9964d88232e8e01fa944": {
     "fixture_id": 575410,
@@ -2503,8 +2539,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.486396499238965,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 0,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "794924d4fee31e71dd32": {
     "fixture_id": 575410,
@@ -2514,8 +2551,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.6532102828024234,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "f2730968304a91e1eaef": {
     "fixture_id": 575410,
@@ -2525,8 +2563,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.6071282078827647,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "12751c2f8f2bbacc7742": {
     "fixture_id": 575410,
@@ -2536,8 +2575,9 @@
     "kickoff": "2026-11-25T20:00:00+00:00",
     "p": 0.8721199586945572,
     "created": "2026-11-22T07:03:38.052052+00:00",
-    "result": null,
-    "result_source": null
+    "result": 1,
+    "result_source": "football-data.org/v4",
+    "settled_at": "2026-11-26T01:05:22.716129+00:00"
   },
   "982160c71f484e8e2e78": {
     "fixture_id": 555091,
@@ -7161,6 +7201,61 @@
     "kickoff": "2026-11-30T20:15:00+00:00",
     "p": 0.7761807204661455,
     "created": "2026-11-25T07:13:11.512876+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "2ca5f273cb857710ffdd": {
+    "fixture_id": 560668,
+    "market": "ТБ 0.5 1Т",
+    "home": "Coventry City FC",
+    "away": "Ipswich Town FC",
+    "kickoff": "2026-12-01T20:00:00+00:00",
+    "p": 0.7016541535900682,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "520e1a084719bf6dc8b5": {
+    "fixture_id": 560668,
+    "market": "ТБ 1.5 1Т",
+    "home": "Coventry City FC",
+    "away": "Ipswich Town FC",
+    "kickoff": "2026-12-01T20:00:00+00:00",
+    "p": 0.3495396459348395,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "0b266f1cf1ee6a260741": {
+    "fixture_id": 560668,
+    "market": "ТБ 2.5",
+    "home": "Coventry City FC",
+    "away": "Ipswich Town FC",
+    "kickoff": "2026-12-01T20:00:00+00:00",
+    "p": 0.5744340705617033,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "1ecaa009b6efaec5077c": {
+    "fixture_id": 560668,
+    "market": "Обе забьют",
+    "home": "Coventry City FC",
+    "away": "Ipswich Town FC",
+    "kickoff": "2026-12-01T20:00:00+00:00",
+    "p": 0.5922851406054692,
+    "created": "2026-11-26T01:05:22.716129+00:00",
+    "result": null,
+    "result_source": null
+  },
+  "c10ce688a753c3a018c0": {
+    "fixture_id": 560668,
+    "market": "ТБ 0.5 2Т",
+    "home": "Coventry City FC",
+    "away": "Ipswich Town FC",
+    "kickoff": "2026-12-01T20:00:00+00:00",
+    "p": 0.8192440561553307,
+    "created": "2026-11-26T01:05:22.716129+00:00",
     "result": null,
     "result_source": null
   }
