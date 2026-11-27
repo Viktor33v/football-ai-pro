@@ -8393,8 +8393,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null,
-    "settlement_issue": "missing_card_stats"
+    "result": 1,
+    "settled_at": "2026-11-27T18:56:46.878981+00:00"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Burnley\", \"Birmingham City\", 0]": {
     "league": "ENG_2_championship",
@@ -8414,8 +8414,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null,
-    "settlement_issue": "missing_card_stats"
+    "result": 1,
+    "settled_at": "2026-11-27T18:56:46.878981+00:00"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Watford\", \"Blackburn Rovers\", 0]": {
     "league": "ENG_2_championship",
@@ -8435,8 +8435,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null,
-    "settlement_issue": "missing_card_stats"
+    "result": 1,
+    "settled_at": "2026-11-27T18:56:46.878981+00:00"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-25\", \"Stoke City\", \"Millwall\", 0]": {
     "league": "ENG_2_championship",
@@ -8456,8 +8456,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null,
-    "settlement_issue": "missing_card_stats"
+    "result": 1,
+    "settled_at": "2026-11-27T18:56:46.878981+00:00"
   },
   "[\"cards\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 0]": {
     "league": "ENG_2_championship",
