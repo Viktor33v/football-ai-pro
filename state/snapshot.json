@@ -1,156 +1,6 @@
 {
-  "created": "2026-11-28T07:05:46.275561+00:00",
+  "created": "2026-11-28T12:57:55.008059+00:00",
   "rows": [
-    {
-      "fixture_id": 561969,
-      "home": "Blackburn Rovers FC",
-      "away": "Charlton Athletic FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        19
-      ],
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7222222222222222,
-      "selected": true
-    },
-    {
-      "fixture_id": 561969,
-      "home": "Blackburn Rovers FC",
-      "away": "Charlton Athletic FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        19
-      ],
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3635743398901293,
-      "selected": false
-    },
-    {
-      "fixture_id": 561969,
-      "home": "Blackburn Rovers FC",
-      "away": "Charlton Athletic FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        19
-      ],
-      "market": "ТБ 2.5",
-      "p": 0.4618474430050853,
-      "selected": false
-    },
-    {
-      "fixture_id": 561969,
-      "home": "Blackburn Rovers FC",
-      "away": "Charlton Athletic FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        19
-      ],
-      "market": "Обе забьют",
-      "p": 0.5597531021116067,
-      "selected": false
-    },
-    {
-      "fixture_id": 561969,
-      "home": "Blackburn Rovers FC",
-      "away": "Charlton Athletic FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        19
-      ],
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7398182066956303,
-      "selected": false
-    },
-    {
-      "fixture_id": 561973,
-      "home": "Preston North End FC",
-      "away": "Norwich City FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        19,
-        20
-      ],
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7222222222222222,
-      "selected": true
-    },
-    {
-      "fixture_id": 561973,
-      "home": "Preston North End FC",
-      "away": "Norwich City FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        19,
-        20
-      ],
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3635743398901293,
-      "selected": false
-    },
-    {
-      "fixture_id": 561973,
-      "home": "Preston North End FC",
-      "away": "Norwich City FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        19,
-        20
-      ],
-      "market": "ТБ 2.5",
-      "p": 0.5511102420539937,
-      "selected": false
-    },
-    {
-      "fixture_id": 561973,
-      "home": "Preston North End FC",
-      "away": "Norwich City FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        19,
-        20
-      ],
-      "market": "Обе забьют",
-      "p": 0.5632747461896004,
-      "selected": false
-    },
-    {
-      "fixture_id": 561973,
-      "home": "Preston North End FC",
-      "away": "Norwich City FC",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T12:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        19,
-        20
-      ],
-      "market": "ТБ 0.5 2Т",
-      "p": 0.792058843411343,
-      "selected": false
-    },
     {
       "fixture_id": 564760,
       "home": "Real Betis Balompié",
@@ -1877,81 +1727,6 @@
       "selected": true
     },
     {
-      "fixture_id": 576807,
-      "home": "SE Palmeiras",
-      "away": "Estudiantes de La Plata",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T20:00:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        12
-      ],
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6419402356902357,
-      "selected": false
-    },
-    {
-      "fixture_id": 576807,
-      "home": "SE Palmeiras",
-      "away": "Estudiantes de La Plata",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T20:00:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        12
-      ],
-      "market": "ТБ 1.5 1Т",
-      "p": 0.2194243572084481,
-      "selected": false
-    },
-    {
-      "fixture_id": 576807,
-      "home": "SE Palmeiras",
-      "away": "Estudiantes de La Plata",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T20:00:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        12
-      ],
-      "market": "ТБ 2.5",
-      "p": 0.45330678321993984,
-      "selected": false
-    },
-    {
-      "fixture_id": 576807,
-      "home": "SE Palmeiras",
-      "away": "Estudiantes de La Plata",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T20:00:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        12
-      ],
-      "market": "Обе забьют",
-      "p": 0.5400829271140053,
-      "selected": false
-    },
-    {
-      "fixture_id": 576807,
-      "home": "SE Palmeiras",
-      "away": "Estudiantes de La Plata",
-      "date": "2026-11-28",
-      "kickoff": "2026-11-28T20:00:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        12
-      ],
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8301699989366964,
-      "selected": true
-    },
-    {
       "fixture_id": 564762,
       "home": "Real Madrid CF",
       "away": "Deportivo Alavés",
@@ -2024,6 +1799,81 @@
       ],
       "market": "ТБ 0.5 2Т",
       "p": 0.8387248519645464,
+      "selected": true
+    },
+    {
+      "fixture_id": 576807,
+      "home": "SE Palmeiras",
+      "away": "Estudiantes de La Plata",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6419402356902357,
+      "selected": false
+    },
+    {
+      "fixture_id": 576807,
+      "home": "SE Palmeiras",
+      "away": "Estudiantes de La Plata",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.2194243572084481,
+      "selected": false
+    },
+    {
+      "fixture_id": 576807,
+      "home": "SE Palmeiras",
+      "away": "Estudiantes de La Plata",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.45330678321993984,
+      "selected": false
+    },
+    {
+      "fixture_id": 576807,
+      "home": "SE Palmeiras",
+      "away": "Estudiantes de La Plata",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "Обе забьют",
+      "p": 0.5400829271140053,
+      "selected": false
+    },
+    {
+      "fixture_id": 576807,
+      "home": "SE Palmeiras",
+      "away": "Estudiantes de La Plata",
+      "date": "2026-11-28",
+      "kickoff": "2026-11-28T20:00:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        12
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8301699989366964,
       "selected": true
     },
     {
@@ -4052,81 +3902,6 @@
       "selected": true
     },
     {
-      "fixture_id": 555106,
-      "home": "SC Internacional",
-      "away": "RB Bragantino",
-      "date": "2026-11-29",
-      "kickoff": "2026-11-29T21:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 0.5 1Т",
-      "p": 0.7177974434611603,
-      "selected": true
-    },
-    {
-      "fixture_id": 555106,
-      "home": "SC Internacional",
-      "away": "RB Bragantino",
-      "date": "2026-11-29",
-      "kickoff": "2026-11-29T21:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 1.5 1Т",
-      "p": 0.3499076308810822,
-      "selected": false
-    },
-    {
-      "fixture_id": 555106,
-      "home": "SC Internacional",
-      "away": "RB Bragantino",
-      "date": "2026-11-29",
-      "kickoff": "2026-11-29T21:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 2.5",
-      "p": 0.5081236138141627,
-      "selected": false
-    },
-    {
-      "fixture_id": 555106,
-      "home": "SC Internacional",
-      "away": "RB Bragantino",
-      "date": "2026-11-29",
-      "kickoff": "2026-11-29T21:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "Обе забьют",
-      "p": 0.6339945381163538,
-      "selected": true
-    },
-    {
-      "fixture_id": 555106,
-      "home": "SC Internacional",
-      "away": "RB Bragantino",
-      "date": "2026-11-29",
-      "kickoff": "2026-11-29T21:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 0.5 2Т",
-      "p": 0.7614975715122766,
-      "selected": false
-    },
-    {
       "fixture_id": 555103,
       "home": "SC Corinthians Paulista",
       "away": "Grêmio FBPA",
@@ -4199,6 +3974,81 @@
       ],
       "market": "ТБ 0.5 2Т",
       "p": 0.7537670102501091,
+      "selected": false
+    },
+    {
+      "fixture_id": 555106,
+      "home": "SC Internacional",
+      "away": "RB Bragantino",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T21:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.7177974434611603,
+      "selected": true
+    },
+    {
+      "fixture_id": 555106,
+      "home": "SC Internacional",
+      "away": "RB Bragantino",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T21:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.3499076308810822,
+      "selected": false
+    },
+    {
+      "fixture_id": 555106,
+      "home": "SC Internacional",
+      "away": "RB Bragantino",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T21:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5081236138141627,
+      "selected": false
+    },
+    {
+      "fixture_id": 555106,
+      "home": "SC Internacional",
+      "away": "RB Bragantino",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T21:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6339945381163538,
+      "selected": true
+    },
+    {
+      "fixture_id": 555106,
+      "home": "SC Internacional",
+      "away": "RB Bragantino",
+      "date": "2026-11-29",
+      "kickoff": "2026-11-29T21:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.7614975715122766,
       "selected": false
     },
     {
@@ -4952,81 +4802,6 @@
       "selected": false
     },
     {
-      "fixture_id": 560669,
-      "home": "Manchester City FC",
-      "away": "Leeds United FC",
-      "date": "2026-12-02",
-      "kickoff": "2026-12-02T19:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 0.5 1Т",
-      "p": 0.6903205726735139,
-      "selected": false
-    },
-    {
-      "fixture_id": 560669,
-      "home": "Manchester City FC",
-      "away": "Leeds United FC",
-      "date": "2026-12-02",
-      "kickoff": "2026-12-02T19:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 1.5 1Т",
-      "p": 0.31352389440624734,
-      "selected": false
-    },
-    {
-      "fixture_id": 560669,
-      "home": "Manchester City FC",
-      "away": "Leeds United FC",
-      "date": "2026-12-02",
-      "kickoff": "2026-12-02T19:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 2.5",
-      "p": 0.5800667261943138,
-      "selected": false
-    },
-    {
-      "fixture_id": 560669,
-      "home": "Manchester City FC",
-      "away": "Leeds United FC",
-      "date": "2026-12-02",
-      "kickoff": "2026-12-02T19:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "Обе забьют",
-      "p": 0.6417382298334556,
-      "selected": true
-    },
-    {
-      "fixture_id": 560669,
-      "home": "Manchester City FC",
-      "away": "Leeds United FC",
-      "date": "2026-12-02",
-      "kickoff": "2026-12-02T19:30:00+00:00",
-      "group": "goals",
-      "sample": [
-        20,
-        20
-      ],
-      "market": "ТБ 0.5 2Т",
-      "p": 0.8379748363423143,
-      "selected": true
-    },
-    {
       "fixture_id": 560665,
       "home": "Chelsea FC",
       "away": "Crystal Palace FC",
@@ -5174,6 +4949,81 @@
       ],
       "market": "ТБ 0.5 2Т",
       "p": 0.8256788608389896,
+      "selected": true
+    },
+    {
+      "fixture_id": 560669,
+      "home": "Manchester City FC",
+      "away": "Leeds United FC",
+      "date": "2026-12-02",
+      "kickoff": "2026-12-02T19:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 1Т",
+      "p": 0.6903205726735139,
+      "selected": false
+    },
+    {
+      "fixture_id": 560669,
+      "home": "Manchester City FC",
+      "away": "Leeds United FC",
+      "date": "2026-12-02",
+      "kickoff": "2026-12-02T19:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 1.5 1Т",
+      "p": 0.31352389440624734,
+      "selected": false
+    },
+    {
+      "fixture_id": 560669,
+      "home": "Manchester City FC",
+      "away": "Leeds United FC",
+      "date": "2026-12-02",
+      "kickoff": "2026-12-02T19:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 2.5",
+      "p": 0.5800667261943138,
+      "selected": false
+    },
+    {
+      "fixture_id": 560669,
+      "home": "Manchester City FC",
+      "away": "Leeds United FC",
+      "date": "2026-12-02",
+      "kickoff": "2026-12-02T19:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "Обе забьют",
+      "p": 0.6417382298334556,
+      "selected": true
+    },
+    {
+      "fixture_id": 560669,
+      "home": "Manchester City FC",
+      "away": "Leeds United FC",
+      "date": "2026-12-02",
+      "kickoff": "2026-12-02T19:30:00+00:00",
+      "group": "goals",
+      "sample": [
+        20,
+        20
+      ],
+      "market": "ТБ 0.5 2Т",
+      "p": 0.8379748363423143,
       "selected": true
     },
     {
@@ -6381,8 +6231,8 @@
       "date": "2026-11-29",
       "home": "Everton",
       "away": "Liverpool",
-      "p": 0.5737052053508549,
-      "baseline": 0.5803571428571429,
+      "p": 0.5699866297888886,
+      "baseline": 0.5752212389380531,
       "expected": 8.995454545454546,
       "sample": [
         11,
@@ -6397,8 +6247,8 @@
       "date": "2026-11-29",
       "home": "Brighton",
       "away": "Newcastle",
-      "p": 0.6195147623863413,
-      "baseline": 0.5803571428571429,
+      "p": 0.6159272498069626,
+      "baseline": 0.5752212389380531,
       "expected": 10.068181818181818,
       "sample": [
         11,
@@ -6413,8 +6263,8 @@
       "date": "2026-11-29",
       "home": "Crystal Palace",
       "away": "Hull",
-      "p": 0.6350705298319523,
-      "baseline": 0.5803571428571429,
+      "p": 0.6315397331677677,
+      "baseline": 0.5752212389380531,
       "expected": 10.468181818181819,
       "sample": [
         11,
@@ -6429,8 +6279,8 @@
       "date": "2026-11-29",
       "home": "Fulham",
       "away": "Bournemouth",
-      "p": 0.6019419908697492,
-      "baseline": 0.5803571428571429,
+      "p": 0.5982978228705089,
+      "baseline": 0.5752212389380531,
       "expected": 9.64090909090909,
       "sample": [
         11,
@@ -6445,8 +6295,8 @@
       "date": "2026-11-29",
       "home": "Sunderland",
       "away": "Spurs",
-      "p": 0.5906394123831884,
-      "baseline": 0.5803571428571429,
+      "p": 0.5869629817533397,
+      "baseline": 0.5752212389380531,
       "expected": 9.377272727272727,
       "sample": [
         11,
@@ -6461,8 +6311,8 @@
       "date": "2026-11-29",
       "home": "Arsenal",
       "away": "Man City",
-      "p": 0.6227689280340714,
-      "baseline": 0.5803571428571429,
+      "p": 0.6191927705587685,
+      "baseline": 0.5752212389380531,
       "expected": 10.149999999999999,
       "sample": [
         11,
@@ -6477,8 +6327,8 @@
       "date": "2026-12-01",
       "home": "Coventry",
       "away": "Ipswich",
-      "p": 0.5627876648443773,
-      "baseline": 0.5803571428571429,
+      "p": 0.5590459159934675,
+      "baseline": 0.5752212389380531,
       "expected": 8.756198347107437,
       "sample": [
         11,
@@ -6493,11 +6343,11 @@
       "date": "2026-12-02",
       "home": "Chelsea",
       "away": "Crystal Palace",
-      "p": 0.6288629049019381,
-      "baseline": 0.5803571428571429,
-      "expected": 10.305785123966942,
+      "p": 0.6199080254758538,
+      "baseline": 0.5752212389380531,
+      "expected": 10.168044077134986,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -6509,12 +6359,12 @@
       "date": "2026-12-02",
       "home": "Hull",
       "away": "Nott'm Forest",
-      "p": 0.575958324104874,
-      "baseline": 0.5803571428571429,
-      "expected": 9.045454545454545,
+      "p": 0.567097999361025,
+      "baseline": 0.5752212389380531,
+      "expected": 8.931818181818182,
       "sample": [
         11,
-        11
+        12
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -6525,8 +6375,8 @@
       "date": "2026-12-02",
       "home": "Liverpool",
       "away": "Sunderland",
-      "p": 0.601400642137423,
-      "baseline": 0.5803571428571429,
+      "p": 0.5977548540585409,
+      "baseline": 0.5752212389380531,
       "expected": 9.62809917355372,
       "sample": [
         11,
@@ -6541,8 +6391,8 @@
       "date": "2026-12-02",
       "home": "Man City",
       "away": "Leeds",
-      "p": 0.5735372111759349,
-      "baseline": 0.5803571428571429,
+      "p": 0.5698182551111546,
+      "baseline": 0.5752212389380531,
       "expected": 8.991735537190081,
       "sample": [
         11,
@@ -6557,8 +6407,8 @@
       "date": "2026-12-02",
       "home": "Aston Villa",
       "away": "Everton",
-      "p": 0.6125768073018876,
-      "baseline": 0.5803571428571429,
+      "p": 0.6089659854837219,
+      "baseline": 0.5752212389380531,
       "expected": 9.896694214876034,
       "sample": [
         11,
@@ -6573,8 +6423,8 @@
       "date": "2026-12-02",
       "home": "Bournemouth",
       "away": "Brighton",
-      "p": 0.5754006544216145,
-      "baseline": 0.5803571428571429,
+      "p": 0.5716859606129423,
+      "baseline": 0.5752212389380531,
       "expected": 9.03305785123967,
       "sample": [
         11,
@@ -6589,8 +6439,8 @@
       "date": "2026-12-02",
       "home": "Brentford",
       "away": "Arsenal",
-      "p": 0.6019245407822593,
-      "baseline": 0.5803571428571429,
+      "p": 0.5982803204435003,
+      "baseline": 0.5752212389380531,
       "expected": 9.640495867768594,
       "sample": [
         11,
@@ -6605,8 +6455,8 @@
       "date": "2026-12-02",
       "home": "Newcastle",
       "away": "Man Utd",
-      "p": 0.6262930813463935,
-      "baseline": 0.5803571428571429,
+      "p": 0.622729525021332,
+      "baseline": 0.5752212389380531,
       "expected": 10.239669421487603,
       "sample": [
         11,
@@ -6621,8 +6471,8 @@
       "date": "2026-12-03",
       "home": "Spurs",
       "away": "Fulham",
-      "p": 0.6769687274448251,
-      "baseline": 0.5803571428571429,
+      "p": 0.6736216280568527,
+      "baseline": 0.5752212389380531,
       "expected": 11.694214876033058,
       "sample": [
         11,
@@ -6637,11 +6487,11 @@
       "date": "2026-12-05",
       "home": "Chelsea",
       "away": "Liverpool",
-      "p": 0.6154211282467861,
-      "baseline": 0.5803571428571429,
-      "expected": 9.966528925619834,
+      "p": 0.6061665185174091,
+      "baseline": 0.5752212389380531,
+      "expected": 9.828787878787878,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -6653,8 +6503,8 @@
       "date": "2026-12-05",
       "home": "Aston Villa",
       "away": "Crystal Palace",
-      "p": 0.5911244576988604,
-      "baseline": 0.5803571428571429,
+      "p": 0.5874493440305106,
+      "baseline": 0.5752212389380531,
       "expected": 9.388429752066116,
       "sample": [
         11,
@@ -6669,8 +6519,8 @@
       "date": "2026-12-05",
       "home": "Bournemouth",
       "away": "Hull",
-      "p": 0.6022036398278652,
-      "baseline": 0.5803571428571429,
+      "p": 0.598560257549761,
+      "baseline": 0.5752212389380531,
       "expected": 9.64710743801653,
       "sample": [
         11,
@@ -6685,8 +6535,8 @@
       "date": "2026-12-05",
       "home": "Leeds",
       "away": "Ipswich",
-      "p": 0.559503532727255,
-      "baseline": 0.5803571428571429,
+      "p": 0.5557554353708799,
+      "baseline": 0.5752212389380531,
       "expected": 8.685123966942147,
       "sample": [
         11,
@@ -6701,8 +6551,8 @@
       "date": "2026-12-05",
       "home": "Man Utd",
       "away": "Coventry",
-      "p": 0.5880608676927683,
-      "baseline": 0.5803571428571429,
+      "p": 0.5843775381239121,
+      "baseline": 0.5752212389380531,
       "expected": 9.318181818181818,
       "sample": [
         11,
@@ -6717,11 +6567,11 @@
       "date": "2026-12-05",
       "home": "Nott'm Forest",
       "away": "Brighton",
-      "p": 0.5910167199594798,
-      "baseline": 0.5803571428571429,
-      "expected": 9.38595041322314,
+      "p": 0.569350258044709,
+      "baseline": 0.5752212389380531,
+      "expected": 8.981404958677686,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -6733,8 +6583,8 @@
       "date": "2026-12-05",
       "home": "Brentford",
       "away": "Man City",
-      "p": 0.6190681858299696,
-      "baseline": 0.5803571428571429,
+      "p": 0.6154791359942022,
+      "baseline": 0.5752212389380531,
       "expected": 10.057024793388429,
       "sample": [
         11,
@@ -6749,8 +6599,8 @@
       "date": "2026-11-29",
       "home": "Valencia CF",
       "away": "CA Osasuna",
-      "p": 0.5617284218674633,
-      "baseline": 0.5648854961832062,
+      "p": 0.5640092502336731,
+      "baseline": 0.5681818181818182,
       "expected": 8.819638694638694,
       "sample": [
         13,
@@ -6765,8 +6615,8 @@
       "date": "2026-11-29",
       "home": "RC Deportivo",
       "away": "FC Barcelona",
-      "p": 0.5608653250667766,
-      "baseline": 0.5648854961832062,
+      "p": 0.5631471737028384,
+      "baseline": 0.5681818181818182,
       "expected": 8.8006993006993,
       "sample": [
         13,
@@ -6781,8 +6631,8 @@
       "date": "2026-11-29",
       "home": "Celta",
       "away": "Villarreal CF",
-      "p": 0.5996737842393141,
-      "baseline": 0.5648854961832062,
+      "p": 0.6018993244293521,
+      "baseline": 0.5681818181818182,
       "expected": 9.689102564102564,
       "sample": [
         13,
@@ -6797,8 +6647,8 @@
       "date": "2026-11-29",
       "home": "Real Sociedad",
       "away": "Sevilla FC",
-      "p": 0.5861813386602744,
-      "baseline": 0.5648854961832062,
+      "p": 0.5884288534432631,
+      "baseline": 0.5681818181818182,
       "expected": 9.37062937062937,
       "sample": [
         13,
@@ -6813,8 +6663,8 @@
       "date": "2026-11-30",
       "home": "RCD Espanyol de Barcelona",
       "away": "Getafe CF",
-      "p": 0.5555777421404913,
-      "baseline": 0.5648854961832062,
+      "p": 0.5578656063507645,
+      "baseline": 0.5681818181818182,
       "expected": 8.685314685314685,
       "sample": [
         13,
@@ -6829,8 +6679,8 @@
       "date": "2026-12-02",
       "home": "Real Sociedad",
       "away": "Real Madrid",
-      "p": 0.642090209646853,
-      "baseline": 0.5648854961832062,
+      "p": 0.6442302706054472,
+      "baseline": 0.5681818181818182,
       "expected": 10.789044289044291,
       "sample": [
         13,
@@ -6845,8 +6695,8 @@
       "date": "2026-12-02",
       "home": "FC Barcelona",
       "away": "Atlético de Madrid",
-      "p": 0.6284946054083453,
-      "baseline": 0.5648854961832062,
+      "p": 0.630664771735846,
+      "baseline": 0.5681818181818182,
       "expected": 10.416666666666666,
       "sample": [
         13,
@@ -6861,8 +6711,8 @@
       "date": "2026-12-04",
       "home": "Deportivo Alavés",
       "away": "RCD Espanyol de Barcelona",
-      "p": 0.5795393960146947,
-      "baseline": 0.5648854961832062,
+      "p": 0.581796795262719,
+      "baseline": 0.5681818181818182,
       "expected": 9.217948717948719,
       "sample": [
         13,
@@ -6877,11 +6727,11 @@
       "date": "2026-12-05",
       "home": "R. Racing Club",
       "away": "RC Deportivo",
-      "p": 0.6837762182775882,
-      "baseline": 0.5648854961832062,
-      "expected": 12.112179487179487,
+      "p": 0.6862167371388677,
+      "baseline": 0.5681818181818182,
+      "expected": 12.12706043956044,
       "sample": [
-        13,
+        14,
         13
       ],
       "group": "corners",
@@ -6893,12 +6743,12 @@
       "date": "2026-12-05",
       "home": "Rayo Vallecano",
       "away": "Levante UD",
-      "p": 0.5864452468593013,
-      "baseline": 0.5648854961832062,
-      "expected": 9.376748251748252,
+      "p": 0.592419249128161,
+      "baseline": 0.5681818181818182,
+      "expected": 9.46374458874459,
       "sample": [
         12,
-        13
+        14
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -6909,8 +6759,8 @@
       "date": "2026-12-05",
       "home": "Villarreal CF",
       "away": "Real Sociedad",
-      "p": 0.6756547887726679,
-      "baseline": 0.5648854961832062,
+      "p": 0.6777093891573086,
+      "baseline": 0.5681818181818182,
       "expected": 11.826631701631703,
       "sample": [
         13,
@@ -6925,8 +6775,8 @@
       "date": "2026-12-05",
       "home": "FC Barcelona",
       "away": "Celta",
-      "p": 0.5970109395001377,
-      "baseline": 0.5648854961832062,
+      "p": 0.5992410168612439,
+      "baseline": 0.5681818181818182,
       "expected": 9.625291375291374,
       "sample": [
         13,
@@ -6941,8 +6791,8 @@
       "date": "2026-11-29",
       "home": "SC Freiburg",
       "away": "RB Leipzig",
-      "p": 0.6873570343464214,
-      "baseline": 0.6956521739130435,
+      "p": 0.6891103201893543,
+      "baseline": 0.6989247311827957,
       "expected": 10.0,
       "sample": [
         10,
@@ -6957,8 +6807,8 @@
       "date": "2026-11-29",
       "home": "TSG Hoffenheim",
       "away": "FC Augsburg",
-      "p": 0.6939140170020694,
-      "baseline": 0.6956521739130435,
+      "p": 0.6956643336662067,
+      "baseline": 0.6989247311827957,
       "expected": 10.17222222222222,
       "sample": [
         10,
@@ -6973,8 +6823,8 @@
       "date": "2026-11-29",
       "home": "Borussia Dortmund",
       "away": "Bayer 04 Leverkusen",
-      "p": 0.6930774420746253,
-      "baseline": 0.6956521739130435,
+      "p": 0.6948281447932892,
+      "baseline": 0.6989247311827957,
       "expected": 10.15,
       "sample": [
         10,
@@ -6989,8 +6839,8 @@
       "date": "2026-12-04",
       "home": "FC Bayern München",
       "away": "SC Paderborn 07",
-      "p": 0.7041307637263495,
-      "baseline": 0.6956521739130435,
+      "p": 0.7058761946151573,
+      "baseline": 0.6989247311827957,
       "expected": 10.45,
       "sample": [
         10,
@@ -7005,8 +6855,8 @@
       "date": "2026-12-05",
       "home": "1. FC Union Berlin",
       "away": "Hamburger SV",
-      "p": 0.6655076989877453,
-      "baseline": 0.6956521739130435,
+      "p": 0.6672699419847936,
+      "baseline": 0.6989247311827957,
       "expected": 9.454545454545453,
       "sample": [
         10,
@@ -7021,12 +6871,12 @@
       "date": "2026-12-05",
       "home": "Bayer 04 Leverkusen",
       "away": "Borussia Mönchengladbach",
-      "p": 0.725460756871112,
-      "baseline": 0.6956521739130435,
-      "expected": 11.075000000000001,
+      "p": 0.7272149512897552,
+      "baseline": 0.6989247311827957,
+      "expected": 11.075619834710745,
       "sample": [
         10,
-        10
+        11
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -7037,8 +6887,8 @@
       "date": "2026-12-05",
       "home": "FC Augsburg",
       "away": "1. FC Köln",
-      "p": 0.6859511235238974,
-      "baseline": 0.6956521739130435,
+      "p": 0.6877050290969955,
+      "baseline": 0.6989247311827957,
       "expected": 9.963636363636363,
       "sample": [
         10,
@@ -7053,8 +6903,8 @@
       "date": "2026-12-05",
       "home": "RB Leipzig",
       "away": "1. FSV Mainz 05",
-      "p": 0.6911848354657935,
-      "baseline": 0.6956521739130435,
+      "p": 0.6929364037585176,
+      "baseline": 0.6989247311827957,
       "expected": 10.1,
       "sample": [
         10,
@@ -7069,8 +6919,8 @@
       "date": "2026-12-05",
       "home": "SC Freiburg",
       "away": "TSG Hoffenheim",
-      "p": 0.6873570343464214,
-      "baseline": 0.6956521739130435,
+      "p": 0.6891103201893543,
+      "baseline": 0.6989247311827957,
       "expected": 10.0,
       "sample": [
         10,
@@ -7085,12 +6935,12 @@
       "date": "2026-12-05",
       "home": "Eintracht Frankfurt",
       "away": "SV Werder Bremen",
-      "p": 0.712940281139073,
-      "baseline": 0.6956521739130435,
-      "expected": 10.700000000000001,
+      "p": 0.7156194806429854,
+      "baseline": 0.6989247311827957,
+      "expected": 10.727272727272727,
       "sample": [
         10,
-        10
+        11
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -7101,8 +6951,8 @@
       "date": "2026-11-29",
       "home": "Udinese",
       "away": "Fiorentina",
-      "p": 0.6016297145609117,
-      "baseline": 0.6065573770491803,
+      "p": 0.6031090370385379,
+      "baseline": 0.6097560975609756,
       "expected": 9.25,
       "sample": [
         12,
@@ -7117,8 +6967,8 @@
       "date": "2026-11-29",
       "home": "Sassuolo",
       "away": "Napoli",
-      "p": 0.6296961295605417,
-      "baseline": 0.6065573770491803,
+      "p": 0.631184604567878,
+      "baseline": 0.6097560975609756,
       "expected": 9.916666666666666,
       "sample": [
         12,
@@ -7133,8 +6983,8 @@
       "date": "2026-11-29",
       "home": "Roma",
       "away": "Monza",
-      "p": 0.6050931207146175,
-      "baseline": 0.6065573770491803,
+      "p": 0.6065734550936994,
+      "baseline": 0.6097560975609756,
       "expected": 9.329545454545455,
       "sample": [
         12,
@@ -7149,8 +6999,8 @@
       "date": "2026-11-29",
       "home": "Como",
       "away": "Juventus",
-      "p": 0.67877510211881,
-      "baseline": 0.6065573770491803,
+      "p": 0.6802847750044563,
+      "baseline": 0.6097560975609756,
       "expected": 11.257954545454544,
       "sample": [
         12,
@@ -7165,8 +7015,8 @@
       "date": "2026-11-30",
       "home": "Lecce",
       "away": "Atalanta",
-      "p": 0.5988881051272587,
-      "baseline": 0.6065573770491803,
+      "p": 0.600366650249464,
+      "baseline": 0.6097560975609756,
       "expected": 9.1875,
       "sample": [
         12,
@@ -7181,8 +7031,8 @@
       "date": "2026-11-30",
       "home": "Cagliari",
       "away": "Milan",
-      "p": 0.5871180512516236,
-      "baseline": 0.6065573770491803,
+      "p": 0.5885934982070816,
+      "baseline": 0.6097560975609756,
       "expected": 8.923484848484849,
       "sample": [
         12,
@@ -7197,11 +7047,11 @@
       "date": "2026-12-04",
       "home": "Bologna",
       "away": "Roma",
-      "p": 0.6300019471100431,
-      "baseline": 0.6065573770491803,
-      "expected": 9.924242424242426,
+      "p": 0.6308430127223785,
+      "baseline": 0.6097560975609756,
+      "expected": 9.908216783216783,
       "sample": [
-        12,
+        13,
         12
       ],
       "group": "corners",
@@ -7213,8 +7063,8 @@
       "date": "2026-12-05",
       "home": "Monza",
       "away": "Como",
-      "p": 0.6159279945167679,
-      "baseline": 0.6065573770491803,
+      "p": 0.6174117088657163,
+      "baseline": 0.6097560975609756,
       "expected": 9.583017676767676,
       "sample": [
         12,
@@ -7229,8 +7079,8 @@
       "date": "2026-12-05",
       "home": "Frosinone",
       "away": "Internazionale",
-      "p": 0.6772717066294758,
-      "baseline": 0.6065573770491803,
+      "p": 0.6787806311780125,
+      "baseline": 0.6097560975609756,
       "expected": 11.212121212121211,
       "sample": [
         12,
@@ -7245,8 +7095,8 @@
       "date": "2026-12-05",
       "home": "Napoli",
       "away": "Lecce",
-      "p": 0.6373102970957927,
-      "baseline": 0.6065573770491803,
+      "p": 0.6388016276266402,
+      "baseline": 0.6097560975609756,
       "expected": 10.10763888888889,
       "sample": [
         12,
@@ -7261,8 +7111,8 @@
       "date": "2026-11-29",
       "home": "AJ Auxerre",
       "away": "Olympique de Marseille",
-      "p": 0.5806062330981496,
-      "baseline": 0.5544554455445545,
+      "p": 0.5776844914181316,
+      "baseline": 0.5490196078431373,
       "expected": 9.654545454545454,
       "sample": [
         11,
@@ -7277,8 +7127,8 @@
       "date": "2026-11-29",
       "home": "Toulouse FC",
       "away": "Stade Rennais FC",
-      "p": 0.6036058220569017,
-      "baseline": 0.5544554455445545,
+      "p": 0.6006972422339957,
+      "baseline": 0.5490196078431373,
       "expected": 10.204545454545453,
       "sample": [
         11,
@@ -7293,8 +7143,8 @@
       "date": "2026-11-29",
       "home": "Olympique Lyonnais",
       "away": "AS Monaco",
-      "p": 0.5758131316497372,
-      "baseline": 0.5544554455445545,
+      "p": 0.5728889628548683,
+      "baseline": 0.5490196078431373,
       "expected": 9.544214876033058,
       "sample": [
         11,
@@ -7309,8 +7159,8 @@
       "date": "2026-12-04",
       "home": "Toulouse FC",
       "away": "Paris Saint-Germain",
-      "p": 0.5164406170020475,
-      "baseline": 0.5544554455445545,
+      "p": 0.5134957295094137,
+      "baseline": 0.5490196078431373,
       "expected": 8.258333333333333,
       "sample": [
         11,
@@ -7325,8 +7175,8 @@
       "date": "2026-12-05",
       "home": "LOSC Lille",
       "away": "AJ Auxerre",
-      "p": 0.5794625149167205,
-      "baseline": 0.5544554455445545,
+      "p": 0.576540184129455,
+      "baseline": 0.5490196078431373,
       "expected": 9.628099173553718,
       "sample": [
         11,
@@ -7341,8 +7191,8 @@
       "date": "2026-12-05",
       "home": "AS Monaco",
       "away": "Angers SCO",
-      "p": 0.5847065723695652,
-      "baseline": 0.5544554455445545,
+      "p": 0.5817869938466221,
+      "baseline": 0.5490196078431373,
       "expected": 9.75,
       "sample": [
         11,
@@ -7357,11 +7207,11 @@
       "date": "2026-12-05",
       "home": "Paris FC",
       "away": "Le Mans FC",
-      "p": 0.49269476557755093,
-      "baseline": 0.5544554455445545,
-      "expected": 7.768595041322314,
+      "p": 0.4902505312992346,
+      "baseline": 0.5490196078431373,
+      "expected": 7.778925619834711,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -7373,8 +7223,8 @@
       "date": "2026-12-05",
       "home": "RC Lens",
       "away": "Havre Athletic Club",
-      "p": 0.583574941543826,
-      "baseline": 0.5544554455445545,
+      "p": 0.5806547580400291,
+      "baseline": 0.5490196078431373,
       "expected": 9.723553719008263,
       "sample": [
         11,
@@ -7389,8 +7239,8 @@
       "date": "2026-12-05",
       "home": "RC Strasbourg Alsace",
       "away": "FC Lorient",
-      "p": 0.5134125108451928,
-      "baseline": 0.5544554455445545,
+      "p": 0.510467048870135,
+      "baseline": 0.5490196078431373,
       "expected": 8.195454545454545,
       "sample": [
         11,
@@ -7405,8 +7255,8 @@
       "date": "2026-11-29",
       "home": "ADO Den Haag",
       "away": "FC Utrecht",
-      "p": 0.6476699696437822,
-      "baseline": 0.6974789915966386,
+      "p": 0.6442674355074259,
+      "baseline": 0.6916666666666667,
       "expected": 9.111888111888112,
       "sample": [
         13,
@@ -7421,8 +7271,8 @@
       "date": "2026-11-29",
       "home": "Feyenoord",
       "away": "Ajax",
-      "p": 0.7049728865708744,
-      "baseline": 0.6974789915966386,
+      "p": 0.7016575107193295,
+      "baseline": 0.6916666666666667,
       "expected": 10.545454545454545,
       "sample": [
         13,
@@ -7437,8 +7287,8 @@
       "date": "2026-11-29",
       "home": "Fortuna Sittard",
       "away": "sc Heerenveen",
-      "p": 0.7120279637183747,
-      "baseline": 0.6974789915966386,
+      "p": 0.7087259007707692,
+      "baseline": 0.6916666666666667,
       "expected": 10.744755244755243,
       "sample": [
         13,
@@ -7453,8 +7303,8 @@
       "date": "2026-11-29",
       "home": "PEC Zwolle",
       "away": "AZ",
-      "p": 0.7213985944497727,
-      "baseline": 0.6974789915966386,
+      "p": 0.7181151001440926,
+      "baseline": 0.6916666666666667,
       "expected": 11.02039627039627,
       "sample": [
         13,
@@ -7469,8 +7319,8 @@
       "date": "2026-11-29",
       "home": "N.E.C. Nijmegen",
       "away": "FC Twente",
-      "p": 0.6875684157500753,
-      "baseline": 0.6974789915966386,
+      "p": 0.684222625371626,
+      "baseline": 0.6916666666666667,
       "expected": 10.079254079254081,
       "sample": [
         13,
@@ -7485,12 +7335,12 @@
       "date": "2026-12-04",
       "home": "Telstar",
       "away": "FC Groningen",
-      "p": 0.6967312405600325,
-      "baseline": 0.6974789915966386,
-      "expected": 10.320512820512821,
+      "p": 0.691950646907078,
+      "baseline": 0.6916666666666667,
+      "expected": 10.28180153180153,
       "sample": [
         13,
-        13
+        14
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -7501,11 +7351,11 @@
       "date": "2026-12-05",
       "home": "Willem II",
       "away": "Feyenoord",
-      "p": 0.6913820710305741,
-      "baseline": 0.6974789915966386,
-      "expected": 10.178613053613052,
+      "p": 0.6857928909287768,
+      "baseline": 0.6916666666666667,
+      "expected": 10.119921744921745,
       "sample": [
-        13,
+        14,
         13
       ],
       "group": "corners",
@@ -7517,8 +7367,8 @@
       "date": "2026-12-05",
       "home": "Sparta Rotterdam",
       "away": "N.E.C. Nijmegen",
-      "p": 0.703035261463735,
-      "baseline": 0.6974789915966386,
+      "p": 0.6997163290356913,
+      "baseline": 0.6916666666666667,
       "expected": 10.491841491841491,
       "sample": [
         13,
@@ -7533,8 +7383,8 @@
       "date": "2026-12-05",
       "home": "AZ",
       "away": "PSV",
-      "p": 0.6545946858310118,
-      "baseline": 0.6974789915966386,
+      "p": 0.65120069847334,
+      "baseline": 0.6916666666666667,
       "expected": 9.271853146853148,
       "sample": [
         13,
@@ -7549,8 +7399,8 @@
       "date": "2026-12-05",
       "home": "Fortuna Sittard",
       "away": "PEC Zwolle",
-      "p": 0.7397326051156032,
-      "baseline": 0.6974789915966386,
+      "p": 0.7364884142421984,
+      "baseline": 0.6916666666666667,
       "expected": 11.603438228438229,
       "sample": [
         13,
@@ -7565,8 +7415,8 @@
       "date": "2026-11-29",
       "home": "Gil Vicente FC",
       "away": "Estoril Praia",
-      "p": 0.49085247976102486,
-      "baseline": 0.51,
+      "p": 0.49351042815092855,
+      "baseline": 0.5148514851485149,
       "expected": 8.27995867768595,
       "sample": [
         11,
@@ -7581,8 +7431,8 @@
       "date": "2026-11-29",
       "home": "FC Porto",
       "away": "Sporting CP",
-      "p": 0.5270514629466466,
-      "baseline": 0.51,
+      "p": 0.5296992468866176,
+      "baseline": 0.5148514851485149,
       "expected": 9.045454545454545,
       "sample": [
         11,
@@ -7597,8 +7447,8 @@
       "date": "2026-11-30",
       "home": "Casa Pia AC",
       "away": "SC Braga",
-      "p": 0.5110740982366141,
-      "baseline": 0.51,
+      "p": 0.5137272127434819,
+      "baseline": 0.5148514851485149,
       "expected": 8.703305785123966,
       "sample": [
         11,
@@ -7613,8 +7463,8 @@
       "date": "2026-11-30",
       "home": "SL Benfica",
       "away": "FC Famalicão",
-      "p": 0.5865708653900419,
-      "baseline": 0.51,
+      "p": 0.5891876499697202,
+      "baseline": 0.5148514851485149,
       "expected": 10.425619834710742,
       "sample": [
         11,
@@ -7629,25 +7479,9 @@
       "date": "2026-12-04",
       "home": "Sporting CP",
       "away": "Marítimo M.",
-      "p": 0.4784024423036926,
-      "baseline": 0.51,
-      "expected": 8.02293388429752,
-      "sample": [
-        11,
-        10
-      ],
-      "group": "corners",
-      "market": "Угловые ТБ 8.5",
-      "selected": false
-    },
-    {
-      "league": "POR_1_primeira-liga",
-      "date": "2026-12-05",
-      "home": "CD Nacional",
-      "away": "SL Benfica",
-      "p": 0.5118153615147503,
-      "baseline": 0.51,
-      "expected": 8.71900826446281,
+      "p": 0.48360169423453575,
+      "baseline": 0.5148514851485149,
+      "expected": 8.075206611570248,
       "sample": [
         11,
         11
@@ -7659,10 +7493,26 @@
     {
       "league": "POR_1_primeira-liga",
       "date": "2026-12-05",
+      "home": "CD Nacional",
+      "away": "SL Benfica",
+      "p": 0.5149553967365927,
+      "baseline": 0.5148514851485149,
+      "expected": 8.729338842975206,
+      "sample": [
+        12,
+        11
+      ],
+      "group": "corners",
+      "market": "Угловые ТБ 8.5",
+      "selected": false
+    },
+    {
+      "league": "POR_1_primeira-liga",
+      "date": "2026-12-05",
       "home": "Santa Clara",
       "away": "FC Porto",
-      "p": 0.5385588985074685,
-      "baseline": 0.51,
+      "p": 0.5412020421355317,
+      "baseline": 0.5148514851485149,
       "expected": 9.297520661157025,
       "sample": [
         11,
@@ -7677,8 +7527,8 @@
       "date": "2026-12-05",
       "home": "SC Braga",
       "away": "FC Arouca",
-      "p": 0.4666123322642212,
-      "baseline": 0.51,
+      "p": 0.46927311724136506,
+      "baseline": 0.5148514851485149,
       "expected": 7.78099173553719,
       "sample": [
         11,
@@ -7693,8 +7543,8 @@
       "date": "2026-11-29",
       "home": "Sint-Truidense",
       "away": "Racing Genk",
-      "p": 0.6803026317190924,
-      "baseline": 0.6454545454545455,
+      "p": 0.682002522337169,
+      "baseline": 0.6486486486486487,
       "expected": 10.522727272727273,
       "sample": [
         12,
@@ -7709,8 +7559,8 @@
       "date": "2026-11-29",
       "home": "Antwerp",
       "away": "Anderlecht",
-      "p": 0.6647516283538686,
-      "baseline": 0.6454545454545455,
+      "p": 0.6664585038065518,
+      "baseline": 0.6486486486486487,
       "expected": 10.102272727272728,
       "sample": [
         12,
@@ -7725,8 +7575,8 @@
       "date": "2026-11-29",
       "home": "Standard Liege",
       "away": "Club Brugge",
-      "p": 0.7267852421086798,
-      "baseline": 0.6454545454545455,
+      "p": 0.7284600305774613,
+      "baseline": 0.6486486486486487,
       "expected": 12.003787878787879,
       "sample": [
         12,
@@ -7741,8 +7591,8 @@
       "date": "2026-11-29",
       "home": "Union St.-Gilloise",
       "away": "KAA Gent",
-      "p": 0.6768895378166193,
-      "baseline": 0.6454545454545455,
+      "p": 0.6785910209855998,
+      "baseline": 0.6486486486486487,
       "expected": 10.428030303030303,
       "sample": [
         12,
@@ -7757,8 +7607,8 @@
       "date": "2026-11-29",
       "home": "Çorum",
       "away": "Kocaelispor",
-      "p": 0.5836475307595416,
-      "baseline": 0.5818181818181818,
+      "p": 0.5774801139965428,
+      "baseline": 0.5714285714285714,
       "expected": 9.31969696969697,
       "sample": [
         12,
@@ -7773,8 +7623,8 @@
       "date": "2026-11-29",
       "home": "Eyüpspor",
       "away": "Istanbul Basaksehir",
-      "p": 0.5367856723622271,
-      "baseline": 0.5818181818181818,
+      "p": 0.5305420738425362,
+      "baseline": 0.5714285714285714,
       "expected": 8.305681818181817,
       "sample": [
         12,
@@ -7789,8 +7639,8 @@
       "date": "2026-11-29",
       "home": "Fenerbahçe",
       "away": "Erzurumspor",
-      "p": 0.5852720784561625,
-      "baseline": 0.5818181818181818,
+      "p": 0.5791082059964143,
+      "baseline": 0.5714285714285714,
       "expected": 9.356439393939395,
       "sample": [
         12,
@@ -7805,8 +7655,8 @@
       "date": "2026-11-30",
       "home": "Göztepe",
       "away": "Trabzonspor",
-      "p": 0.604055332827153,
-      "baseline": 0.5818181818181818,
+      "p": 0.5979367095771833,
+      "baseline": 0.5714285714285714,
       "expected": 9.792045454545454,
       "sample": [
         12,
@@ -7821,8 +7671,8 @@
       "date": "2026-11-30",
       "home": "Besiktas",
       "away": "Galatasaray",
-      "p": 0.6194354471674003,
-      "baseline": 0.5818181818181818,
+      "p": 0.613359675173741,
+      "baseline": 0.5714285714285714,
       "expected": 10.16628787878788,
       "sample": [
         12,
@@ -7837,12 +7687,12 @@
       "date": "2026-12-04",
       "home": "Galatasaray",
       "away": "Çaykur Rizespor",
-      "p": 0.6289015932722536,
-      "baseline": 0.5818181818181818,
-      "expected": 10.406250000000002,
+      "p": 0.6211870211320065,
+      "baseline": 0.5714285714285714,
+      "expected": 10.36351495726496,
       "sample": [
         12,
-        12
+        13
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -7853,11 +7703,11 @@
       "date": "2026-12-05",
       "home": "Konyaspor",
       "away": "Gaziantep",
-      "p": 0.5117650941304213,
-      "baseline": 0.5818181818181818,
-      "expected": 7.7875631313131315,
+      "p": 0.5036157941743573,
+      "baseline": 0.5714285714285714,
+      "expected": 7.7488344988344995,
       "sample": [
-        12,
+        13,
         12
       ],
       "group": "corners",
@@ -7869,12 +7719,12 @@
       "date": "2026-12-05",
       "home": "Amedspor",
       "away": "Alanyaspor",
-      "p": 0.5239254626369017,
-      "baseline": 0.5818181818181818,
-      "expected": 8.038194444444445,
+      "p": 0.5157955490680907,
+      "baseline": 0.5714285714285714,
+      "expected": 7.999465811965811,
       "sample": [
         12,
-        12
+        13
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -7885,8 +7735,8 @@
       "date": "2026-12-05",
       "home": "Istanbul Basaksehir",
       "away": "Fenerbahçe",
-      "p": 0.5882264807586736,
-      "baseline": 0.5818181818181818,
+      "p": 0.5820692054081854,
+      "baseline": 0.5714285714285714,
       "expected": 9.423611111111112,
       "sample": [
         12,
@@ -7981,8 +7831,8 @@
       "date": "2026-11-29",
       "home": "Swansea City",
       "away": "Cardiff City",
-      "p": 0.6636903677444036,
-      "baseline": 0.6650485436893204,
+      "p": 0.6646309630405198,
+      "baseline": 0.6666666666666666,
       "expected": 9.760180995475112,
       "sample": [
         17,
@@ -7997,8 +7847,8 @@
       "date": "2026-12-04",
       "home": "Sheffield United",
       "away": "West Ham United",
-      "p": 0.6870280877153665,
-      "baseline": 0.6650485436893204,
+      "p": 0.6879571547563621,
+      "baseline": 0.6666666666666666,
       "expected": 10.373949579831931,
       "sample": [
         17,
@@ -8013,8 +7863,8 @@
       "date": "2026-12-05",
       "home": "Bolton Wanderers",
       "away": "Blackburn Rovers",
-      "p": 0.7080284834552617,
-      "baseline": 0.6650485436893204,
+      "p": 0.7089456323549332,
+      "baseline": 0.6666666666666666,
       "expected": 10.983193277310924,
       "sample": [
         17,
@@ -8029,8 +7879,8 @@
       "date": "2026-12-05",
       "home": "Bristol City",
       "away": "Swansea City",
-      "p": 0.6913286959109664,
-      "baseline": 0.6650485436893204,
+      "p": 0.6922554422179672,
+      "baseline": 0.6666666666666666,
       "expected": 10.493697478991598,
       "sample": [
         17,
@@ -8045,11 +7895,11 @@
       "date": "2026-12-05",
       "home": "Middlesbrough",
       "away": "Derby County",
-      "p": 0.7030902328171269,
-      "baseline": 0.6650485436893204,
-      "expected": 10.834033613445376,
+      "p": 0.7045183875333794,
+      "baseline": 0.6666666666666666,
+      "expected": 10.849206349206348,
       "sample": [
-        17,
+        18,
         17
       ],
       "group": "corners",
@@ -8061,8 +7911,8 @@
       "date": "2026-12-05",
       "home": "Watford",
       "away": "Millwall",
-      "p": 0.6951786096631127,
-      "baseline": 0.6650485436893204,
+      "p": 0.6961032262731939,
+      "baseline": 0.6666666666666666,
       "expected": 10.602941176470587,
       "sample": [
         17,
@@ -8077,8 +7927,8 @@
       "date": "2026-12-05",
       "home": "Cardiff City",
       "away": "Lincoln City",
-      "p": 0.7321578329461282,
-      "baseline": 0.6650485436893204,
+      "p": 0.7330594323691357,
+      "baseline": 0.6666666666666666,
       "expected": 11.779411764705882,
       "sample": [
         17,
@@ -8093,8 +7943,8 @@
       "date": "2026-12-05",
       "home": "Charlton Athletic",
       "away": "Birmingham City",
-      "p": 0.6996768058578129,
-      "baseline": 0.6650485436893204,
+      "p": 0.70059887146666,
+      "baseline": 0.6666666666666666,
       "expected": 10.733193277310924,
       "sample": [
         17,
@@ -8109,8 +7959,8 @@
       "date": "2026-12-05",
       "home": "Norwich City",
       "away": "Wrexham",
-      "p": 0.6468847311067807,
-      "baseline": 0.6650485436893204,
+      "p": 0.6478325169334178,
+      "baseline": 0.6666666666666666,
       "expected": 9.34873949579832,
       "sample": [
         17,
@@ -8125,8 +7975,8 @@
       "date": "2026-12-05",
       "home": "Portsmouth",
       "away": "West Bromwich Albion",
-      "p": 0.7127008418613334,
-      "baseline": 0.6650485436893204,
+      "p": 0.7136151369942683,
+      "baseline": 0.6666666666666666,
       "expected": 11.128151260504202,
       "sample": [
         17,
@@ -8141,8 +7991,8 @@
       "date": "2026-12-05",
       "home": "Stoke City",
       "away": "Queens Park Rangers",
-      "p": 0.6555774974523367,
-      "baseline": 0.6650485436893204,
+      "p": 0.65652168020313,
+      "baseline": 0.6666666666666666,
       "expected": 9.558823529411764,
       "sample": [
         17,
@@ -8157,12 +8007,12 @@
       "date": "2026-12-05",
       "home": "Wolverhampton Wanderers",
       "away": "Southampton",
-      "p": 0.7056106673614313,
-      "baseline": 0.6650485436893204,
-      "expected": 10.90966386554622,
+      "p": 0.7069534865817235,
+      "baseline": 0.6666666666666666,
+      "expected": 10.92250233426704,
       "sample": [
         17,
-        17
+        18
       ],
       "group": "corners",
       "market": "Угловые ТБ 8.5",
@@ -8317,8 +8167,8 @@
       "date": "2026-11-29",
       "home": "Everton",
       "away": "Liverpool",
-      "p": 0.45436537813315553,
-      "baseline": 0.4732142857142857,
+      "p": 0.4510997681145711,
+      "baseline": 0.4690265486725664,
       "expected": 8.995454545454546,
       "sample": [
         11,
@@ -8333,8 +8183,8 @@
       "date": "2026-11-29",
       "home": "Brighton",
       "away": "Newcastle",
-      "p": 0.5029334211753158,
-      "baseline": 0.4732142857142857,
+      "p": 0.49971621342232453,
+      "baseline": 0.4690265486725664,
       "expected": 10.068181818181818,
       "sample": [
         11,
@@ -8349,8 +8199,8 @@
       "date": "2026-11-29",
       "home": "Crystal Palace",
       "away": "Hull",
-      "p": 0.5203276385800975,
-      "baseline": 0.4732142857142857,
+      "p": 0.5171429646123715,
+      "baseline": 0.4690265486725664,
       "expected": 10.468181818181819,
       "sample": [
         11,
@@ -8365,8 +8215,8 @@
       "date": "2026-11-29",
       "home": "Fulham",
       "away": "Bournemouth",
-      "p": 0.4838491935159258,
-      "baseline": 0.4732142857142857,
+      "p": 0.48060532860472327,
+      "baseline": 0.4690265486725664,
       "expected": 9.64090909090909,
       "sample": [
         11,
@@ -8381,8 +8231,8 @@
       "date": "2026-11-29",
       "home": "Sunderland",
       "away": "Spurs",
-      "p": 0.4718770252765106,
-      "baseline": 0.4732142857142857,
+      "p": 0.4686214153173779,
+      "baseline": 0.4690265486725664,
       "expected": 9.377272727272727,
       "sample": [
         11,
@@ -8397,8 +8247,8 @@
       "date": "2026-11-29",
       "home": "Arsenal",
       "away": "Man City",
-      "p": 0.5065323775018657,
-      "baseline": 0.4732142857142857,
+      "p": 0.5033212648220023,
+      "baseline": 0.4690265486725664,
       "expected": 10.149999999999999,
       "sample": [
         11,
@@ -8413,8 +8263,8 @@
       "date": "2026-12-01",
       "home": "Coventry",
       "away": "Ipswich",
-      "p": 0.44333857617346273,
-      "baseline": 0.4732142857142857,
+      "p": 0.44007121047015485,
+      "baseline": 0.4690265486725664,
       "expected": 8.756198347107437,
       "sample": [
         11,
@@ -8429,11 +8279,11 @@
       "date": "2026-12-02",
       "home": "Chelsea",
       "away": "Crystal Palace",
-      "p": 0.5133282426658274,
-      "baseline": 0.4732142857142857,
-      "expected": 10.305785123966942,
+      "p": 0.5041136696981293,
+      "baseline": 0.4690265486725664,
+      "expected": 10.168044077134986,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -8445,12 +8295,12 @@
       "date": "2026-12-02",
       "home": "Hull",
       "away": "Nott'm Forest",
-      "p": 0.45666645769304737,
-      "baseline": 0.4732142857142857,
-      "expected": 9.045454545454545,
+      "p": 0.4481681342010714,
+      "baseline": 0.4690265486725664,
+      "expected": 8.931818181818182,
       "sample": [
         11,
-        11
+        12
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -8461,8 +8311,8 @@
       "date": "2026-12-02",
       "home": "Liverpool",
       "away": "Sunderland",
-      "p": 0.4832704661880162,
-      "baseline": 0.4732142857142857,
+      "p": 0.4800259440067369,
+      "baseline": 0.4690265486725664,
       "expected": 9.62809917355372,
       "sample": [
         11,
@@ -8477,8 +8327,8 @@
       "date": "2026-12-02",
       "home": "Man City",
       "away": "Leeds",
-      "p": 0.454194158671969,
-      "baseline": 0.4732142857142857,
+      "p": 0.45092849410127,
+      "baseline": 0.4690265486725664,
       "expected": 8.991735537190081,
       "sample": [
         11,
@@ -8493,8 +8343,8 @@
       "date": "2026-12-02",
       "home": "Aston Villa",
       "away": "Everton",
-      "p": 0.4953288424358933,
-      "baseline": 0.4732142857142857,
+      "p": 0.4920998625423687,
+      "baseline": 0.4690265486725664,
       "expected": 9.896694214876034,
       "sample": [
         11,
@@ -8509,8 +8359,8 @@
       "date": "2026-12-02",
       "home": "Bournemouth",
       "away": "Brighton",
-      "p": 0.456096100947362,
-      "baseline": 0.4732142857142857,
+      "p": 0.4528310900563236,
+      "baseline": 0.4690265486725664,
       "expected": 9.03305785123967,
       "sample": [
         11,
@@ -8525,8 +8375,8 @@
       "date": "2026-12-02",
       "home": "Brentford",
       "away": "Arsenal",
-      "p": 0.48383053013459115,
-      "baseline": 0.4732142857142857,
+      "p": 0.48058664388644856,
+      "baseline": 0.4690265486725664,
       "expected": 9.640495867768594,
       "sample": [
         11,
@@ -8541,8 +8391,8 @@
       "date": "2026-12-02",
       "home": "Newcastle",
       "away": "Man Utd",
-      "p": 0.5104534252686976,
-      "baseline": 0.4732142857142857,
+      "p": 0.5072493329514409,
+      "baseline": 0.4690265486725664,
       "expected": 10.239669421487603,
       "sample": [
         11,
@@ -8557,8 +8407,8 @@
       "date": "2026-12-03",
       "home": "Spurs",
       "away": "Fulham",
-      "p": 0.569762672747437,
-      "baseline": 0.4732142857142857,
+      "p": 0.566711811272513,
+      "baseline": 0.4690265486725664,
       "expected": 11.694214876033058,
       "sample": [
         11,
@@ -8573,11 +8423,11 @@
       "date": "2026-12-05",
       "home": "Chelsea",
       "away": "Liverpool",
-      "p": 0.498435271905794,
-      "baseline": 0.4732142857142857,
-      "expected": 9.966528925619834,
+      "p": 0.4890629559283881,
+      "baseline": 0.4690265486725664,
+      "expected": 9.828787878787878,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -8589,8 +8439,8 @@
       "date": "2026-12-05",
       "home": "Aston Villa",
       "away": "Crystal Palace",
-      "p": 0.4723860678220706,
-      "baseline": 0.4732142857142857,
+      "p": 0.4691308773469959,
+      "baseline": 0.4690265486725664,
       "expected": 9.388429752066116,
       "sample": [
         11,
@@ -8605,8 +8455,8 @@
       "date": "2026-12-05",
       "home": "Bournemouth",
       "away": "Hull",
-      "p": 0.48412910203170567,
-      "baseline": 0.4732142857142857,
+      "p": 0.4808855582500573,
+      "baseline": 0.4690265486725664,
       "expected": 9.64710743801653,
       "sample": [
         11,
@@ -8621,8 +8471,8 @@
       "date": "2026-12-05",
       "home": "Leeds",
       "away": "Ipswich",
-      "p": 0.4400611170510481,
-      "baseline": 0.4732142857142857,
+      "p": 0.4367939282985388,
+      "baseline": 0.4690265486725664,
       "expected": 8.685123966942147,
       "sample": [
         11,
@@ -8637,8 +8487,8 @@
       "date": "2026-12-05",
       "home": "Man Utd",
       "away": "Coventry",
-      "p": 0.4691779593164875,
-      "baseline": 0.4732142857142857,
+      "p": 0.465920245140223,
+      "baseline": 0.4690265486725664,
       "expected": 9.318181818181818,
       "sample": [
         11,
@@ -8653,11 +8503,11 @@
       "date": "2026-12-05",
       "home": "Nott'm Forest",
       "away": "Brighton",
-      "p": 0.4722729634773906,
-      "baseline": 0.4732142857142857,
-      "expected": 9.38595041322314,
+      "p": 0.4504526940633007,
+      "baseline": 0.4690265486725664,
+      "expected": 8.981404958677686,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -8669,8 +8519,8 @@
       "date": "2026-12-05",
       "home": "Brentford",
       "away": "Man City",
-      "p": 0.5024411402842655,
-      "baseline": 0.4732142857142857,
+      "p": 0.4992231248760335,
+      "baseline": 0.4690265486725664,
       "expected": 10.057024793388429,
       "sample": [
         11,
@@ -8685,8 +8535,8 @@
       "date": "2026-11-29",
       "home": "Valencia CF",
       "away": "CA Osasuna",
-      "p": 0.46917587522588694,
-      "baseline": 0.5114503816793893,
+      "p": 0.47166708766326504,
+      "baseline": 0.5151515151515151,
       "expected": 8.819638694638694,
       "sample": [
         13,
@@ -8701,8 +8551,8 @@
       "date": "2026-11-29",
       "home": "RC Deportivo",
       "away": "FC Barcelona",
-      "p": 0.4683029966378717,
-      "baseline": 0.5114503816793893,
+      "p": 0.4707943087496307,
+      "baseline": 0.5151515151515151,
       "expected": 8.8006993006993,
       "sample": [
         13,
@@ -8717,8 +8567,8 @@
       "date": "2026-11-29",
       "home": "Celta",
       "away": "Villarreal CF",
-      "p": 0.5088427801556783,
-      "baseline": 0.5114503816793893,
+      "p": 0.5113170524193799,
+      "baseline": 0.5151515151515151,
       "expected": 9.689102564102564,
       "sample": [
         13,
@@ -8733,8 +8583,8 @@
       "date": "2026-11-29",
       "home": "Real Sociedad",
       "away": "Sevilla FC",
-      "p": 0.49444319582642793,
-      "baseline": 0.5114503816793893,
+      "p": 0.49692635976128513,
+      "baseline": 0.5151515151515151,
       "expected": 9.37062937062937,
       "sample": [
         13,
@@ -8749,8 +8599,8 @@
       "date": "2026-11-30",
       "home": "RCD Espanyol de Barcelona",
       "away": "Getafe CF",
-      "p": 0.4629831446032189,
-      "baseline": 0.5114503816793893,
+      "p": 0.46547479836621797,
+      "baseline": 0.5151515151515151,
       "expected": 8.685314685314685,
       "sample": [
         13,
@@ -8765,8 +8615,8 @@
       "date": "2026-12-02",
       "home": "Real Sociedad",
       "away": "Real Madrid",
-      "p": 0.5564056666571637,
-      "baseline": 0.5114503816793893,
+      "p": 0.5588296837349844,
+      "baseline": 0.5151515151515151,
       "expected": 10.789044289044291,
       "sample": [
         13,
@@ -8781,8 +8631,8 @@
       "date": "2026-12-02",
       "home": "FC Barcelona",
       "away": "Atlético de Madrid",
-      "p": 0.5407622706526425,
-      "baseline": 0.5114503816793893,
+      "p": 0.5432062654868206,
+      "baseline": 0.5151515151515151,
       "expected": 10.416666666666666,
       "sample": [
         13,
@@ -8797,8 +8647,8 @@
       "date": "2026-12-04",
       "home": "Deportivo Alavés",
       "away": "RCD Espanyol de Barcelona",
-      "p": 0.4874759892904171,
-      "baseline": 0.5114503816793893,
+      "p": 0.48996235113870534,
+      "baseline": 0.5151515151515151,
       "expected": 9.217948717948719,
       "sample": [
         13,
@@ -8813,11 +8663,11 @@
       "date": "2026-12-05",
       "home": "R. Racing Club",
       "away": "RC Deportivo",
-      "p": 0.6070362276604861,
-      "baseline": 0.5114503816793893,
-      "expected": 12.112179487179487,
+      "p": 0.6098925142799574,
+      "baseline": 0.5151515151515151,
+      "expected": 12.12706043956044,
       "sample": [
-        13,
+        14,
         13
       ],
       "group": "corners",
@@ -8829,12 +8679,12 @@
       "date": "2026-12-05",
       "home": "Rayo Vallecano",
       "away": "Levante UD",
-      "p": 0.49472166195378847,
-      "baseline": 0.5114503816793893,
-      "expected": 9.376748251748252,
+      "p": 0.5011546669269379,
+      "baseline": 0.5151515151515151,
+      "expected": 9.46374458874459,
       "sample": [
         12,
-        13
+        14
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -8845,8 +8695,8 @@
       "date": "2026-12-05",
       "home": "Villarreal CF",
       "away": "Real Sociedad",
-      "p": 0.596828048561943,
-      "baseline": 0.5114503816793893,
+      "p": 0.5991852370007403,
+      "baseline": 0.5151515151515151,
       "expected": 11.826631701631703,
       "sample": [
         13,
@@ -8861,8 +8711,8 @@
       "date": "2026-12-05",
       "home": "FC Barcelona",
       "away": "Celta",
-      "p": 0.5059743364249997,
-      "baseline": 0.5114503816793893,
+      "p": 0.5084506217994138,
+      "baseline": 0.5151515151515151,
       "expected": 9.625291375291374,
       "sample": [
         13,
@@ -8877,8 +8727,8 @@
       "date": "2026-11-29",
       "home": "SC Freiburg",
       "away": "RB Leipzig",
-      "p": 0.5657145720502237,
-      "baseline": 0.5760869565217391,
+      "p": 0.5681250830049178,
+      "baseline": 0.5806451612903226,
       "expected": 10.0,
       "sample": [
         10,
@@ -8893,8 +8743,8 @@
       "date": "2026-11-29",
       "home": "TSG Hoffenheim",
       "away": "FC Augsburg",
-      "p": 0.5731215482622516,
-      "baseline": 0.5760869565217391,
+      "p": 0.5755302521350978,
+      "baseline": 0.5806451612903226,
       "expected": 10.17222222222222,
       "sample": [
         10,
@@ -8909,8 +8759,8 @@
       "date": "2026-11-29",
       "home": "Borussia Dortmund",
       "away": "Bayer 04 Leverkusen",
-      "p": 0.572171623003251,
-      "baseline": 0.5760869565217391,
+      "p": 0.5745805678478035,
+      "baseline": 0.5806451612903226,
       "expected": 10.15,
       "sample": [
         10,
@@ -8925,8 +8775,8 @@
       "date": "2026-12-04",
       "home": "FC Bayern München",
       "away": "SC Paderborn 07",
-      "p": 0.5848409913776602,
-      "baseline": 0.5760869565217391,
+      "p": 0.5872465009115218,
+      "baseline": 0.5806451612903226,
       "expected": 10.45,
       "sample": [
         10,
@@ -8941,8 +8791,8 @@
       "date": "2026-12-05",
       "home": "1. FC Union Berlin",
       "away": "Hamburger SV",
-      "p": 0.5416477421557935,
-      "baseline": 0.5760869565217391,
+      "p": 0.5440629687774745,
+      "baseline": 0.5806451612903226,
       "expected": 9.454545454545453,
       "sample": [
         10,
@@ -8957,12 +8807,12 @@
       "date": "2026-12-05",
       "home": "Bayer 04 Leverkusen",
       "away": "Borussia Mönchengladbach",
-      "p": 0.6100493985065076,
-      "baseline": 0.5760869565217391,
-      "expected": 11.075000000000001,
+      "p": 0.6124707917764709,
+      "baseline": 0.5806451612903226,
+      "expected": 11.075619834710745,
       "sample": [
         10,
-        10
+        11
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -8973,8 +8823,8 @@
       "date": "2026-12-05",
       "home": "FC Augsburg",
       "away": "1. FC Köln",
-      "p": 0.5641377761737316,
-      "baseline": 0.5760869565217391,
+      "p": 0.5665486504533499,
+      "baseline": 0.5806451612903226,
       "expected": 9.963636363636363,
       "sample": [
         10,
@@ -8989,8 +8839,8 @@
       "date": "2026-12-05",
       "home": "RB Leipzig",
       "away": "1. FSV Mainz 05",
-      "p": 0.5700279001565316,
-      "baseline": 0.5760869565217391,
+      "p": 0.5724373788605592,
+      "baseline": 0.5806451612903226,
       "expected": 10.1,
       "sample": [
         10,
@@ -9005,8 +8855,8 @@
       "date": "2026-12-05",
       "home": "SC Freiburg",
       "away": "TSG Hoffenheim",
-      "p": 0.5657145720502237,
-      "baseline": 0.5760869565217391,
+      "p": 0.5681250830049178,
+      "baseline": 0.5806451612903226,
       "expected": 10.0,
       "sample": [
         10,
@@ -9021,12 +8871,12 @@
       "date": "2026-12-05",
       "home": "Eintracht Frankfurt",
       "away": "SV Werder Bremen",
-      "p": 0.5951271379984158,
-      "baseline": 0.5760869565217391,
-      "expected": 10.700000000000001,
+      "p": 0.5986354112951666,
+      "baseline": 0.5806451612903226,
+      "expected": 10.727272727272727,
       "sample": [
         10,
-        10
+        11
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -9037,8 +8887,8 @@
       "date": "2026-11-29",
       "home": "Udinese",
       "away": "Fiorentina",
-      "p": 0.4707654919662018,
-      "baseline": 0.47540983606557374,
+      "p": 0.46870747164943494,
+      "baseline": 0.4715447154471545,
       "expected": 9.25,
       "sample": [
         12,
@@ -9053,8 +8903,8 @@
       "date": "2026-11-29",
       "home": "Sassuolo",
       "away": "Napoli",
-      "p": 0.5008207199642952,
-      "baseline": 0.47540983606557374,
+      "p": 0.4987665160010433,
+      "baseline": 0.4715447154471545,
       "expected": 9.916666666666666,
       "sample": [
         12,
@@ -9069,8 +8919,8 @@
       "date": "2026-11-29",
       "home": "Roma",
       "away": "Monza",
-      "p": 0.4743964121486374,
-      "baseline": 0.47540983606557374,
+      "p": 0.4723387130445008,
+      "baseline": 0.4715447154471545,
       "expected": 9.329545454545455,
       "sample": [
         12,
@@ -9085,8 +8935,8 @@
       "date": "2026-11-29",
       "home": "Como",
       "away": "Juventus",
-      "p": 0.5571363607823036,
-      "baseline": 0.47540983606557374,
+      "p": 0.5550960549757814,
+      "baseline": 0.4715447154471545,
       "expected": 11.257954545454544,
       "sample": [
         12,
@@ -9101,8 +8951,8 @@
       "date": "2026-11-30",
       "home": "Lecce",
       "away": "Atalanta",
-      "p": 0.46790641935713106,
-      "baseline": 0.47540983606557374,
+      "p": 0.46584817386677596,
+      "baseline": 0.4715447154471545,
       "expected": 9.1875,
       "sample": [
         12,
@@ -9117,8 +8967,8 @@
       "date": "2026-11-30",
       "home": "Cagliari",
       "away": "Milan",
-      "p": 0.4557820155906394,
-      "baseline": 0.47540983606557374,
+      "p": 0.453723091545762,
+      "baseline": 0.4715447154471545,
       "expected": 8.923484848484849,
       "sample": [
         12,
@@ -9133,11 +8983,11 @@
       "date": "2026-12-04",
       "home": "Bologna",
       "away": "Roma",
-      "p": 0.5011563315417451,
-      "baseline": 0.47540983606557374,
-      "expected": 9.924242424242426,
+      "p": 0.4983919306657811,
+      "baseline": 0.4715447154471545,
+      "expected": 9.908216783216783,
       "sample": [
-        12,
+        13,
         12
       ],
       "group": "corners",
@@ -9149,8 +8999,8 @@
       "date": "2026-12-05",
       "home": "Monza",
       "away": "Como",
-      "p": 0.4858951879603667,
-      "baseline": 0.47540983606557374,
+      "p": 0.48383876251233854,
+      "baseline": 0.4715447154471545,
       "expected": 9.583017676767676,
       "sample": [
         12,
@@ -9165,8 +9015,8 @@
       "date": "2026-12-05",
       "home": "Frosinone",
       "away": "Internazionale",
-      "p": 0.5553327866096586,
-      "baseline": 0.47540983606557374,
+      "p": 0.5532919041784379,
+      "baseline": 0.4715447154471545,
       "expected": 11.212121212121211,
       "sample": [
         12,
@@ -9181,8 +9031,8 @@
       "date": "2026-12-05",
       "home": "Napoli",
       "away": "Lecce",
-      "p": 0.5092307509170733,
-      "baseline": 0.47540983606557374,
+      "p": 0.5071780749202852,
+      "baseline": 0.4715447154471545,
       "expected": 10.10763888888889,
       "sample": [
         12,
@@ -9197,8 +9047,8 @@
       "date": "2026-11-29",
       "home": "AJ Auxerre",
       "away": "Olympique de Marseille",
-      "p": 0.46111054142564656,
-      "baseline": 0.44554455445544555,
+      "p": 0.45871165136069203,
+      "baseline": 0.4411764705882353,
       "expected": 9.654545454545454,
       "sample": [
         11,
@@ -9213,8 +9063,8 @@
       "date": "2026-11-29",
       "home": "Toulouse FC",
       "away": "Stade Rennais FC",
-      "p": 0.48584491764841875,
-      "baseline": 0.44554455445544555,
+      "p": 0.4834517453472762,
+      "baseline": 0.4411764705882353,
       "expected": 10.204545454545453,
       "sample": [
         11,
@@ -9229,8 +9079,8 @@
       "date": "2026-11-29",
       "home": "Olympique Lyonnais",
       "away": "AS Monaco",
-      "p": 0.4560778952064901,
-      "baseline": 0.44554455445544555,
+      "p": 0.45367821662352864,
+      "baseline": 0.4411764705882353,
       "expected": 9.544214876033058,
       "sample": [
         11,
@@ -9245,8 +9095,8 @@
       "date": "2026-12-04",
       "home": "Toulouse FC",
       "away": "Paris Saint-Germain",
-      "p": 0.3970088152921525,
-      "baseline": 0.44554455445544555,
+      "p": 0.39461017489108186,
+      "baseline": 0.4411764705882353,
       "expected": 8.258333333333333,
       "sample": [
         11,
@@ -9261,8 +9111,8 @@
       "date": "2026-12-05",
       "home": "LOSC Lille",
       "away": "AJ Auxerre",
-      "p": 0.4599059235305387,
-      "baseline": 0.44554455445544555,
+      "p": 0.45750683295362454,
+      "baseline": 0.4411764705882353,
       "expected": 9.628099173553718,
       "sample": [
         11,
@@ -9277,8 +9127,8 @@
       "date": "2026-12-05",
       "home": "AS Monaco",
       "away": "Angers SCO",
-      "p": 0.46544862496273354,
-      "baseline": 0.44554455445544555,
+      "p": 0.4630505178954203,
+      "baseline": 0.4411764705882353,
       "expected": 9.75,
       "sample": [
         11,
@@ -9293,11 +9143,11 @@
       "date": "2026-12-05",
       "home": "Paris FC",
       "away": "Le Mans FC",
-      "p": 0.3750060940989409,
-      "baseline": 0.44554455445544555,
-      "expected": 7.768595041322314,
+      "p": 0.37307050556602067,
+      "baseline": 0.4411764705882353,
+      "expected": 7.778925619834711,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -9309,8 +9159,8 @@
       "date": "2026-12-05",
       "home": "RC Lens",
       "away": "Havre Athletic Club",
-      "p": 0.46424833655997444,
-      "baseline": 0.44554455445544555,
+      "p": 0.46185000334010956,
+      "baseline": 0.4411764705882353,
       "expected": 9.723553719008263,
       "sample": [
         11,
@@ -9325,8 +9175,8 @@
       "date": "2026-12-05",
       "home": "RC Strasbourg Alsace",
       "away": "FC Lorient",
-      "p": 0.394152598071948,
-      "baseline": 0.44554455445544555,
+      "p": 0.39175452731472554,
+      "baseline": 0.4411764705882353,
       "expected": 8.195454545454545,
       "sample": [
         11,
@@ -9341,8 +9191,8 @@
       "date": "2026-11-29",
       "home": "ADO Den Haag",
       "away": "FC Utrecht",
-      "p": 0.4941707583040842,
-      "baseline": 0.5210084033613446,
+      "p": 0.49148075104632943,
+      "baseline": 0.5166666666666667,
       "expected": 9.111888111888112,
       "sample": [
         13,
@@ -9357,8 +9207,8 @@
       "date": "2026-11-29",
       "home": "Feyenoord",
       "away": "Ajax",
-      "p": 0.557219173745908,
-      "baseline": 0.5210084033613446,
+      "p": 0.5545746953760389,
+      "baseline": 0.5166666666666667,
       "expected": 10.545454545454545,
       "sample": [
         13,
@@ -9373,8 +9223,8 @@
       "date": "2026-11-29",
       "home": "Fortuna Sittard",
       "away": "sc Heerenveen",
-      "p": 0.565441983746674,
-      "baseline": 0.5210084033613446,
+      "p": 0.5628067763744187,
+      "baseline": 0.5166666666666667,
       "expected": 10.744755244755243,
       "sample": [
         13,
@@ -9389,8 +9239,8 @@
       "date": "2026-11-29",
       "home": "PEC Zwolle",
       "away": "AZ",
-      "p": 0.5765362809537298,
-      "baseline": 0.5210084033613446,
+      "p": 0.5739147626295714,
+      "baseline": 0.5166666666666667,
       "expected": 11.02039627039627,
       "sample": [
         13,
@@ -9405,8 +9255,8 @@
       "date": "2026-11-29",
       "home": "N.E.C. Nijmegen",
       "away": "FC Twente",
-      "p": 0.5373874412599962,
-      "baseline": 0.5210084033613446,
+      "p": 0.5347237030415501,
+      "baseline": 0.5166666666666667,
       "expected": 10.079254079254081,
       "sample": [
         13,
@@ -9421,12 +9271,12 @@
       "date": "2026-12-04",
       "home": "Telstar",
       "away": "FC Groningen",
-      "p": 0.547749447058806,
-      "baseline": 0.5210084033613446,
-      "expected": 10.320512820512821,
+      "p": 0.5434447944362206,
+      "baseline": 0.5166666666666667,
+      "expected": 10.28180153180153,
       "sample": [
         13,
-        13
+        14
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -9437,11 +9287,11 @@
       "date": "2026-12-05",
       "home": "Willem II",
       "away": "Feyenoord",
-      "p": 0.5416793417586965,
-      "baseline": 0.5210084033613446,
-      "expected": 10.178613053613052,
+      "p": 0.5364859258810626,
+      "baseline": 0.5166666666666667,
+      "expected": 10.119921744921745,
       "sample": [
-        13,
+        14,
         13
       ],
       "group": "corners",
@@ -9453,8 +9303,8 @@
       "date": "2026-12-05",
       "home": "Sparta Rotterdam",
       "away": "N.E.C. Nijmegen",
-      "p": 0.5549798199232893,
-      "baseline": 0.5210084033613446,
+      "p": 0.552332946500075,
+      "baseline": 0.5166666666666667,
       "expected": 10.491841491841491,
       "sample": [
         13,
@@ -9469,8 +9319,8 @@
       "date": "2026-12-05",
       "home": "AZ",
       "away": "PSV",
-      "p": 0.5014591056038182,
-      "baseline": 0.5210084033613446,
+      "p": 0.498771967762314,
+      "baseline": 0.5166666666666667,
       "expected": 9.271853146853148,
       "sample": [
         13,
@@ -9485,8 +9335,8 @@
       "date": "2026-12-05",
       "home": "Fortuna Sittard",
       "away": "PEC Zwolle",
-      "p": 0.5988488953520876,
-      "baseline": 0.5210084033613446,
+      "p": 0.5962589885755755,
+      "baseline": 0.5166666666666667,
       "expected": 11.603438228438229,
       "sample": [
         13,
@@ -9501,8 +9351,8 @@
       "date": "2026-11-29",
       "home": "Gil Vicente FC",
       "away": "Estoril Praia",
-      "p": 0.3860677771487997,
-      "baseline": 0.43,
+      "p": 0.38910793555183276,
+      "baseline": 0.43564356435643564,
       "expected": 8.27995867768595,
       "sample": [
         11,
@@ -9517,8 +9367,8 @@
       "date": "2026-11-29",
       "home": "FC Porto",
       "away": "Sporting CP",
-      "p": 0.4211736555412553,
-      "baseline": 0.43,
+      "p": 0.42421747488679906,
+      "baseline": 0.43564356435643564,
       "expected": 9.045454545454545,
       "sample": [
         11,
@@ -9533,8 +9383,8 @@
       "date": "2026-11-30",
       "home": "Casa Pia AC",
       "away": "SC Braga",
-      "p": 0.40541301496623705,
-      "baseline": 0.43,
+      "p": 0.4084561140543107,
+      "baseline": 0.43564356435643564,
       "expected": 8.703305785123966,
       "sample": [
         11,
@@ -9549,8 +9399,8 @@
       "date": "2026-11-30",
       "home": "SL Benfica",
       "away": "FC Famalicão",
-      "p": 0.4837954955108361,
-      "baseline": 0.43,
+      "p": 0.48682882371174774,
+      "baseline": 0.43564356435643564,
       "expected": 10.425619834710742,
       "sample": [
         11,
@@ -9565,25 +9415,9 @@
       "date": "2026-12-04",
       "home": "Sporting CP",
       "away": "Marítimo M.",
-      "p": 0.3744861726375357,
-      "baseline": 0.43,
-      "expected": 8.02293388429752,
-      "sample": [
-        11,
-        10
-      ],
-      "group": "corners",
-      "market": "Угловые ТБ 9.5",
-      "selected": false
-    },
-    {
-      "league": "POR_1_primeira-liga",
-      "date": "2026-12-05",
-      "home": "CD Nacional",
-      "away": "SL Benfica",
-      "p": 0.4061348518398755,
-      "baseline": 0.43,
-      "expected": 8.71900826446281,
+      "p": 0.3798664728449199,
+      "baseline": 0.43564356435643564,
+      "expected": 8.075206611570248,
       "sample": [
         11,
         11
@@ -9595,10 +9429,26 @@
     {
       "league": "POR_1_primeira-liga",
       "date": "2026-12-05",
+      "home": "CD Nacional",
+      "away": "SL Benfica",
+      "p": 0.40965306398519674,
+      "baseline": 0.43564356435643564,
+      "expected": 8.729338842975206,
+      "sample": [
+        12,
+        11
+      ],
+      "group": "corners",
+      "market": "Угловые ТБ 9.5",
+      "selected": false
+    },
+    {
+      "league": "POR_1_primeira-liga",
+      "date": "2026-12-05",
       "home": "Santa Clara",
       "away": "FC Porto",
-      "p": 0.432791124865463,
-      "baseline": 0.43,
+      "p": 0.4358345661650508,
+      "baseline": 0.43564356435643564,
       "expected": 9.297520661157025,
       "sample": [
         11,
@@ -9613,8 +9463,8 @@
       "date": "2026-12-05",
       "home": "SC Braga",
       "away": "FC Arouca",
-      "p": 0.36374716019611,
-      "baseline": 0.43,
+      "p": 0.3667808645949492,
+      "baseline": 0.43564356435643564,
       "expected": 7.78099173553719,
       "sample": [
         11,
@@ -9629,8 +9479,8 @@
       "date": "2026-11-29",
       "home": "Sint-Truidense",
       "away": "Racing Genk",
-      "p": 0.557361574045768,
-      "baseline": 0.5181818181818182,
+      "p": 0.5596513048505312,
+      "baseline": 0.5225225225225225,
       "expected": 10.522727272727273,
       "sample": [
         12,
@@ -9645,8 +9495,8 @@
       "date": "2026-11-29",
       "home": "Antwerp",
       "away": "Anderlecht",
-      "p": 0.539568297926433,
-      "baseline": 0.5181818181818182,
+      "p": 0.5418625454758246,
+      "baseline": 0.5225225225225225,
       "expected": 10.102272727272728,
       "sample": [
         12,
@@ -9661,8 +9511,8 @@
       "date": "2026-11-29",
       "home": "Standard Liege",
       "away": "Club Brugge",
-      "p": 0.6138675651752312,
-      "baseline": 0.5181818181818182,
+      "p": 0.6161371114388152,
+      "baseline": 0.5225225225225225,
       "expected": 12.003787878787879,
       "sample": [
         12,
@@ -9677,8 +9527,8 @@
       "date": "2026-11-29",
       "home": "Union St.-Gilloise",
       "away": "KAA Gent",
-      "p": 0.5534125349597289,
-      "baseline": 0.5181818181818182,
+      "p": 0.5557033452736568,
+      "baseline": 0.5225225225225225,
       "expected": 10.428030303030303,
       "sample": [
         12,
@@ -9693,8 +9543,8 @@
       "date": "2026-11-29",
       "home": "Çorum",
       "away": "Kocaelispor",
-      "p": 0.46358539354267436,
-      "baseline": 0.4727272727272727,
+      "p": 0.458358441949645,
+      "baseline": 0.4642857142857143,
       "expected": 9.31969696969697,
       "sample": [
         12,
@@ -9709,8 +9559,8 @@
       "date": "2026-11-29",
       "home": "Eyüpspor",
       "away": "Istanbul Basaksehir",
-      "p": 0.4169378796022807,
-      "baseline": 0.4727272727272727,
+      "p": 0.4117148334422774,
+      "baseline": 0.4642857142857143,
       "expected": 8.305681818181817,
       "sample": [
         12,
@@ -9725,8 +9575,8 @@
       "date": "2026-11-29",
       "home": "Fenerbahçe",
       "away": "Erzurumspor",
-      "p": 0.465269703711524,
-      "baseline": 0.4727272727272727,
+      "p": 0.46004364937973735,
+      "baseline": 0.4642857142857143,
       "expected": 9.356439393939395,
       "sample": [
         12,
@@ -9741,8 +9591,8 @@
       "date": "2026-11-30",
       "home": "Göztepe",
       "away": "Trabzonspor",
-      "p": 0.48508644178737137,
-      "baseline": 0.4727272727272727,
+      "p": 0.47987602800241025,
+      "baseline": 0.4642857142857143,
       "expected": 9.792045454545454,
       "sample": [
         12,
@@ -9757,8 +9607,8 @@
       "date": "2026-11-30",
       "home": "Besiktas",
       "away": "Galatasaray",
-      "p": 0.5017974840639057,
-      "baseline": 0.4727272727272727,
+      "p": 0.49660733151693726,
+      "baseline": 0.4642857142857143,
       "expected": 10.16628787878788,
       "sample": [
         12,
@@ -9773,12 +9623,12 @@
       "date": "2026-12-04",
       "home": "Galatasaray",
       "away": "Çaykur Rizespor",
-      "p": 0.5123094957368113,
-      "baseline": 0.4727272727272727,
-      "expected": 10.406250000000002,
+      "p": 0.5052732547807839,
+      "baseline": 0.4642857142857143,
+      "expected": 10.36351495726496,
       "sample": [
         12,
-        12
+        13
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -9789,11 +9639,11 @@
       "date": "2026-12-05",
       "home": "Konyaspor",
       "away": "Gaziantep",
-      "p": 0.39351159624101695,
-      "baseline": 0.4727272727272727,
-      "expected": 7.7875631313131315,
+      "p": 0.38659090032286697,
+      "baseline": 0.4642857142857143,
+      "expected": 7.7488344988344995,
       "sample": [
-        12,
+        13,
         12
       ],
       "group": "corners",
@@ -9805,12 +9655,12 @@
       "date": "2026-12-05",
       "home": "Amedspor",
       "away": "Alanyaspor",
-      "p": 0.40477122872220084,
-      "baseline": 0.4727272727272727,
-      "expected": 8.038194444444445,
+      "p": 0.39781103406061746,
+      "baseline": 0.4642857142857143,
+      "expected": 7.999465811965811,
       "sample": [
         12,
-        12
+        13
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -9821,8 +9671,8 @@
       "date": "2026-12-05",
       "home": "Istanbul Basaksehir",
       "away": "Fenerbahçe",
-      "p": 0.4683447228448996,
-      "baseline": 0.4727272727272727,
+      "p": 0.46312048372971276,
+      "baseline": 0.4642857142857143,
       "expected": 9.423611111111112,
       "sample": [
         12,
@@ -9917,8 +9767,8 @@
       "date": "2026-11-29",
       "home": "Swansea City",
       "away": "Cardiff City",
-      "p": 0.5523281019778038,
-      "baseline": 0.5679611650485437,
+      "p": 0.5535172130607688,
+      "baseline": 0.5700483091787439,
       "expected": 9.760180995475112,
       "sample": [
         17,
@@ -9933,8 +9783,8 @@
       "date": "2026-12-04",
       "home": "Sheffield United",
       "away": "West Ham United",
-      "p": 0.5786962619775156,
-      "baseline": 0.5679611650485437,
+      "p": 0.5798783460930439,
+      "baseline": 0.5700483091787439,
       "expected": 10.373949579831931,
       "sample": [
         17,
@@ -9949,8 +9799,8 @@
       "date": "2026-12-05",
       "home": "Bolton Wanderers",
       "away": "Blackburn Rovers",
-      "p": 0.6034213942887203,
-      "baseline": 0.5679611650485437,
+      "p": 0.6045948441113862,
+      "baseline": 0.5700483091787439,
       "expected": 10.983193277310924,
       "sample": [
         17,
@@ -9965,8 +9815,8 @@
       "date": "2026-12-05",
       "home": "Bristol City",
       "away": "Swansea City",
-      "p": 0.5836794914310982,
-      "baseline": 0.5679611650485437,
+      "p": 0.5848599930077534,
+      "baseline": 0.5700483091787439,
       "expected": 10.493697478991598,
       "sample": [
         17,
@@ -9981,11 +9831,11 @@
       "date": "2026-12-05",
       "home": "Middlesbrough",
       "away": "Derby County",
-      "p": 0.5975170043630007,
-      "baseline": 0.5679611650485437,
-      "expected": 10.834033613445376,
+      "p": 0.5992976611885976,
+      "baseline": 0.5700483091787439,
+      "expected": 10.849206349206348,
       "sample": [
-        17,
+        18,
         17
       ],
       "group": "corners",
@@ -9997,8 +9847,8 @@
       "date": "2026-12-05",
       "home": "Watford",
       "away": "Millwall",
-      "p": 0.5881747821359858,
-      "baseline": 0.5679611650485437,
+      "p": 0.5893537875927746,
+      "baseline": 0.5700483091787439,
       "expected": 10.602941176470587,
       "sample": [
         17,
@@ -10013,8 +9863,8 @@
       "date": "2026-12-05",
       "home": "Cardiff City",
       "away": "Lincoln City",
-      "p": 0.6331399210220585,
-      "baseline": 0.5679611650485437,
+      "p": 0.6343004173031328,
+      "baseline": 0.5700483091787439,
       "expected": 11.779411764705882,
       "sample": [
         17,
@@ -10029,8 +9879,8 @@
       "date": "2026-12-05",
       "home": "Charlton Athletic",
       "away": "Birmingham City",
-      "p": 0.593468897914667,
-      "baseline": 0.5679611650485437,
+      "p": 0.594646058349376,
+      "baseline": 0.5700483091787439,
       "expected": 10.733193277310924,
       "sample": [
         17,
@@ -10045,8 +9895,8 @@
       "date": "2026-12-05",
       "home": "Norwich City",
       "away": "Wrexham",
-      "p": 0.5340065117822641,
-      "baseline": 0.5679611650485437,
+      "p": 0.5351991396974516,
+      "baseline": 0.5700483091787439,
       "expected": 9.34873949579832,
       "sample": [
         17,
@@ -10061,8 +9911,8 @@
       "date": "2026-12-05",
       "home": "Portsmouth",
       "away": "West Bromwich Albion",
-      "p": 0.6090613173439144,
-      "baseline": 0.5679611650485437,
+      "p": 0.6102325245401807,
+      "baseline": 0.5700483091787439,
       "expected": 11.128151260504202,
       "sample": [
         17,
@@ -10077,8 +9927,8 @@
       "date": "2026-12-05",
       "home": "Stoke City",
       "away": "Queens Park Rangers",
-      "p": 0.5434162620787657,
-      "baseline": 0.5679611650485437,
+      "p": 0.5446072264422697,
+      "baseline": 0.5700483091787439,
       "expected": 9.558823529411764,
       "sample": [
         17,
@@ -10093,12 +9943,12 @@
       "date": "2026-12-05",
       "home": "Wolverhampton Wanderers",
       "away": "Southampton",
-      "p": 0.6005233883792445,
-      "baseline": 0.5679611650485437,
-      "expected": 10.90966386554622,
+      "p": 0.6022055371616637,
+      "baseline": 0.5700483091787439,
+      "expected": 10.92250233426704,
       "sample": [
         17,
-        17
+        18
       ],
       "group": "corners",
       "market": "Угловые ТБ 9.5",
@@ -10253,8 +10103,8 @@
       "date": "2026-11-29",
       "home": "Everton",
       "away": "Liverpool",
-      "p": 0.7024736334922674,
-      "baseline": 0.6964285714285714,
+      "p": 0.6988564875584317,
+      "baseline": 0.6902654867256637,
       "expected": 4.9,
       "sample": [
         11,
@@ -10269,8 +10119,8 @@
       "date": "2026-11-29",
       "home": "Brighton",
       "away": "Newcastle",
-      "p": 0.6749098882760404,
-      "baseline": 0.6964285714285714,
+      "p": 0.671223553653506,
+      "baseline": 0.6902654867256637,
       "expected": 4.409090909090908,
       "sample": [
         11,
@@ -10285,8 +10135,8 @@
       "date": "2026-11-29",
       "home": "Crystal Palace",
       "away": "Hull",
-      "p": 0.7067413095819054,
-      "baseline": 0.6964285714285714,
+      "p": 0.7031357116863807,
+      "baseline": 0.6902654867256637,
       "expected": 4.9818181818181815,
       "sample": [
         11,
@@ -10301,8 +10151,8 @@
       "date": "2026-11-29",
       "home": "Fulham",
       "away": "Bournemouth",
-      "p": 0.7017532948670473,
-      "baseline": 0.6964285714285714,
+      "p": 0.6981342217100144,
+      "baseline": 0.6902654867256637,
       "expected": 4.886363636363636,
       "sample": [
         11,
@@ -10317,8 +10167,8 @@
       "date": "2026-11-29",
       "home": "Sunderland",
       "away": "Spurs",
-      "p": 0.6535283668277577,
-      "baseline": 0.6964285714285714,
+      "p": 0.6497949237355434,
+      "baseline": 0.6902654867256637,
       "expected": 4.0636363636363635,
       "sample": [
         11,
@@ -10326,15 +10176,15 @@
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
-      "selected": true
+      "selected": false
     },
     {
       "league": "ENG_1_premier-league",
       "date": "2026-11-29",
       "home": "Arsenal",
       "away": "Man City",
-      "p": 0.7181092358449054,
-      "baseline": 0.6964285714285714,
+      "p": 0.7145354834137968,
+      "baseline": 0.6902654867256637,
       "expected": 5.209090909090909,
       "sample": [
         11,
@@ -10349,8 +10199,8 @@
       "date": "2026-12-01",
       "home": "Coventry",
       "away": "Ipswich",
-      "p": 0.6607644928181906,
-      "baseline": 0.6964285714285714,
+      "p": 0.6570463379816625,
+      "baseline": 0.6902654867256637,
       "expected": 4.177685950413223,
       "sample": [
         11,
@@ -10365,11 +10215,11 @@
       "date": "2026-12-02",
       "home": "Chelsea",
       "away": "Crystal Palace",
-      "p": 0.6840909162361979,
-      "baseline": 0.6964285714285714,
-      "expected": 4.566115702479339,
+      "p": 0.6771358705068062,
+      "baseline": 0.6902654867256637,
+      "expected": 4.509297520661157,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -10381,12 +10231,12 @@
       "date": "2026-12-02",
       "home": "Hull",
       "away": "Nott'm Forest",
-      "p": 0.711041055701266,
-      "baseline": 0.6964285714285714,
-      "expected": 5.066115702479339,
+      "p": 0.7050817866564714,
+      "baseline": 0.6902654867256637,
+      "expected": 5.019628099173554,
       "sample": [
         11,
-        11
+        12
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -10397,8 +10247,8 @@
       "date": "2026-12-02",
       "home": "Liverpool",
       "away": "Sunderland",
-      "p": 0.7137297706123218,
-      "baseline": 0.6964285714285714,
+      "p": 0.710143563175778,
+      "baseline": 0.6902654867256637,
       "expected": 5.119834710743802,
       "sample": [
         11,
@@ -10413,8 +10263,8 @@
       "date": "2026-12-02",
       "home": "Man City",
       "away": "Leeds",
-      "p": 0.6415323332595949,
-      "baseline": 0.6964285714285714,
+      "p": 0.6377750515631748,
+      "baseline": 0.6902654867256637,
       "expected": 3.8801652892561984,
       "sample": [
         11,
@@ -10429,8 +10279,8 @@
       "date": "2026-12-02",
       "home": "Aston Villa",
       "away": "Everton",
-      "p": 0.7400268535339273,
-      "baseline": 0.6964285714285714,
+      "p": 0.7365189553334982,
+      "baseline": 0.6902654867256637,
       "expected": 5.694214876033058,
       "sample": [
         11,
@@ -10445,8 +10295,8 @@
       "date": "2026-12-02",
       "home": "Bournemouth",
       "away": "Brighton",
-      "p": 0.6674223259275487,
-      "baseline": 0.6964285714285714,
+      "p": 0.6637188316136651,
+      "baseline": 0.6902654867256637,
       "expected": 4.285123966942149,
       "sample": [
         11,
@@ -10461,8 +10311,8 @@
       "date": "2026-12-02",
       "home": "Brentford",
       "away": "Arsenal",
-      "p": 0.6671691353927071,
-      "baseline": 0.6964285714285714,
+      "p": 0.6634650732219811,
+      "baseline": 0.6902654867256637,
       "expected": 4.2809917355371905,
       "sample": [
         11,
@@ -10477,8 +10327,8 @@
       "date": "2026-12-02",
       "home": "Newcastle",
       "away": "Man Utd",
-      "p": 0.6681805078911391,
-      "baseline": 0.6964285714285714,
+      "p": 0.6644787188972585,
+      "baseline": 0.6902654867256637,
       "expected": 4.297520661157025,
       "sample": [
         11,
@@ -10493,8 +10343,8 @@
       "date": "2026-12-03",
       "home": "Spurs",
       "away": "Fulham",
-      "p": 0.7407187164203878,
-      "baseline": 0.6964285714285714,
+      "p": 0.7372129930683187,
+      "baseline": 0.6902654867256637,
       "expected": 5.710743801652892,
       "sample": [
         11,
@@ -10509,11 +10359,11 @@
       "date": "2026-12-05",
       "home": "Chelsea",
       "away": "Liverpool",
-      "p": 0.7269023752028179,
-      "baseline": 0.6964285714285714,
-      "expected": 5.3954545454545455,
+      "p": 0.7207156928236382,
+      "baseline": 0.6902654867256637,
+      "expected": 5.338636363636364,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -10525,8 +10375,8 @@
       "date": "2026-12-05",
       "home": "Aston Villa",
       "away": "Crystal Palace",
-      "p": 0.6773589545414407,
-      "baseline": 0.6964285714285714,
+      "p": 0.6736783857314775,
+      "baseline": 0.6902654867256637,
       "expected": 4.450413223140496,
       "sample": [
         11,
@@ -10541,8 +10391,8 @@
       "date": "2026-12-05",
       "home": "Bournemouth",
       "away": "Hull",
-      "p": 0.6998417995228947,
-      "baseline": 0.6964285714285714,
+      "p": 0.6962176430597813,
+      "baseline": 0.6902654867256637,
       "expected": 4.850413223140496,
       "sample": [
         11,
@@ -10557,8 +10407,8 @@
       "date": "2026-12-05",
       "home": "Leeds",
       "away": "Ipswich",
-      "p": 0.6439440826953865,
-      "baseline": 0.6964285714285714,
+      "p": 0.6401914409812095,
+      "baseline": 0.6902654867256637,
       "expected": 3.9165289256198346,
       "sample": [
         11,
@@ -10573,8 +10423,8 @@
       "date": "2026-12-05",
       "home": "Man Utd",
       "away": "Coventry",
-      "p": 0.6630095911968134,
-      "baseline": 0.6964285714285714,
+      "p": 0.6592963167880034,
+      "baseline": 0.6902654867256637,
       "expected": 4.213636363636364,
       "sample": [
         11,
@@ -10589,11 +10439,11 @@
       "date": "2026-12-05",
       "home": "Nott'm Forest",
       "away": "Brighton",
-      "p": 0.6777729572254064,
-      "baseline": 0.6964285714285714,
-      "expected": 4.457438016528926,
+      "p": 0.664668365165463,
+      "baseline": 0.6902654867256637,
+      "expected": 4.300619834710744,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -10605,8 +10455,8 @@
       "date": "2026-12-05",
       "home": "Brentford",
       "away": "Man City",
-      "p": 0.7083969669918619,
-      "baseline": 0.6964285714285714,
+      "p": 0.7047959090856883,
+      "baseline": 0.6902654867256637,
       "expected": 5.014049586776859,
       "sample": [
         11,
@@ -10621,8 +10471,8 @@
       "date": "2026-11-29",
       "home": "Valencia CF",
       "away": "CA Osasuna",
-      "p": 0.6456508801104871,
-      "baseline": 0.6870229007633588,
+      "p": 0.6475580603629199,
+      "baseline": 0.6893939393939394,
       "expected": 4.0174825174825175,
       "sample": [
         13,
@@ -10637,8 +10487,8 @@
       "date": "2026-11-29",
       "home": "RC Deportivo",
       "away": "FC Barcelona",
-      "p": 0.6602636761334556,
-      "baseline": 0.6870229007633588,
+      "p": 0.662136776871366,
+      "baseline": 0.6893939393939394,
       "expected": 4.248251748251748,
       "sample": [
         13,
@@ -10653,8 +10503,8 @@
       "date": "2026-11-29",
       "home": "Celta",
       "away": "Villarreal CF",
-      "p": 0.68563391032276,
-      "baseline": 0.6870229007633588,
+      "p": 0.6874408329391221,
+      "baseline": 0.6893939393939394,
       "expected": 4.67948717948718,
       "sample": [
         13,
@@ -10669,8 +10519,8 @@
       "date": "2026-11-29",
       "home": "Real Sociedad",
       "away": "Sevilla FC",
-      "p": 0.6816282281917657,
-      "baseline": 0.6870229007633588,
+      "p": 0.6834461808867327,
+      "baseline": 0.6893939393939394,
       "expected": 4.608391608391608,
       "sample": [
         13,
@@ -10685,8 +10535,8 @@
       "date": "2026-11-30",
       "home": "RCD Espanyol de Barcelona",
       "away": "Getafe CF",
-      "p": 0.6219688856951977,
-      "baseline": 0.6870229007633588,
+      "p": 0.623924776208176,
+      "baseline": 0.6893939393939394,
       "expected": 3.664335664335664,
       "sample": [
         13,
@@ -10701,8 +10551,8 @@
       "date": "2026-12-02",
       "home": "Real Sociedad",
       "away": "Real Madrid",
-      "p": 0.7179462621985779,
-      "baseline": 0.6870229007633588,
+      "p": 0.7196563729417095,
+      "baseline": 0.6893939393939394,
       "expected": 5.307109557109557,
       "sample": [
         13,
@@ -10717,8 +10567,8 @@
       "date": "2026-12-02",
       "home": "FC Barcelona",
       "away": "Atlético de Madrid",
-      "p": 0.7132217907516646,
-      "baseline": 0.6870229007633588,
+      "p": 0.7149469229671761,
+      "baseline": 0.6893939393939394,
       "expected": 5.208333333333334,
       "sample": [
         13,
@@ -10733,8 +10583,8 @@
       "date": "2026-12-04",
       "home": "Deportivo Alavés",
       "away": "RCD Espanyol de Barcelona",
-      "p": 0.6447238202711458,
-      "baseline": 0.6870229007633588,
+      "p": 0.6466330606870268,
+      "baseline": 0.6893939393939394,
       "expected": 4.003205128205128,
       "sample": [
         13,
@@ -10749,11 +10599,11 @@
       "date": "2026-12-05",
       "home": "R. Racing Club",
       "away": "RC Deportivo",
-      "p": 0.7250672969840117,
-      "baseline": 0.6870229007633588,
-      "expected": 5.461538461538462,
+      "p": 0.7281362813553982,
+      "baseline": 0.6893939393939394,
+      "expected": 5.492445054945055,
       "sample": [
-        13,
+        14,
         13
       ],
       "group": "corners",
@@ -10765,12 +10615,12 @@
       "date": "2026-12-05",
       "home": "Rayo Vallecano",
       "away": "Levante UD",
-      "p": 0.6831961822636125,
-      "baseline": 0.6870229007633588,
-      "expected": 4.636072261072261,
+      "p": 0.6880820413029232,
+      "baseline": 0.6893939393939394,
+      "expected": 4.691017316017316,
       "sample": [
         12,
-        13
+        14
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -10781,8 +10631,8 @@
       "date": "2026-12-05",
       "home": "Villarreal CF",
       "away": "Real Sociedad",
-      "p": 0.7468970505878436,
-      "baseline": 0.6870229007633588,
+      "p": 0.7485086022344749,
+      "baseline": 0.6893939393939394,
       "expected": 5.98572261072261,
       "sample": [
         13,
@@ -10797,8 +10647,8 @@
       "date": "2026-12-05",
       "home": "FC Barcelona",
       "away": "Celta",
-      "p": 0.6967809137078427,
-      "baseline": 0.6870229007633588,
+      "p": 0.6985560093054146,
+      "baseline": 0.6893939393939394,
       "expected": 4.8843240093240095,
       "sample": [
         13,
@@ -10813,8 +10663,8 @@
       "date": "2026-11-29",
       "home": "SC Freiburg",
       "away": "RB Leipzig",
-      "p": 0.6798217715159063,
-      "baseline": 0.6956521739130435,
+      "p": 0.6812382533833584,
+      "baseline": 0.6989247311827957,
       "expected": 4.425,
       "sample": [
         10,
@@ -10829,8 +10679,8 @@
       "date": "2026-11-29",
       "home": "TSG Hoffenheim",
       "away": "FC Augsburg",
-      "p": 0.6694063694435939,
-      "baseline": 0.6956521739130435,
+      "p": 0.6708137964153043,
+      "baseline": 0.6989247311827957,
       "expected": 4.25,
       "sample": [
         10,
@@ -10845,8 +10695,8 @@
       "date": "2026-11-29",
       "home": "Borussia Dortmund",
       "away": "Bayer 04 Leverkusen",
-      "p": 0.6898138718823275,
-      "baseline": 0.6956521739130435,
+      "p": 0.6912395118870688,
+      "baseline": 0.6989247311827957,
       "expected": 4.6,
       "sample": [
         10,
@@ -10861,8 +10711,8 @@
       "date": "2026-12-04",
       "home": "FC Bayern München",
       "away": "SC Paderborn 07",
-      "p": 0.7007111287082397,
-      "baseline": 0.6956521739130435,
+      "p": 0.7021472767348007,
+      "baseline": 0.6989247311827957,
       "expected": 4.8,
       "sample": [
         10,
@@ -10877,8 +10727,8 @@
       "date": "2026-12-05",
       "home": "1. FC Union Berlin",
       "away": "Hamburger SV",
-      "p": 0.6748694835026097,
-      "baseline": 0.6956521739130435,
+      "p": 0.676281597054429,
+      "baseline": 0.6989247311827957,
       "expected": 4.340909090909091,
       "sample": [
         10,
@@ -10893,12 +10743,12 @@
       "date": "2026-12-05",
       "home": "Bayer 04 Leverkusen",
       "away": "Borussia Mönchengladbach",
-      "p": 0.7097891247219013,
-      "baseline": 0.6956521739130435,
-      "expected": 4.975,
+      "p": 0.707637841976483,
+      "baseline": 0.6989247311827957,
+      "expected": 4.9047520661157025,
       "sample": [
         10,
-        10
+        11
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -10909,8 +10759,8 @@
       "date": "2026-12-05",
       "home": "FC Augsburg",
       "away": "1. FC Köln",
-      "p": 0.703348301530186,
-      "baseline": 0.6956521739130435,
+      "p": 0.7047870736054059,
+      "baseline": 0.6989247311827957,
       "expected": 4.8500000000000005,
       "sample": [
         10,
@@ -10925,8 +10775,8 @@
       "date": "2026-12-05",
       "home": "RB Leipzig",
       "away": "1. FSV Mainz 05",
-      "p": 0.7085183118218478,
-      "baseline": 0.6956521739130435,
+      "p": 0.7099623195456746,
+      "baseline": 0.6989247311827957,
       "expected": 4.95,
       "sample": [
         10,
@@ -10941,8 +10791,8 @@
       "date": "2026-12-05",
       "home": "SC Freiburg",
       "away": "TSG Hoffenheim",
-      "p": 0.6709199935636743,
-      "baseline": 0.6956521739130435,
+      "p": 0.6723287050510034,
+      "baseline": 0.6989247311827957,
       "expected": 4.275,
       "sample": [
         10,
@@ -10957,12 +10807,12 @@
       "date": "2026-12-05",
       "home": "Eintracht Frankfurt",
       "away": "SV Werder Bremen",
-      "p": 0.7020340678795753,
-      "baseline": 0.6956521739130435,
-      "expected": 4.825,
+      "p": 0.7038311766161038,
+      "baseline": 0.6989247311827957,
+      "expected": 4.831818181818182,
       "sample": [
         10,
-        10
+        11
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -10973,8 +10823,8 @@
       "date": "2026-11-29",
       "home": "Udinese",
       "away": "Fiorentina",
-      "p": 0.5731780916767819,
-      "baseline": 0.5983606557377049,
+      "p": 0.5749366821095943,
+      "baseline": 0.6016260162601627,
       "expected": 3.6553030303030303,
       "sample": [
         12,
@@ -10989,8 +10839,8 @@
       "date": "2026-11-29",
       "home": "Sassuolo",
       "away": "Napoli",
-      "p": 0.6264746170324231,
-      "baseline": 0.5983606557377049,
+      "p": 0.6282142468941301,
+      "baseline": 0.6016260162601627,
       "expected": 4.4772727272727275,
       "sample": [
         12,
@@ -11005,8 +10855,8 @@
       "date": "2026-11-29",
       "home": "Roma",
       "away": "Monza",
-      "p": 0.6200961330576202,
-      "baseline": 0.5983606557377049,
+      "p": 0.6218383755502648,
+      "baseline": 0.6016260162601627,
       "expected": 4.371212121212121,
       "sample": [
         12,
@@ -11021,8 +10871,8 @@
       "date": "2026-11-29",
       "home": "Como",
       "away": "Juventus",
-      "p": 0.6858737687927918,
-      "baseline": 0.5983606557377049,
+      "p": 0.6875848059047706,
+      "baseline": 0.6016260162601627,
       "expected": 5.632575757575758,
       "sample": [
         12,
@@ -11037,8 +10887,8 @@
       "date": "2026-11-30",
       "home": "Lecce",
       "away": "Atalanta",
-      "p": 0.6076294826595516,
-      "baseline": 0.5983606557377049,
+      "p": 0.6093765678065914,
+      "baseline": 0.6016260162601627,
       "expected": 4.170833333333333,
       "sample": [
         12,
@@ -11053,8 +10903,8 @@
       "date": "2026-11-30",
       "home": "Cagliari",
       "away": "Milan",
-      "p": 0.564699332776422,
-      "baseline": 0.5983606557377049,
+      "p": 0.5664603134386097,
+      "baseline": 0.6016260162601627,
       "expected": 3.535227272727273,
       "sample": [
         12,
@@ -11069,11 +10919,11 @@
       "date": "2026-12-04",
       "home": "Bologna",
       "away": "Roma",
-      "p": 0.6320390695159296,
-      "baseline": 0.5983606557377049,
-      "expected": 4.571969696969696,
+      "p": 0.6347053626458827,
+      "baseline": 0.6016260162601627,
+      "expected": 4.587995337995338,
       "sample": [
-        12,
+        13,
         12
       ],
       "group": "corners",
@@ -11085,8 +10935,8 @@
       "date": "2026-12-05",
       "home": "Monza",
       "away": "Como",
-      "p": 0.6289010711208557,
-      "baseline": 0.5983606557377049,
+      "p": 0.6306396833843101,
+      "baseline": 0.6016260162601627,
       "expected": 4.518308080808081,
       "sample": [
         12,
@@ -11101,8 +10951,8 @@
       "date": "2026-12-05",
       "home": "Frosinone",
       "away": "Internazionale",
-      "p": 0.6608964838948164,
-      "baseline": 0.5983606557377049,
+      "p": 0.6626204738644568,
+      "baseline": 0.6016260162601627,
       "expected": 5.1022727272727275,
       "sample": [
         12,
@@ -11117,8 +10967,8 @@
       "date": "2026-12-05",
       "home": "Napoli",
       "away": "Lecce",
-      "p": 0.640011038611877,
-      "baseline": 0.5983606557377049,
+      "p": 0.6417448260645218,
+      "baseline": 0.6016260162601627,
       "expected": 4.7114898989899,
       "sample": [
         12,
@@ -11133,8 +10983,8 @@
       "date": "2026-11-29",
       "home": "AJ Auxerre",
       "away": "Olympique de Marseille",
-      "p": 0.5962839217839824,
-      "baseline": 0.594059405940594,
+      "p": 0.5987492017033462,
+      "baseline": 0.5980392156862745,
       "expected": 4.109090909090909,
       "sample": [
         11,
@@ -11149,8 +10999,8 @@
       "date": "2026-11-29",
       "home": "Toulouse FC",
       "away": "Stade Rennais FC",
-      "p": 0.6549527588686778,
-      "baseline": 0.594059405940594,
+      "p": 0.6573186891414484,
+      "baseline": 0.5980392156862745,
       "expected": 5.109090909090909,
       "sample": [
         11,
@@ -11165,8 +11015,8 @@
       "date": "2026-11-29",
       "home": "Olympique Lyonnais",
       "away": "AS Monaco",
-      "p": 0.6245290857278238,
-      "baseline": 0.594059405940594,
+      "p": 0.6269503777172092,
+      "baseline": 0.5980392156862745,
       "expected": 4.561570247933885,
       "sample": [
         11,
@@ -11181,8 +11031,8 @@
       "date": "2026-12-04",
       "home": "Toulouse FC",
       "away": "Paris Saint-Germain",
-      "p": 0.5808344878408147,
-      "baseline": 0.594059405940594,
+      "p": 0.5833206839635626,
+      "baseline": 0.5980392156862745,
       "expected": 3.878030303030303,
       "sample": [
         11,
@@ -11197,8 +11047,8 @@
       "date": "2026-12-05",
       "home": "LOSC Lille",
       "away": "AJ Auxerre",
-      "p": 0.6188500165071062,
-      "baseline": 0.594059405940594,
+      "p": 0.6212807354513525,
+      "baseline": 0.5980392156862745,
       "expected": 4.466942148760331,
       "sample": [
         11,
@@ -11213,8 +11063,8 @@
       "date": "2026-12-05",
       "home": "AS Monaco",
       "away": "Angers SCO",
-      "p": 0.6147587498704712,
-      "baseline": 0.594059405940594,
+      "p": 0.6171960802555458,
+      "baseline": 0.5980392156862745,
       "expected": 4.3999999999999995,
       "sample": [
         11,
@@ -11229,11 +11079,11 @@
       "date": "2026-12-05",
       "home": "Paris FC",
       "away": "Le Mans FC",
-      "p": 0.5442318693926225,
-      "baseline": 0.594059405940594,
-      "expected": 3.3636363636363633,
+      "p": 0.550553517581819,
+      "baseline": 0.5980392156862745,
+      "expected": 3.4152892561983466,
       "sample": [
-        11,
+        12,
         11
       ],
       "group": "corners",
@@ -11245,8 +11095,8 @@
       "date": "2026-12-05",
       "home": "RC Lens",
       "away": "Havre Athletic Club",
-      "p": 0.6375713004321422,
-      "baseline": 0.594059405940594,
+      "p": 0.6399698559380834,
+      "baseline": 0.5980392156862745,
       "expected": 4.787190082644628,
       "sample": [
         11,
@@ -11261,8 +11111,8 @@
       "date": "2026-12-05",
       "home": "RC Strasbourg Alsace",
       "away": "FC Lorient",
-      "p": 0.5905873184119493,
-      "baseline": 0.594059405940594,
+      "p": 0.5930605756141883,
+      "baseline": 0.5980392156862745,
       "expected": 4.0227272727272725,
       "sample": [
         11,
@@ -11277,8 +11127,8 @@
       "date": "2026-11-29",
       "home": "ADO Den Haag",
       "away": "FC Utrecht",
-      "p": 0.6503069210696512,
-      "baseline": 0.6134453781512605,
+      "p": 0.6518142050915224,
+      "baseline": 0.6166666666666667,
       "expected": 4.751748251748252,
       "sample": [
         13,
@@ -11293,8 +11143,8 @@
       "date": "2026-11-29",
       "home": "Feyenoord",
       "away": "Ajax",
-      "p": 0.6247345330984084,
-      "baseline": 0.6134453781512605,
+      "p": 0.6262305924501794,
+      "baseline": 0.6166666666666667,
       "expected": 4.314685314685315,
       "sample": [
         13,
@@ -11309,8 +11159,8 @@
       "date": "2026-11-29",
       "home": "Fortuna Sittard",
       "away": "sc Heerenveen",
-      "p": 0.6485541096877927,
-      "baseline": 0.6134453781512605,
+      "p": 0.6500605768077181,
+      "baseline": 0.6166666666666667,
       "expected": 4.720279720279721,
       "sample": [
         13,
@@ -11318,15 +11168,15 @@
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
-      "selected": false
+      "selected": true
     },
     {
       "league": "NED_1_eredivisie",
       "date": "2026-11-29",
       "home": "PEC Zwolle",
       "away": "AZ",
-      "p": 0.6498376143089661,
-      "baseline": 0.6134453781512605,
+      "p": 0.6513446789297735,
+      "baseline": 0.6166666666666667,
       "expected": 4.743298368298368,
       "sample": [
         13,
@@ -11334,15 +11184,15 @@
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
-      "selected": false
+      "selected": true
     },
     {
       "league": "NED_1_eredivisie",
       "date": "2026-11-29",
       "home": "N.E.C. Nijmegen",
       "away": "FC Twente",
-      "p": 0.6350210545019317,
-      "baseline": 0.6134453781512605,
+      "p": 0.6365214490309441,
+      "baseline": 0.6166666666666667,
       "expected": 4.48513986013986,
       "sample": [
         13,
@@ -11357,12 +11207,12 @@
       "date": "2026-12-04",
       "home": "Telstar",
       "away": "FC Groningen",
-      "p": 0.6481627219600284,
-      "baseline": 0.6134453781512605,
+      "p": 0.6496690076199606,
+      "baseline": 0.6166666666666667,
       "expected": 4.713286713286713,
       "sample": [
         13,
-        13
+        14
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -11373,11 +11223,11 @@
       "date": "2026-12-05",
       "home": "Willem II",
       "away": "Feyenoord",
-      "p": 0.6519657219497204,
-      "baseline": 0.6134453781512605,
-      "expected": 4.781759906759907,
+      "p": 0.6529917088945849,
+      "baseline": 0.6166666666666667,
+      "expected": 4.773018648018648,
       "sample": [
-        13,
+        14,
         13
       ],
       "group": "corners",
@@ -11389,8 +11239,8 @@
       "date": "2026-12-05",
       "home": "Sparta Rotterdam",
       "away": "N.E.C. Nijmegen",
-      "p": 0.6654008375178708,
-      "baseline": 0.6134453781512605,
+      "p": 0.6669154418350439,
+      "baseline": 0.6166666666666667,
       "expected": 5.033799533799534,
       "sample": [
         13,
@@ -11405,8 +11255,8 @@
       "date": "2026-12-05",
       "home": "AZ",
       "away": "PSV",
-      "p": 0.5956691211600182,
-      "baseline": 0.6134453781512605,
+      "p": 0.5971542783752241,
+      "baseline": 0.6166666666666667,
       "expected": 3.8639277389277384,
       "sample": [
         13,
@@ -11421,8 +11271,8 @@
       "date": "2026-12-05",
       "home": "Fortuna Sittard",
       "away": "PEC Zwolle",
-      "p": 0.6851356779067219,
-      "baseline": 0.6134453781512605,
+      "p": 0.6866606214935995,
+      "baseline": 0.6166666666666667,
       "expected": 5.438519813519814,
       "sample": [
         13,
@@ -11437,8 +11287,8 @@
       "date": "2026-11-29",
       "home": "Gil Vicente FC",
       "away": "Estoril Praia",
-      "p": 0.6211133665911037,
-      "baseline": 0.62,
+      "p": 0.6176625834770513,
+      "baseline": 0.6138613861386139,
       "expected": 4.25309917355372,
       "sample": [
         11,
@@ -11453,8 +11303,8 @@
       "date": "2026-11-29",
       "home": "FC Porto",
       "away": "Sporting CP",
-      "p": 0.6537822617075792,
-      "baseline": 0.62,
+      "p": 0.6503772416687048,
+      "baseline": 0.6138613861386139,
       "expected": 4.804545454545455,
       "sample": [
         11,
@@ -11469,8 +11319,8 @@
       "date": "2026-11-30",
       "home": "Casa Pia AC",
       "away": "SC Braga",
-      "p": 0.5500090495219188,
-      "baseline": 0.62,
+      "p": 0.5464878968744038,
+      "baseline": 0.6138613861386139,
       "expected": 3.2260330578512395,
       "sample": [
         11,
@@ -11485,8 +11335,8 @@
       "date": "2026-11-30",
       "home": "SL Benfica",
       "away": "FC Famalicão",
-      "p": 0.6849473902657075,
-      "baseline": 0.62,
+      "p": 0.6815933489396904,
+      "baseline": 0.6138613861386139,
       "expected": 5.413223140495867,
       "sample": [
         11,
@@ -11501,25 +11351,9 @@
       "date": "2026-12-04",
       "home": "Sporting CP",
       "away": "Marítimo M.",
-      "p": 0.6329323497453767,
-      "baseline": 0.62,
-      "expected": 4.444628099173554,
-      "sample": [
-        11,
-        10
-      ],
-      "group": "corners",
-      "market": "Угловые 1Т ТБ 3.5",
-      "selected": false
-    },
-    {
-      "league": "POR_1_primeira-liga",
-      "date": "2026-12-05",
-      "home": "CD Nacional",
-      "away": "SL Benfica",
-      "p": 0.6357629787330477,
-      "baseline": 0.62,
-      "expected": 4.491735537190083,
+      "p": 0.6289466949150055,
+      "baseline": 0.6138613861386139,
+      "expected": 4.435537190082645,
       "sample": [
         11,
         11
@@ -11531,10 +11365,26 @@
     {
       "league": "POR_1_primeira-liga",
       "date": "2026-12-05",
+      "home": "CD Nacional",
+      "away": "SL Benfica",
+      "p": 0.6298469339151924,
+      "baseline": 0.6138613861386139,
+      "expected": 4.450413223140496,
+      "sample": [
+        12,
+        11
+      ],
+      "group": "corners",
+      "market": "Угловые 1Т ТБ 3.5",
+      "selected": false
+    },
+    {
+      "league": "POR_1_primeira-liga",
+      "date": "2026-12-05",
       "home": "Santa Clara",
       "away": "FC Porto",
-      "p": 0.6362564453691983,
-      "baseline": 0.62,
+      "p": 0.632825882296867,
+      "baseline": 0.6138613861386139,
       "expected": 4.5,
       "sample": [
         11,
@@ -11549,8 +11399,8 @@
       "date": "2026-12-05",
       "home": "SC Braga",
       "away": "FC Arouca",
-      "p": 0.5521644377514319,
-      "baseline": 0.62,
+      "p": 0.5486447768547451,
+      "baseline": 0.6138613861386139,
       "expected": 3.2549586776859503,
       "sample": [
         11,
@@ -11565,8 +11415,8 @@
       "date": "2026-11-29",
       "home": "Sint-Truidense",
       "away": "Racing Genk",
-      "p": 0.6994460949695691,
-      "baseline": 0.6272727272727273,
+      "p": 0.7013258220858485,
+      "baseline": 0.6306306306306306,
       "expected": 5.465909090909092,
       "sample": [
         12,
@@ -11581,8 +11431,8 @@
       "date": "2026-11-29",
       "home": "Antwerp",
       "away": "Anderlecht",
-      "p": 0.6444300759092089,
-      "baseline": 0.6272727272727273,
+      "p": 0.646377670711554,
+      "baseline": 0.6306306306306306,
       "expected": 4.390151515151516,
       "sample": [
         12,
@@ -11597,8 +11447,8 @@
       "date": "2026-11-29",
       "home": "Standard Liege",
       "away": "Club Brugge",
-      "p": 0.7344140990692771,
-      "baseline": 0.6272727272727273,
+      "p": 0.7362419733959931,
+      "baseline": 0.6306306306306306,
       "expected": 6.386363636363636,
       "sample": [
         12,
@@ -11613,8 +11463,8 @@
       "date": "2026-11-29",
       "home": "Union St.-Gilloise",
       "away": "KAA Gent",
-      "p": 0.6615490035506155,
-      "baseline": 0.6272727272727273,
+      "p": 0.6634772677695995,
+      "baseline": 0.6306306306306306,
       "expected": 4.693181818181818,
       "sample": [
         12,
@@ -11629,8 +11479,8 @@
       "date": "2026-11-29",
       "home": "Çorum",
       "away": "Kocaelispor",
-      "p": 0.5898684126623339,
-      "baseline": 0.5727272727272728,
+      "p": 0.5826422679130853,
+      "baseline": 0.5625,
       "expected": 4.225,
       "sample": [
         12,
@@ -11645,8 +11495,8 @@
       "date": "2026-11-29",
       "home": "Eyüpspor",
       "away": "Istanbul Basaksehir",
-      "p": 0.5459953267537521,
-      "baseline": 0.5727272727272728,
+      "p": 0.5385239535751282,
+      "baseline": 0.5625,
       "expected": 3.584469696969697,
       "sample": [
         12,
@@ -11661,8 +11511,8 @@
       "date": "2026-11-29",
       "home": "Fenerbahçe",
       "away": "Erzurumspor",
-      "p": 0.5788026447758986,
-      "baseline": 0.5727272727272728,
+      "p": 0.5715066304904243,
+      "baseline": 0.5625,
       "expected": 4.056439393939394,
       "sample": [
         12,
@@ -11677,8 +11527,8 @@
       "date": "2026-11-30",
       "home": "Göztepe",
       "away": "Trabzonspor",
-      "p": 0.6021424550851728,
-      "baseline": 0.5727272727272728,
+      "p": 0.5949998700230389,
+      "baseline": 0.5625,
       "expected": 4.418939393939394,
       "sample": [
         12,
@@ -11693,8 +11543,8 @@
       "date": "2026-11-30",
       "home": "Besiktas",
       "away": "Galatasaray",
-      "p": 0.6497294437617299,
-      "baseline": 0.5727272727272728,
+      "p": 0.6429689009613548,
+      "baseline": 0.5625,
       "expected": 5.26628787878788,
       "sample": [
         12,
@@ -11709,12 +11559,12 @@
       "date": "2026-12-04",
       "home": "Galatasaray",
       "away": "Çaykur Rizespor",
-      "p": 0.596786111603478,
-      "baseline": 0.5727272727272728,
-      "expected": 4.333333333333334,
+      "p": 0.5857620467665642,
+      "baseline": 0.5625,
+      "expected": 4.27323717948718,
       "sample": [
         12,
-        12
+        13
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -11725,11 +11575,11 @@
       "date": "2026-12-05",
       "home": "Konyaspor",
       "away": "Gaziantep",
-      "p": 0.535959889956753,
-      "baseline": 0.5727272727272728,
-      "expected": 3.44665404040404,
+      "p": 0.5243912120464067,
+      "baseline": 0.5625,
+      "expected": 3.391899766899767,
       "sample": [
-        12,
+        13,
         12
       ],
       "group": "corners",
@@ -11741,12 +11591,12 @@
       "date": "2026-12-05",
       "home": "Amedspor",
       "away": "Alanyaspor",
-      "p": 0.5147811222830139,
-      "baseline": 0.5727272727272728,
-      "expected": 3.163194444444444,
+      "p": 0.502810729473476,
+      "baseline": 0.5625,
+      "expected": 3.105769230769231,
       "sample": [
         12,
-        12
+        13
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -11757,8 +11607,8 @@
       "date": "2026-12-05",
       "home": "Istanbul Basaksehir",
       "away": "Fenerbahçe",
-      "p": 0.6028617017375653,
-      "baseline": 0.5727272727272728,
+      "p": 0.5957242079173385,
+      "baseline": 0.5625,
       "expected": 4.430555555555555,
       "sample": [
         12,
@@ -11853,8 +11703,8 @@
       "date": "2026-11-29",
       "home": "Swansea City",
       "away": "Cardiff City",
-      "p": 0.6146679914883936,
-      "baseline": 0.6456310679611651,
+      "p": 0.6159879735721843,
+      "baseline": 0.6473429951690821,
       "expected": 3.83710407239819,
       "sample": [
         17,
@@ -11869,8 +11719,8 @@
       "date": "2026-12-04",
       "home": "Sheffield United",
       "away": "West Ham United",
-      "p": 0.6637678484299818,
-      "baseline": 0.6456310679611651,
+      "p": 0.6650135329080014,
+      "baseline": 0.6473429951690821,
       "expected": 4.6344537815126055,
       "sample": [
         17,
@@ -11885,8 +11735,8 @@
       "date": "2026-12-05",
       "home": "Bolton Wanderers",
       "away": "Blackburn Rovers",
-      "p": 0.6819583785738492,
-      "baseline": 0.6456310679611651,
+      "p": 0.6831713193296481,
+      "baseline": 0.6473429951690821,
       "expected": 4.972689075630252,
       "sample": [
         17,
@@ -11901,8 +11751,8 @@
       "date": "2026-12-05",
       "home": "Bristol City",
       "away": "Swansea City",
-      "p": 0.6511708405976246,
-      "baseline": 0.6456310679611651,
+      "p": 0.652437572726893,
+      "baseline": 0.6473429951690821,
       "expected": 4.415966386554622,
       "sample": [
         17,
@@ -11917,11 +11767,11 @@
       "date": "2026-12-05",
       "home": "Middlesbrough",
       "away": "Derby County",
-      "p": 0.6585191466324981,
-      "baseline": 0.6456310679611651,
-      "expected": 4.542016806722689,
+      "p": 0.6614405667361363,
+      "baseline": 0.6473429951690821,
+      "expected": 4.571195144724556,
       "sample": [
-        17,
+        18,
         17
       ],
       "group": "corners",
@@ -11933,8 +11783,8 @@
       "date": "2026-12-05",
       "home": "Watford",
       "away": "Millwall",
-      "p": 0.6866527635393,
-      "baseline": 0.6456310679611651,
+      "p": 0.6878568071804367,
+      "baseline": 0.6473429951690821,
       "expected": 5.065126050420169,
       "sample": [
         17,
@@ -11949,8 +11799,8 @@
       "date": "2026-12-05",
       "home": "Cardiff City",
       "away": "Lincoln City",
-      "p": 0.7204570325357733,
-      "baseline": 0.6456310679611651,
+      "p": 0.7215915999559892,
+      "baseline": 0.6473429951690821,
       "expected": 5.815126050420168,
       "sample": [
         17,
@@ -11965,8 +11815,8 @@
       "date": "2026-12-05",
       "home": "Charlton Athletic",
       "away": "Birmingham City",
-      "p": 0.6990536769852944,
-      "baseline": 0.6456310679611651,
+      "p": 0.7002333384536307,
+      "baseline": 0.6473429951690821,
       "expected": 5.321428571428571,
       "sample": [
         17,
@@ -11981,8 +11831,8 @@
       "date": "2026-12-05",
       "home": "Norwich City",
       "away": "Wrexham",
-      "p": 0.6253860367653299,
-      "baseline": 0.6456310679611651,
+      "p": 0.6266916030697902,
+      "baseline": 0.6473429951690821,
       "expected": 4.0,
       "sample": [
         17,
@@ -11997,8 +11847,8 @@
       "date": "2026-12-05",
       "home": "Portsmouth",
       "away": "West Bromwich Albion",
-      "p": 0.680548718487437,
-      "baseline": 0.6456310679611651,
+      "p": 0.6817642952144558,
+      "baseline": 0.6473429951690821,
       "expected": 4.945378151260504,
       "sample": [
         17,
@@ -12013,8 +11863,8 @@
       "date": "2026-12-05",
       "home": "Stoke City",
       "away": "Queens Park Rangers",
-      "p": 0.6654129493936192,
-      "baseline": 0.6456310679611651,
+      "p": 0.6666557863580986,
+      "baseline": 0.6473429951690821,
       "expected": 4.663865546218488,
       "sample": [
         17,
@@ -12029,12 +11879,12 @@
       "date": "2026-12-05",
       "home": "Wolverhampton Wanderers",
       "away": "Southampton",
-      "p": 0.6637678484299818,
-      "baseline": 0.6456310679611651,
-      "expected": 4.6344537815126055,
+      "p": 0.6669023816837965,
+      "baseline": 0.6473429951690821,
+      "expected": 4.6683006535947715,
       "sample": [
         17,
-        17
+        18
       ],
       "group": "corners",
       "market": "Угловые 1Т ТБ 3.5",
@@ -22353,19 +22203,19 @@
       "baseline": 0.15685555893349393
     },
     "Угловые ТБ 8.5": {
-      "n": 690,
-      "model": 0.2352135730029343,
-      "baseline": 0.23743886727183333
+      "n": 701,
+      "model": 0.23525240901437286,
+      "baseline": 0.23759671853735362
     },
     "Угловые ТБ 9.5": {
-      "n": 690,
-      "model": 0.2511182622277254,
-      "baseline": 0.2525216421339815
+      "n": 701,
+      "model": 0.25065775301369286,
+      "baseline": 0.25216671970505933
     },
     "Угловые 1Т ТБ 3.5": {
-      "n": 636,
-      "model": 0.23700211200192492,
-      "baseline": 0.23763927331980914
+      "n": 647,
+      "model": 0.23673898142648844,
+      "baseline": 0.23739510861284197
     },
     "ЖК ТБ 2.5": {
       "n": 690,
@@ -22394,7 +22244,7 @@
     }
   },
   "calibration": {
-    "created": "2026-11-28T06:59:50.019612+00:00",
+    "created": "2026-11-28T12:52:04.256051+00:00",
     "markets": {
       "ТБ 0.5 1Т": [
         [
@@ -38329,27 +38179,19 @@
     }
   },
   "history_comparison": {
-    "previous_created": "2026-11-28T01:04:50.720747+00:00",
+    "previous_created": "2026-11-28T07:05:46.275561+00:00",
     "markets": {
-      "ТБ 0.5 1Т": {
-        "previous": 795,
-        "current": 796
+      "Угловые ТБ 8.5": {
+        "previous": 690,
+        "current": 701
       },
-      "ТБ 1.5 1Т": {
-        "previous": 795,
-        "current": 796
+      "Угловые ТБ 9.5": {
+        "previous": 690,
+        "current": 701
       },
-      "ТБ 2.5": {
-        "previous": 795,
-        "current": 796
-      },
-      "Обе забьют": {
-        "previous": 795,
-        "current": 796
-      },
-      "ТБ 0.5 2Т": {
-        "previous": 795,
-        "current": 796
+      "Угловые 1Т ТБ 3.5": {
+        "previous": 636,
+        "current": 647
       }
     }
   }

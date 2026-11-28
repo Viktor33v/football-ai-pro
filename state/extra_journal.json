@@ -3600,8 +3600,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"NED_1_eredivisie\", \"2026-11-27\", \"FC Groningen\", \"Willem II\", 0]": {
     "league": "NED_1_eredivisie",
@@ -3620,8 +3620,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 0,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"BEL_1_pro-league\", \"2026-11-27\", \"OH Leuven\", \"KV Kortrijk\", 0]": {
     "league": "BEL_1_pro-league",
@@ -3640,8 +3640,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"ENG_1_premier-league\", \"2026-11-27\", \"Nott'm Forest\", \"Chelsea\", 2]": {
     "league": "ENG_1_premier-league",
@@ -3660,8 +3660,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 0,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"ESP_1_la-liga\", \"2026-11-27\", \"Levante UD\", \"R. Racing Club\", 2]": {
     "league": "ESP_1_la-liga",
@@ -3680,8 +3680,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 2]": {
     "league": "GER_1_bundesliga",
@@ -3700,8 +3700,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"BEL_1_pro-league\", \"2026-11-27\", \"OH Leuven\", \"KV Kortrijk\", 2]": {
     "league": "BEL_1_pro-league",
@@ -3720,8 +3720,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-20T07:08:27.224101+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-27\", \"Nott'm Forest\", \"Chelsea\", 0]": {
     "league": "ENG_1_premier-league",
@@ -3742,7 +3742,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-27\", \"Levante UD\", \"R. Racing Club\", 0]": {
     "league": "ESP_1_la-liga",
@@ -3763,7 +3763,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 0]": {
     "league": "GER_1_bundesliga",
@@ -3784,7 +3784,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ITA_1_serie-a\", \"2026-11-27\", \"Venezia\", \"Bologna\", 0]": {
     "league": "ITA_1_serie-a",
@@ -3805,7 +3805,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"FRA_1_ligue-1\", \"2026-11-27\", \"Stade Brestois 29\", \"Paris FC\", 0]": {
     "league": "FRA_1_ligue-1",
@@ -3826,7 +3826,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"POR_1_primeira-liga\", \"2026-11-27\", \"Marítimo M.\", \"CD Nacional\", 0]": {
     "league": "POR_1_primeira-liga",
@@ -3847,7 +3847,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"BEL_1_pro-league\", \"2026-11-27\", \"OH Leuven\", \"KV Kortrijk\", 0]": {
     "league": "BEL_1_pro-league",
@@ -3868,7 +3868,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Alanyaspor\", \"Konyaspor\", 0]": {
     "league": "TUR_1_super-lig",
@@ -3889,7 +3889,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Çaykur Rizespor\", \"Kasimpasa\", 0]": {
     "league": "TUR_1_super-lig",
@@ -3910,7 +3910,7 @@
     "index": 0,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ENG_1_premier-league\", \"2026-11-27\", \"Nott'm Forest\", \"Chelsea\", 4]": {
     "league": "ENG_1_premier-league",
@@ -3931,7 +3931,7 @@
     "index": 4,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-27\", \"Levante UD\", \"R. Racing Club\", 4]": {
     "league": "ESP_1_la-liga",
@@ -3952,7 +3952,7 @@
     "index": 4,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_1_bundesliga\", \"2026-11-27\", \"SV Werder Bremen\", \"Borussia Mönchengladbach\", 4]": {
     "league": "GER_1_bundesliga",
@@ -3973,7 +3973,7 @@
     "index": 4,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Alanyaspor\", \"Konyaspor\", 4]": {
     "league": "TUR_1_super-lig",
@@ -3994,7 +3994,7 @@
     "index": 4,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"TUR_1_super-lig\", \"2026-11-27\", \"Çaykur Rizespor\", \"Kasimpasa\", 4]": {
     "league": "TUR_1_super-lig",
@@ -4015,7 +4015,7 @@
     "index": 4,
     "created": "2026-11-20T07:08:27.224101+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"corners\", \"GER_1_bundesliga\", \"2026-11-28\", \"1. FC Köln\", \"SV 07 Elversberg\", 0]": {
     "league": "GER_1_bundesliga",
@@ -7667,8 +7667,8 @@
     "selected": true,
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 0]": {
     "league": "ENG_2_championship",
@@ -7878,7 +7878,7 @@
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_corner_stats"
   },
   "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"VfL Bochum\", \"SV Darmstadt 98\", 0]": {
     "league": "GER_2_2-bundesliga",
@@ -7898,7 +7898,7 @@
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_corner_stats"
   },
   "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Dynamo Dresden\", \"FC St. Pauli\", 0]": {
     "league": "GER_2_2-bundesliga",
@@ -8051,7 +8051,7 @@
     "index": 1,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_corner_stats"
   },
   "[\"corners\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Holstein Kiel\", \"1. FC Kaiserslautern\", 1]": {
     "league": "GER_2_2-bundesliga",
@@ -8264,8 +8264,8 @@
     "selected": true,
     "index": 2,
     "created": "2026-11-24T07:09:49.089288+00:00",
-    "result": null,
-    "settlement_issue": "fixture_not_found"
+    "result": 1,
+    "settled_at": "2026-11-28T12:57:55.008059+00:00"
   },
   "[\"corners\", \"ENG_2_championship\", \"2026-11-28\", \"Blackburn Rovers\", \"Charlton Athletic\", 2]": {
     "league": "ENG_2_championship",
@@ -8724,7 +8724,7 @@
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"VfL Bochum\", \"SV Darmstadt 98\", 0]": {
     "league": "GER_2_2-bundesliga",
@@ -8745,7 +8745,7 @@
     "index": 0,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Dynamo Dresden\", \"FC St. Pauli\", 0]": {
     "league": "GER_2_2-bundesliga",
@@ -8946,7 +8946,7 @@
     "index": 4,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-27\", \"VfL Bochum\", \"SV Darmstadt 98\", 4]": {
     "league": "GER_2_2-bundesliga",
@@ -8967,7 +8967,7 @@
     "index": 4,
     "created": "2026-11-24T07:09:49.089288+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"GER_2_2-bundesliga\", \"2026-11-28\", \"Dynamo Dresden\", \"FC St. Pauli\", 4]": {
     "league": "GER_2_2-bundesliga",
@@ -9519,7 +9519,7 @@
     "index": 1,
     "created": "2026-11-25T07:13:11.512876+00:00",
     "result": null,
-    "settlement_issue": "fixture_not_found"
+    "settlement_issue": "missing_card_stats"
   },
   "[\"cards\", \"ESP_1_la-liga\", \"2026-11-28\", \"Málaga CF\", \"Athletic Club\", 1]": {
     "league": "ESP_1_la-liga",
