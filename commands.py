@@ -21,12 +21,12 @@ def load(path, default):
     return visible_state(path, local_load(path, default))
 from backtest import LABELS
 
-REMOVED_MARKET = "ТБ 1.5 1Т"
+REMOVED_MARKETS = {"ТБ 1.5 1Т", "ТБ 0.5 2Т"}
 def visible_state(path, data):
     if path == "state/snapshot.json" and isinstance(data, dict):
         data = dict(data)
-        data["rows"] = [r for r in data.get("rows", []) if r.get("market") != REMOVED_MARKET]
-        data["diagnostics"] = {k:v for k,v in data.get("diagnostics", {}).items() if k != REMOVED_MARKET}
+        data["rows"] = [r for r in data.get("rows", []) if r.get("market") not in REMOVED_MARKETS]
+        data["diagnostics"] = {k:v for k,v in data.get("diagnostics", {}).items() if k not in REMOVED_MARKETS}
     return data
 from reliability26 import calibration_summary, reliability, baseline_evidence
 from forward28 import report as forward_report, extra_market_report
@@ -216,7 +216,6 @@ def analyze(arg):
         ("goals","ТБ 0.5 1Т","1+ гол до перерыва"),
         ("goals","ТБ 2.5","3+ гола за матч"),
         ("goals","Обе забьют","Каждая команда забьёт"),
-        ("goals","ТБ 0.5 2Т","1+ гол после перерыва"),
         ("corners","Угловые ТБ 8.5","9+ угловых за матч"),
         ("corners","Угловые ТБ 9.5","10+ угловых за матч"),
         ("corners","Угловые 1Т ТБ 3.5","4+ угловых до перерыва"),
@@ -243,7 +242,7 @@ def analyze(arg):
             lines.append(f"Более вероятный исход модели: {side}; не сигнал доходности.")
         lines.append("↳ "+meaning+(f"; выборка {sample}" if sample else ""))
         if why: lines.append("Причина: "+"; ".join(why))
-    lines.append(f"Покрытие: {len(clean)}/12. Это полнота данных, не гарантия точности.")
+    lines.append(f"Покрытие: {len(clean)}/11. Это полнота данных, не гарантия точности.")
     lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
     for r in sorted([r for r in clean if eligible(r,snap)],key=lambda r:r["p"],reverse=True)[:3]:
         lines.append(f"{r['market']}: {r['p']:.1%}")
@@ -263,7 +262,7 @@ def status_report():
     s=load("state/snapshot.json",{}); f=load("state/form.json",{})
     if not s: return "База отсутствует."
     age=(datetime.now(timezone.utc)-datetime.fromisoformat(s["created"])).total_seconds()/3600
-    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/12",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
+    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/11",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
 def h2h_local(q):
     if not q.strip(): return "Пример: /h2h Бавария - Кёльн"
     f=load("state/form.json",{}); found={}
@@ -303,7 +302,7 @@ def filter_predictions(arg, days=1, compact=False):
     from cards import MARKETS as CARD_MARKETS
     aliases={"оз":"Обе забьют","btts":"Обе забьют","обе забьют":"Обе забьют",
              "тм 2.5":"ТМ 2.5","тм 2,5":"ТМ 2.5"}
-    markets=[m for m in LABELS if m != REMOVED_MARKET]+[m[0] for m in CORNER_MARKETS+CARD_MARKETS]
+    markets=[m for m in LABELS if m not in REMOVED_MARKETS]+[m[0] for m in CORNER_MARKETS+CARD_MARKETS]
     for name in markets:
         aliases[name.casefold()]=name
         aliases[name.casefold().replace(".",",")]=name
@@ -448,7 +447,7 @@ def all_predictions(arg):
             lines.append(f"{r['market']}: {r['p']:.1%} ({status})")
             if r["group"]=="goals" and r["market"]=="ТБ 2.5":
                 lines.append(f"ТМ 2.5: {1-r['p']:.1%} (дополнение, не тестировалось отдельно)")
-        lines.append(f"Рынков в базе: {len(markets)}/12")
+        lines.append(f"Рынков в базе: {len(markets)}/11")
     if len(groups)>(1 if arg.strip() else 3): lines.append("Другие матчи: /all НАЗВАНИЕ КОМАНДЫ")
     return "\n".join(lines)
 
@@ -800,7 +799,7 @@ def answer(msg):
         for d in (7,30,90):
             start=(now.date()-timedelta(days=d-1)).isoformat()
             lines.append(f"За {d} дней (UTC):")
-            for market in sorted({r["market"] for r in rows} - {REMOVED_MARKET}):
+            for market in sorted({r["market"] for r in rows} - REMOVED_MARKETS):
                 rs=[r for r in rows if r["market"]==market and start<=r["date"]<=now.date().isoformat()]
                 done=[r for r in rs if r["result"] is not None]
                 lines.append(f"{market}: {sum(r['result'] for r in done)}/{len(done)}; ожидают {len(rs)-len(done)}")
@@ -841,7 +840,7 @@ def answer(msg):
         rs=[r for r in rs if r["selected"]]
     else: return helptext
     lines=["⚽ Football AI PRO V23 • ДЕМО","Снимок: "+snap["created"]+" UTC","Вероятности не являются доказательством прибыльности.","Только будущие матчи с известным временем; расписание независимо не подтверждено.",
-           "⚠️ ТБ 0.5 2Т означает минимум 1 гол во 2-м тайме, НЕ 2 гола. Прогнозов ТБ 1.5 2Т модель не выдаёт."]
+           "Рынки второго тайма исключены из основного бота."]
     # Prefer historically supported markets when choosing ONE forecast per fixture.
     # Raw probability alone is not a measure of prediction quality.
     if cmd in ("/corners","/cards"):
