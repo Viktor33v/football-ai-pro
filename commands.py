@@ -21,7 +21,7 @@ def load(path, default):
     return visible_state(path, local_load(path, default))
 from backtest import LABELS
 
-REMOVED_MARKETS = {"ТБ 1.5 1Т", "ТБ 0.5 2Т", "Угловые ТБ 9.5", "ЖК ТБ 4.5"}
+REMOVED_MARKETS = {"ТБ 1.5 1Т", "ТБ 0.5 2Т", "Угловые ТБ 9.5", "ЖК ТБ 4.5", "ЖК ТБ 2.5", "ЖК хозяев ТБ 1.5", "ЖК гостей ТБ 1.5"}
 def visible_state(path, data):
     if path == "state/snapshot.json" and isinstance(data, dict):
         data = dict(data)
@@ -218,9 +218,9 @@ def analyze(arg):
         ("goals","Обе забьют","Каждая команда забьёт"),
         ("corners","Угловые ТБ 8.5","9+ угловых за матч"),
         ("corners","Угловые 1Т ТБ 3.5","4+ угловых до перерыва"),
-        ("cards","ЖК ТБ 2.5","3+ ЖК за матч"),
+
         ("cards","ЖК ТБ 3.5","4+ ЖК за матч"),
-        ("cards","ЖК хозяев ТБ 1.5","2+ ЖК хозяев"),
+
         ("cards","ЖК гостей ТБ 1.5","2+ ЖК гостей")]
     lines.append("Рынок | Вероятность | Фильтр")
     for g,m,meaning in descriptions:
@@ -240,7 +240,7 @@ def analyze(arg):
             lines.append(f"Более вероятный исход модели: {side}; не сигнал доходности.")
         lines.append("↳ "+meaning+(f"; выборка {sample}" if sample else ""))
         if why: lines.append("Причина: "+"; ".join(why))
-    lines.append(f"Покрытие: {len(clean)}/9. Это полнота данных, не гарантия точности.")
+    lines.append(f"Покрытие: {len(clean)}/6. Это полнота данных, не гарантия точности.")
     lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
     for r in sorted([r for r in clean if eligible(r,snap)],key=lambda r:r["p"],reverse=True)[:3]:
         lines.append(f"{r['market']}: {r['p']:.1%}")
@@ -260,7 +260,7 @@ def status_report():
     s=load("state/snapshot.json",{}); f=load("state/form.json",{})
     if not s: return "База отсутствует."
     age=(datetime.now(timezone.utc)-datetime.fromisoformat(s["created"])).total_seconds()/3600
-    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/9",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
+    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/6",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
 def h2h_local(q):
     if not q.strip(): return "Пример: /h2h Бавария - Кёльн"
     f=load("state/form.json",{}); found={}
@@ -445,7 +445,7 @@ def all_predictions(arg):
             lines.append(f"{r['market']}: {r['p']:.1%} ({status})")
             if r["group"]=="goals" and r["market"]=="ТБ 2.5":
                 lines.append(f"ТМ 2.5: {1-r['p']:.1%} (дополнение, не тестировалось отдельно)")
-        lines.append(f"Рынков в базе: {len(markets)}/9")
+        lines.append(f"Рынков в базе: {len(markets)}/6")
     if len(groups)>(1 if arg.strip() else 3): lines.append("Другие матчи: /all НАЗВАНИЕ КОМАНДЫ")
     return "\n".join(lines)
 
@@ -769,7 +769,7 @@ def answer(msg):
     local=timezone(timedelta(hours=6)); now=datetime.now(timezone.utc)
     cmd,_,arg=msg.strip().partition(" "); cmd=cmd.split("@")[0].lower()
     helptext="⚽ Football AI PRO V24 • ДЕМО\n/today — сегодня\n/tomorrow — завтра\n/top — 10 по вероятности\n/goals — голы\n/btts — обе забьют\n/corners — угловые\n/cards — ЖК\n/stats — журнал\n/match Arsenal — поиск по названию (русский или латиница)\nРежим ДЕМО. /bank — виртуальный банк.\n/bank_reset — новый цикл\n/bank_history — история циклов"
-    if cmd in ("/start","/help"): return helptext+"\n⚠️ ТБ 0.5 2Т = 1+ гол во втором тайме. ТБ 1.5 2Т = 2+ гола; модель его не прогнозирует."+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/90 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
+    if cmd in ("/start","/help"): return helptext+"\n⚠️ ТБ 0.5 2Т = 1+ гол во втором тайме. ТБ 1.5 2Т = 2+ гола; модель его не прогнозирует."+"\n/form Бавария — последние 5 матчей\n/tactic 4-3-3 4-2-3-1 — история схем\n/analyze Бавария - Кёльн — полный анализ\n/performance — проходимость 7/30/60 дней\n/shortlist — кандидаты на 7 дней\n/best — фильтр на сегодня\n/status — состояние базы\n/h2h Бавария - Кёльн — доступные очные встречи\n/form Бавария; 20 — форма до 20 матчей\n/half — тест 1Т\n/odds 73.5 1.50 — демо расчёт"
     if cmd=="/today": return today_quality()
     if cmd=="/bank": return bank_report()
     if cmd in ("/paper_list","/paper_add","/paper_open","/paper_settle"): return paper_commands(cmd,arg)
