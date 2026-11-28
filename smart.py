@@ -13,6 +13,16 @@ def run():
         start=max(today-timedelta(days=364),end-timedelta(days=6))
         for m in api("matches?dateFrom="+str(start)+"&dateTo="+str(end))["matches"]:
             raw[m["id"]]=m
+    # Retain previously observed finished matches inside the rolling window.
+    fresh_count=len(raw)
+    cache_path="state/v28_results.json"
+    if os.path.exists(cache_path):
+        with open(cache_path,encoding="utf-8") as f:
+            cached=json.load(f)
+        for m in cached.values():
+            if m.get("status")=="FINISHED" and str(today-timedelta(days=364))<=m.get("utcDate","")[:10]<str(today):
+                raw.setdefault(m["id"],m)
+    print(f"History: API={fresh_count}, merged={len(raw)}, recovered={len(raw)-fresh_count}")
     upcoming=api("matches?dateFrom="+str(today)+"&dateTo="+str(today+timedelta(days=6)))["matches"]
     days=defaultdict(list); actual={}
     for m in raw.values():
@@ -70,7 +80,7 @@ def run():
     goal_test=[[] for _ in range(5)]
     for day,ms in sorted(days.items()):
         pending=[]
-        for m,v,y in ms:
+        for m,v,y in sorted(ms,key=lambda item:(item[0]["utcDate"],item[0]["id"])):
             a=m["homeTeam"]["id"]; b=m["awayTeam"]["id"]
             l=m["competition"]["id"]; f=half_candidate(a,b,l)
             if f:
