@@ -15,11 +15,19 @@ def load(path, default):
                     created = datetime.fromisoformat(data['created'])
                     if created.tzinfo is None or created > datetime.now(timezone.utc) or not isinstance(data.get('rows'), list):
                         raise ValueError('Invalid snapshot')
-                return data
+                return visible_state(path, data)
         except (OSError, ValueError, KeyError, TypeError):
             pass
-    return local_load(path, default)
+    return visible_state(path, local_load(path, default))
 from backtest import LABELS
+
+REMOVED_MARKET = "ТБ 1.5 1Т"
+def visible_state(path, data):
+    if path == "state/snapshot.json" and isinstance(data, dict):
+        data = dict(data)
+        data["rows"] = [r for r in data.get("rows", []) if r.get("market") != REMOVED_MARKET]
+        data["diagnostics"] = {k:v for k,v in data.get("diagnostics", {}).items() if k != REMOVED_MARKET}
+    return data
 from reliability26 import calibration_summary, reliability, baseline_evidence
 from forward28 import report as forward_report, extra_market_report
 from team_ru import display as ru_team
@@ -206,7 +214,6 @@ def analyze(arg):
     clean=[]
     descriptions=[
         ("goals","ТБ 0.5 1Т","1+ гол до перерыва"),
-        ("goals","ТБ 1.5 1Т","2+ гола до перерыва"),
         ("goals","ТБ 2.5","3+ гола за матч"),
         ("goals","Обе забьют","Каждая команда забьёт"),
         ("goals","ТБ 0.5 2Т","1+ гол после перерыва"),
@@ -236,7 +243,7 @@ def analyze(arg):
             lines.append(f"Более вероятный исход модели: {side}; не сигнал доходности.")
         lines.append("↳ "+meaning+(f"; выборка {sample}" if sample else ""))
         if why: lines.append("Причина: "+"; ".join(why))
-    lines.append(f"Покрытие: {len(clean)}/13. Это полнота данных, не гарантия точности.")
+    lines.append(f"Покрытие: {len(clean)}/12. Это полнота данных, не гарантия точности.")
     lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
     for r in sorted([r for r in clean if eligible(r,snap)],key=lambda r:r["p"],reverse=True)[:3]:
         lines.append(f"{r['market']}: {r['p']:.1%}")
@@ -256,7 +263,7 @@ def status_report():
     s=load("state/snapshot.json",{}); f=load("state/form.json",{})
     if not s: return "База отсутствует."
     age=(datetime.now(timezone.utc)-datetime.fromisoformat(s["created"])).total_seconds()/3600
-    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/13",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
+    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/12",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
 def h2h_local(q):
     if not q.strip(): return "Пример: /h2h Бавария - Кёльн"
     f=load("state/form.json",{}); found={}
@@ -296,12 +303,12 @@ def filter_predictions(arg, days=1, compact=False):
     from cards import MARKETS as CARD_MARKETS
     aliases={"оз":"Обе забьют","btts":"Обе забьют","обе забьют":"Обе забьют",
              "тм 2.5":"ТМ 2.5","тм 2,5":"ТМ 2.5"}
-    markets=LABELS+[m[0] for m in CORNER_MARKETS+CARD_MARKETS]
+    markets=[m for m in LABELS if m != REMOVED_MARKET]+[m[0] for m in CORNER_MARKETS+CARD_MARKETS]
     for name in markets:
         aliases[name.casefold()]=name
         aliases[name.casefold().replace(".",",")]=name
     usage=("Примеры:\n/filter обе забьют 60-80\n/filter тб 2.5 до 70\n"
-           "/filter тб 1.5 1т от 60\n/filter тм 2.5 60-80\n"
+           "/filter тб 0.5 1т от 60\n/filter тм 2.5 60-80\n"
            "По умолчанию: сегодня (Бишкек), все прогнозы, по убыванию вероятности.")
     arg=" ".join(arg.casefold().replace("–","-").replace("—","-").split())
     m=re.fullmatch(r"(.+?)\s+(?:(от|до)\s+)?(\d{1,3})(?:\s*-\s*(\d{1,3}))?\s*%?",arg)
@@ -441,7 +448,7 @@ def all_predictions(arg):
             lines.append(f"{r['market']}: {r['p']:.1%} ({status})")
             if r["group"]=="goals" and r["market"]=="ТБ 2.5":
                 lines.append(f"ТМ 2.5: {1-r['p']:.1%} (дополнение, не тестировалось отдельно)")
-        lines.append(f"Рынков в базе: {len(markets)}/13")
+        lines.append(f"Рынков в базе: {len(markets)}/12")
     if len(groups)>(1 if arg.strip() else 3): lines.append("Другие матчи: /all НАЗВАНИЕ КОМАНДЫ")
     return "\n".join(lines)
 
@@ -781,7 +788,7 @@ def answer(msg):
     if cmd=="/status": return status_report()
     if cmd=="/h2h": return h2h(arg)
     if cmd=="/odds": return odds(arg)
-    if cmd=="/half": return half_report()
+    if cmd=="/half": return "ТБ 1.5 первого тайма перенесён в ГОЛ PRO."
     if cmd=="/analyze": return analyze(arg)
     if cmd=="/tactic": return tactic(arg.strip())
     if cmd=="/form": return team_form(arg.strip())
@@ -793,7 +800,7 @@ def answer(msg):
         for d in (7,30,90):
             start=(now.date()-timedelta(days=d-1)).isoformat()
             lines.append(f"За {d} дней (UTC):")
-            for market in sorted({r["market"] for r in rows}):
+            for market in sorted({r["market"] for r in rows} - {REMOVED_MARKET}):
                 rs=[r for r in rows if r["market"]==market and start<=r["date"]<=now.date().isoformat()]
                 done=[r for r in rs if r["result"] is not None]
                 lines.append(f"{market}: {sum(r['result'] for r in done)}/{len(done)}; ожидают {len(rs)-len(done)}")
