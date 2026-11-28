@@ -21,7 +21,7 @@ def load(path, default):
     return visible_state(path, local_load(path, default))
 from backtest import LABELS
 
-REMOVED_MARKETS = {"ТБ 1.5 1Т", "ТБ 0.5 2Т"}
+REMOVED_MARKETS = {"ТБ 1.5 1Т", "ТБ 0.5 2Т", "Угловые ТБ 9.5", "ЖК ТБ 4.5"}
 def visible_state(path, data):
     if path == "state/snapshot.json" and isinstance(data, dict):
         data = dict(data)
@@ -217,11 +217,9 @@ def analyze(arg):
         ("goals","ТБ 2.5","3+ гола за матч"),
         ("goals","Обе забьют","Каждая команда забьёт"),
         ("corners","Угловые ТБ 8.5","9+ угловых за матч"),
-        ("corners","Угловые ТБ 9.5","10+ угловых за матч"),
         ("corners","Угловые 1Т ТБ 3.5","4+ угловых до перерыва"),
         ("cards","ЖК ТБ 2.5","3+ ЖК за матч"),
         ("cards","ЖК ТБ 3.5","4+ ЖК за матч"),
-        ("cards","ЖК ТБ 4.5","5+ ЖК за матч"),
         ("cards","ЖК хозяев ТБ 1.5","2+ ЖК хозяев"),
         ("cards","ЖК гостей ТБ 1.5","2+ ЖК гостей")]
     lines.append("Рынок | Вероятность | Фильтр")
@@ -242,7 +240,7 @@ def analyze(arg):
             lines.append(f"Более вероятный исход модели: {side}; не сигнал доходности.")
         lines.append("↳ "+meaning+(f"; выборка {sample}" if sample else ""))
         if why: lines.append("Причина: "+"; ".join(why))
-    lines.append(f"Покрытие: {len(clean)}/11. Это полнота данных, не гарантия точности.")
+    lines.append(f"Покрытие: {len(clean)}/9. Это полнота данных, не гарантия точности.")
     lines.append("\nФИЛЬТР ДЕМО: 10 матчей каждой команды, 100 тестовых, Brier лучше базы")
     for r in sorted([r for r in clean if eligible(r,snap)],key=lambda r:r["p"],reverse=True)[:3]:
         lines.append(f"{r['market']}: {r['p']:.1%}")
@@ -262,7 +260,7 @@ def status_report():
     s=load("state/snapshot.json",{}); f=load("state/form.json",{})
     if not s: return "База отсутствует."
     age=(datetime.now(timezone.utc)-datetime.fromisoformat(s["created"])).total_seconds()/3600
-    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/11",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
+    return "\n".join(["Football AI PRO • статус",f"Снимок: {s['created']}",f"Возраст: {age:.1f} ч",f"Рынков с метриками: {len(s.get('diagnostics',{}))}/9",f"Команд с формой: {len(f.get('teams',[]))}","ВНИМАНИЕ: данные старше 30 часов" if age>30 else "Возраст снимка в пределах 30 часов","Даты матчей независимо не подтверждены. Демо."])
 def h2h_local(q):
     if not q.strip(): return "Пример: /h2h Бавария - Кёльн"
     f=load("state/form.json",{}); found={}
@@ -302,7 +300,7 @@ def filter_predictions(arg, days=1, compact=False):
     from cards import MARKETS as CARD_MARKETS
     aliases={"оз":"Обе забьют","btts":"Обе забьют","обе забьют":"Обе забьют",
              "тм 2.5":"ТМ 2.5","тм 2,5":"ТМ 2.5"}
-    markets=[m for m in LABELS if m not in REMOVED_MARKETS]+[m[0] for m in CORNER_MARKETS+CARD_MARKETS]
+    markets=[m for m in LABELS+[m[0] for m in CORNER_MARKETS+CARD_MARKETS] if m not in REMOVED_MARKETS]
     for name in markets:
         aliases[name.casefold()]=name
         aliases[name.casefold().replace(".",",")]=name
@@ -447,7 +445,7 @@ def all_predictions(arg):
             lines.append(f"{r['market']}: {r['p']:.1%} ({status})")
             if r["group"]=="goals" and r["market"]=="ТБ 2.5":
                 lines.append(f"ТМ 2.5: {1-r['p']:.1%} (дополнение, не тестировалось отдельно)")
-        lines.append(f"Рынков в базе: {len(markets)}/11")
+        lines.append(f"Рынков в базе: {len(markets)}/9")
     if len(groups)>(1 if arg.strip() else 3): lines.append("Другие матчи: /all НАЗВАНИЕ КОМАНДЫ")
     return "\n".join(lines)
 
